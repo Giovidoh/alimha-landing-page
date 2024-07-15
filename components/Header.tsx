@@ -13,7 +13,11 @@ const Header = () => {
             </div>
             <div className="flex justify-between items-center w-1/4 pl-16">
                 <BurgerButton />
-                <ButtonGradientStyle1 text="Devenir partenaire" />
+                <ButtonGradientStyle1
+                    fromColor="from-primary-blue"
+                    toColor="to-secondary-blue"
+                    text="Devenir partenaire"
+                />
             </div>
         </div>
     );

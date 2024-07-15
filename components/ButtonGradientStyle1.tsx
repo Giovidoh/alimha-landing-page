@@ -1,19 +1,23 @@
 import React from "react";
 
-const ButtonGradientStyle1 = ({ text }: { text: string }) => {
+interface ButtonGradientStyle1Props {
+    fromColor?: string;
+    toColor?: string;
+    text?: string;
+}
+
+const ButtonGradientStyle1: React.FC<ButtonGradientStyle1Props> = ({
+    fromColor = "from-primary-blue",
+    toColor = "to-secondary-blue",
+    text = "Button",
+}) => {
     return (
-        <button className="bg-gradient-to-r from-primary-blue to-secondary-blue font-bold capitalize tracking-wide whitespace-nowrap text-white rounded-xl py-3 px-6">
+        <button
+            className={`bg-gradient-to-r ${fromColor} ${toColor} to-secondary-blue font-bold capitalize tracking-wide whitespace-nowrap text-white rounded-xl py-3 px-6`}
+        >
             {text}
         </button>
     );
 };
-
-{
-    /* Example :
-<ButtonGradientStyle1
-    text="Devenir partenaire"
-/>;
-*/
-}
 
 export default ButtonGradientStyle1;

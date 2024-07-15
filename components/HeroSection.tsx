@@ -24,7 +24,11 @@ const HeroSection = () => {
                     transformer vos visions en solutions concrètes.
                 </p>
                 <div className="flex justify-between w-[70%] pb-8">
-                    <ButtonGradientStyle1 text="Devenir partenaire" />
+                    <ButtonGradientStyle1
+                        fromColor="from-primary-blue"
+                        toColor="to-secondary-blue"
+                        text="Devenir partenaire"
+                    />
                     <ButtonStyle1 text="En savoir Plus" />
                 </div>
                 <ClientsReviewsRate />
