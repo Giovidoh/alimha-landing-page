@@ -3,8 +3,8 @@ import Star from "./Star";
 
 const ClientsReviewsRate = () => {
     return (
-        <div className="flex flex-col items-center justify-between w-48 h-14">
-            <div className="flex justify-evenly w-[90%]">
+        <div className="flex flex-col items-center justify-between w-fit h-14">
+            <div className="flex justify-evenly w-full">
                 <Star />
                 <Star />
                 <Star />
