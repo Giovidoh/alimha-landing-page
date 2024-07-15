@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 import BurgerButton from "./BurgerButton";
-import ButtonStyle1 from "./ButtonStyle1";
+import ButtonGradientStyle1 from "./ButtonGradientStyle1";
 
 const Header = () => {
     return (
@@ -13,7 +13,7 @@ const Header = () => {
             </div>
             <div className="flex justify-between items-center w-1/4 pl-16">
                 <BurgerButton />
-                <ButtonStyle1 text="Devenir partenaire" />
+                <ButtonGradientStyle1 text="Devenir partenaire" />
             </div>
         </div>
     );

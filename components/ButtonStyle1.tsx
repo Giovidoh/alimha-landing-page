@@ -1,19 +1,15 @@
 import React from "react";
 
-const ButtonStyle1 = ({ text }: { text: string }) => {
+interface ButtonStyle1Props {
+    text?: string;
+}
+
+const ButtonStyle1: React.FC<ButtonStyle1Props> = ({ text }) => {
     return (
-        <button className="bg-gradient-to-r from-primary-blue to-secondary-blue font-bold capitalize tracking-wide whitespace-nowrap text-white rounded-xl py-3 px-6">
+        <button className="border border-primary-blue text-[#171717] font-semibold tracking-wide rounded-xl py-3 px-12">
             {text}
         </button>
     );
 };
-
-{
-    /* Example :
-<ButtonStyle1
-    text="Devenir partenaire"
-/>;
-*/
-}
 
 export default ButtonStyle1;

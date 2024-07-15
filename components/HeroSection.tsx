@@ -1,7 +1,7 @@
 import React from "react";
 import HeroImg from "./HeroImg";
+import ButtonGradientStyle1 from "./ButtonGradientStyle1";
 import ButtonStyle1 from "./ButtonStyle1";
-import ButtonStyle2 from "./ButtonStyle2";
 import ClientsReviewsRate from "./ClientsReviewsRate";
 
 const HeroSection = () => {
@@ -24,8 +24,8 @@ const HeroSection = () => {
                     transformer vos visions en solutions concrètes.
                 </p>
                 <div className="flex justify-between w-[70%] pb-8">
-                    <ButtonStyle1 text="Devenir partenaire" />
-                    <ButtonStyle2 text="En savoir Plus" />
+                    <ButtonGradientStyle1 text="Devenir partenaire" />
+                    <ButtonStyle1 text="En savoir Plus" />
                 </div>
                 <ClientsReviewsRate />
             </div>
