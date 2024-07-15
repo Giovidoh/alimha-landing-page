@@ -11,8 +11,6 @@ const config: Config = {
             "primary-blue": "#0039BA",
             "secondary-blue": "#0067F8",
             white: "#FFFFFF",
-            "blue-gradient":
-                "bg-gradient-to-r from-primary-blue to-secondary-blue",
         },
         extend: {
             backgroundImage: {

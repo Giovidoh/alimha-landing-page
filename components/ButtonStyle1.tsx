@@ -1,17 +1,9 @@
 import React from "react";
 
-const ButtonStyle1 = ({
-    gradientFromColor,
-    gradientToColor,
-    text,
-}: {
-    gradientFromColor: string;
-    gradientToColor: string;
-    text: string;
-}) => {
+const ButtonStyle1 = ({ text }: { text: string }) => {
     return (
         <button
-            className={`bg-gradient-to-r from-${gradientFromColor} to-${gradientToColor} font-bold capitalize tracking-wide text-white rounded-xl py-3 px-6`}
+            className={`bg-gradient-to-r from-primary-blue to-secondary-blue font-bold capitalize tracking-wide text-white rounded-xl py-3 px-6`}
         >
             {text}
         </button>
@@ -21,8 +13,6 @@ const ButtonStyle1 = ({
 {
     /* Example :
 <ButtonStyle1
-    gradientFromColor="primary-blue"
-    gradientToColor="secondary-blue"
     text="Devenir partenaire"
 />;
 */
