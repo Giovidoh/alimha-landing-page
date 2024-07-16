@@ -10,7 +10,8 @@ const Footer = () => {
                     <p className="text-secondary-blue text-justify leading-[19.13px] mt-5">
                         Rejoignez la Révolution Technologique Découvrez comment
                         Alimha and Company peut transformer votre manière de
-                        faire des affaires. Contactez-nous dès aujourd'hui !
+                        faire des affaires. Contactez-nous dès aujourd&apos;hui
+                        !
                     </p>
                     <div></div>
                 </div>
