@@ -1,5 +1,6 @@
 import React from "react";
 import LogoFooter from "./LogoFooter";
+import FooterLink from "./FooterLink";
 
 const Footer = () => {
     return (
@@ -17,52 +18,38 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col justify-between h-[99px]">
                     <h3 className="font-semibold text-white text-xl">Alimha</h3>
-                    <p className="text-secondary-blue font-light">
-                        Qui sommes nous ?
-                    </p>
-                    <p className="text-secondary-blue font-light">
-                        Pourquoi - nous ?
-                    </p>
+                    <FooterLink href="#" text="Qui sommes nous ?" />
+                    <FooterLink href="#" text="Pourquoi - nous ?" />
                 </div>
                 <div className="flex flex-col justify-between h-[134px]">
                     <h3 className="font-semibold text-white text-xl">
                         Solutions
                     </h3>
-                    <p className="text-secondary-blue font-light">
-                        Agrégateur de Solutions de Paiement
-                    </p>
-                    <p className="text-secondary-blue font-light">
-                        Application Mobile de Transfert d&apos;Argent
-                    </p>
-                    <p className="text-secondary-blue font-light">
-                        Développement de Logiciels
-                    </p>
+                    <FooterLink
+                        href="#"
+                        text="Agrégateur de Solutions de Paiement"
+                    />
+                    <FooterLink
+                        href="#"
+                        text="Application Mobile de Transfert d'Argent"
+                    />
+                    <FooterLink href="#" text="Développement de Logiciels" />
                 </div>
                 <div className="flex flex-col justify-between h-[134px]">
                     <h3 className="font-semibold text-white text-xl">
                         Resources
                     </h3>
-                    <p className="text-secondary-blue font-light">
-                        Conditions d’utilisation{" "}
-                    </p>
-                    <p className="text-secondary-blue font-light">
-                        Politique de confidentialité{" "}
-                    </p>
-                    <p className="text-secondary-blue">Mention Légale</p>
+                    <FooterLink href="#" text="Conditions d’utilisation" />
+                    <FooterLink href="#" text="Politique de confidentialité" />
+                    <FooterLink href="#" text="Mention Légale" />
                 </div>
                 <div className="flex flex-col justify-between h-[134px]">
                     <h3 className="font-semibold text-white text-xl">
                         Contactez-nous
                     </h3>
-                    <p className="text-secondary-blue font-light">
-                        infos@alimha.com
-                    </p>
-                    <p className="text-secondary-blue font-light">
-                        +221 78 589 87 85
-                    </p>
-                    <p className="text-secondary-blue font-light">
-                        Medina, rue 4 Dakar , Sénégal
-                    </p>
+                    <FooterLink href="#" text="infos@alimha.com" />
+                    <FooterLink href="#" text="+221 78 589 87 85" />
+                    <FooterLink href="#" text="Medina, rue 4 Dakar , Sénégal" />
                 </div>
             </div>
             <div className="w-full pt-40 pb-10">
