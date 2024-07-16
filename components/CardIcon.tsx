@@ -11,7 +11,7 @@ const CardIcon: React.FC<cardIconProps> = ({ icon, bgColor }) => {
         <div
             className={`${bgColor} flex justify-center items-center h-[88px] w-[88px] p-2 rounded-[28px]`}
         >
-            <Image src={icon} alt="icon" />
+            <Image src={icon} alt="icon" height={40} width={40} />
         </div>
     );
 };
