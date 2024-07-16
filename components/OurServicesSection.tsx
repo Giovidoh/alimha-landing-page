@@ -4,7 +4,7 @@ import alimha_icon from "@/public/images/alimha-logo-graphic-min-blue.png";
 
 const OurServicesSection = () => {
     return (
-        <section className="flex flex-col justify-evenly px-[10%] bg-white h-screen w-full">
+        <section className="flex flex-col justify-evenly px-[10%] bg-white h-fit w-full pb-40">
             <div className="flex items-center h-fit">
                 <h3 className="font-semibold text-xl text-primary-blue pt-4 pr-6">
                     Nos services

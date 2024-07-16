@@ -6,7 +6,7 @@ import ClientsReviewsRate from "./ClientsReviewsRate";
 
 const HeroSection = () => {
     return (
-        <section className="flex px-[10%] bg-white h-screen w-full">
+        <section className="flex px-[10%] bg-white h-fit w-full pb-24">
             <div className="w-1/2 pt-32">
                 <h3 className="font-semibold text-xl text-primary-blue mb-2">
                     Fintech
