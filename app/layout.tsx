@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
     title: "Alimha",
     description:
-        "Fintech welcome to Alimha and Company Your Trusted Partner in Technology Solutions Transform your ideas into innovative realities We combine expertise, creativity and cutting-edge technology to transform your visions into concrete solutions.",
+        "Welcome to Alimha and Company - Your trusted partner in technology solutions. Transform your ideas into innovative realities with our expertise, creativity, and cutting-edge technology. We combine these elements to turn your visions into concrete solutions.",
 };
 
 export default function RootLayout({
