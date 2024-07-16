@@ -32,7 +32,7 @@ const Footer = () => {
                         Agrégateur de Solutions de Paiement
                     </p>
                     <p className="text-secondary-blue font-light">
-                        Application Mobile de Transfert d'Argent
+                        Application Mobile de Transfert d&apos;Argent
                     </p>
                     <p className="text-secondary-blue font-light">
                         Développement de Logiciels
