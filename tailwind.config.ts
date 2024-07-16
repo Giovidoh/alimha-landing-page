@@ -10,6 +10,7 @@ const config: Config = {
         colors: {
             "primary-blue": "#0039BA",
             "secondary-blue": "#0067F8",
+            "dark-blue": "#001036",
             "gray-1": "#969696",
             "gray-2": "#ACACAC",
             "orange-1": "#FF5500",

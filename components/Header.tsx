@@ -6,7 +6,7 @@ import ButtonGradientStyle1 from "./ButtonGradientStyle1";
 
 const Header = () => {
     return (
-        <div className="flex px-[10%] py-5">
+        <header className="flex px-[10%] py-5">
             <div className="flex justify-between items-center w-3/4 pr-10">
                 <Logo />
                 <NavBar />
@@ -19,7 +19,7 @@ const Header = () => {
                     text="Devenir partenaire"
                 />
             </div>
-        </div>
+        </header>
     );
 };
 
