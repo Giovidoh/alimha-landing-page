@@ -11,7 +11,7 @@ const ButtonStyle2: React.FC<ButtonStyle2Props> = ({
 }) => {
     return (
         <button
-            className={`border ${bgColor} text-white capitalize font-bold tracking-wide rounded-xl py-3 px-12`}
+            className={`border ${bgColor} text-white capitalize font-bold tracking-wide rounded-xl w-[194px] h-[55px]`}
         >
             {text}
         </button>

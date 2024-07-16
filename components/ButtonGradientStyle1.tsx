@@ -13,7 +13,7 @@ const ButtonGradientStyle1: React.FC<ButtonGradientStyle1Props> = ({
 }) => {
     return (
         <button
-            className={`bg-gradient-to-r ${fromColor} ${toColor} to-secondary-blue font-bold capitalize tracking-wide whitespace-nowrap text-white rounded-xl py-3 px-6`}
+            className={`bg-gradient-to-r ${fromColor} ${toColor} to-secondary-blue font-bold capitalize tracking-wide whitespace-nowrap text-white w-[194px] h-[55px] rounded-xl`}
         >
             {text}
         </button>
