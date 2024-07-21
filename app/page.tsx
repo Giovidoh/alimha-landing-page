@@ -1,11 +1,11 @@
 import ContactUsSection from "@/components/ContactUsSection";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "@/components/sections/HeroSection";
 import OurServicesSection from "@/components/OurServicesSection";
-import TheyTrustUsSection from "@/components/TheyTrustUsSection";
-import WhoAreWeSection from "@/components/WhoAreWeSection";
-import WhyUsSection from "@/components/WhyUsSection";
+import TheyTrustUsSection from "@/components/sections/TheyTrustUsSection";
+import WhoAreWeSection from "@/components/sections/WhoAreWeSection";
+import WhyUsSection from "@/components/sections/WhyUsSection";
 
 export default function Home() {
     return (

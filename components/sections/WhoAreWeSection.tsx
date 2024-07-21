@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonGradientStyle1 from "./ButtonGradientStyle1";
+import ButtonGradientStyle1 from "../ButtonGradientStyle1";
 
 const WhoAreWeSection = () => {
     return (

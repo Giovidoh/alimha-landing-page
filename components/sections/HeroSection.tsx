@@ -1,8 +1,8 @@
 import React from "react";
-import HeroImg from "./HeroImg";
-import ButtonGradientStyle1 from "./ButtonGradientStyle1";
-import ButtonStyle1 from "./ButtonStyle1";
-import ClientsReviewsRate from "./ClientsReviewsRate";
+import HeroImg from "../HeroImg";
+import ButtonGradientStyle1 from "../ButtonGradientStyle1";
+import ButtonStyle1 from "../ButtonStyle1";
+import ClientsReviewsRate from "../ClientsReviewsRate";
 
 const HeroSection = () => {
     return (
