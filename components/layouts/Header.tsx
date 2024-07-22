@@ -11,7 +11,6 @@ const Header = () => {
 
     return (
         <>
-            {/* Laptop & desktop */}
             <header className="relative flex justify-between lg:px-[10%] max-lg:px-[5%] py-5">
                 <div className="flex justify-between items-center pr-10">
                     <Logo />
@@ -40,28 +39,6 @@ const Header = () => {
                     )}
                 </div>
             </header>
-
-            {/* tablet & mobile */}
-            {/* <header className="hidden relative max-lg:flex max-lg:justify-between max-lg:px-[5%] max-lg:py-5">
-                <div className="flex justify-between items-center pr-10">
-                    <Logo />
-                </div>
-                <div className="flex items-center w-full">
-                    <NavBar />
-                </div>
-                <div className="flex justify-end items-center">
-                    <BurgerButton setBurgerDropped={setBurgerDropped} />
-                    {burgerDropped && (
-                        <div className="absolute right-0 top-full p-2 bg-primary-blue">
-                            <ButtonGradientStyle1
-                                fromColor="from-primary-blue"
-                                toColor="to-secondary-blue"
-                                text="Devenir partenaire"
-                            />
-                        </div>
-                    )}
-                </div>
-            </header> */}
         </>
     );
 };
