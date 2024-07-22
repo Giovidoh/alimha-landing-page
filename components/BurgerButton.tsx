@@ -1,6 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 
-const BurgerButton = () => {
+interface BurgerButtonProps {
+    setBurgerDropped: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const BurgerButton: FC<BurgerButtonProps> = ({ setBurgerDropped }) => {
+    const handleClick = () => {
+        setBurgerDropped((prev) => !prev);
+    };
+
     return (
         <svg
             width="24"
@@ -8,6 +16,8 @@ const BurgerButton = () => {
             viewBox="0 0 24 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            onClick={handleClick}
+            className="cursor-pointer"
         >
             <path
                 fillRule="evenodd"
