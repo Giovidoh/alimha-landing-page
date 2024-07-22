@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../Card";
 import alimha_icon from "@/public/images/alimha-logo-graphic-min-blue.png";
 
 const OurServicesSection = () => {

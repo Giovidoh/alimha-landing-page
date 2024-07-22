@@ -1,6 +1,6 @@
 import React from "react";
-import LogoFooter from "./LogoFooter";
-import FooterLink from "./FooterLink";
+import LogoFooter from "../LogoFooter";
+import FooterLink from "../FooterLink";
 
 const Footer = () => {
     return (
