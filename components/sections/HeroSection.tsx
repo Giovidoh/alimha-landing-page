@@ -1,12 +1,15 @@
+import Image from "next/image";
 import React from "react";
-import HeroImg from "../HeroImg";
 import ButtonGradientStyle1 from "../ButtonGradientStyle1";
 import ButtonStyle1 from "../ButtonStyle1";
 import ClientsReviewsRate from "../ClientsReviewsRate";
+import actor1 from "@/public/images/actor1.png";
+import plus2 from "@/public/images/plus-vector-2.png";
+import circle5 from "@/public/images/circle-vector-5.png";
 
 const HeroSection = () => {
     return (
-        <section className="flex px-[10%] bg-white h-fit w-full pb-24">
+        <section className="flex px-[10%] bg-white h-fit w-full pb-24 bg-hero-world-img bg-contain bg-no-repeat bg-top">
             <div className="w-1/2 pt-32">
                 <h3 className="font-semibold text-xl text-primary-blue mb-2">
                     Fintech
@@ -33,8 +36,26 @@ const HeroSection = () => {
                 </div>
                 <ClientsReviewsRate />
             </div>
-            <div className="w-1/2 ">
-                <HeroImg />
+            <div className="relative w-1/2">
+                <Image
+                    src={actor1}
+                    alt="hero actor image"
+                    className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10"
+                />
+                <Image
+                    src={plus2}
+                    alt="plus icon"
+                    height={30}
+                    width={30}
+                    className="absolute top-[190px] right-[80px] z-0"
+                />
+                <Image
+                    src={circle5}
+                    alt="circle icon"
+                    height={30}
+                    width={30}
+                    className="absolute bottom-[20px] right-[275px] z-0"
+                />
             </div>
         </section>
     );

@@ -21,7 +21,7 @@ const Card: React.FC<CardProps> = ({
     buttonBgColor,
 }) => {
     return (
-        <div className="flex flex-col justify-between items-start h-[400px] w-[357px] px-7 py-5 rounded-3xl shadow-2xl">
+        <div className="flex flex-col justify-between items-start h-[400px] w-[357px] px-7 py-5 rounded-3xl shadow-2xl bg-white z-10">
             <CardIcon icon={icon} bgColor={bgColor} />
             <h2
                 className={`${titleColor} text-[28px] font-semibold leading-[36px]`}
