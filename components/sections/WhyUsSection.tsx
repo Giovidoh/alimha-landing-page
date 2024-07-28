@@ -24,6 +24,30 @@ const WhyUsSection = () => {
                 height={900}
                 className="absolute right-0 top-0 h-full"
             />
+            <Image
+                src={dot_vector1}
+                alt="line vector"
+                height={125}
+                className="absolute top-24 left-40"
+            />
+            <Image
+                src={plus_vector3}
+                alt="line vector"
+                height={11}
+                className="absolute top-40 left-[600px]"
+            />
+            <Image
+                src={plus_vector3}
+                alt="line vector"
+                height={10}
+                className="absolute top-64 right-80"
+            />
+            <Image
+                src={circle_vector3}
+                alt="line vector"
+                height={30}
+                className="absolute bottom-44 left-1/2"
+            />
 
             <div className="max-w-[465px]">
                 <div className="flex items-center h-fit">

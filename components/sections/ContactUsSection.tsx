@@ -1,9 +1,33 @@
+import Image from "next/image";
 import React from "react";
 import ContactForm from "../ContactForm";
+import Map from "../Map";
+import plus3 from "@/public/images/plus-vector-3.png";
+import circle_vector5 from "@/public/images/circle-vector-5.png";
+import line_vector3 from "@/public/images/line-vector3.png";
 
 const ContactUsSection = () => {
     return (
-        <section className="flex flex-col justify-evenly items-center text-center px-[10%] bg-[#F1F6FF] h-fit w-full pt-20 pb-32">
+        <section className="relative flex flex-col justify-evenly items-center text-center px-[10%] bg-[#F1F6FF] h-fit w-full pt-20 pb-32">
+            <Image
+                src={plus3}
+                alt="plus icon"
+                height={20}
+                className="absolute top-40 left-80"
+            />
+            <Image
+                src={circle_vector5}
+                alt="circle icon"
+                height={35}
+                className="absolute bottom-36 right-20"
+            />
+            <Image
+                src={line_vector3}
+                alt="line vector"
+                height={800}
+                className="absolute -bottom-40 right-0"
+            />
+
             <div className="mb-6">
                 <h1 className="font-bold text-[44px] leading-[52.6px] pb-5">
                     Contactez-nous
@@ -12,9 +36,9 @@ const ContactUsSection = () => {
                     Discutons de votre projet
                 </p>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center w-full">
                 {/* ADD A MAP HERE */}
-
+                <Map />
                 <ContactForm />
             </div>
         </section>

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import ButtonGradientStyle1 from "../ButtonGradientStyle1";
-import about_us_bg from "@/public/images/about-us-bg.png";
 import actor2 from "@/public/images/actor2.png";
 import growth1 from "@/public/images/growth1.png";
 import growth2 from "@/public/images/growth2.png";
@@ -47,6 +46,12 @@ const WhoAreWeSection = () => {
             />
             <div className="absolute bottom-40 left-56 p-3 bg-white shadow-md rounded-lg">
                 <Image src={growth1} alt="circle vector" height={60} />
+            </div>
+            <div className="absolute flex items-center top-56 left-[560px] px-3 py-1 bg-[#19AFFF] shadow-md rounded-lg">
+                <div className="bg-[#70CDFF] p-1 mr-2 rounded-lg">
+                    <Image src={thumb_up} alt="thumb up" height={30} />
+                </div>
+                <span className="text-white text-[32px] font-medium">200</span>
             </div>
 
             <div>

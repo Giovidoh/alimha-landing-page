@@ -13,7 +13,7 @@ const Input: React.FC<InputProps> = ({
         <input
             type={type}
             placeholder={placeholder}
-            className="bg-[#EDEDED] text-xl text-[#8E91B5] max-w-[465px] w-[465px] px-5 py-3 rounded-lg"
+            className="bg-[#F8FAFC] text-xl text-[#8E91B5] border border-[#EDEDED] w-full px-5 py-3 rounded-lg outline-none"
         />
     );
 };

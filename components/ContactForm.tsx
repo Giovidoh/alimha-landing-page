@@ -7,12 +7,12 @@ const ContactForm = () => {
     return (
         <form
             action=""
-            className="bg-white px-10 py-7 w-fit items-center rounded-3xl"
+            className="bg-white px-10 py-7 w-1/2 items-center rounded-3xl z-10"
         >
-            <div className="flex flex-col items-center justify-between h-[482px]">
+            <div className="flex flex-col items-center justify-around h-[482px]">
                 <Input type="text" placeholder="Nom" />
                 <Input type="email" placeholder="Email" />
-                <TextArea />
+                <TextArea placeholder="Votre message" />
                 <ButtonGradientStyle1 text="Envoyer" />
             </div>
         </form>
