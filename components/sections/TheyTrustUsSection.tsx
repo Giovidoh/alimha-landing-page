@@ -12,7 +12,7 @@ import tmoney from "@/public/images/tmoney.png";
 
 const TheyTrustUsSection = () => {
     return (
-        <section className="relative flex flex-col justify-evenly items-center text-center px-[10%] bg-white h-fit w-full pt-12 pb-24">
+        <section className="relative flex flex-col justify-evenly items-center text-center px-[5%] lg:px-[10%] bg-white h-fit w-full pt-12 pb-24">
             <Image
                 src={circle_vector4}
                 alt="circle vector"
@@ -41,17 +41,86 @@ const TheyTrustUsSection = () => {
                     Nos Moyens de paiement
                 </h1>
                 <p className="max-w-[595px] text-xl text-gray-1">
-                    Alimha Regroupe la crème des opérateurs d’Afrique en matière
+                    Alimha regroupe la crème des opérateurs d’Afrique en matière
                     de moyens de paiement digitales.
                 </p>
             </div>
-            <div className="flex justify-between items-center w-full px-5">
-                <Image src={orange_money} alt="orange money icon" height={55} />
-                <Image src={wave} alt="wave icon" height={80} />
-                <Image src={moov_money} alt="moov money icon" height={80} />
-                <Image src={mtn_momo} alt="mtn momo icon" height={70} />
-                <Image src={free_money} alt="free money icon" height={125} />
-                <Image src={tmoney} alt="tmoney icon" height={75} />
+            <div className="flex justify-between items-center w-full">
+                {/* Small devices */}
+                <Image
+                    src={orange_money}
+                    alt="orange money icon"
+                    height={25}
+                    className="block md:hidden"
+                />
+                <Image
+                    src={wave}
+                    alt="wave icon"
+                    height={40}
+                    className="block md:hidden"
+                />
+                <Image
+                    src={moov_money}
+                    alt="moov money icon"
+                    height={40}
+                    className="block md:hidden"
+                />
+                <Image
+                    src={mtn_momo}
+                    alt="mtn momo icon"
+                    height={35}
+                    className="block md:hidden"
+                />
+                <Image
+                    src={free_money}
+                    alt="free money icon"
+                    height={62.5}
+                    className="block md:hidden"
+                />
+                <Image
+                    src={tmoney}
+                    alt="tmoney icon"
+                    height={37.5}
+                    className="block md:hidden"
+                />
+
+                {/* Large devices */}
+                <Image
+                    src={orange_money}
+                    alt="orange money icon"
+                    height={55}
+                    className="hidden md:block"
+                />
+                <Image
+                    src={wave}
+                    alt="wave icon"
+                    height={80}
+                    className="hidden md:block"
+                />
+                <Image
+                    src={moov_money}
+                    alt="moov money icon"
+                    height={80}
+                    className="hidden md:block"
+                />
+                <Image
+                    src={mtn_momo}
+                    alt="mtn momo icon"
+                    height={70}
+                    className="hidden md:block"
+                />
+                <Image
+                    src={free_money}
+                    alt="free money icon"
+                    height={125}
+                    className="hidden md:block"
+                />
+                <Image
+                    src={tmoney}
+                    alt="tmoney icon"
+                    height={75}
+                    className="hidden md:block"
+                />
             </div>
         </section>
     );
