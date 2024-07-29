@@ -4,16 +4,22 @@ interface ButtonGradientStyle1Props {
     fromColor?: string;
     toColor?: string;
     text?: string;
+    width?: string;
+    height?: string;
+    marginRight?: string;
 }
 
 const ButtonGradientStyle1: React.FC<ButtonGradientStyle1Props> = ({
     fromColor = "from-primary-blue",
     toColor = "to-secondary-blue",
     text = "Button",
+    width = "w-[194px]",
+    height = "h-[55px]",
+    marginRight = "mr-0",
 }) => {
     return (
         <button
-            className={`bg-gradient-to-r ${fromColor} ${toColor} to-secondary-blue font-bold capitalize tracking-wide whitespace-nowrap text-white w-[194px] h-[55px] rounded-xl`}
+            className={`bg-gradient-to-r ${fromColor} ${toColor} font-bold capitalize tracking-wide whitespace-nowrap text-white ${width} ${height} ${marginRight} rounded-xl`}
         >
             {text}
         </button>
