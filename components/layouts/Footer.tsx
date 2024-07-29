@@ -53,7 +53,7 @@ const Footer = () => {
                 className="absolute bottom-0 right-0 opacity-20"
             />
 
-            <div className="flex justify-between items-start w-full pt-40">
+            <div className="flex justify-between items-start w-full pt-40 z-10">
                 <div className="max-w-[280px]">
                     <LogoFooter />
                     <p className="text-secondary-blue text-justify leading-[19.13px] mt-5">
