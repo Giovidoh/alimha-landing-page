@@ -21,14 +21,10 @@ const Card: React.FC<CardProps> = ({
     buttonBgColor,
 }) => {
     return (
-        <div className="flex flex-col justify-between items-start h-[400px] w-[357px] px-7 py-5 rounded-3xl shadow-2xl bg-white z-10">
+        <div className="flex flex-col justify-around items-start w-full h-[430px] px-7 py-5 rounded-3xl shadow-xl md:shadow-2xl bg-white z-10">
             <CardIcon icon={icon} bgColor={bgColor} />
-            <h2
-                className={`${titleColor} text-[28px] font-semibold leading-[36px]`}
-            >
-                {title}
-            </h2>
-            <p className="text-[#8E91B5] pb-5">{description}</p>
+            <h2 className={`${titleColor} text-2xl font-semibold`}>{title}</h2>
+            <p className="text-[#8E91B5] text-[16px] pb-5">{description}</p>
             <ButtonStyle2 text="En savoir plus" bgColor={buttonBgColor} />
         </div>
     );

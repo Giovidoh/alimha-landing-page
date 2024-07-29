@@ -10,7 +10,7 @@ import line_vector1 from "@/public/images/line-vector1.png";
 
 const OurServicesSection = () => {
     return (
-        <section className="relative flex flex-col justify-evenly px-[10%] bg-white h-fit w-full pb-40">
+        <section className="relative flex flex-col justify-evenly px-[5%] lg:px-[10%] bg-white h-fit w-full pb-40">
             <Image
                 src={dot_vector1}
                 alt="dot vector"
@@ -23,22 +23,22 @@ const OurServicesSection = () => {
                 height={900}
                 className="absolute right-0"
             />
-            <div className="flex items-center h-fit">
+            <div className="flex justify-center md:justify-start items-center h-fit">
                 <h3 className="font-semibold text-xl text-primary-blue pt-4 pr-6">
                     Nos services
                 </h3>
                 <Image src={fund1} alt="fund icon" height={54} width={54} />
             </div>
             <div className="mb-6">
-                <h1 className="font-bold text-[44px] leading-[52.6px] pb-4">
+                <h1 className="font-bold text-center md:text-left text-[32px] lg:text-[44px] leading-[45px] lg:leading-[52.6px] pb-4">
                     Développez Votre <br /> Activité avec Alimha
                 </h1>
-                <p className="text-xl text-gray-2">
+                <p className="text-center md:text-left text-xl text-gray-2">
                     Des solutions simples pour vos Paiements et transfert
                     d’argent
                 </p>
             </div>
-            <div className="flex justify-between">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
                 <Card
                     icon={payment_icon}
                     bgColor={"bg-[#E0E2FF]"}

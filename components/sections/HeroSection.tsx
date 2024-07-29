@@ -26,7 +26,7 @@ const HeroSection = () => {
                     expertise, créativité et technologie de pointe pour
                     transformer vos visions en solutions concrètes.
                 </p>
-                <div className="flex flex-col md:flex-row justify-between pb-8">
+                <div className="flex flex-col md:flex-row justify-between w-full pb-8">
                     <ButtonGradientStyle1
                         fromColor="from-primary-blue"
                         toColor="to-secondary-blue"
