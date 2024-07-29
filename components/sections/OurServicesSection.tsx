@@ -10,7 +10,7 @@ import line_vector1 from "@/public/images/line-vector1.png";
 
 const OurServicesSection = () => {
     return (
-        <section className="relative flex flex-col justify-evenly px-[5%] lg:px-[10%] bg-white h-fit w-full pb-40">
+        <section className="relative flex flex-col justify-evenly px-[5%] lg:px-[10%] bg-white h-fit w-full pb-24">
             <Image
                 src={dot_vector1}
                 alt="dot vector"

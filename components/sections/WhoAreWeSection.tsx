@@ -13,7 +13,7 @@ import thumb_up from "@/public/images/thumb-up.png";
 
 const WhoAreWeSection = () => {
     return (
-        <section className="relative flex flex-col md:flex-row items-center bg-[#DDECFF] bg-who-are-we-bg bg-cover bg-no-repeat w-full h-fit px-[5%] lg:px-[10%] py-10">
+        <section className="relative flex items-center bg-[#DDECFF] bg-who-are-we-bg bg-cover bg-no-repeat w-full h-fit px-[5%] lg:px-[10%] py-10">
             <Image
                 src={circle_vector1}
                 alt="circle vector"
