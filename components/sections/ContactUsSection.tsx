@@ -29,14 +29,14 @@ const ContactUsSection = () => {
             />
 
             <div className="mb-6">
-                <h1 className="font-bold text-[44px] leading-[52.6px] pb-5">
+                <h1 className="font-bold text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-5">
                     Contactez-nous
                 </h1>
                 <p className="text-xl text-gray-1 font-medium pb-4">
                     Discutons de votre projet
                 </p>
             </div>
-            <div className="flex justify-between items-center w-full">
+            <div className="grid  lg:grid-cols-2 gap-5 w-full">
                 {/* ADD A MAP HERE */}
                 <Map />
                 <ContactForm />

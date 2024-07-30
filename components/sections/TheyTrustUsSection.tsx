@@ -37,7 +37,7 @@ const TheyTrustUsSection = () => {
                 </h3>
             </div>
             <div className="mb-6">
-                <h1 className="font-bold text-[44px] leading-[52.6px] pb-4">
+                <h1 className="font-bold text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-4">
                     Nos Moyens de paiement
                 </h1>
                 <p className="max-w-[595px] text-xl text-gray-1">
