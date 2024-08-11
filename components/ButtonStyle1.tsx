@@ -17,7 +17,7 @@ const ButtonStyle1: React.FC<ButtonStyle1Props> = ({
 }) => {
     return (
         <button
-            className={`border border-primary-blue bg-white text-[#171717] font-semibold tracking-wide rounded-xl ${width} ${height} ${marginLeft} ${marginTop}`}
+            className={`border border-primary-blue bg-white hover:bg-primary-blue hover:text-white hover:scale-105 text-[#171717] font-semibold tracking-wide rounded-xl ${width} ${height} ${marginLeft} ${marginTop} transition ease-in`}
         >
             {text}
         </button>
