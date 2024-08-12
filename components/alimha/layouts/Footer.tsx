@@ -2,16 +2,16 @@ import Image from "next/image";
 import React from "react";
 import LogoFooter from "../LogoFooter";
 import FooterLink from "../FooterLink";
-import footer_bg from "@/public/images/footer-bg.png";
-import circle_vector4 from "@/public/images/circle-vector-4.png";
-import circle_vector6 from "@/public/images/circle-vector-6.png";
-import plus_vector4 from "@/public/images/plus-vector-4.png";
-import dot_vector2 from "@/public/images/dot-vector-2.png";
-import facebook_icon from "@/public/images/facebook-icon.png";
-import linkedin_icon from "@/public/images/linkedin-icon.png";
-import instagram_icon from "@/public/images/instagram-icon.png";
-import x_icon from "@/public/images/x-icon.png";
-import youtube_icon from "@/public/images/youtube-icon.png";
+import footer_bg from "@/public/assets/footer-bg.png";
+import circle_vector4 from "@/public/assets/circle-vector-4.png";
+import circle_vector6 from "@/public/assets/circle-vector-6.png";
+import plus_vector4 from "@/public/assets/plus-vector-4.png";
+import dot_vector2 from "@/public/assets/dot-vector-2.png";
+import facebook_icon from "@/public/assets/facebook-icon.png";
+import linkedin_icon from "@/public/assets/linkedin-icon.png";
+import instagram_icon from "@/public/assets/instagram-icon.png";
+import x_icon from "@/public/assets/x-icon.png";
+import youtube_icon from "@/public/assets/youtube-icon.png";
 
 const Footer = () => {
     return (

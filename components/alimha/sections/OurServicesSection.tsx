@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import Card from "../Card";
-import fund1 from "@/public/images/fund1.png";
-import payment_icon from "@/public/images/payment-icon.png";
-import transaction_icon from "@/public/images/transaction-icon.png";
-import software_icon from "@/public/images/software-icon.png";
-import dot_vector1 from "@/public/images/dot-vector-1.png";
-import line_vector1 from "@/public/images/line-vector1.png";
+import fund1 from "@/public/assets/fund1.png";
+import payment_icon from "@/public/assets/payment-icon.png";
+import transaction_icon from "@/public/assets/transaction-icon.png";
+import software_icon from "@/public/assets/software-icon.png";
+import dot_vector1 from "@/public/assets/dot-vector-1.png";
+import line_vector1 from "@/public/assets/line-vector1.png";
 
 const OurServicesSection = () => {
     return (

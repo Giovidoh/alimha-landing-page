@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import international_icon from "@/public/images/international-icon.png";
-import circle_vector4 from "@/public/images/circle-vector-4.png";
-import plus_vector3 from "@/public/images/plus-vector-3.png";
-import orange_money from "@/public/images/orange-money.png";
-import wave from "@/public/images/wave.png";
-import moov_money from "@/public/images/moov-money.png";
-import mtn_momo from "@/public/images/mtn-momo.png";
-import free_money from "@/public/images/free-money.png";
-import tmoney from "@/public/images/tmoney.png";
+import international_icon from "@/public/assets/international-icon.png";
+import circle_vector4 from "@/public/assets/circle-vector-4.png";
+import plus_vector3 from "@/public/assets/plus-vector-3.png";
+import orange_money from "@/public/assets/orange-money.png";
+import wave from "@/public/assets/wave.png";
+import moov_money from "@/public/assets/moov-money.png";
+import mtn_momo from "@/public/assets/mtn-momo.png";
+import free_money from "@/public/assets/free-money.png";
+import tmoney from "@/public/assets/tmoney.png";
 
 const TheyTrustUsSection = () => {
     return (

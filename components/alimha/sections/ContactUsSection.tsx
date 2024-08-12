@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import ContactForm from "../ContactForm";
 import Map from "../Map";
-import plus3 from "@/public/images/plus-vector-3.png";
-import circle_vector5 from "@/public/images/circle-vector-5.png";
-import line_vector3 from "@/public/images/line-vector3.png";
+import plus3 from "@/public/assets/plus-vector-3.png";
+import circle_vector5 from "@/public/assets/circle-vector-5.png";
+import line_vector3 from "@/public/assets/line-vector3.png";
 
 const ContactUsSection = () => {
     return (

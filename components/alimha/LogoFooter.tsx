@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import logo_graphic from "@/public/images/alimha-logo-graphic.png";
-import logo_typo from "@/public/images/alimha-logo-typo-white.png";
+import logo_graphic from "@/public/assets/alimha-logo-graphic.png";
+import logo_typo from "@/public/assets/alimha-logo-typo-white.png";
 
 const LogoFooter = () => {
     return (

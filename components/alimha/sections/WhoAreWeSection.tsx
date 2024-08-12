@@ -1,15 +1,15 @@
 import Image from "next/image";
 import React from "react";
 import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
-import actor2 from "@/public/images/actor2.png";
-import growth1 from "@/public/images/growth1.png";
-import growth2 from "@/public/images/growth2.png";
-import circle_vector1 from "@/public/images/circle-vector-1.png";
-import circle_vector2 from "@/public/images/circle-vector-2.png";
-import plus_vector1 from "@/public/images/plus-vector-1.png";
-import plus_vector2 from "@/public/images/plus-vector-2.png";
-import dash_vector1 from "@/public/images/dash-vector-1.png";
-import thumb_up from "@/public/images/thumb-up.png";
+import actor2 from "@/public/assets/actor2.png";
+import growth1 from "@/public/assets/growth1.png";
+import growth2 from "@/public/assets/growth2.png";
+import circle_vector1 from "@/public/assets/circle-vector-1.png";
+import circle_vector2 from "@/public/assets/circle-vector-2.png";
+import plus_vector1 from "@/public/assets/plus-vector-1.png";
+import plus_vector2 from "@/public/assets/plus-vector-2.png";
+import dash_vector1 from "@/public/assets/dash-vector-1.png";
+import thumb_up from "@/public/assets/thumb-up.png";
 
 const WhoAreWeSection = () => {
     return (

@@ -3,9 +3,9 @@ import React from "react";
 import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import ButtonStyle1 from "../buttons/ButtonStyle1";
 import ClientsReviewsRate from "../ClientsReviewsRate";
-import actor1 from "@/public/images/actor1.png";
-import plus2 from "@/public/images/plus-vector-2.png";
-import circle5 from "@/public/images/circle-vector-5.png";
+import actor1 from "@/public/assets/actor1.png";
+import plus2 from "@/public/assets/plus-vector-2.png";
+import circle5 from "@/public/assets/circle-vector-5.png";
 
 const HeroSection = () => {
     return (

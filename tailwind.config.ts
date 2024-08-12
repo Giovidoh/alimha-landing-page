@@ -9,12 +9,13 @@ const config: Config = {
     theme: {
         extend: {
             backgroundImage: {
-                "hero-world-img": "url(../public/images/world.png)",
-                "who-are-we-bg": "url(../public/images/about-us-bg.png)",
+                "hero-world-img": "url(../public/assets/world.png)",
+                "who-are-we-bg": "url(../public/assets/about-us-bg.png)",
             },
             colors: {
                 "primary-blue": "#0039BA",
                 "secondary-blue": "#0067F8",
+                tertiary: "rgba(226, 241, 255, 1)",
                 "dark-blue": "#001036",
                 "gray-1": "#969696",
                 "gray-2": "#ACACAC",

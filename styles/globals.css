@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+    /* font-family: "Neue Haas Grotesk Display Pro", sans-serif; */
 }
 
 html,
