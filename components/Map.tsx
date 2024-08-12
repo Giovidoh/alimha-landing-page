@@ -12,7 +12,10 @@ const Map = () => {
                     width="100%"
                     mode="place"
                     style="position: static"
-                    q="Brooklyn+Bridge,New+York,NY"
+                    q="Dakar, Sénégal"
+                    center="14.738742, -17.494657"
+                    zoom="18"
+                    maptype="roadmap"
                 />
             </div>
 
@@ -24,7 +27,10 @@ const Map = () => {
                     width="100%"
                     mode="place"
                     style="position: static"
-                    q="Brooklyn+Bridge,New+York,NY"
+                    q="Dakar, Sénégal"
+                    center="14.738742, -17.494657"
+                    zoom="18"
+                    maptype="roadmap"
                 />
             </div>
         </>
