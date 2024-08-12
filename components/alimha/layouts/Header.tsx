@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import Logo from "../Logo";
 import NavBar from "../NavBar";
-import BurgerButton from "../BurgerButton";
-import ButtonGradientStyle1 from "../ButtonGradientStyle1";
+import BurgerButton from "../buttons/BurgerButton";
+import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 
 const Header = () => {
     const [burgerDropped, setBurgerDropped] = useState(false);

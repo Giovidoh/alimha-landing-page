@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ButtonGradientStyle1 from "../ButtonGradientStyle1";
+import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import actor2 from "@/public/images/actor2.png";
 import growth1 from "@/public/images/growth1.png";
 import growth2 from "@/public/images/growth2.png";

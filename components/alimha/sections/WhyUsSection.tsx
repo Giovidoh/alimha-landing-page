@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ButtonGradientStyle1 from "../ButtonGradientStyle1";
+import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import map_img from "@/public/images/map.png";
 import dot_vector1 from "@/public/images/dot-vector-1.png";
 import line_vector2 from "@/public/images/line-vector2.png";

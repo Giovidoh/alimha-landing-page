@@ -1,7 +1,7 @@
 import React from "react";
 import CardIcon from "./CardIcon";
 import { StaticImageData } from "next/image";
-import ButtonStyle2 from "./ButtonStyle2";
+import ButtonStyle2 from "./buttons/ButtonStyle2";
 
 interface CardProps {
     icon: StaticImageData;

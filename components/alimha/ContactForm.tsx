@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "./Input";
 import TextArea from "./TextArea";
-import ButtonGradientStyle1 from "./ButtonGradientStyle1";
+import ButtonGradientStyle1 from "./buttons/ButtonGradientStyle1";
 
 const ContactForm = () => {
     return (
