@@ -14,7 +14,7 @@ import SvgIconsCollection from "../SvgIconsCollection";
 
 const AdvantagesSection = () => {
     return (
-        <section className="flex justify-between items-center bg-gray-50 px-40 py-10">
+        <section className="flex justify-between items-center bg-gray-50 px-40 pt-20 pb-28">
             <div className="flex flex-col items-start w-1/2 gap-4">
                 <div className="mb-5">
                     <Badge text="Avantages" />
