@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
-import "@/styles/globals.css";
+import "@/styles/sendmoGlobals.css";
 
 const sora = Sora({ subsets: ["latin"] });
 
