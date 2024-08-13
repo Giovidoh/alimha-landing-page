@@ -14,7 +14,7 @@ const FontionalitiesSection = () => {
     return (
         <section className="flex flex-col items-center px-40 pt-20 py-36 gap-10">
             <Badge text="Fonctionnalités" />
-            <h1 className="text-4xl leading-snug font-semibold tracking-wide whitespace-nowrap">
+            <h1 className="text-4xl leading-snug font-bold tracking-wide whitespace-nowrap">
                 La Solution Innovante pour <br /> Vos Dépôts Mobile Money
             </h1>
             <div className="grid grid-cols-2 gap-2">
@@ -26,7 +26,7 @@ const FontionalitiesSection = () => {
                     illustration={instantDepositIllustration}
                 />
                 <IconTextIllustrationCard
-                    backgroundColor="bg-gray-100"
+                    backgroundColor="bg-gray-50"
                     foregroundColor="text-black"
                     icon={<SubRegionalTransfersIcon />}
                     title="Transferts Sous-Régionaux"
@@ -34,7 +34,7 @@ const FontionalitiesSection = () => {
                     illustration={subRegionalTransfersIllustration}
                 />
                 <IconTextIllustrationCard
-                    backgroundColor="bg-gray-100"
+                    backgroundColor="bg-gray-50"
                     foregroundColor="text-black"
                     icon={<RealTimeTransactionTrackingIcon />}
                     title="Suivi des Transactions en Temps Réel"

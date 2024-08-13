@@ -34,7 +34,7 @@ const avatarsImages = [
 
 const WelcomeToSendmoSection = () => {
     return (
-        <section className="flex justify-between items-center bg-gray-100 px-40 pt-10 pb-20">
+        <section className="flex justify-between items-center bg-gray-50 px-40 pt-10 pb-20">
             <div className="relative">
                 <Image src={blackWoman} alt="black woman image" />
                 <div className="absolute top-48 -left-4">
@@ -56,7 +56,7 @@ const WelcomeToSendmoSection = () => {
             </div>
             <div className="flex flex-col items-start gap-5 mt-28">
                 <Badge text="Bienvenue chez SendMo" />
-                <h1 className="text-4xl leading-snug font-semibold tracking-wide whitespace-nowrap">
+                <h1 className="text-4xl leading-snug font-bold tracking-wide whitespace-nowrap">
                     La Solution Innovante pour <br /> Vos Dépôts Mobile Money
                 </h1>
                 <p className="font-light mb-4">
