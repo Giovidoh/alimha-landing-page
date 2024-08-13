@@ -64,7 +64,7 @@ const HeroSection = () => {
         <section className="flex justify-between items-center px-40 py-10">
             <div className="flex flex-col items-start w-1/2 gap-6 mb-24">
                 <Badge text="Application de transfert d’argent" />
-                <h1 className="text-5xl leading-snug font-semibold tracking-wider whitespace-nowrap">
+                <h1 className="text-5xl leading-snug font-semibold tracking-wide whitespace-nowrap">
                     Simplifiez Vos <br /> Dépôts d'Argent
                 </h1>
                 <p className="font-light pb-4 whitespace-nowrap">

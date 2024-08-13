@@ -11,7 +11,7 @@ const Header = () => {
             <SendmoLogo />
             <Navbar />
             <div>
-                <Button text="Télécharger App" />
+                <Button text="Télécharger App" className="px-3 py-2" />
             </div>
         </header>
     );
