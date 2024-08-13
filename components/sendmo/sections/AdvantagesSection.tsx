@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React from "react";
 import Badge from "../badges/Badge";
 import IconTextCard from "../cards/IconTextCard";
