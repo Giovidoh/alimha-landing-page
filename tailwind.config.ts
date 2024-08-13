@@ -11,6 +11,8 @@ const config: Config = {
             backgroundImage: {
                 "hero-world-img": "url(../public/assets/world.png)",
                 "who-are-we-bg": "url(../public/assets/about-us-bg.png)",
+                "sendmo-download-app-bg":
+                    "url(../public/assets/sendmo-download-app-bg.png)",
             },
             colors: {
                 "primary-blue": "#0039BA",

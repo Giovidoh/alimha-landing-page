@@ -78,12 +78,14 @@ const HeroSection = () => {
                         icon={
                             <GooglePlayIcon className="fill-black group-hover:fill-secondary-blue transition" />
                         }
+                        className="border-black hover:border-secondary-blue hover:text-secondary-blue"
                     />
                     <AppDownloadersButton1
                         text="app store"
                         icon={
                             <AppStoreIcon className="fill-black group-hover:fill-secondary-blue transition" />
                         }
+                        className="border-black hover:border-secondary-blue hover:text-secondary-blue"
                     />
                 </div>
             </div>
