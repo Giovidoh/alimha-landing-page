@@ -16,7 +16,7 @@ const ImageTextIconCard: FC<ImageTextIconCardProps> = ({
 }) => {
     return (
         <div
-            className={`flex justify-between items-center bg-white p-3 rounded-lg shadow-lg ${className}`}
+            className={`flex justify-between items-center bg-white border border-tertiary p-3 rounded-lg shadow-lg ${className}`}
         >
             <div className="flex items-center gap-2">
                 <Image src={image.src} alt={image.alt} height={30} />
