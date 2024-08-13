@@ -90,7 +90,12 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className="relative w-1/2">
-                <Image src={sendmoHeroImage} alt="hero image" height={650} />
+                <Image
+                    src={sendmoHeroImage}
+                    alt="hero image"
+                    height={650}
+                    priority
+                />
                 <div className="absolute bottom-1/3 -left-14">
                     <ImagesCollection images={countriesImages} />
                 </div>
