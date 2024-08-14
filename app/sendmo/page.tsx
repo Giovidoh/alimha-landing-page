@@ -2,6 +2,7 @@ import Header from "@/components/sendmo/layouts/Header";
 import AdvantagesSection from "@/components/sendmo/sections/AdvantagesSection";
 import ContactSection from "@/components/sendmo/sections/ContactSection";
 import DownloadAppSection from "@/components/sendmo/sections/DownloadAppSection";
+import FaqSection from "@/components/sendmo/sections/FaqSection";
 import FontionalitiesSection from "@/components/sendmo/sections/FontionalitiesSection";
 import HeroSection from "@/components/sendmo/sections/HeroSection";
 import PaymentMethodsSection from "@/components/sendmo/sections/PaymentMethodsSection";
@@ -18,6 +19,7 @@ export default function Home() {
             <PaymentMethodsSection />
             <DownloadAppSection />
             <ContactSection />
+            <FaqSection />
         </main>
     );
 }

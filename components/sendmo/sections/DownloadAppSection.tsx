@@ -17,11 +17,14 @@ const DownloadAppSection = () => {
                         <h1 className="text-4xl leading-snug font-bold tracking-wide whitespace-nowrap">
                             Téléchargez SendMo <br /> Aujourd'hui
                         </h1>
-                        <p className="">
-                            Disponible sur Android et iOS. Rejoignez des
-                            milliers d'utilisateurs satisfaits et téléchargez
-                            SendMo dès aujourd'hui pour une expérience de dépôt
-                            mobile money sans pareille.
+                        <p className="font-light">
+                            <span className="font-bold text-base">
+                                Disponible sur Android et iOS
+                            </span>
+                            <br /> Rejoignez des milliers d'utilisateurs
+                            satisfaits et téléchargez SendMo dès aujourd'hui
+                            pour une expérience de dépôt mobile money sans
+                            pareille.
                         </p>
                         <div className="flex gap-6">
                             <AppDownloadersButton1
