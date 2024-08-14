@@ -13,6 +13,7 @@ const config: Config = {
                 "who-are-we-bg": "url(../public/assets/about-us-bg.png)",
                 "sendmo-download-app-bg":
                     "url(../public/assets/sendmo-download-app-bg.png)",
+                "sendmo-contact-bg": "url(../public/assets/line-vector4.png)",
             },
             colors: {
                 "primary-blue": "#0039BA",
