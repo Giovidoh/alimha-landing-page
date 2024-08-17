@@ -61,7 +61,7 @@ const paymentMethodsImages = [
 
 const HeroSection = () => {
     return (
-        <section className="flex justify-between items-center px-40 py-10">
+        <section className="flex justify-between items-center w-full px-40 pt-24 pb-10">
             <div className="flex flex-col items-start w-1/2 gap-6 mb-24">
                 <Badge text="Application de transfert d’argent" />
                 <h1 className="text-5xl leading-snug font-semibold tracking-wide whitespace-nowrap">
@@ -89,7 +89,7 @@ const HeroSection = () => {
                     />
                 </div>
             </div>
-            <div className="relative w-1/2">
+            <div className="relative flex justify-end w-1/2">
                 <Image
                     src={sendmoHeroImage}
                     alt="hero image"

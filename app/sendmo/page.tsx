@@ -11,7 +11,7 @@ import WelcomeToSendmoSection from "@/components/sendmo/sections/WelcomeToSendmo
 
 export default function Home() {
     return (
-        <main className="h-full w-full">
+        <main className="flex flex-col items-center">
             <Header />
             <HeroSection />
             <WelcomeToSendmoSection />
