@@ -27,7 +27,10 @@ const accordionInfos = [
 
 const FaqSection = () => {
     return (
-        <section className="flex flex-col justify-between items-center gap-10 px-40 py-20">
+        <section
+            id="faq_section"
+            className="flex flex-col justify-between items-center gap-10 px-40 py-20"
+        >
             <Badge text="FAQS" px="px-14" />
             <div className="flex flex-col items-center gap-3">
                 <h1 className="text-4xl leading-snug font-bold tracking-wide whitespace-nowrap">

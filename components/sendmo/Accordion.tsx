@@ -35,7 +35,7 @@ const Accordion: FC<AccordionProps> = ({ title, body }) => {
             </button>
 
             <div
-                className={`grid overflow-hidden transition-all duration-300 ease-in-out font-extralight text-white ${
+                className={`grid transition-all duration-300 ease-in-out font-extralight text-white ${
                     open
                         ? "grid-rows-[1fr] pt-2 opacity-100"
                         : "grid-rows-[0fr] opacity-0"

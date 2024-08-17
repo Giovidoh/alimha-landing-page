@@ -5,7 +5,10 @@ import SendIcon from "@/public/assets/send-icon.svg";
 
 const ContactSection = () => {
     return (
-        <section className="flex justify-between items-center px-40 mt-20">
+        <section
+            id="contact_section"
+            className="flex justify-between items-center px-40 mt-20"
+        >
             <div className="relative bg-gray-50 before:content-[''] before:absolute before:top-0 before:left-0 before:bg-sendmo-contact-bg before:bg-no-repeat before:bg-cover before:bg-center before:w-full before:h-full w-full h-full px-20 pt-14 pb-14 rounded-md">
                 <div className="relative flex justify-between items-center">
                     <div className="flex flex-col items-start w-3/4 gap-4">

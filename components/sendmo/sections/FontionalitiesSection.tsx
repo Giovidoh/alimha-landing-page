@@ -12,7 +12,10 @@ import clientSupportIllustration from "@/public/assets/client-support-24-7-illus
 
 const FontionalitiesSection = () => {
     return (
-        <section className="flex flex-col items-center px-40 pt-20 py-36 gap-10">
+        <section
+            id="fonctionalities_section"
+            className="flex flex-col items-center px-40 pt-20 py-36 gap-10"
+        >
             <Badge text="Fonctionnalités" />
             <h1 className="text-4xl leading-snug font-bold tracking-wide whitespace-nowrap">
                 La Solution Innovante pour <br /> Vos Dépôts Mobile Money

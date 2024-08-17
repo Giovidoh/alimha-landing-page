@@ -1,22 +1,22 @@
 export const headerLinks = [
     {
         text: "Fonctionnalités",
-        url: "#",
+        url: "#fonctionalities_section",
     },
     {
         text: "Avantages",
-        url: "#",
+        url: "#advantages_section",
     },
     {
         text: "Téléchargement",
-        url: "/sendmo#ok",
+        url: "#download_section",
     },
     {
         text: "Contact",
-        url: "",
+        url: "#contact_section",
     },
     {
         text: "FAQ",
-        url: "",
+        url: "#faq_section",
     },
 ];

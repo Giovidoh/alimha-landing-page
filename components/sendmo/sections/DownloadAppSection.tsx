@@ -9,7 +9,10 @@ import AppStoreIcon from "@/public/assets/app-store-icon.svg";
 
 const DownloadAppSection = () => {
     return (
-        <section className="flex justify-between items-center px-40">
+        <section
+            id="download_section"
+            className="flex justify-between items-center px-40"
+        >
             <div className="relative bg-secondary-blue w-full h-full px-20 pt-14 pb-14 rounded-md before:content-[''] before:absolute before:top-0 before:left-0 before:bg-sendmo-download-app-bg before:bg-no-repeat before:bg-cover before:opacity-45 before:w-full before:h-full">
                 <div className="flex items-center">
                     <div className="relative flex flex-col items-start gap-8 text-white w-1/2">
