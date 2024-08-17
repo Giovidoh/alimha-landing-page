@@ -9,7 +9,7 @@ const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     return (
-        <header className="sticky top-0 left-0 flex justify-center bg-white w-screen px-40 max-[1120px]:px-20 py-5 z-10">
+        <header className="sticky top-0 left-0 flex justify-center bg-white w-screen px-40 max-[1120px]:px-20 py-5 z-50">
             <div className="flex justify-between items-center w-full">
                 <SendmoLogo className="h-7" />
                 <div className="w-1/2 max-[870px]:hidden">
