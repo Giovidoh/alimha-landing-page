@@ -15,8 +15,8 @@ const Accordion: FC<AccordionProps> = ({ title, body }) => {
         <div
             className={`${
                 open
-                    ? " bg-secondary-blue px-14 py-5 w-full h-fit border border-secondary-blue rounded-xl transition-transform"
-                    : "w-full h-[80px] px-14 border py-5 border-secondary-blue rounded-xl shadow-lg"
+                    ? "bg-secondary-blue w-full h-fit px-14 py-5 border border-secondary-blue rounded-xl transition-transform"
+                    : "w-full px-14 py-5 border border-secondary-blue rounded-xl shadow-lg"
             }`}
         >
             <button
@@ -35,9 +35,9 @@ const Accordion: FC<AccordionProps> = ({ title, body }) => {
             </button>
 
             <div
-                className={`grid pt-2 transition-all duration-300 ease-in-out font-extralight text-white ${
+                className={`grid overflow-hidden transition-all duration-300 ease-in-out font-extralight text-white ${
                     open
-                        ? "grid-rows-[1fr] opacity-100"
+                        ? "grid-rows-[1fr] pt-2 opacity-100"
                         : "grid-rows-[0fr] opacity-0"
                 }`}
             >
