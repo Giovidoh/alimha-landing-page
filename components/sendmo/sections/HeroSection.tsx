@@ -67,7 +67,7 @@ const HeroSection = () => {
                 <h1 className="text-3xl md:text-5xl leading-snug font-semibold tracking-wide whitespace-nowrap">
                     Simplifiez Vos <br /> Dépôts d'Argent
                 </h1>
-                <p className="text-sm md:text-base font-light pb-4">
+                <p className="font-light pb-4">
                     Gérez vos transactions de manière intuitive et sécurisée
                     avec SendMo. Faites des dépôts rapides en quelques clics, où
                     que vous soyez.
