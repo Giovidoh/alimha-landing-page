@@ -34,16 +34,25 @@ const avatarsImages = [
 
 const WelcomeToSendmoSection = () => {
     return (
-        <section className="flex justify-between items-center bg-gray-50 px-40 pt-10 pb-20">
+        <section className="flex flex-col min-[930px]:flex-row justify-between items-center bg-gray-50 px-20 min-[1120px]:px-40 min-[930px]:pt-10 pb-20">
             <div className="relative">
-                <Image src={blackWoman} alt="black woman image" />
-                <div className="absolute top-48 -left-4">
+                <div className="max-sm:hidden min-[930px]:hidden">
+                    <Image
+                        src={blackWoman}
+                        alt="black woman image"
+                        height={400}
+                    />
+                </div>
+                <div className="hidden min-[930px]:block">
+                    <Image src={blackWoman} alt="black woman image" />
+                </div>
+                <div className="hidden sm:block absolute top-1/3 -left-[15%]">
                     <ImagesCollections
                         images={avatarsImages}
                         imageHeight={40}
                     />
                 </div>
-                <div className="absolute bottom-1 right-10">
+                <div className="hidden sm:block absolute bottom-1 right-10">
                     <div className="flex items-center w-fit px-3 py-2 gap-2 bg-white rounded-lg shadow-lg">
                         <Image src={avatar5} alt="avatar 5 image" height={40} />
                         <p
@@ -54,12 +63,12 @@ const WelcomeToSendmoSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-start gap-5 mt-28">
+            <div className="flex flex-col items-center sm:items-start gap-5 mt-14 min-[930px]:mt-28">
                 <Badge text="Bienvenue chez SendMo" />
-                <h1 className="text-4xl leading-snug font-bold tracking-wide whitespace-nowrap">
-                    La Solution Innovante pour <br /> Vos Dépôts Mobile Money
+                <h1 className="text-2xl md:text-4xl text-center sm:text-start leading-snug font-bold tracking-wide">
+                    La Solution Innovante pour Vos Dépôts Mobile Money
                 </h1>
-                <p className="font-light mb-4">
+                <p className="text-center sm:text-start font-light mb-4">
                     Transférez Facilement, Déposez Rapidement, en Toute
                     Sécurité. Avec SendMo, simplifiez vos transactions
                     financières et connectez-vous sous-régionalement avec
