@@ -8,7 +8,7 @@ import Navbar from "../Navbar";
 const Header = () => {
     return (
         <header className="flex justify-between items-center px-40 py-5 bg-white">
-            <SendmoLogo />
+            <SendmoLogo className="h-7" />
             <Navbar />
             <div>
                 <Button text="Télécharger App" className="px-3 py-2" />

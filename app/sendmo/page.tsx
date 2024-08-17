@@ -1,3 +1,4 @@
+import Footer from "@/components/sendmo/layouts/Footer";
 import Header from "@/components/sendmo/layouts/Header";
 import AdvantagesSection from "@/components/sendmo/sections/AdvantagesSection";
 import ContactSection from "@/components/sendmo/sections/ContactSection";
@@ -20,6 +21,7 @@ export default function Home() {
             <DownloadAppSection />
             <ContactSection />
             <FaqSection />
+            <Footer />
         </main>
     );
 }

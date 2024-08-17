@@ -22,7 +22,7 @@ const ContactSection = () => {
                         <LeftIconButton
                             icon={<SendIcon />}
                             text="Contactez-nous"
-                            className="mt-20 p-3 gap-2"
+                            className="mt-20 p-3 gap-2 font-semibold"
                         />
                     </div>
                 </div>

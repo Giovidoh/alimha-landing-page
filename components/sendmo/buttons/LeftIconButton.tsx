@@ -14,7 +14,7 @@ const LeftIconButton: FC<LeftIconButtonProps> = ({
     return (
         <button
             className={
-                `flex items-center bg-secondary-blue hover:bg-primary-blue hover:scale-105 text-white text-lg font-semibold rounded-md transition ` +
+                `flex items-center bg-secondary-blue hover:bg-primary-blue hover:scale-105 text-white text-lg rounded-md transition ` +
                 className
             }
         >
