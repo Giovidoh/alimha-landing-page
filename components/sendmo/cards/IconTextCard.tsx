@@ -10,7 +10,7 @@ interface IconTextCardProps {
 const IconTextCard: FC<IconTextCardProps> = ({ icon, title, body }) => {
     return (
         <div
-            className={`flex items-start bg-white w-full h-[120px] p-5 gap-4 rounded-2xl shadow-md`}
+            className={`flex items-start bg-white w-full h-fit p-5 gap-4 rounded-2xl shadow-md`}
         >
             <div className="flex justify-center items-center p-3 bg-tertiary rounded-lg fill-secondary-blue">
                 {icon}
@@ -18,7 +18,9 @@ const IconTextCard: FC<IconTextCardProps> = ({ icon, title, body }) => {
             <div>
                 <h2 className="text-xl font-bold">{title}</h2>
                 <div className="flex justify-between items-center">
-                    <p className="font-light text-sm text-gray-1">{body}</p>
+                    <p className="font-light text-sm text-pretty text-gray-1">
+                        {body}
+                    </p>
                 </div>
             </div>
         </div>
