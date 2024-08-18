@@ -1,5 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    async redirects() {
+        return [
+            {
+                source: "/",
+                destination: "/alimha",
+                permanent: true,
+            },
+        ];
+    },
+
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/,
