@@ -39,24 +39,25 @@ const countriesImages = [
 
 const PaymentMethodsSection = () => {
     return (
-        <section className="flex flex-col justify-between items-center px-40 pt-20 pb-28 gap-5">
+        <section className="flex flex-col justify-between items-center px-20 min-[1120px]:px-40 pt-20 pb-28 gap-5">
             <Badge text="Moyen de paiement" />
-            <div className="flex flex-col items-center w-1/2 gap-4 text-center">
-                <h1 className="text-4xl leading-snug font-bold tracking-wide">
+            <div className="flex flex-col items-center w-full min-[950px]:w-1/2 gap-4 text-center">
+                <h1 className="text-2xl md:text-4xl leading-snug font-bold tracking-wide">
                     Pays où vous pouvez envoyer de l'argent
                 </h1>
-                <p className="flex font-light mb-4">
+                <p className="flex font-light text-pretty mb-4">
                     Pays ou vous pouvez envoyer de l’argent Via Sendmo avec les
                     opérateurs mobile money disponibles
                 </p>
             </div>
-            <div className="grid grid-cols-5 w-full gap-10">
+            <div className="flex flex-wrap justify-center w-full gap-7">
                 {countriesImages.map((image, index) => (
                     <ImageTextIconCard
                         key={index}
                         image={image}
                         title={image.name}
                         icon={<DropdownIcon />}
+                        className="w-full sm:w-[160px]"
                     />
                 ))}
             </div>
