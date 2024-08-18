@@ -15,8 +15,8 @@ const Accordion: FC<AccordionProps> = ({ title, body }) => {
         <div
             className={`${
                 open
-                    ? "bg-secondary-blue w-full h-fit px-14 py-5 border border-secondary-blue rounded-xl transition-transform"
-                    : "w-full px-14 py-5 border border-secondary-blue rounded-xl shadow-lg"
+                    ? "bg-secondary-blue w-full h-fit px-5 sm:px-14 py-5 border border-secondary-blue rounded-xl transition-transform"
+                    : "w-full px-5 sm:px-14 py-5 border border-secondary-blue rounded-xl shadow-lg"
             }`}
         >
             <button
@@ -24,7 +24,7 @@ const Accordion: FC<AccordionProps> = ({ title, body }) => {
                 onClick={() => setOpen((prev) => !prev)}
             >
                 <span
-                    className={`text-xl text-start font-bold max-w-[70%] ${
+                    className={`text-base sm:text-xl text-start font-bold max-w-[70%] ${
                         open ? "text-white" : "text-black"
                     }`}
                 >
