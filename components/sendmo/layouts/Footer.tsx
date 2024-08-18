@@ -87,7 +87,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="w-full mt-40">
-                <div className="flex justify-between items-center w-full text-[12px] font-light text-[#A9A9A9] border-t border-t-[#B1B1B1] pt-3">
+                <div className="flex flex-wrap justify-between items-center w-full gap-4 text-[12px] font-light text-[#A9A9A9] border-t border-t-[#B1B1B1] pt-3">
                     <span>Tous droits réservés ! Copyright 2024</span>
                     <div className="flex gap-4">
                         <FacebookIcon className="fill-[#A0A0A0] h-4" />
