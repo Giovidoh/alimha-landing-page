@@ -14,15 +14,15 @@ import YoutubeIcon from "@/public/assets/youtube-icon.svg";
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col justify-between items-center bg-gray-50 px-40 pt-14 pb-5">
-            <div className="flex justify-between items-center w-full">
-                <h1 className="text-4xl">
+        <footer className="flex flex-col justify-between items-center w-full bg-gray-50 px-5 sm:px-20 min-[1120px]:px-40 pt-14 pb-5">
+            <div className="flex flex-wrap justify-between items-center w-full gap-10">
+                <h1 className="text-2xl md:text-4xl text-center lg:text-start">
                     Simplifier vos transferts <br /> d’argent à tout moment
                 </h1>
                 <div className="flex">
                     <Input
                         placeholder="E-mail"
-                        className="text-xl font-light rounded-tl-md rounded-bl-md"
+                        className="w-full text-xl font-light rounded-tl-md rounded-bl-md"
                     />
                     <div className="relative h-[44px] w-[200px]">
                         <Button
@@ -32,9 +32,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-between w-full mt-24">
+            <div className="flex flex-wrap justify-between w-full gap-10 mt-24">
                 <SendmoLogo className="h-12" />
-                <div className="flex flex-wrap justify-between w-[60%]">
+                <div className="flex flex-wrap justify-between w-[60%] gap-10">
                     <div className="flex flex-col items-start gap-3">
                         <h2 className="text-[#5B5B5B] text-xl font-semibold">
                             Usely link
