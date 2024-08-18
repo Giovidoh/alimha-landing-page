@@ -61,7 +61,7 @@ const paymentMethodsImages = [
 
 const HeroSection = () => {
     return (
-        <section className="flex flex-col min-[930px]:flex-row justify-between items-center w-full px-20 min-[1120px]:px-40 py-10">
+        <section className="flex flex-col min-[930px]:flex-row justify-between items-center w-full px-5 sm:px-20 min-[1120px]:px-40 py-10">
             <div className="flex flex-col items-start w-full min-[930px]:w-1/2 gap-3 md:gap-6 min-[930px]:mb-24 z-10">
                 <Badge text="Application de transfert d’argent" />
                 <h1 className="text-3xl md:text-5xl leading-snug font-semibold tracking-wide whitespace-nowrap">

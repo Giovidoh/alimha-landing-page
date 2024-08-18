@@ -14,7 +14,7 @@ const FontionalitiesSection = () => {
     return (
         <section
             id="fonctionalities_section"
-            className="flex flex-col items-center px-20 min-[1120px]:px-40 pt-10 md:pt-20 py-36 gap-10"
+            className="flex flex-col items-center px-5 sm:px-20 min-[1120px]:px-40 pt-10 md:pt-20 py-36 gap-10"
         >
             <Badge text="Fonctionnalités" />
             <h1 className="text-2xl md:text-4xl text-center md:text-start leading-snug font-bold tracking-wide">

@@ -11,9 +11,9 @@ const DownloadAppSection = () => {
     return (
         <section
             id="download_section"
-            className="flex justify-between items-center px-20 min-[1120px]:px-40"
+            className="flex justify-between items-center px-5 sm:px-20 min-[1120px]:px-40"
         >
-            <div className="relative bg-secondary-blue w-full h-full px-10 min-[1120px]:px-20 pt-14 pb-14 rounded-md before:content-[''] before:absolute before:top-0 before:left-0 before:bg-sendmo-download-app-bg before:bg-no-repeat before:bg-cover before:opacity-45 before:w-full before:h-full">
+            <div className="relative bg-secondary-blue w-full h-full px-5 sm:px-10 min-[1120px]:px-20 pt-14 pb-14 rounded-md before:content-[''] before:absolute before:top-0 before:left-0 before:bg-sendmo-download-app-bg before:bg-no-repeat before:bg-cover before:opacity-45 before:w-full before:h-full">
                 <div className="flex flex-col min-[1200px]:flex-row items-center">
                     <div className="relative flex flex-col items-start w-full min-[1200px]:w-1/2 gap-5 md:gap-8 text-white">
                         <Badge text="Téléchargement" />

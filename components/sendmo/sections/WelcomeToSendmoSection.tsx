@@ -34,7 +34,7 @@ const avatarsImages = [
 
 const WelcomeToSendmoSection = () => {
     return (
-        <section className="flex flex-col min-[930px]:flex-row justify-between items-center bg-gray-50 px-20 min-[1120px]:px-40 min-[930px]:pt-10 pb-20">
+        <section className="flex flex-col-reverse min-[930px]:flex-row justify-between items-center bg-gray-50 px-5 sm:px-20 min-[1120px]:px-40 min-[930px]:pt-10 pb-20">
             <div className="relative">
                 <div className="max-sm:hidden min-[930px]:hidden">
                     <Image

@@ -17,7 +17,7 @@ const AdvantagesSection = () => {
     return (
         <section
             id="advantages_section"
-            className="flex flex-col min-[1300px]:flex-row justify-between items-center bg-gray-50 w-full px-20 min-[1120px]:px-40 pt-20 pb-28"
+            className="flex flex-col min-[1300px]:flex-row justify-between items-center bg-gray-50 w-full px-5 sm:px-20 min-[1120px]:px-40 pt-20 pb-28"
         >
             <div className="flex flex-col items-center min-[1300px]:items-start w-full min-[1300px]:w-1/2 gap-4">
                 <div className="mb-5">
