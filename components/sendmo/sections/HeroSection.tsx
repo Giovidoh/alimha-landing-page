@@ -62,17 +62,17 @@ const paymentMethodsImages = [
 const HeroSection = () => {
     return (
         <section className="flex flex-col min-[930px]:flex-row justify-between items-center w-full px-5 sm:px-20 min-[1120px]:px-40 py-10">
-            <div className="flex flex-col items-start w-full min-[930px]:w-1/2 gap-3 md:gap-6 min-[930px]:mb-24 z-10">
+            <div className="flex flex-col justify-center items-center sm:items-start w-full min-[930px]:w-1/2 gap-3 md:gap-6 min-[930px]:mb-24 z-10">
                 <Badge text="Application de transfert d’argent" />
-                <h1 className="text-3xl md:text-5xl leading-snug font-semibold tracking-wide whitespace-nowrap">
+                <h1 className="text-3xl md:text-5xl text-center sm:text-start leading-snug font-semibold tracking-wide whitespace-nowrap">
                     Simplifiez Vos <br /> Dépôts d'Argent
                 </h1>
-                <p className="font-light pb-4">
+                <p className="text-center sm:text-start text-pretty font-light pb-4">
                     Gérez vos transactions de manière intuitive et sécurisée
                     avec SendMo. Faites des dépôts rapides en quelques clics, où
                     que vous soyez.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-2 sm:gap-6">
+                <div className="flex flex-col sm:flex-row w-full gap-2 sm:gap-6">
                     <AppDownloadersButton1
                         text="google play"
                         icon={

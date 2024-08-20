@@ -13,7 +13,7 @@ const AppDownloadersButton1: FC<AppDownloadersButton1Props> = ({
 }) => {
     return (
         <button
-            className={`flex items-center group p-3 gap-3 border-[2px] hover:scale-105 rounded-lg capitalize transition ${className}`}
+            className={`flex justify-center items-center group p-3 gap-3 border-[2px] hover:scale-105 rounded-lg capitalize transition ${className}`}
         >
             {icon}
             {text}
