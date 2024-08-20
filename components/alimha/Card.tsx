@@ -6,6 +6,7 @@ import ButtonStyle2 from "./buttons/ButtonStyle2";
 interface CardProps {
     icon: StaticImageData;
     bgColor: string;
+    href?: string;
     title?: string;
     titleColor?: string;
     description?: string;
@@ -15,6 +16,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({
     icon,
     bgColor,
+    href,
     title = "Card Title",
     titleColor = "#292D32",
     description = "Card Description",
@@ -25,7 +27,11 @@ const Card: React.FC<CardProps> = ({
             <CardIcon icon={icon} bgColor={bgColor} />
             <h2 className={`${titleColor} text-2xl font-semibold`}>{title}</h2>
             <p className="text-[#8E91B5] text-[16px] pb-5">{description}</p>
-            <ButtonStyle2 text="En savoir plus" bgColor={buttonBgColor} />
+            <ButtonStyle2
+                href={href}
+                text="En savoir plus"
+                bgColor={buttonBgColor}
+            />
         </div>
     );
 };

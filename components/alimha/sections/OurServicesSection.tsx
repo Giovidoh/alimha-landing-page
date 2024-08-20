@@ -48,6 +48,7 @@ const OurServicesSection = () => {
                 <Card
                     icon={transaction_icon}
                     bgColor={"bg-[#FFF2E0]"}
+                    href="/sendmo"
                     title="Application Mobile de Transfert d'Argent"
                     titleColor="text-orange-1"
                     description="Facilitez les transferts d'argent instantanés avec notre application mobile intuitive, sécurisée et facile à utiliser."
