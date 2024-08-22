@@ -42,6 +42,7 @@ const OurServicesSection = () => {
                 <Card
                     icon={payment_icon}
                     bgColor={"bg-[#E0E2FF]"}
+                    href="/alpay"
                     title="Agrégateur de Solutions de Paiement"
                     description="Simplifiez vos transactions avec notre agrégateur de paiements, optimisé pour une intégration fluide et une gestion efficace."
                 />
