@@ -2,6 +2,7 @@ import Footer from "@/components/sendmo/layouts/Footer";
 import Header from "@/components/alpay/layouts/Header";
 import HeroSection from "@/components/alpay/sections/HeroSection";
 import OurServicesSection from "@/components/alpay/sections/OurServicesSection";
+import AdvantagesSection from "@/components/alpay/sections/AdvantagesSection";
 
 export default function Home() {
     return (
@@ -9,6 +10,7 @@ export default function Home() {
             <Header />
             <HeroSection />
             <OurServicesSection />
+            <AdvantagesSection />
         </main>
     );
 }
