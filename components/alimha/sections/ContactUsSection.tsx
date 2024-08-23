@@ -8,7 +8,10 @@ import line_vector3 from "@/public/assets/line-vector3.png";
 
 const ContactUsSection = () => {
     return (
-        <section className="relative flex flex-col justify-evenly items-center text-center px-[5%] lg:px-[10%] bg-[#F1F6FF] h-fit w-full pt-20 pb-32">
+        <section
+            id="contact-us"
+            className="relative flex flex-col justify-evenly items-center text-center px-[5%] lg:px-[10%] bg-[#F1F6FF] h-fit w-full pt-20 pb-32"
+        >
             <Image
                 src={plus3}
                 alt="plus icon"

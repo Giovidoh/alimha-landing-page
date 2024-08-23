@@ -9,7 +9,7 @@ import WhyUsSection from "@/components/alimha/sections/WhyUsSection";
 
 export default function Home() {
     return (
-        <main className="h-full w-full">
+        <main className="h-fit w-full">
             <Header />
             <HeroSection />
             <OurServicesSection />
