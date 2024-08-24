@@ -15,6 +15,7 @@ const config: Config = {
                     "url(../public/assets/sendmo-download-app-bg.png)",
                 "sendmo-contact-bg": "url(../public/assets/line-vector4.png)",
                 "alpay-advantages-bg": "url(../public/assets/dots-world.png)",
+                "alpay-how-it-works-bg": "url(../public/assets/wavy-lines.png)",
             },
             colors: {
                 "primary-blue": "#0039BA",

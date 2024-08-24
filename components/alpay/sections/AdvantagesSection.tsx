@@ -10,7 +10,7 @@ import dotVector1 from "@/public/assets/dot-vector-1.png";
 
 const AdvantagesSection = () => {
     return (
-        <section className="flex items-end bg-alpay-advantages-bg bg-cover bg-no-repeat bg-center w-full  py-24 px-5 sm:px-20 min-[1120px]:px-40 gap-3">
+        <section className="flex items-end bg-alpay-advantages-bg bg-cover bg-no-repeat bg-center w-full py-24 px-5 sm:px-20 min-[1120px]:px-40 gap-3">
             <div className="relative flex flex-col w-1/2 gap-4">
                 <span className="font-medium text-lg text-primary-blue">
                     Avantages
