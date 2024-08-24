@@ -15,7 +15,7 @@ const ContactUsSection = () => {
                 <Image
                     src={bluredVectors}
                     alt="blured vectors image"
-                    height={67}
+                    height={100}
                     className="absolute top-14 left-[10%]"
                 />
             </div>

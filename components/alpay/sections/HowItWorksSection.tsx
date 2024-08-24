@@ -17,7 +17,7 @@ const HowItWorksSection = () => {
                 <Image
                     src={bluredVectors}
                     alt="dot vector image"
-                    height={137}
+                    height={100}
                 />
             </div>
             <span className="font-medium text-lg text-white">
