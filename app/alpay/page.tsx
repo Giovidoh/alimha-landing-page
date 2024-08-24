@@ -6,6 +6,7 @@ import AdvantagesSection from "@/components/alpay/sections/AdvantagesSection";
 import HowItWorksSection from "@/components/alpay/sections/HowItWorksSection";
 import WhyUsSection from "@/components/alpay/sections/WhyUsSection";
 import ApplicationSection from "@/components/alpay/sections/ApplicationSection";
+import ContactUsSection from "@/components/alpay/sections/ContactUsSection";
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <HowItWorksSection />
             <WhyUsSection />
             <ApplicationSection />
+            <ContactUsSection />
         </main>
     );
 }
