@@ -19,7 +19,7 @@ const OurServicesSection = () => {
                     body="Réunissez divers modes de paiement en une seule interface. Acceptez des cartes de crédit, paiements mobiles, virements bancaires, et plus encore, tout en gardant une vue d'ensemble de vos flux financiers."
                     buttonText="En Savoir Plus"
                     buttonIcon={<ArrowRightIcon />}
-                    className="w-1/3 bg-white"
+                    className="w-1/3 bg-white border border-tertiary"
                     titleClassName="text-primary-blue"
                     bodyClassName="text-[#292D32] pb-7"
                     buttonClassName="text-primary-blue fill-primary-blue"
@@ -30,7 +30,7 @@ const OurServicesSection = () => {
                     body="Notre solution s'intègre facilement avec vos systèmes existants, que ce soit votre site web, votre application mobile ou votre logiciel de gestion. Bénéficiez d'une configuration rapide sans interruption de service."
                     buttonText="En Savoir Plus"
                     buttonIcon={<ArrowRightIcon />}
-                    className="w-1/3 bg-primary-blue"
+                    className="w-1/3 bg-primary-blue border border-primary-blue"
                     titleClassName="text-white"
                     bodyClassName="text-white pb-7"
                     buttonClassName="text-white fill-white"
@@ -41,7 +41,7 @@ const OurServicesSection = () => {
                     body="Protégez vos transactions avec des normes de sécurité de pointe, incluant le chiffrement des données et la conformité PCI-DSS. Vos informations financières et celles de vos clients sont toujours en sécurité."
                     buttonText="En Savoir Plus"
                     buttonIcon={<ArrowRightIcon />}
-                    className="w-1/3 bg-white"
+                    className="w-1/3 bg-white border border-tertiary"
                     titleClassName="text-primary-blue"
                     bodyClassName="text-[#292D32] pb-7"
                     buttonClassName="text-primary-blue fill-primary-blue"
