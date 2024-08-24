@@ -4,6 +4,7 @@ import HeroSection from "@/components/alpay/sections/HeroSection";
 import OurServicesSection from "@/components/alpay/sections/OurServicesSection";
 import AdvantagesSection from "@/components/alpay/sections/AdvantagesSection";
 import HowItWorksSection from "@/components/alpay/sections/HowItWorksSection";
+import WhyUsSection from "@/components/alpay/sections/WhyUsSection";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <OurServicesSection />
             <AdvantagesSection />
             <HowItWorksSection />
+            <WhyUsSection />
         </main>
     );
 }
