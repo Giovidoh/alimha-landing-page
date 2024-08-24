@@ -4,10 +4,29 @@ import IconTextCard2 from "../cards/IconTextCard2";
 import PhoneIcon from "@/public/assets/phone-icon.svg";
 import MessageIcon from "@/public/assets/message-icon.svg";
 import AddressIcon from "@/public/assets/address-icon.svg";
+import bluredVectors from "@/public/assets/blured-vectors.png";
+import dotVector1 from "@/public/assets/dot-vector-1.png";
+import Image from "next/image";
 
 const ContactUsSection = () => {
     return (
-        <section className="flex flex-col items-center bg-tertiary w-full h-fit pt-20 pb-14 px-5 sm:px-20 min-[1120px]:px-40 gap-5">
+        <section className="relative flex flex-col items-center bg-tertiary w-full h-fit pt-20 pb-14 px-5 sm:px-20 min-[1120px]:px-40 gap-5">
+            <div>
+                <Image
+                    src={bluredVectors}
+                    alt="blured vectors image"
+                    height={67}
+                    className="absolute top-14 left-[10%]"
+                />
+            </div>
+            <div>
+                <Image
+                    src={dotVector1}
+                    alt="dot vector image"
+                    height={137}
+                    className="absolute right-[10%] -top-7"
+                />
+            </div>
             <span className="font-medium text-lg text-primary-blue">
                 Contactez-Nous
             </span>
