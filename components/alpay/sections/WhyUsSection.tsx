@@ -13,7 +13,7 @@ const WhyUsSection = () => {
         <section className="flex flex-row-reverse items-end w-full py-40 px-5 sm:px-20 min-[1120px]:px-40 gap-5">
             <div className="relative flex flex-col w-1/2 gap-4">
                 <span className="font-medium text-lg text-primary-blue">
-                    Pourquoi-nous?
+                    Pourquoi-nous ?
                 </span>
                 <h1 className="font-bold text-4xl">
                     Pourquoi Choisir Notre Agrégateur
