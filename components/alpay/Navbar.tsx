@@ -24,7 +24,7 @@ const Navbar = () => {
                             activeLink == index
                                 ? "text-secondary-blue scale-105"
                                 : "hover:text-secondary-blue hover:scale-105 transition"
-                        } list-none max-[1200px]:text-sm`}
+                        } list-none max-[1200px]:text-sm whitespace-nowrap`}
                         onClick={() => setActiveLink(index)}
                     >
                         <Link href={link.url}>{link.text}</Link>
