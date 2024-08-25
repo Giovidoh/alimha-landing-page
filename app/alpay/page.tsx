@@ -1,4 +1,4 @@
-import Footer from "@/components/sendmo/layouts/Footer";
+import Footer from "@/components/alpay/layouts/Footer";
 import Header from "@/components/alpay/layouts/Header";
 import HeroSection from "@/components/alpay/sections/HeroSection";
 import OurServicesSection from "@/components/alpay/sections/OurServicesSection";
@@ -19,6 +19,7 @@ export default function Home() {
             <WhyUsSection />
             <ApplicationSection />
             <ContactUsSection />
+            <Footer />
         </main>
     );
 }
