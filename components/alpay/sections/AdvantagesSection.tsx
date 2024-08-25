@@ -10,15 +10,15 @@ import dotVector1 from "@/public/assets/dot-vector-1.png";
 
 const AdvantagesSection = () => {
     return (
-        <section className="flex items-end bg-alpay-advantages-bg bg-cover bg-no-repeat bg-center w-full py-24 px-5 sm:px-20 min-[1120px]:px-40 gap-3">
-            <div className="relative flex flex-col w-1/2 gap-4">
-                <span className="font-medium text-lg text-primary-blue">
+        <section className="flex bg-gray-50 bg-alpay-advantages-bg bg-cover bg-no-repeat bg-center w-full h-fit py-10 min-[1000px]:py-24 px-5 sm:px-20 min-[1120px]:px-40 gap-3">
+            <div className="flex flex-col justify-center items-center min-[1000px]:items-start w-full min-[1000px]:w-1/2 min-h-[600px] gap-4">
+                <span className="font-medium text-base sm:text-lg text-primary-blue">
                     Avantages
                 </span>
-                <h1 className="font-bold text-4xl">
+                <h1 className="font-bold text-2xl sm:text-3xl min-[1000px]:text-4xl text-center min-[1000px]:text-start">
                     Les Avantages de Notre Agrégateur
                 </h1>
-                <p className="text-sm text-[#292D32] mt-2 mb-5">
+                <p className="text-sm text-[#292D32] text-center min-[1000px]:text-start mt-2 mb-5">
                     Notre Agrégateur offre plusieurs avantages dont :
                 </p>
                 <div className="flex flex-col gap-8">
@@ -39,22 +39,22 @@ const AdvantagesSection = () => {
                     />
                 </div>
             </div>
-            <div className="relative w-1/2">
-                <div className="absolute bottom-0">
+            <div className="relative hidden min-[1000px]:block w-1/2 h-[600px] z-10">
+                <div className="absolute top-0">
                     <Image
                         src={unsplashPhoneComputerImage}
                         alt="phone computer image"
                         height={485}
                     />
                 </div>
-                <div className="absolute -bottom-14 right-5">
+                <div className="absolute top-64 left-1/4">
                     <Image
                         src={computerImage}
                         alt="computer image"
                         height={287}
                     />
                 </div>
-                <div className="absolute right-28 -top-96">
+                <div className="absolute left-[60%] top-24 -z-10">
                     <Image
                         src={dotVector1}
                         alt="dot vector image"
