@@ -27,7 +27,7 @@ const IconTextButtonCard: FC<IconTextButtonCardProps> = ({
     return (
         <div
             className={
-                `flex flex-col items-center gap-5 p-10 rounded-2xl shadow-2xl ` +
+                `flex flex-col justify-between items-center gap-5 p-10 rounded-2xl shadow-2xl ` +
                 className
             }
         >
