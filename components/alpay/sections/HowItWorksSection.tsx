@@ -9,7 +9,7 @@ import bluredVectors from "@/public/assets/blured-vectors.png";
 
 const HowItWorksSection = () => {
     return (
-        <section className="relative flex flex-col items-center w-full bg-primary-blue bg-alpay-how-it-works-bg bg-cover bg-no-repeat bg-center pt-28 pb-32 px-5 sm:px-20 min-[1120px]:px-40 gap-3">
+        <section className="relative flex flex-col items-center w-full bg-primary-blue bg-alpay-how-it-works-bg bg-cover bg-no-repeat bg-center pt-28 pb-32 px-5 sm:px-20 min-[1330px]:px-40 gap-3">
             <div className="absolute top-10 left-[10%]">
                 <Image src={dotVector2} alt="dot vector image" height={137} />
             </div>
@@ -20,13 +20,13 @@ const HowItWorksSection = () => {
                     height={100}
                 />
             </div>
-            <span className="font-medium text-lg text-white">
+            <span className="font-medium text-base sm:text-lg text-white z-0">
                 Fonctionnement
             </span>
-            <h1 className="font-bold text-4xl text-white mb-16">
+            <h1 className="font-bold text-2xl sm:text-3xl min-[1000px]:text-4xl text-center text-white mb-16">
                 Comment Ça Marche
             </h1>
-            <div className="grid grid-cols-3 w-full">
+            <div className="grid place-items-center grid-cols-1 min-[890px]:grid-cols-2 min-[1170px]:grid-cols-3 w-full gap-20 min-[1170px]:gap-5">
                 <div className="w-[320px]">
                     <IconTextCard
                         icon={<PersonInscriptionIcon />}
