@@ -16,7 +16,7 @@ const Navbar = () => {
 
     return (
         <nav className="w-full">
-            <ul className="flex flex-col min-[870px]:flex-row justify-between items-center w-full gap-4 max-[870px]:pb-3">
+            <ul className="flex flex-col min-[1000px]:flex-row justify-between items-center w-full gap-4 max-[1000px]:pb-3">
                 {headerLinks.map((link, index) => (
                     <li
                         key={index}
