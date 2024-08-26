@@ -27,7 +27,7 @@ const ContactUsSection = () => {
                     className="absolute right-[10%] -top-7"
                 />
             </div>
-            <span className="font-medium text-lg text-primary-blue">
+            <span className="font-medium text-lg text-primary-blue z-10">
                 Contactez-Nous
             </span>
 
@@ -37,7 +37,7 @@ const ContactUsSection = () => {
 
             <ContactUsForm />
 
-            <div className="grid grid-cols-3 w-full gap-3">
+            <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] w-full gap-3">
                 <div className="w-full">
                     <IconTextCard2
                         icon={<PhoneIcon />}

@@ -7,10 +7,10 @@ const ContactUsForm = () => {
     return (
         <form
             action=""
-            className="bg-white w-full px-10 py-7 items-center rounded-3xl shadow-2xl"
+            className="bg-white w-full px-10 py-7 rounded-3xl shadow-2xl"
         >
             <div className="flex flex-col items-center justify-around h-[330px] sm:h-[482px]">
-                <div className="flex w-full gap-2">
+                <div className="flex flex-col sm:flex-row w-full gap-2">
                     <Input type="text" placeholder="Nom" />
                     <Input type="email" placeholder="Email" />
                 </div>
