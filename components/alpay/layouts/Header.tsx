@@ -4,6 +4,7 @@ import AlpayLogo from "@/public/assets/alpay-logo.svg";
 import Navbar from "@/components/alpay/Navbar";
 import Button from "../buttons/Button";
 import BurgerButtonIcon from "@/public/assets/burger-button-icon.svg";
+import Link from "next/link";
 
 const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -16,10 +17,13 @@ const Header = () => {
                     <Navbar />
                 </div>
                 <div className="max-[1070px]:hidden">
-                    <Button
+                    {/* <Button
                         text="Contactez-nous"
                         className="bg-primary-blue text-white px-3 py-2"
-                    />
+                    /> */}
+                    <button className="hover:scale-105 rounded-md transition bg-primary-blue text-white px-3 py-2">
+                        <Link href="#contact-us">Contactez-nous</Link>
+                    </button>
                 </div>
                 <div className="flex items-center min-[1070px]:hidden">
                     <button
@@ -34,10 +38,14 @@ const Header = () => {
                             <div className="min-[1000px]:hidden">
                                 <Navbar />
                             </div>
-                            <Button
+                            {/* <Button
+                                href=""
                                 text="Contactez-nous"
                                 className="bg-primary-blue text-white px-3 py-2"
-                            />
+                            /> */}
+                            <button className="hover:scale-105 rounded-md transition bg-primary-blue text-white px-3 py-2">
+                                <Link href="#contact-us">Contactez-nous</Link>
+                            </button>
                         </div>
                     )}
                 </div>

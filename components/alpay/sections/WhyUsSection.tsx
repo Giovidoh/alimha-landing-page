@@ -11,7 +11,10 @@ import ClientSatisfactionIcon from "@/public/assets/client-satisfaction-icon.svg
 
 const WhyUsSection = () => {
     return (
-        <section className="relative flex flex-row-reverse items-end w-full py-10 min-[1000px]:py-24 px-5 sm:px-20 min-[1330px]:px-40 gap-5 overflow-hidden">
+        <section
+            id="why-us"
+            className="relative flex flex-row-reverse items-end w-full py-10 min-[1000px]:py-24 px-5 sm:px-20 min-[1330px]:px-40 gap-5 overflow-hidden"
+        >
             <div className="absolute bottom-[60%] left-0 rotate-180">
                 <Image
                     src={linkedLines}

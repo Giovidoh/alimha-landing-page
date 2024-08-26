@@ -7,7 +7,10 @@ import ArrowRightIcon from "@/public/assets/arrow-right-icon.svg";
 
 const OurServicesSection = () => {
     return (
-        <section className="flex flex-col items-center w-full py-24 px-5 sm:px-20 min-[1330px]:px-40 gap-3">
+        <section
+            id="our-services"
+            className="flex flex-col items-center w-full py-24 px-5 sm:px-20 min-[1330px]:px-40 gap-3"
+        >
             <span className="font-medium text-base sm:text-lg text-center text-primary-blue">
                 Nos Services
             </span>

@@ -10,7 +10,10 @@ import Image from "next/image";
 
 const ContactUsSection = () => {
     return (
-        <section className="relative flex flex-col items-center bg-tertiary w-full h-fit pt-20 pb-14 px-5 sm:px-20 min-[1120px]:px-40 gap-5">
+        <section
+            id="contact-us"
+            className="relative flex flex-col items-center bg-tertiary w-full h-fit pt-20 pb-14 px-5 sm:px-20 min-[1120px]:px-40 gap-5"
+        >
             <div>
                 <Image
                     src={bluredVectors}

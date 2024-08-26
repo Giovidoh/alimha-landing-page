@@ -9,7 +9,10 @@ import bluredVectors from "@/public/assets/blured-vectors.png";
 
 const HowItWorksSection = () => {
     return (
-        <section className="relative flex flex-col items-center w-full bg-primary-blue bg-alpay-how-it-works-bg bg-cover bg-no-repeat bg-center pt-28 pb-32 px-5 sm:px-20 min-[1330px]:px-40 gap-3">
+        <section
+            id="how-it-works"
+            className="relative flex flex-col items-center w-full bg-primary-blue bg-alpay-how-it-works-bg bg-cover bg-no-repeat bg-center pt-28 pb-32 px-5 sm:px-20 min-[1330px]:px-40 gap-3"
+        >
             <div className="absolute top-10 left-[10%]">
                 <Image src={dotVector2} alt="dot vector image" height={137} />
             </div>

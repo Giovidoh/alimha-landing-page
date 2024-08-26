@@ -17,6 +17,6 @@ export const headerLinks = [
     },
     {
         text: "Pourquoi Alpay",
-        url: "#why-alpay",
+        url: "#why-us",
     },
 ];
