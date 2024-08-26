@@ -20,7 +20,7 @@ const WhyUsSection = () => {
                 />
             </div>
             <div className="flex flex-col justify-center items-center min-[1000px]:items-start w-full min-[1000px]:w-1/2 min-h-[600px] gap-4">
-                <span className="font-medium text-lg text-primary-blue">
+                <span className="font-medium text-base sm:text-lg text-primary-blue">
                     Pourquoi-nous ?
                 </span>
                 <h1 className="font-bold text-2xl sm:text-3xl min-[1000px]:text-4xl text-center min-[1000px]:text-start">

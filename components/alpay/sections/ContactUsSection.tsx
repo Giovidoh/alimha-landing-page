@@ -27,11 +27,11 @@ const ContactUsSection = () => {
                     className="absolute right-[10%] -top-7"
                 />
             </div>
-            <span className="font-medium text-lg text-primary-blue z-10">
+            <span className="font-medium text-base sm:text-lg text-primary-blue z-10">
                 Contactez-Nous
             </span>
 
-            <h1 className="font-bold text-center text-4xl w-full md:w-1/2 mb-8">
+            <h1 className="font-bold text-2xl sm:text-3xl min-[1000px]:text-4xl text-center w-full md:w-1/2 mb-8">
                 Transformer Votre Gestion des Paiements
             </h1>
 
