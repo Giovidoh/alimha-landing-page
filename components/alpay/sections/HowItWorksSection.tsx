@@ -27,21 +27,21 @@ const HowItWorksSection = () => {
                 Comment Ça Marche
             </h1>
             <div className="grid place-items-center grid-cols-1 min-[890px]:grid-cols-2 min-[1170px]:grid-cols-3 w-full gap-20 min-[1170px]:gap-5">
-                <div className="w-[320px]">
+                <div className="w-[320px] h-full">
                     <IconTextCard
                         icon={<PersonInscriptionIcon />}
                         title="Inscription Facile"
                         body="Créez votre compte en quelques minutes et commencez à configurer vos options de paiement selon vos besoins spécifiques."
                     />
                 </div>
-                <div className="w-[320px]">
+                <div className="w-[320px] h-full">
                     <IconTextCard
                         icon={<GearIcon />}
                         title="Configuration Rapide"
                         body="Utilisez nos guides et notre support pour intégrer facilement l’agrégateur à vos systèmes existants. Pas de développement complexe nécessaire."
                     />
                 </div>
-                <div className="w-[320px]">
+                <div className="w-[320px] h-full">
                     <IconTextCard
                         icon={<TransactionIcon />}
                         title="Lancez Vos Transactions"
