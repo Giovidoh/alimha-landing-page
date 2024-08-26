@@ -9,11 +9,11 @@ import tmoney from "@/public/assets/tmoney.png";
 
 const TheyTrustUsSection = () => {
     return (
-        <section className="relative flex flex-col justify-evenly items-center w-full h-fit px-5 sm:px-20 min-[1120px]:px-40 pt-12 pb-24">
+        <section className="relative flex flex-col justify-evenly items-center w-full h-fit px-5 sm:px-20 min-[1120px]:px-40 pt-12 pb-24 gap-3">
             <span className="font-medium text-lg text-primary-blue">
                 Applications
             </span>
-            <h1 className="font-bold text-center text-4xl">
+            <h1 className="font-bold text-2xl sm:text-3xl min-[1000px]:text-4xl text-center mb-8">
                 Moyens de paiement Disponibles
             </h1>
             {/* Small devices */}
