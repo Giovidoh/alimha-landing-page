@@ -22,16 +22,11 @@ export default function Home() {
             <Toaster
                 toastOptions={{
                     style: {
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
                         fontSize: "18px",
-                        textWrap: "wrap",
-                        minWidth: "0px",
-                        width: "500px",
                     },
                 }}
-                position="top-center"
+                position="bottom-left"
+                closeButton
                 richColors
             />
         </main>
