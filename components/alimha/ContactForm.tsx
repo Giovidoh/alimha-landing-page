@@ -3,7 +3,7 @@ import React from "react";
 import Input from "./Input";
 import TextArea from "./TextArea";
 import ButtonGradientStyle1 from "./buttons/ButtonGradientStyle1";
-import { Toaster, toast } from "sonner";
+import { toast } from "sonner";
 
 const ContactForm = () => {
     async function handleSubmit(e: any) {
