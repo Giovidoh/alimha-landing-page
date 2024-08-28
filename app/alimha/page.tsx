@@ -6,6 +6,7 @@ import OurServicesSection from "@/components/alimha/sections/OurServicesSection"
 import TheyTrustUsSection from "@/components/alimha/sections/TheyTrustUsSection";
 import WhoAreWeSection from "@/components/alimha/sections/WhoAreWeSection";
 import WhyUsSection from "@/components/alimha/sections/WhyUsSection";
+import { Toaster } from "sonner";
 
 export default function Home() {
     return (
@@ -18,6 +19,20 @@ export default function Home() {
             <TheyTrustUsSection />
             <ContactUsSection />
             <Footer />
+            <Toaster
+                toastOptions={{
+                    style: {
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        fontSize: "18px",
+                        minWidth: "0px",
+                        width: "500px",
+                    },
+                }}
+                position="top-center"
+                richColors
+            />
         </main>
     );
 }
