@@ -56,13 +56,13 @@ const Footer = () => {
             <div className="flex flex-wrap md:flex-nowrap justify-between items-start w-full pt-40 z-10">
                 <div className="max-w-[280px] mr-5 mb-10">
                     <LogoFooter />
-                    <p className="text-secondary-blue text-justify leading-[19.13px] mt-5">
+                    <p className="text-white text-justify leading-[19.13px] mt-5">
                         Rejoignez la Révolution Technologique Découvrez comment
                         Alimha and Company peut transformer votre manière de
                         faire des affaires. Contactez-nous dès aujourd&apos;hui
                         !
                     </p>
-                    <div className="flex justify-between items-center w-2/3 pt-7">
+                    {/* <div className="flex justify-between items-center w-2/3 pt-7">
                         <Image
                             src={facebook_icon}
                             alt="facebook icon"
@@ -84,61 +84,75 @@ const Footer = () => {
                             alt="youtube icon"
                             height={16}
                         />
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex flex-wrap justify-start gap-10 w-full">
-                    <div className="flex flex-col justify-between h-[99px]">
-                        <h3 className="font-semibold text-white text-xl">
+                    <div className="flex flex-col">
+                        <h3 className="font-semibold text-secondary-blue text-2xl mt-3">
                             Alimha
                         </h3>
-                        <FooterLink href="#" text="Qui sommes nous ?" />
-                        <FooterLink href="#" text="Pourquoi - nous ?" />
+                        <div className="flex flex-col gap-3 mt-7">
+                            <FooterLink href="#" text="Qui sommes nous ?" />
+                            <FooterLink href="#" text="Pourquoi - nous ?" />
+                        </div>
                     </div>
-                    <div className="flex flex-col justify-between h-[134px]">
-                        <h3 className="font-semibold text-white text-xl">
+                    <div className="flex flex-col justify-between">
+                        <h3 className="font-semibold text-secondary-blue text-2xl mt-3">
                             Solutions
                         </h3>
-                        <FooterLink
-                            href="#"
-                            text="Agrégateur de Solutions de Paiement"
-                        />
-                        <FooterLink
-                            href="#"
-                            text="Application Mobile de Transfert d'Argent"
-                        />
-                        <FooterLink
-                            href="#"
-                            text="Développement de Logiciels"
-                        />
+                        <div className="flex flex-col gap-3 mt-7">
+                            <FooterLink
+                                href="#"
+                                text="Agrégateur de Solutions de Paiement"
+                            />
+                            <FooterLink
+                                href="#"
+                                text="Application Mobile de Transfert d'Argent"
+                            />
+                            <FooterLink
+                                href="#"
+                                text="Développement de Logiciels"
+                            />
+                        </div>
                     </div>
-                    <div className="flex flex-col justify-between h-[134px]">
-                        <h3 className="font-semibold text-white text-xl">
+                    <div className="flex flex-col justify-between">
+                        <h3 className="font-semibold text-secondary-blue text-2xl mt-3">
                             Resources
                         </h3>
-                        <FooterLink href="#" text="Conditions d’utilisation" />
-                        <FooterLink
-                            href="#"
-                            text="Politique de confidentialité"
-                        />
-                        <FooterLink href="#" text="Mention Légale" />
+                        <div className="flex flex-col gap-3 mt-7">
+                            <FooterLink
+                                href="#"
+                                text="Conditions d’utilisation"
+                            />
+                            <FooterLink
+                                href="#"
+                                text="Politique de confidentialité"
+                            />
+                            <FooterLink href="#" text="Mention Légale" />
+                        </div>
                     </div>
-                    <div className="flex flex-col justify-between h-[134px]">
-                        <h3 className="font-semibold text-white text-xl">
+                    <div className="flex flex-col justify-between">
+                        <h3 className="font-semibold text-secondary-blue text-2xl mt-3">
                             Contactez-nous
                         </h3>
-                        <FooterLink href="#" text="infos@alimha.com" />
-                        <FooterLink href="#" text="+221 78 589 87 85" />
-                        <FooterLink
-                            href="#"
-                            text="Medina, rue 4 Dakar , Sénégal"
-                        />
+                        <div className="flex flex-col gap-3 mt-7">
+                            <FooterLink href="#" text="infos@alimha.com" />
+                            <FooterLink
+                                href="#"
+                                text="+221 33 844 30 81 / +221 77 889 21 74"
+                            />
+                            <FooterLink
+                                href="#"
+                                text="Mamelles, Dakar - Sénégal"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="w-full pt-40 pb-10">
                 <div className="flex flex-col sm:flex-row justify-between items-center w-full text-sm text-center font-light text-secondary-blue border-t border-t-primary-blue pt-3 gap-3">
-                    <span>Tous droits réservés ! Copyright 2024</span>
-                    <span>ALIMAH 2024</span>
+                    <span>Tous droits réservés | Copyright 2024</span>
+                    <span>ALIMHA</span>
                 </div>
             </div>
         </footer>

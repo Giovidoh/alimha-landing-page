@@ -12,6 +12,8 @@ import tmoney from "@/public/assets/tmoney.png";
 import codifyLogo from "@/public/assets/codify-logo.png";
 import soudhuLogo from "@/public/assets/soudhu-logo.png";
 import odeytech from "@/public/assets/Odeytech.jpg";
+import ubaLogo from "@/public/assets/uba-logo.png";
+import ecobankLogo from "@/public/assets/ecobank-logo.png";
 
 const TheyTrustUsSection = () => {
     return (
@@ -50,27 +52,31 @@ const TheyTrustUsSection = () => {
             </div>
             <div className="flex md:hidden justify-between items-center w-full">
                 {/* Small devices */}
-                <Image src={codifyLogo} alt="codify logo" height={42.5} />
-                <Image src={soudhuLogo} alt="codify logo" height={32.5} />
-                <Image src={odeytech} alt="codify logo" height={32.5} />
-                <Image src={orange_money} alt="orange money icon" height={25} />
+                <Image src={ecobankLogo} alt="ecobank logo" height={32.5} />
+                <Image src={soudhuLogo} alt="soudhu logo" height={32.5} />
+                <Image src={ubaLogo} alt="uba logo" height={65} />
+                <Image src={codifyLogo} alt="codify logo" height={47.5} />
+                <Image src={odeytech} alt="odeytech logo" height={32.5} />
+                {/* <Image src={orange_money} alt="orange money icon" height={25} />
                 <Image src={wave} alt="wave icon" height={40} />
                 <Image src={moov_money} alt="moov money icon" height={40} />
                 <Image src={mtn_momo} alt="mtn momo icon" height={35} />
                 <Image src={free_money} alt="free money icon" height={62.5} />
-                <Image src={tmoney} alt="tmoney icon" height={37.5} />
+                <Image src={tmoney} alt="tmoney icon" height={37.5} /> */}
             </div>
             <div className="hidden md:flex justify-between items-center w-full">
                 {/* Large devices */}
-                <Image src={codifyLogo} alt="codify logo" height={85} />
-                <Image src={soudhuLogo} alt="codify logo" height={65} />
-                <Image src={odeytech} alt="codify logo" height={65} />
-                <Image src={orange_money} alt="orange money icon" height={55} />
-                <Image src={wave} alt="wave icon" height={80} />
-                <Image src={moov_money} alt="moov money icon" height={80} />
-                <Image src={mtn_momo} alt="mtn momo icon" height={70} />
-                <Image src={free_money} alt="free money icon" height={125} />
-                <Image src={tmoney} alt="tmoney icon" height={75} />
+                <Image src={ecobankLogo} alt="ecobank logo" height={65} />
+                <Image src={soudhuLogo} alt="soudhu logo" height={65} />
+                <Image src={ubaLogo} alt="uba logo" height={130} />
+                <Image src={codifyLogo} alt="codify logo" height={95} />
+                <Image src={odeytech} alt="odeytech logo" height={65} />
+                {/* <Image src={orange_money} alt="orange money icon" height={55} /> */}
+                {/* <Image src={wave} alt="wave icon" height={80} /> */}
+                {/* <Image src={moov_money} alt="moov money icon" height={80} /> */}
+                {/* <Image src={mtn_momo} alt="mtn momo icon" height={70} /> */}
+                {/* <Image src={free_money} alt="free money icon" height={125} /> */}
+                {/* <Image src={tmoney} alt="tmoney icon" height={75} /> */}
             </div>
         </section>
     );

@@ -15,9 +15,10 @@ const ContactForm = () => {
                 Accept: "application/json",
             },
             body: JSON.stringify({
-                access_key: "60ecd023-8099-406c-9f81-de02aa2abd14",
+                access_key: "cfc359c9-8196-4e5f-86bf-24d0658ceb45",
                 name: e.target.name.value,
                 email: e.target.email.value,
+                subject: "Alimha & Company",
                 message: e.target.message.value,
             }),
         });
