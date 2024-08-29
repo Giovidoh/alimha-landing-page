@@ -14,7 +14,7 @@ const ButtonGradientStyle1: React.FC<ButtonGradientStyle1Props> = ({
     toColor = "to-secondary-blue",
     text = "Button",
     width = "w-[194px]",
-    height = "h-[55px]",
+    height = "h-[45px]",
     marginRight = "mr-0",
 }) => {
     return (

@@ -11,7 +11,7 @@ interface ButtonStyle1Props {
 const ButtonStyle1: React.FC<ButtonStyle1Props> = ({
     text,
     width = "w-[194px]",
-    height = "h-[55px]",
+    height = "h-[45px]",
     marginLeft = "ml-0",
     marginTop = "mt-0",
 }) => {

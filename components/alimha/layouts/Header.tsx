@@ -10,7 +10,7 @@ const Header = () => {
     const [burgerDropped, setBurgerDropped] = useState(false);
 
     return (
-        <header className="sticky top-0 left-0 flex justify-between bg-white w-full lg:px-[10%] max-lg:px-[5%] py-5 z-50">
+        <header className="sticky top-0 left-0 flex justify-between bg-white w-full lg:px-[10%] max-lg:px-[5%] py-2 shadow-md z-50">
             <div className="flex justify-between items-center pr-10">
                 <Logo />
             </div>

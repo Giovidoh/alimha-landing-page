@@ -9,8 +9,8 @@ import circle5 from "@/public/assets/circle-vector-5.png";
 
 const HeroSection = () => {
     return (
-        <section className="flex bg-white h-fit w-full px-[5%] lg:px-[10%] pb-24 bg-hero-world-img bg-contain bg-no-repeat bg-top">
-            <div className="w-full md:w-1/2 text-center md:text-left pt-10 md:pt-16 lg:pt-32">
+        <section className="flex bg-white h-fit w-full px-[5%] lg:px-[10%] pt-10 md:pt-12 lg:pt-18 xl:pt-28 pb-24 bg-hero-world-img bg-contain bg-no-repeat bg-top">
+            <div className="w-full md:w-1/2 text-center md:text-left">
                 <h3 className="font-semibold text-lg md:text-xl text-primary-blue mb-2">
                     Fintech
                 </h3>
@@ -47,6 +47,7 @@ const HeroSection = () => {
                 <Image
                     src={actor1}
                     alt="hero actor image"
+                    height={600}
                     className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10"
                 />
                 <Image
