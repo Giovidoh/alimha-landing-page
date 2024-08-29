@@ -14,7 +14,7 @@ import thumb_up from "@/public/assets/thumb-up.png";
 const WhoAreWeSection = () => {
     return (
         <section
-            id="about-us"
+            id="who-are-we"
             className="relative flex items-center bg-[#DDECFF] bg-who-are-we-bg bg-cover bg-no-repeat w-full h-fit px-[5%] lg:px-[10%] py-10"
         >
             <Image

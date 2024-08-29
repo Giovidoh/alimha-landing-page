@@ -51,9 +51,9 @@ const WhyUsSection = () => {
 
             <div className="flex flex-col items-center md:items-start w-full z-10">
                 <div className="flex justify-center md:justify-start items-center h-fit pb-4">
-                    <h3 className="font-semibold text-xl text-primary-blue whitespace-nowrap pt-4 pr-6">
+                    {/* <h3 className="font-semibold text-xl text-primary-blue whitespace-nowrap pt-4 pr-6">
                         Pourquoi nous ?
-                    </h3>
+                    </h3> */}
                     <Image src={map_img} alt="map icon" height={40} />
                 </div>
                 <div className="mb-6">
@@ -71,7 +71,7 @@ const WhyUsSection = () => {
                         </span>
                         , en{" "}
                         <span className="text-primary-blue font-semibold">
-                            guinée
+                            Guinée
                         </span>
                         , au{" "}
                         <span className="text-primary-blue font-semibold">
@@ -85,11 +85,10 @@ const WhyUsSection = () => {
                         <span className="text-primary-blue font-semibold">
                             Comores
                         </span>
-                        . <br /> Avec plus de 3 devises prises en charge avec
-                        plusieurs options de règlement.
+                        . <br />
                     </p>
                 </div>
-                <ButtonGradientStyle1 text="En savoir plus" />
+                {/* <ButtonGradientStyle1 text="En savoir plus" /> */}
             </div>
             <div className="hidden md:block w-full pt-24 z-10">
                 <Image src={africa_vector} alt="africa vector" height={800} />

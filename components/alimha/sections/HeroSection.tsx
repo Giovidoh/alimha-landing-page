@@ -9,11 +9,8 @@ import circle5 from "@/public/assets/circle-vector-5.png";
 
 const HeroSection = () => {
     return (
-        <section className="flex bg-white h-fit w-full px-[5%] lg:px-[10%] pt-10 md:pt-12 lg:pt-18 xl:pt-28 pb-24 bg-hero-world-img bg-contain bg-no-repeat bg-top">
+        <section className="flex bg-white h-fit w-full px-[5%] lg:px-[10%] pt-10 md:pt-12 lg:pt-18 xl:pt-32 pb-24 bg-hero-world-img bg-contain bg-no-repeat bg-top">
             <div className="w-full md:w-1/2 text-center md:text-left">
-                <h3 className="font-semibold text-lg md:text-xl text-primary-blue mb-2">
-                    Fintech
-                </h3>
                 <h1 className="font-bold text-[32px] lg:text-[54px] leading-[50px] lg:leading-[64.8px] pb-4">
                     Bienvenue chez <br />
                     <span className="text-primary-blue">
@@ -21,10 +18,11 @@ const HeroSection = () => {
                     </span>
                 </h1>
                 <p className="text-[#1E1E1E] pb-8">
-                    Votre Partenaire de Confiance en Solutions Technologiques
-                    Transformez vos idées en réalités innovantes Nous combinons
-                    expertise, créativité et technologie de pointe pour
-                    transformer vos visions en solutions concrètes.
+                    Votre partenaire de confiance en solutions technologiques,
+                    nous transformons vos idées en réalités innovantes. Grâce à
+                    une combinaison d'expertise, de créativité et de technologie
+                    de pointe, nous donnons vie à vos visions en les
+                    concrétisant en solutions pratiques et performantes.
                 </p>
                 <div className="flex flex-col md:flex-row justify-between w-full pb-8">
                     <ButtonGradientStyle1
