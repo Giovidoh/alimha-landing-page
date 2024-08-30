@@ -52,14 +52,14 @@ const OurServicesSection = () => {
                 <Card
                     icon={payment_icon}
                     bgColor={"bg-[#E0E2FF]"}
-                    href="/alpay"
+                    href="/en/alpay"
                     title="Agrégateur de Solutions de Paiement"
                     description="Connectez-vous aux meilleures solutions de paiement. Centralisez et optimisez vos transactions financières grâce à notre agrégateur de solutions de paiement, conçu pour simplifier et sécuriser vos opérations."
                 />
                 <Card
                     icon={transaction_icon}
                     bgColor={"bg-[#FFF2E0]"}
-                    href="/sendmo"
+                    href="/en/sendmo"
                     title="Application Mobile de Dépôt d'argent"
                     titleColor="text-orange-1"
                     description="Dépôts Mobile Money sécurisés, à moindre coût et instantanés. Facilitez les dépôts d'argent sous-régionaux avec notre application mobile, conçue pour offrir une expérience utilisateur fluide et sécurisée."

@@ -15,6 +15,7 @@ const ButtonStyle2: React.FC<ButtonStyle2Props> = ({
     return (
         <Link
             href={href}
+            target="_blank"
             className={`flex justify-center items-center border ${bgColor} text-white hover:scale-105 capitalize font-bold tracking-wide rounded-xl w-[194px] h-[45px] transition ease-in`}
         >
             {text}
