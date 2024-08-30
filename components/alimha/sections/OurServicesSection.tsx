@@ -1,14 +1,15 @@
 import Image from "next/image";
 import React from "react";
 import Card from "../Card";
-import fund1 from "@/public/assets/fund1.png";
 import payment_icon from "@/public/assets/payment-icon.png";
 import transaction_icon from "@/public/assets/transaction-icon.png";
 import software_icon from "@/public/assets/software-icon.png";
 import dot_vector1 from "@/public/assets/dot-vector-1.png";
 import line_vector1 from "@/public/assets/line-vector1.png";
+import { useTranslations } from "next-intl";
 
 const OurServicesSection = () => {
+    const t = useTranslations("AlimhaPage");
     return (
         <section
             id="our-services"
@@ -28,13 +29,13 @@ const OurServicesSection = () => {
             />
             <div className="flex justify-center md:justify-start items-center h-fit">
                 <h3 className="font-semibold text-xl text-primary-blue pt-4 pr-6 mb-4">
-                    Nos services
+                    {t("Our services")}
                 </h3>
                 {/* <Image src={fund1} alt="fund icon" height={54} width={54} /> */}
             </div>
             <div className="mb-6">
                 <h1 className="font-bold text-center md:text-left text-[32px] lg:text-[44px] leading-[45px] lg:leading-[52.6px] pb-4">
-                    Développez votre <br /> activité avec Alimha
+                    {t("Expand your")} <br /> {t("business with Alimha")}
                 </h1>
                 {/* <p className="text-center md:text-left text-xl text-gray-2">
                     Des solutions simples pour vos Paiements et transfert
@@ -45,24 +46,26 @@ const OurServicesSection = () => {
                 <Card
                     icon={software_icon}
                     bgColor={"bg-[#E9FFF5]"}
-                    title="Développement de Logiciels"
-                    description="Des solutions logicielles sur mesure pour vos besoins spécifiques. Nous créons des applications web et mobiles, analysons et auditons vos systèmes, et déployons des solutions informatiques adaptées à vos exigences."
+                    title={t("Software Development")}
+                    description={t("Software Development description")}
                     buttonBgColor="bg-green-1"
                 />
                 <Card
                     icon={payment_icon}
                     bgColor={"bg-[#E0E2FF]"}
                     href="/en/alpay"
-                    title="Agrégateur de Solutions de Paiement"
-                    description="Connectez-vous aux meilleures solutions de paiement. Centralisez et optimisez vos transactions financières grâce à notre agrégateur de solutions de paiement, conçu pour simplifier et sécuriser vos opérations."
+                    title={t("Payment Solutions Aggregator")}
+                    description={t("Payment Solutions Aggregator description")}
                 />
                 <Card
                     icon={transaction_icon}
                     bgColor={"bg-[#FFF2E0]"}
                     href="/en/sendmo"
-                    title="Application Mobile de Dépôt d'argent"
+                    title={t("Money Deposit Mobile Application")}
                     titleColor="text-orange-1"
-                    description="Dépôts Mobile Money sécurisés, à moindre coût et instantanés. Facilitez les dépôts d'argent sous-régionaux avec notre application mobile, conçue pour offrir une expérience utilisateur fluide et sécurisée."
+                    description={t(
+                        "Money Deposit Mobile Application description"
+                    )}
                     buttonBgColor="bg-orange-1"
                 />
             </div>

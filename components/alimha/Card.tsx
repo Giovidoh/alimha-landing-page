@@ -2,6 +2,7 @@ import React from "react";
 import CardIcon from "./CardIcon";
 import { StaticImageData } from "next/image";
 import ButtonStyle2 from "./buttons/ButtonStyle2";
+import { useTranslations } from "next-intl";
 
 interface CardProps {
     icon: StaticImageData;
@@ -22,6 +23,7 @@ const Card: React.FC<CardProps> = ({
     description = "Card Description",
     buttonBgColor,
 }) => {
+    const t = useTranslations("AlimhaPage");
     return (
         <div className="flex flex-col justify-around items-start w-full h-[430px] px-7 py-5 rounded-3xl shadow-xl md:shadow-2xl bg-white z-10">
             <CardIcon icon={icon} bgColor={bgColor} />
@@ -31,7 +33,7 @@ const Card: React.FC<CardProps> = ({
             </p>
             <ButtonStyle2
                 href={href}
-                text="En savoir plus"
+                text={t("Learn more")}
                 bgColor={buttonBgColor}
             />
         </div>
