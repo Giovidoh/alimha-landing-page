@@ -1,9 +1,13 @@
 {
     "AlimhaPage": {
+        "Solutions": "Solutions",
+        "About us": "Qui sommes-nous",
+        "Contact": "Contact",
         "Alimha and Company": "Alimha and Company",
         "welcome to": "Bienvenue chez",
         "hero description": "Votre partenaire de confiance en solutions technologiques, nous transformons vos idées en réalités innovantes. Grâce à une combinaison d'expertise, de créativité et de technologie de pointe, nous donnons vie à vos visions en les concrétisant en solutions pratiques et performantes.",
         "Become partner": "Devenir partenaire",
-        "Learn more": "En savoir Plus"
+        "Learn more": "En savoir Plus",
+        "Customer reviews": "Avis des clients"
     }
 }

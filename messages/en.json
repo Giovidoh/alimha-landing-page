@@ -1,9 +1,13 @@
 {
     "AlimhaPage": {
+        "Solutions": "Solutions",
+        "About us": "About us",
+        "Contact": "Contact",
         "Alimha and Company": "Alimha and Company",
         "welcome to": "Welcome to",
         "hero description": "Your trusted partner for technology solutions, we turn your ideas into innovative realities. Thanks to a combination of expertise, creativity and cutting-edge technology, we bring your visions to life, turning them into practical, high-performance solutions.",
         "Become partner": "Become partner",
-        "Learn more": "Learn more"
+        "Learn more": "Learn more",
+        "Customer reviews": "Customer reviews"
     }
 }

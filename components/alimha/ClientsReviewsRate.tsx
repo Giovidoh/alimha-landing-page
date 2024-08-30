@@ -1,7 +1,9 @@
 import React from "react";
 import Star from "./Star";
+import { useTranslations } from "next-intl";
 
 const ClientsReviewsRate = () => {
+    const t = useTranslations("AlimhaPage");
     return (
         <div className="flex flex-col items-center justify-between w-full h-14 md:w-fit">
             <div className="flex justify-evenly w-full">
@@ -14,7 +16,7 @@ const ClientsReviewsRate = () => {
             <div>
                 <span className="font-bold">(+100) </span>
                 <span className="text-gray-1 font-medium">
-                    Avis des clients
+                    {t("Customer reviews")}
                 </span>
             </div>
         </div>

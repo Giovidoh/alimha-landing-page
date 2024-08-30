@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
@@ -8,6 +7,7 @@ import ClientsReviewsRate from "../ClientsReviewsRate";
 import actor1 from "@/public/assets/actor1.png";
 import plus2 from "@/public/assets/plus-vector-2.png";
 import circle5 from "@/public/assets/circle-vector-5.png";
+import { useTranslations } from "next-intl";
 
 const HeroSection = () => {
     const t = useTranslations("AlimhaPage");

@@ -1,14 +1,15 @@
 "use client";
-
 import React, { useState } from "react";
 import Logo from "../Logo";
 import NavBar from "../NavBar";
 import BurgerButton from "../buttons/BurgerButton";
 import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import LocalSwitcherSelect from "../selects/LocalSwitcherSelect";
+import { useTranslations } from "next-intl";
 
 const Header = () => {
     const [burgerDropped, setBurgerDropped] = useState(false);
+    const t = useTranslations("AlimhaPage");
 
     return (
         <header className="sticky top-0 left-0 flex justify-between bg-white w-full lg:px-[10%] max-lg:px-[5%] py-2 shadow-md z-50">
@@ -25,7 +26,7 @@ const Header = () => {
                 <ButtonGradientStyle1
                     fromColor="from-primary-blue"
                     toColor="to-secondary-blue"
-                    text="Devenir partenaire"
+                    text={t("Become partner")}
                 />
             </div>
             <div className="flex items-center">
@@ -39,7 +40,7 @@ const Header = () => {
                         <ButtonGradientStyle1
                             fromColor="from-primary-blue"
                             toColor="to-secondary-blue"
-                            text="Devenir partenaire"
+                            text={t("Become partner")}
                         />
                     </div>
                 )}
