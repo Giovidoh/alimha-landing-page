@@ -1,21 +1,17 @@
 import Image from "next/image";
 import React from "react";
-import international_icon from "@/public/assets/international-icon.png";
 import circle_vector4 from "@/public/assets/circle-vector-4.png";
 import plus_vector3 from "@/public/assets/plus-vector-3.png";
-import orange_money from "@/public/assets/orange-money.png";
-import wave from "@/public/assets/wave.png";
-import moov_money from "@/public/assets/moov-money.png";
-import mtn_momo from "@/public/assets/mtn-momo.png";
-import free_money from "@/public/assets/free-money.png";
-import tmoney from "@/public/assets/tmoney.png";
 import codifyLogo from "@/public/assets/codify-logo.png";
 import soudhuLogo from "@/public/assets/soudhu-logo.png";
 import odeytech from "@/public/assets/Odeytech.jpg";
 import ubaLogo from "@/public/assets/uba-logo.png";
 import ecobankLogo from "@/public/assets/ecobank-logo.png";
+import { useTranslations } from "next-intl";
 
 const TheyTrustUsSection = () => {
+    const t = useTranslations("AlimhaPage");
+
     return (
         <section className="relative flex flex-col justify-evenly items-center text-center px-[5%] lg:px-[10%] bg-white h-fit w-full pt-12 pb-24">
             <Image
@@ -38,16 +34,15 @@ const TheyTrustUsSection = () => {
                     height={50}
                 /> */}
                 <h3 className="font-semibold text-xl text-primary-blue pt-4">
-                    Ils nous font confiance
+                    {t("They trust us")}
                 </h3>
             </div>
             <div className="mb-6">
                 <h1 className="font-bold text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-4">
-                    Nos partenaires & supports
+                    {t("Our partners & support")}
                 </h1>
                 <p className="max-w-[595px] text-xl text-gray-1">
-                    Nous travaillons avec des partenaires stratégiques de
-                    différents secteurs pour enrichir notre offre de services.
+                    {t("They trust us section description")}
                 </p>
             </div>
             <div className="flex md:hidden justify-between items-center w-full">
