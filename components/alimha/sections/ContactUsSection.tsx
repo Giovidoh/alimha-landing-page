@@ -5,8 +5,10 @@ import Map from "../Map";
 import plus3 from "@/public/assets/plus-vector-3.png";
 import circle_vector5 from "@/public/assets/circle-vector-5.png";
 import line_vector3 from "@/public/assets/line-vector3.png";
+import { useTranslations } from "next-intl";
 
 const ContactUsSection = () => {
+    const t = useTranslations("AlimhaPage");
     return (
         <section
             id="contact"
@@ -33,10 +35,10 @@ const ContactUsSection = () => {
 
             <div className="mb-6">
                 <h1 className="font-bold text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-5">
-                    Contactez-nous
+                    {t("Contact us")}
                 </h1>
                 <p className="text-xl text-gray-1 font-medium pb-4">
-                    Discutons de votre projet
+                    {t("Let's discuss your project")}
                 </p>
             </div>
             <div className="grid  lg:grid-cols-2 gap-5 w-full">
