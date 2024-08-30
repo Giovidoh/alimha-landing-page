@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
 import LogoFooter from "../LogoFooter";
@@ -7,13 +8,11 @@ import circle_vector4 from "@/public/assets/circle-vector-4.png";
 import circle_vector6 from "@/public/assets/circle-vector-6.png";
 import plus_vector4 from "@/public/assets/plus-vector-4.png";
 import dot_vector2 from "@/public/assets/dot-vector-2.png";
-import facebook_icon from "@/public/assets/facebook-icon.png";
-import linkedin_icon from "@/public/assets/linkedin-icon.png";
-import instagram_icon from "@/public/assets/instagram-icon.png";
-import x_icon from "@/public/assets/x-icon.png";
-import youtube_icon from "@/public/assets/youtube-icon.png";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+    const t = useTranslations("AlimhaPage");
+
     return (
         <footer className="relative flex flex-col justify-evenly items-center bg-dark-blue px-[5%] xl:px-[10%] overflow-hidden">
             <Image
@@ -57,10 +56,7 @@ const Footer = () => {
                 <div className="max-w-[280px] mr-5 mb-10">
                     <LogoFooter />
                     <p className="text-white text-justify leading-[19.13px] mt-5">
-                        Rejoignez la Révolution Technologique Découvrez comment
-                        Alimha and Company peut transformer votre manière de
-                        faire des affaires. Contactez-nous dès aujourd&apos;hui
-                        !
+                        {t("Footer description")}
                     </p>
                     {/* <div className="flex justify-between items-center w-2/3 pt-7">
                         <Image
@@ -92,48 +88,42 @@ const Footer = () => {
                             Alimha
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
-                            <FooterLink href="#" text="Qui sommes nous ?" />
-                            <FooterLink href="#" text="Pourquoi - nous ?" />
+                            <FooterLink href="#" text={t("About us")} />
+                            <FooterLink href="#" text="Why us" />
                         </div>
                     </div>
                     <div className="flex flex-col justify-between">
                         <h3 className="font-semibold text-secondary-blue text-2xl mt-3">
-                            Solutions
+                            {t("Solutions")}
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
                             <FooterLink
                                 href="#"
-                                text="Agrégateur de Solutions de Paiement"
+                                text={t("Software Development")}
                             />
                             <FooterLink
                                 href="#"
-                                text="Application Mobile de Transfert d'Argent"
+                                text={t("Payment Solutions Aggregator")}
                             />
                             <FooterLink
                                 href="#"
-                                text="Développement de Logiciels"
+                                text={t("Money Deposit Mobile Application")}
                             />
                         </div>
                     </div>
                     <div className="flex flex-col justify-between">
                         <h3 className="font-semibold text-secondary-blue text-2xl mt-3">
-                            Resources
+                            {t("Resources")}
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
-                            <FooterLink
-                                href="#"
-                                text="Conditions d’utilisation"
-                            />
-                            <FooterLink
-                                href="#"
-                                text="Politique de confidentialité"
-                            />
-                            <FooterLink href="#" text="Mention Légale" />
+                            <FooterLink href="#" text={t("Terms of use")} />
+                            <FooterLink href="#" text={t("Privacy policy")} />
+                            <FooterLink href="#" text={t("Legal Notice")} />
                         </div>
                     </div>
                     <div className="flex flex-col justify-between">
                         <h3 className="font-semibold text-secondary-blue text-2xl mt-3">
-                            Contactez-nous
+                            {t("Contact us")}
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
                             <FooterLink href="#" text="infos@alimha.com" />
@@ -151,7 +141,7 @@ const Footer = () => {
             </div>
             <div className="w-full pt-40 pb-10">
                 <div className="flex flex-col sm:flex-row justify-between items-center w-full text-sm text-center font-light text-secondary-blue border-t border-t-primary-blue pt-3 gap-3">
-                    <span>Tous droits réservés | Copyright 2024</span>
+                    <span>{t("Copyright")}</span>
                     <span>ALIMHA</span>
                 </div>
             </div>
