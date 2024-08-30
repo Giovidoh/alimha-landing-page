@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
@@ -8,8 +9,13 @@ import plus_vector3 from "@/public/assets/plus-vector-3.png";
 import circle_vector3 from "@/public/assets/circle-vector-3.png";
 import linked_lines_vector from "@/public/assets/linked-line-vectors.png";
 import africa_vector from "@/public/assets/africa-img.png";
+import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const WhyUsSection = () => {
+    const t = useTranslations("AlimhaPage");
+    const pathname = usePathname();
+
     return (
         <section className="relative flex justify-between items-center px-[5%] lg:px-[10%] py-10 bg-white h-fit w-full">
             <Image
@@ -58,32 +64,34 @@ const WhyUsSection = () => {
                 </div>
                 <div className="mb-6">
                     <h1 className="font-bold text-center md:text-left text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-5">
-                        Notre portée <br /> Mondiale
+                        {t("WhyUsSection title first part")} <br />{" "}
+                        {t("WhyUsSection title second part")}
                     </h1>
                     <p className="text-center md:text-left text-base font-normal tracking-wide text-gray-2 pb-5 md:pb-10">
-                        Alimha est présent au{" "}
+                        {t("Alimha is present") + " " + t("in1")}{" "}
                         <span className="text-primary-blue font-semibold">
-                            Senegal
+                            {t("Senegal")}
                         </span>
-                        , au{" "}
+                        , {pathname == "/fr/alimha" && t("in1")}{" "}
                         <span className="text-primary-blue font-semibold">
-                            Togo
+                            {t("Togo")}
                         </span>
-                        , en{" "}
+                        , {pathname == "/fr/alimha" && t("in2")}{" "}
                         <span className="text-primary-blue font-semibold">
-                            Guinée
+                            {t("Guinea")}
                         </span>
-                        , au{" "}
+                        , {pathname == "/fr/alimha" && t("in1")}{" "}
                         <span className="text-primary-blue font-semibold">
-                            Djibouti
-                        </span>{" "}
-                        en{" "}
-                        <span className="text-primary-blue font-semibold">
-                            Centrafrique
+                            {t("Djibouti")}
                         </span>
-                        , et au{" "}
+                        , {pathname == "/fr/alimha" && t("in2")}{" "}
                         <span className="text-primary-blue font-semibold">
-                            Comores
+                            {t("Central Africa")}
+                        </span>
+                        , {t("and")}{" "}
+                        {pathname == "/fr/alimha" ? t("in1") : t("the")}{" "}
+                        <span className="text-primary-blue font-semibold">
+                            {t("Comoros")}
                         </span>
                         . <br />
                     </p>
