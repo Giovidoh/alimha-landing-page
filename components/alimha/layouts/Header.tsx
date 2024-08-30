@@ -5,6 +5,7 @@ import Logo from "../Logo";
 import NavBar from "../NavBar";
 import BurgerButton from "../buttons/BurgerButton";
 import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
+import LocalSwitcherSelect from "../selects/LocalSwitcherSelect";
 
 const Header = () => {
     const [burgerDropped, setBurgerDropped] = useState(false);
@@ -26,6 +27,9 @@ const Header = () => {
                     toColor="to-secondary-blue"
                     text="Devenir partenaire"
                 />
+            </div>
+            <div className="flex items-center">
+                <LocalSwitcherSelect />
             </div>
             <div className="md:hidden flex justify-end items-center">
                 <BurgerButton setBurgerDropped={setBurgerDropped} />

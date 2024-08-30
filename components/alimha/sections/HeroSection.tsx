@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
@@ -8,32 +10,28 @@ import plus2 from "@/public/assets/plus-vector-2.png";
 import circle5 from "@/public/assets/circle-vector-5.png";
 
 const HeroSection = () => {
+    const t = useTranslations("AlimhaPage");
+
     return (
         <section className="flex bg-white h-fit w-full px-[5%] lg:px-[10%] pt-10 md:pt-12 lg:pt-18 xl:pt-32 pb-24 bg-hero-world-img bg-contain bg-no-repeat bg-top">
             <div className="w-full md:w-1/2 text-center md:text-left">
                 <h1 className="font-bold text-[32px] lg:text-[54px] leading-[50px] lg:leading-[64.8px] pb-4">
-                    Bienvenue chez <br />
+                    {t("welcome to")} <br />
                     <span className="text-primary-blue">
-                        Alimha and Company
+                        {t("Alimha and Company")}
                     </span>
                 </h1>
-                <p className="text-[#1E1E1E] pb-8">
-                    Votre partenaire de confiance en solutions technologiques,
-                    nous transformons vos idées en réalités innovantes. Grâce à
-                    une combinaison d'expertise, de créativité et de technologie
-                    de pointe, nous donnons vie à vos visions en les
-                    concrétisant en solutions pratiques et performantes.
-                </p>
+                <p className="text-[#1E1E1E] pb-8">{t("hero description")}</p>
                 <div className="flex flex-col md:flex-row justify-between w-full pb-8">
                     <ButtonGradientStyle1
                         fromColor="from-primary-blue"
                         toColor="to-secondary-blue"
-                        text="Devenir partenaire"
+                        text={t("Become partner")}
                         width="w-full md:w-1/2"
                         marginRight="md:mr-2"
                     />
                     <ButtonStyle1
-                        text="En savoir Plus"
+                        text={t("Learn more")}
                         width="w-full md:w-1/2"
                         marginLeft="md:ml-2"
                         marginTop="mt-3 md:mt-0"
