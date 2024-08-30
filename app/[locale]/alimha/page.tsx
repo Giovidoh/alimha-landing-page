@@ -4,7 +4,7 @@ import Header from "@/components/alimha/layouts/Header";
 import HeroSection from "@/components/alimha/sections/HeroSection";
 import OurServicesSection from "@/components/alimha/sections/OurServicesSection";
 import TheyTrustUsSection from "@/components/alimha/sections/TheyTrustUsSection";
-import WhoAreWeSection from "@/components/alimha/sections/WhoAreWeSection";
+import AboutUsSection from "@/components/alimha/sections/AboutUsSection";
 import WhyUsSection from "@/components/alimha/sections/WhyUsSection";
 import { Toaster } from "sonner";
 
@@ -14,7 +14,7 @@ export default function Home() {
             <Header />
             <HeroSection />
             <OurServicesSection />
-            <WhoAreWeSection />
+            <AboutUsSection />
             <WhyUsSection />
             <TheyTrustUsSection />
             <ContactUsSection />

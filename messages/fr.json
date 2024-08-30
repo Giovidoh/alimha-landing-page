@@ -1,7 +1,7 @@
 {
     "AlimhaPage": {
         "Solutions": "Solutions",
-        "About us": "Qui sommes-nous",
+        "About us": "Qui sommes-nous ?",
         "Contact": "Contact",
         "Alimha and Company": "Alimha and Company",
         "welcome to": "Bienvenue chez",
@@ -17,6 +17,8 @@
         "Payment Solutions Aggregator": "Agrégateur de Solutions de Paiement",
         "Payment Solutions Aggregator description": "Connectez-vous aux meilleures solutions de paiement. Centralisez et optimisez vos transactions financières grâce à notre agrégateur de solutions de paiement, conçu pour simplifier et sécuriser vos opérations.",
         "Money Deposit Mobile Application": "Application Mobile de Dépôt d'argent",
-        "Money Deposit Mobile Application description": "Dépôts Mobile Money sécurisés, à moindre coût et instantanés. Facilitez les dépôts d'argent sous-régionaux avec notre application mobile, conçue pour offrir une expérience utilisateur fluide et sécurisée."
+        "Money Deposit Mobile Application description": "Dépôts Mobile Money sécurisés, à moindre coût et instantanés. Facilitez les dépôts d'argent sous-régionaux avec notre application mobile, conçue pour offrir une expérience utilisateur fluide et sécurisée.",
+        "Your growth partner": "Votre partenaire de croissance",
+        "About us section description": "Alimha and Company est une fintech innovante dédiée à fournir des solutions de paiement modernes et efficaces. Notre mission est de simplifier les transactions financières à travers la région, en offrant des services fiables, sécurisés et accessibles à tous."
     }
 }
