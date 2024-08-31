@@ -57,7 +57,7 @@ const LocalSwitcherSelect = () => {
                             height={15}
                             className="pointer-events-none"
                         />
-                        <span className="font-semibold">ENGLISH</span>
+                        <span className="font-semibold">English</span>
                         <ChevronDownOutline className="h-5" />
                     </div>
                 ) : (
@@ -68,7 +68,7 @@ const LocalSwitcherSelect = () => {
                             height={20}
                             className="pointer-events-none"
                         />
-                        <span className="font-semibold">FRANÇAIS</span>
+                        <span className="font-semibold">Français</span>
                         <ChevronDownOutline className="h-5" />
                     </div>
                 )}
@@ -87,7 +87,7 @@ const LocalSwitcherSelect = () => {
                                 height={20}
                                 className="pointer-events-none"
                             />
-                            <span className="font-semibold">FRANÇAIS</span>
+                            <span className="font-semibold">Français</span>
                         </div>
                     ) : (
                         <div className="flex items-center gap-3">
@@ -97,7 +97,7 @@ const LocalSwitcherSelect = () => {
                                 height={15}
                                 className="pointer-events-none"
                             />
-                            <span className="font-semibold">ENGLISH</span>
+                            <span className="font-semibold">English</span>
                         </div>
                     )}
                 </div>
