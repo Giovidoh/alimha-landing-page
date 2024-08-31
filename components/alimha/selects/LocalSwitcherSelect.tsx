@@ -1,5 +1,5 @@
 "use client";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { useTransition } from "react";
 import { ChangeEvent } from "react";
@@ -10,26 +10,20 @@ import usFlag from "@/public/assets/us-flag.png";
 import ChevronDownOutline from "@/public/assets/chevron-down-outline.svg";
 
 const LocalSwitcherSelect = () => {
-    const [isPending, startTransition] = useTransition();
+    // const [isPending, startTransition] = useTransition();
     const router = useRouter();
     const localActive = useLocale();
     const [toggleLocalSwitcher, setToggleLocalSwitcher] = useState(false);
-    const [selectedFlag, setSelectedFlag] = useState(usFlag);
-    const [selectedLanguage, setSelectedLanguage] = useState("ENGLISH");
 
-    const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
-        const nextLocale = e.target.value;
-        startTransition(() => router.replace(`/${nextLocale}/alimha`));
-    };
+    // const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    //     const nextLocale = e.target.value;
+    //     startTransition(() => router.replace(`/${nextLocale}/alimha`));
+    // };
 
     const handleChangeLanguage = () => {
         if (localActive == "en") {
-            setSelectedFlag(frFlag);
-            setSelectedLanguage("FRANÇAIS");
             router.replace(`/fr/alimha`);
         } else {
-            setSelectedFlag(usFlag);
-            setSelectedLanguage("ENGLISH");
             router.replace(`/en/alimha`);
         }
     };
@@ -52,11 +46,11 @@ const LocalSwitcherSelect = () => {
                 </option>
             </select> */}
             <div
-                className="relative bg-white select-none cursor-pointer z-0"
+                className="relative w-[170px] select-none cursor-pointer z-0"
                 onClick={() => setToggleLocalSwitcher((prev) => !prev)}
             >
                 {localActive == "en" ? (
-                    <div className="flex items-center w-[170px] px-3 py-2 gap-2 border-[2px] border-primary-blue rounded-xl shadow-lg">
+                    <div className="flex justify-between items-center bg-white w-full px-3 py-2 gap-2 border-[2px] border-primary-blue rounded-xl shadow-lg">
                         <Image
                             src={usFlag}
                             alt="selected flag"
@@ -67,7 +61,7 @@ const LocalSwitcherSelect = () => {
                         <ChevronDownOutline className="h-5" />
                     </div>
                 ) : (
-                    <div className="flex items-center px-3 py-2 gap-2 border-[2px] border-primary-blue rounded-xl shadow-lg">
+                    <div className="flex justify-between items-center bg-white w-full px-3 py-2 gap-2 border-[2px] border-primary-blue rounded-xl shadow-lg">
                         <Image
                             src={frFlag}
                             alt="selected flag"
