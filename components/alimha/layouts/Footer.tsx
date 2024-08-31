@@ -89,7 +89,7 @@ const Footer = () => {
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
                             <FooterLink href="#" text={t("About us")} />
-                            <FooterLink href="#" text="Why us" />
+                            <FooterLink href="#" text={t("Why us")} />
                         </div>
                     </div>
                     <div className="flex flex-col justify-between">
