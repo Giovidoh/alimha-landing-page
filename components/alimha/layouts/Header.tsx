@@ -23,15 +23,15 @@ const Header = () => {
                 <NavBar />
             </nav>
             <div className="hidden min-[950px]:flex items-center gap-3">
+                <div className="hidden min-[1100px]:flex items-center">
+                    <LocalSwitcherSelect />
+                </div>
                 <div className="flex justify-end items-center">
                     <ButtonGradientStyle1
                         fromColor="from-primary-blue"
                         toColor="to-secondary-blue"
                         text={t("Become partner")}
                     />
-                </div>
-                <div className="hidden min-[1100px]:flex items-center">
-                    <LocalSwitcherSelect />
                 </div>
             </div>
             <div className="flex min-[1100px]:hidden justify-end items-center">
@@ -42,15 +42,15 @@ const Header = () => {
                             <NavBar />
                         </nav>
                         <div className="flex flex-col gap-3">
+                            <div className="flex min-[1100px]:hidden items-center">
+                                <LocalSwitcherSelect />
+                            </div>
                             <div className="flex min-[950px]:hidden">
                                 <ButtonGradientStyle1
                                     fromColor="from-primary-blue"
                                     toColor="to-secondary-blue"
                                     text={t("Become partner")}
                                 />
-                            </div>
-                            <div className="flex min-[1100px]:hidden items-center">
-                                <LocalSwitcherSelect />
                             </div>
                         </div>
                     </div>
