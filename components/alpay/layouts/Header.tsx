@@ -5,6 +5,7 @@ import Navbar from "@/components/alpay/Navbar";
 import Button from "../buttons/Button";
 import BurgerButtonIcon from "@/public/assets/burger-button-icon.svg";
 import Link from "next/link";
+import LocalSwitcherSelect from "../selects/LocalSwitcherSelect";
 
 const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -16,16 +17,19 @@ const Header = () => {
                 <div className="w-1/2 max-[1000px]:hidden">
                     <Navbar />
                 </div>
-                <div className="max-[1070px]:hidden">
+                <div className="hidden min-[1070px]:flex min-[1070px]:ml-16 gap-4">
                     {/* <Button
                         text="Contactez-nous"
                         className="bg-primary-blue text-white px-3 py-2"
                     /> */}
+                    <div className="hidden min-[1440px]:block">
+                        <LocalSwitcherSelect />
+                    </div>
                     <button className="hover:scale-105 rounded-md transition bg-primary-blue text-white px-3 py-2">
                         <Link href="#contact-us">Contactez-nous</Link>
                     </button>
                 </div>
-                <div className="flex items-center min-[1070px]:hidden">
+                <div className="flex items-center min-[1440px]:hidden">
                     <button
                         className=""
                         onClick={() => setToggleMenu((prev) => !prev)}
@@ -34,7 +38,7 @@ const Header = () => {
                     </button>
 
                     {toggleMenu && (
-                        <div className="absolute right-0 top-full p-10 bg-white border bg-opacity-80 backdrop-blur">
+                        <div className="absolute right-0 top-full flex flex-col bg-white bg-opacity-80 p-10 gap-3 border backdrop-blur">
                             <div className="min-[1000px]:hidden">
                                 <Navbar />
                             </div>
@@ -43,7 +47,10 @@ const Header = () => {
                                 text="Contactez-nous"
                                 className="bg-primary-blue text-white px-3 py-2"
                             /> */}
-                            <button className="hover:scale-105 rounded-md transition bg-primary-blue text-white px-3 py-2">
+                            <div className="block min-[1440px]:hidden">
+                                <LocalSwitcherSelect />
+                            </div>
+                            <button className="block min-[1070px]:hidden hover:scale-105 rounded-md transition bg-primary-blue text-white px-3 py-2">
                                 <Link href="#contact-us">Contactez-nous</Link>
                             </button>
                         </div>
