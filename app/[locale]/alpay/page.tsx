@@ -29,7 +29,10 @@ export default function Home() {
             <AdvantagesSection />
             <HowItWorksSection />
             <WhyUsSection />
-            <ApplicationSection />
+            <ApplicationSection
+                tag={t("ApplicationSection.tag")}
+                heading={t("ApplicationSection.heading")}
+            />
             <ContactUsSection />
             <Footer />
             <Toaster

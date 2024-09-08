@@ -135,6 +135,10 @@
                 "title": "Customer Satisfaction Guarantee",
                 "body": "Our customer-focused approach and responsive support ensure a high level of satisfaction."
             }
+        },
+        "ApplicationSection": {
+            "tag": "Application",
+            "heading": "Available Payment Methods"
         }
     }
 }

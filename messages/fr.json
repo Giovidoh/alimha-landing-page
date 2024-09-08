@@ -123,24 +123,28 @@
             "card3": {
                 "title": "Lancez Vos Transactions",
                 "body": "Commencez à accepter des paiements de manière fluide et sécurisée, et visualisez vos transactions en temps réel depuis votre tableau de bord."
-            },
-            "WhyUsSection": {
-                "tag": "Pourquoi-nous ?",
-                "heading": "Pourquoi Choisir Notre Agrégateur",
-                "subheading": "Vous devez choisir Alpay pour :",
-                "card1": {
-                    "title": "Flexibilité et Compatibilité",
-                    "body": "Notre agrégateur s’adapte à tous les environnements de paiement, vous offrant une flexibilité inégalée pour gérer vos transactions."
-                },
-                "card2": {
-                    "title": "Innovation Continue",
-                    "body": "Nous mettons à jour nos technologies pour répondre aux exigences évolutives du marché, vous offrant toujours les meilleures solutions disponibles."
-                },
-                "card3": {
-                    "title": "Satisfaction Client Garantie",
-                    "body": "Nos clients bénéficient d'une satisfaction élevée grâce à notre approche centrée sur leurs besoins et à notre support réactif."
-                }
             }
+        },
+        "WhyUsSection": {
+            "tag": "Pourquoi-nous ?",
+            "heading": "Pourquoi Choisir Notre Agrégateur",
+            "subheading": "Vous devez choisir Alpay pour :",
+            "card1": {
+                "title": "Flexibilité et Compatibilité",
+                "body": "Notre agrégateur s’adapte à tous les environnements de paiement, vous offrant une flexibilité inégalée pour gérer vos transactions."
+            },
+            "card2": {
+                "title": "Innovation Continue",
+                "body": "Nous mettons à jour nos technologies pour répondre aux exigences évolutives du marché, vous offrant toujours les meilleures solutions disponibles."
+            },
+            "card3": {
+                "title": "Satisfaction Client Garantie",
+                "body": "Nos clients bénéficient d'une satisfaction élevée grâce à notre approche centrée sur leurs besoins et à notre support réactif."
+            }
+        },
+        "ApplicationSection": {
+            "tag": "Applications",
+            "heading": "Moyens de paiement Disponibles"
         }
     }
 }

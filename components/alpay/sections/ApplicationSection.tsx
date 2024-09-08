@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { FC } from "react";
 import orange_money from "@/public/assets/orange-money.png";
 import wave from "@/public/assets/wave.png";
 import moov_money from "@/public/assets/moov-money.png";
@@ -7,14 +7,19 @@ import mtn_momo from "@/public/assets/mtn-momo.png";
 import free_money from "@/public/assets/free-money.png";
 import tmoney from "@/public/assets/tmoney.png";
 
-const TheyTrustUsSection = () => {
+interface ApplicationSectionProps {
+    tag: string;
+    heading: string;
+}
+
+const ApplicationSection: FC<ApplicationSectionProps> = ({ tag, heading }) => {
     return (
         <section className="relative flex flex-col justify-evenly items-center w-full h-fit px-5 sm:px-20 min-[1120px]:px-40 pt-12 pb-24 gap-3">
             <span className="font-medium text-base sm:text-lg text-primary-blue">
-                Applications
+                {tag}
             </span>
             <h1 className="font-bold text-2xl sm:text-3xl min-[1000px]:text-4xl text-center mb-8">
-                Moyens de paiement Disponibles
+                {heading}
             </h1>
             {/* Small devices */}
             <div className="flex min-[880px]:hidden flex-wrap justify-between items-center w-full gap-3">
@@ -38,4 +43,4 @@ const TheyTrustUsSection = () => {
     );
 };
 
-export default TheyTrustUsSection;
+export default ApplicationSection;
