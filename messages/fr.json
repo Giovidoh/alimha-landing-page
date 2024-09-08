@@ -108,6 +108,22 @@
                 "title": "Support 24/7",
                 "body": "Minimisez vos coûts grâce à des tarifs compétitifs et une gestion centralisée des frais de traitement."
             }
+        },
+        "HowItWorksSection": {
+            "tag": "Fonctionnement",
+            "heading": "Comment Ça Marche",
+            "card1": {
+                "title": "Inscription Facile",
+                "body": "Créez votre compte en quelques minutes et commencez à configurer vos options de paiement selon vos besoins spécifiques."
+            },
+            "card2": {
+                "title": "Configuration Rapide",
+                "body": "Utilisez nos guides et notre support pour intégrer facilement l’agrégateur à vos systèmes existants. Pas de développement complexe nécessaire."
+            },
+            "card3": {
+                "title": "Lancez Vos Transactions",
+                "body": "Commencez à accepter des paiements de manière fluide et sécurisée, et visualisez vos transactions en temps réel depuis votre tableau de bord."
+            }
         }
     }
 }

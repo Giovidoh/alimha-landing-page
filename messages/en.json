@@ -102,6 +102,22 @@
                 "title": "24/7 support",
                 "body": "Minimize your costs with competitive rates and centralized management of processing fees."
             }
+        },
+        "HowItWorksSection": {
+            "tag": "Operation",
+            "heading": "How It Works",
+            "card1": {
+                "title": "Easy registration",
+                "body": "Create your account in just a few minutes and start configuring your payment options according to your specific needs."
+            },
+            "card2": {
+                "title": "Quick Setup",
+                "body": "Use our guides and support to easily integrate the aggregator into your existing systems. No complex development required."
+            },
+            "card3": {
+                "title": "Start Your Transactions",
+                "body": "Start accepting payments smoothly and securely, and view your transactions in real time from your dashboard."
+            }
         }
     }
 }

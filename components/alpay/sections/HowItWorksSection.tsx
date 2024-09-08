@@ -6,8 +6,10 @@ import TransactionIcon from "@/public/assets/transaction-icon.svg";
 import Image from "next/image";
 import dotVector2 from "@/public/assets/dot-vector-2.png";
 import bluredVectors from "@/public/assets/blured-vectors.png";
+import { useTranslations } from "next-intl";
 
 const HowItWorksSection = () => {
+    const t = useTranslations("AlpayPage.HowItWorksSection");
     return (
         <section
             id="how-it-works"
@@ -24,31 +26,31 @@ const HowItWorksSection = () => {
                 />
             </div>
             <span className="font-medium text-base sm:text-lg text-white z-0">
-                Fonctionnement
+                {t("tag")}
             </span>
             <h1 className="font-bold text-2xl sm:text-3xl min-[1000px]:text-4xl text-center text-white mb-16">
-                Comment Ça Marche
+                {t("heading")}
             </h1>
             <div className="grid place-items-center grid-cols-1 min-[890px]:grid-cols-2 min-[1170px]:grid-cols-3 w-full gap-20 min-[1170px]:gap-5">
                 <div className="w-[320px] h-full">
                     <IconTextCard
                         icon={<PersonInscriptionIcon />}
-                        title="Inscription Facile"
-                        body="Créez votre compte en quelques minutes et commencez à configurer vos options de paiement selon vos besoins spécifiques."
+                        title={t("card1.title")}
+                        body={t("card1.body")}
                     />
                 </div>
                 <div className="w-[320px] h-full">
                     <IconTextCard
                         icon={<GearIcon />}
-                        title="Configuration Rapide"
-                        body="Utilisez nos guides et notre support pour intégrer facilement l’agrégateur à vos systèmes existants. Pas de développement complexe nécessaire."
+                        title={t("card2.title")}
+                        body={t("card2.body")}
                     />
                 </div>
                 <div className="w-[320px] h-full">
                     <IconTextCard
                         icon={<TransactionIcon />}
-                        title="Lancez Vos Transactions"
-                        body="Commencez à accepter des    paiements de manière fluide et sécurisée, et visualisez vos   transactions en temps réel depuis votre tableau de bord."
+                        title={t("card3.title")}
+                        body={t("card3.body")}
                     />
                 </div>
             </div>
