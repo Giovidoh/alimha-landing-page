@@ -48,7 +48,13 @@
         "Terms of use": "Conditions d’utilisation",
         "Privacy policy": "Politique de confidentialité",
         "Legal Notice": "Mention Légale",
-        "Copyright": "Tous droits réservés | Copyright 2024"
+        "Copyright": "Tous droits réservés | Copyright 2024",
+        "HeroSection": {
+            "main heading": {
+                "first": "Agrégateur de Solutions",
+                "second": "de Paiement"
+            }
+        }
     },
     "AlpayPage": {
         "Header": {
@@ -58,6 +64,16 @@
             "How it works": "Comment ça marche",
             "Why Alpay": "Pourquoi Alpay",
             "Contact us": "Contactez-nous"
+        },
+        "HeroSection": {
+            "main heading": {
+                "first": "Agrégateur de Solutions",
+                "second": "de Paiement"
+            },
+            "sub heading": "Simplifiez et Sécurisez Vos Transactions Financières.",
+            "supporting text": "Intégration Facile, Gestion Efficace. Optimisez vos opérations financières avec notre agrégateur de paiements, conçu pour centraliser et automatiser toutes vos transactions de manière fluide.",
+            "Contact us": "Contactez-nous",
+            "Learn more": "En savoir plus"
         }
     }
 }

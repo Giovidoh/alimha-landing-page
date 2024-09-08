@@ -58,6 +58,16 @@
             "How it works": "How it works",
             "Why Alpay": "Why Alpay",
             "Contact us": "Contact us"
+        },
+        "HeroSection": {
+            "main heading": {
+                "first": "Payment Solutions",
+                "second": "Aggregator"
+            },
+            "sub heading": "Simplify and secure your financial transactions.",
+            "supporting text": "Easy Integration, Efficient Management. Optimize your financial operations with our payment aggregator, designed to centralize and automate all your transactions seamlessly.",
+            "Contact us": "Contact us",
+            "Learn more": "Learn more"
         }
     }
 }
