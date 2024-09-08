@@ -1,7 +1,7 @@
 export const headerLinks = [
     {
         text: "Home",
-        url: "/en/alpay",
+        url: "alpay",
     },
     {
         text: "Our services",
