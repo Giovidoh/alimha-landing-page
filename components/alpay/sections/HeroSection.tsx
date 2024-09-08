@@ -15,7 +15,7 @@ const HeroSection = () => {
                         <br /> {t("main heading.second")}
                     </h1>
                     <h2 className="font-semibold text-sm min-[1000px]:text-base text-center min-[1000px]:text-start min-[1000px]:text-nowrap">
-                        {t("sub heading")}
+                        {t("subheading")}
                     </h2>
                     <p className="font-light text-sm min-[1000px]:text-base text-center min-[1000px]:text-start mb-7">
                         {t("supporting text")}

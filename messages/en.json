@@ -64,7 +64,7 @@
                 "first": "Payment Solutions",
                 "second": "Aggregator"
             },
-            "sub heading": "Simplify and secure your financial transactions.",
+            "subheading": "Simplify and secure your financial transactions.",
             "supporting text": "Easy Integration, Efficient Management. Optimize your financial operations with our payment aggregator, designed to centralize and automate all your transactions seamlessly.",
             "Contact us": "Contact us",
             "Learn more": "Learn more"
@@ -85,6 +85,23 @@
                 "body": "Protect your transactions with state-of-the-art security standards, including data encryption and PCI-DSS compliance. Your financial information and that of your customers is always safe."
             },
             "Learn more": "Learn more"
+        },
+        "AdvantagesSection": {
+            "tag": "Advantages",
+            "heading": "The Benefits of Our Aggregator",
+            "subheading": "Our Aggregator offers a number of advantages, including:",
+            "card1": {
+                "title": "Lower Transaction Costs",
+                "body": "Minimize your costs with competitive rates and centralized management of processing fees."
+            },
+            "card2": {
+                "title": "Detailed Reports and Analyses",
+                "body": "Minimize your costs with competitive rates and centralized management of processing fees."
+            },
+            "card3": {
+                "title": "24/7 support",
+                "body": "Minimize your costs with competitive rates and centralized management of processing fees."
+            }
         }
     }
 }

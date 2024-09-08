@@ -70,7 +70,7 @@
                 "first": "Agrégateur de Solutions",
                 "second": "de Paiement"
             },
-            "sub heading": "Simplifiez et Sécurisez Vos Transactions Financières.",
+            "subheading": "Simplifiez et Sécurisez Vos Transactions Financières.",
             "supporting text": "Intégration Facile, Gestion Efficace. Optimisez vos opérations financières avec notre agrégateur de paiements, conçu pour centraliser et automatiser toutes vos transactions de manière fluide.",
             "Contact us": "Contactez-nous",
             "Learn more": "En savoir plus"
@@ -91,6 +91,23 @@
                 "body": "Protégez vos transactions avec des normes de sécurité de pointe, incluant le chiffrement des données et la conformité PCI-DSS. Vos informations financières et celles de vos clients sont toujours en sécurité."
             },
             "Learn more": "En savoir Plus"
+        },
+        "AdvantagesSection": {
+            "tag": "Avantages",
+            "heading": "Les Avantages de Notre Agrégateur",
+            "subheading": "Notre Agrégateur offre plusieurs avantages dont :",
+            "card1": {
+                "title": "Réduction des Frais de Transaction",
+                "body": "Minimisez vos coûts grâce à des tarifs compétitifs et une gestion centralisée des frais de traitement."
+            },
+            "card2": {
+                "title": "Rapports et Analyses Détaillées",
+                "body": "Minimisez vos coûts grâce à des tarifs compétitifs et une gestion centralisée des frais de traitement."
+            },
+            "card3": {
+                "title": "Support 24/7",
+                "body": "Minimisez vos coûts grâce à des tarifs compétitifs et une gestion centralisée des frais de traitement."
+            }
         }
     }
 }

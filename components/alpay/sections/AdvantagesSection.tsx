@@ -7,8 +7,10 @@ import Image from "next/image";
 import unsplashPhoneComputerImage from "@/public/assets/unsplash-phone-computer.png";
 import computerImage from "@/public/assets/computer.png";
 import dotVector1 from "@/public/assets/dot-vector-1.png";
+import { useTranslations } from "next-intl";
 
 const AdvantagesSection = () => {
+    const t = useTranslations("AlpayPage.AdvantagesSection");
     return (
         <section
             id="advantages"
@@ -16,29 +18,29 @@ const AdvantagesSection = () => {
         >
             <div className="flex flex-col justify-center items-center min-[1000px]:items-start w-full min-[1000px]:w-1/2 min-h-[600px] gap-4">
                 <span className="font-medium text-base sm:text-lg text-primary-blue">
-                    Avantages
+                    {t("tag")}
                 </span>
-                <h1 className="font-bold text-2xl sm:text-3xl min-[1000px]:text-4xl text-center min-[1000px]:text-start">
-                    Les Avantages de Notre Agrégateur
-                </h1>
+                <h2 className="font-bold text-2xl sm:text-3xl min-[1000px]:text-4xl text-center min-[1000px]:text-start">
+                    {t("heading")}
+                </h2>
                 <p className="text-sm text-[#292D32] text-center min-[1000px]:text-start mt-2 mb-5">
-                    Notre Agrégateur offre plusieurs avantages dont :
+                    {t("subheading")}
                 </p>
                 <div className="flex flex-col gap-8">
                     <LeftIconTextCard
                         icon={<PercentageIcon />}
-                        title="Réduction des Frais de Transaction"
-                        body="Minimisez vos coûts grâce à des tarifs compétitifs et une gestion centralisée des frais de traitement."
+                        title={t("card1.title")}
+                        body={t("card1.body")}
                     />
                     <LeftIconTextCard
                         icon={<GraphicIcon />}
-                        title="Rapports et Analyses Détaillées"
-                        body="Minimisez vos coûts grâce à des tarifs compétitifs et une gestion centralisée des frais de traitement."
+                        title={t("card2.title")}
+                        body={t("card2.body")}
                     />
                     <LeftIconTextCard
                         icon={<Support247 />}
-                        title="Support 24/7"
-                        body="Minimisez vos coûts grâce à des tarifs compétitifs et une gestion centralisée des frais de traitement."
+                        title={t("card3.title")}
+                        body={t("card3.body")}
                     />
                 </div>
             </div>
