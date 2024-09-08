@@ -49,5 +49,15 @@
         "Privacy policy": "Privacy policy",
         "Legal Notice": "Legal Notice",
         "Copyright": "All rights reserved | Copyright 2024"
+    },
+    "AlpayPage": {
+        "Header": {
+            "Home": "Home",
+            "Our services": "Our services",
+            "Advantages": "Advantages",
+            "How it works": "How it works",
+            "Why Alpay": "Why Alpay",
+            "Contact us": "Contact us"
+        }
     }
 }

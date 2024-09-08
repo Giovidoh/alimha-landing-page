@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import AlpayLogo from "@/public/assets/alpay-logo.svg";
 import Navbar from "@/components/alpay/Navbar";
 import Button from "../buttons/Button";
@@ -7,7 +7,12 @@ import BurgerButtonIcon from "@/public/assets/burger-button-icon.svg";
 import Link from "next/link";
 import LocalSwitcherSelect from "../selects/LocalSwitcherSelect";
 
-const Header = () => {
+interface HeaderProps {
+    headerLinks: { text: string; url: string }[];
+    contactUs: string;
+}
+
+const Header: FC<HeaderProps> = ({ headerLinks, contactUs }) => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     return (
@@ -15,7 +20,7 @@ const Header = () => {
             <div className="flex justify-between items-center w-full">
                 <AlpayLogo />
                 <div className="w-1/2 max-[1000px]:hidden">
-                    <Navbar />
+                    <Navbar headerLinks={headerLinks} />
                 </div>
                 <div className="hidden min-[1070px]:flex min-[1070px]:ml-16 gap-4">
                     {/* <Button
@@ -26,7 +31,7 @@ const Header = () => {
                         <LocalSwitcherSelect />
                     </div>
                     <button className="hover:scale-105 rounded-md transition bg-primary-blue text-white px-3 py-2">
-                        <Link href="#contact-us">Contactez-nous</Link>
+                        <Link href="#contact-us">{contactUs}</Link>
                     </button>
                 </div>
                 <div className="flex items-center min-[1440px]:hidden">
@@ -40,7 +45,7 @@ const Header = () => {
                     {toggleMenu && (
                         <div className="absolute right-0 top-full flex flex-col bg-white bg-opacity-80 p-10 gap-3 border backdrop-blur">
                             <div className="min-[1000px]:hidden">
-                                <Navbar />
+                                <Navbar headerLinks={headerLinks} />
                             </div>
                             {/* <Button
                                 href=""
@@ -51,7 +56,7 @@ const Header = () => {
                                 <LocalSwitcherSelect />
                             </div>
                             <button className="block min-[1070px]:hidden hover:scale-105 rounded-md transition bg-primary-blue text-white px-3 py-2">
-                                <Link href="#contact-us">Contactez-nous</Link>
+                                <Link href="#contact-us">{contactUs}</Link>
                             </button>
                         </div>
                     )}

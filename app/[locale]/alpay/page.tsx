@@ -1,4 +1,5 @@
 import Footer from "@/components/alpay/layouts/Footer";
+import { headerLinks } from "@/data/alpay/headerLinks";
 import Header from "@/components/alpay/layouts/Header";
 import HeroSection from "@/components/alpay/sections/HeroSection";
 import OurServicesSection from "@/components/alpay/sections/OurServicesSection";
@@ -8,11 +9,21 @@ import WhyUsSection from "@/components/alpay/sections/WhyUsSection";
 import ApplicationSection from "@/components/alpay/sections/ApplicationSection";
 import ContactUsSection from "@/components/alpay/sections/ContactUsSection";
 import { Toaster } from "sonner";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+    const t = useTranslations("AlpayPage");
+    const translatedHeaderLinks: { text: string; url: string }[] =
+        headerLinks.map((link) => ({
+            text: t(`Header.${link.text}`),
+            url: link.url,
+        }));
     return (
         <main className="flex flex-col items-center">
-            <Header />
+            <Header
+                headerLinks={translatedHeaderLinks}
+                contactUs={t("Header.Contact us")}
+            />
             <HeroSection />
             <OurServicesSection />
             <AdvantagesSection />

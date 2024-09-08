@@ -1,22 +1,22 @@
 export const headerLinks = [
     {
-        text: "Accueil",
+        text: "Home",
         url: "/en/alpay",
     },
     {
-        text: "Nos services",
+        text: "Our services",
         url: "#our-services",
     },
     {
-        text: "Avantages",
+        text: "Advantages",
         url: "#advantages",
     },
     {
-        text: "Comment ça mache",
+        text: "How it works",
         url: "#how-it-works",
     },
     {
-        text: "Pourquoi Alpay",
+        text: "Why Alpay",
         url: "#why-us",
     },
 ];
