@@ -74,6 +74,23 @@
             "supporting text": "Intégration Facile, Gestion Efficace. Optimisez vos opérations financières avec notre agrégateur de paiements, conçu pour centraliser et automatiser toutes vos transactions de manière fluide.",
             "Contact us": "Contactez-nous",
             "Learn more": "En savoir plus"
+        },
+        "OurServicesSection": {
+            "tag": "Nos services",
+            "heading": "Ce Que Nous Offrons",
+            "card1": {
+                "title": "Consolidation des Moyens de Paiement",
+                "body": "Réunissez divers modes de paiement en une seule interface. Acceptez des cartes de crédit, paiements mobiles, virements bancaires, et plus encore, tout en gardant une vue d'ensemble de vos flux financiers."
+            },
+            "card2": {
+                "title": "Intégration Universelle",
+                "body": "Notre solution s'intègre facilement avec vos systèmes existants, que ce soit votre site web, votre application mobile ou votre logiciel de gestion. Bénéficiez d'une configuration rapide sans interruption de service."
+            },
+            "card3": {
+                "title": "Sécurité Avancée",
+                "body": "Protégez vos transactions avec des normes de sécurité de pointe, incluant le chiffrement des données et la conformité PCI-DSS. Vos informations financières et celles de vos clients sont toujours en sécurité."
+            },
+            "Learn more": "En savoir Plus"
         }
     }
 }

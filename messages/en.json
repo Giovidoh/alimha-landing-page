@@ -68,6 +68,23 @@
             "supporting text": "Easy Integration, Efficient Management. Optimize your financial operations with our payment aggregator, designed to centralize and automate all your transactions seamlessly.",
             "Contact us": "Contact us",
             "Learn more": "Learn more"
+        },
+        "OurServicesSection": {
+            "tag": "Our services",
+            "heading": "What We Offer",
+            "card1": {
+                "title": "Consolidation of Payment Methods",
+                "body": "Combine various payment methods in a single interface. Accept credit cards, mobile payments, bank transfers and more, while keeping an overview of your financial flows."
+            },
+            "card2": {
+                "title": "Universal Integration",
+                "body": "Our solution integrates easily with your existing systems, whether it's your website, mobile application or management software. Benefit from rapid configuration with no downtime."
+            },
+            "card3": {
+                "title": "Advanced Security",
+                "body": "Protect your transactions with state-of-the-art security standards, including data encryption and PCI-DSS compliance. Your financial information and that of your customers is always safe."
+            },
+            "Learn more": "Learn more"
         }
     }
 }
