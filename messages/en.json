@@ -162,6 +162,30 @@
                 "title": "Address:",
                 "body": "Medina Rue 4, Dakar-Sénégal"
             }
+        },
+        "Footer": {
+            "description": "Join the Technology Revolution Discover how Alimha and Company can transform the way you do business. Contact us today!",
+            "col1": {
+                "title": "Alpay",
+                "link1": "Home",
+                "link2": "Our services",
+                "link3": "Advantages",
+                "link4": "How it works",
+                "link5": "Why Alpay"
+            },
+            "col2": {
+                "title": "Resources",
+                "link1": "Terms of use",
+                "link2": "Privacy policy",
+                "link3": "Legal notice"
+            },
+            "col3": {
+                "title": "Contact us",
+                "email": "infos@alpay.com",
+                "number": "+221 78 589 87 85",
+                "address": "Medina, rue 4 Dakar, Sénégal"
+            },
+            "copyright": "All rights reserved! Copyright 2024"
         }
     }
 }

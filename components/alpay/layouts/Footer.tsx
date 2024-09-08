@@ -9,8 +9,10 @@ import instagram_icon from "@/public/assets/instagram-icon.png";
 import x_icon from "@/public/assets/x-icon.png";
 import youtube_icon from "@/public/assets/youtube-icon.png";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+    const t = useTranslations("AlpayPage.Footer");
     return (
         <footer className="relative flex flex-col justify-evenly items-center bg-primary-blue w-full px-[5%] xl:px-[10%] overflow-hidden">
             <Image
@@ -30,10 +32,7 @@ const Footer = () => {
                 <div className="max-w-[380px] mr-5 mb-10 text-pretty">
                     <AlpayLogoWhite />
                     <p className="font-extralight text-white text-justify leading-[19.13px] mt-5">
-                        Rejoignez la Révolution Technologique Découvrez comment
-                        Alimha and Company peut transformer votre manière de
-                        faire des affaires. Contactez-nous dès aujourd&apos;hui
-                        !
+                        {t("description")}
                     </p>
                     <div className="flex justify-between items-center w-2/3 pt-7">
                         <Image
@@ -61,33 +60,37 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-wrap justify-between w-full gap-10 text-white font-extralight">
                     <div className="flex flex-col gap-3">
-                        <h3 className="font-semibold text-xl">Alpay</h3>
-                        <Link href="#">Accueil</Link>
-                        <Link href="#">Nos services</Link>
-                        <Link href="#">Avantages</Link>
-                        <Link href="#">Comment ça mache</Link>
-                        <Link href="#">Pourquoi Alpay</Link>
-                    </div>
-                    <div className="flex flex-col gap-3">
-                        <h3 className="font-semibold text-xl">Ressources</h3>
-                        <Link href="#">Conditions d’utilisation </Link>
-                        <Link href="#">Politique de confidentialité </Link>
-                        <Link href="#">Mention Légale</Link>
+                        <h3 className="font-semibold text-xl">
+                            {t("col1.title")}
+                        </h3>
+                        <Link href="#">{t("col1.link1")}</Link>
+                        <Link href="#">{t("col1.link2")}</Link>
+                        <Link href="#">{t("col1.link3")}</Link>
+                        <Link href="#">{t("col1.link4")}</Link>
+                        <Link href="#">{t("col1.link5")}</Link>
                     </div>
                     <div className="flex flex-col gap-3">
                         <h3 className="font-semibold text-xl">
-                            Contactez-nous
+                            {t("col2.title")}
                         </h3>
-                        <Link href="#">infos@alpay.com</Link>
-                        <Link href="#">+221 78 589 87 85</Link>
-                        <Link href="#">Medina, rue 4 Dakar , Sénégal</Link>
+                        <Link href="#">{t("col2.link1")}</Link>
+                        <Link href="#">{t("col2.link2")}</Link>
+                        <Link href="#">{t("col2.link3")}</Link>
+                    </div>
+                    <div className="flex flex-col gap-3">
+                        <h3 className="font-semibold text-xl">
+                            {t("col3.title")}
+                        </h3>
+                        <Link href="#">{t("col3.email")}</Link>
+                        <Link href="#">{t("col3.number")}</Link>
+                        <Link href="#">{t("col3.address")}</Link>
                     </div>
                 </div>
             </div>
             <div className="w-full pt-40 pb-10">
                 <div className="flex flex-col sm:flex-row justify-between items-center w-full text-sm text-center font-light text-white border-t border-t-white pt-3 gap-3">
-                    <span>Tous droits réservés ! Copyright 2024</span>
-                    <span>ALIMAH 2024</span>
+                    <span>{t("copyright")}</span>
+                    <span>ALIMAH</span>
                 </div>
             </div>
         </footer>
