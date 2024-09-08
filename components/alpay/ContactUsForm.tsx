@@ -1,11 +1,25 @@
 "use client";
-import React from "react";
+import React, { FC } from "react";
 import Input from "./Inputs/Input";
 import TextArea from "./Inputs/Textarea";
 import Button from "./buttons/Button";
 import { toast } from "sonner";
 
-const ContactUsForm = () => {
+interface ContactUsFormProps {
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    subjectPlaceholder: string;
+    messagePlaceholder: string;
+    sendButtonText: string;
+}
+
+const ContactUsForm: FC<ContactUsFormProps> = ({
+    namePlaceholder,
+    emailPlaceholder,
+    subjectPlaceholder,
+    messagePlaceholder,
+    sendButtonText,
+}) => {
     async function handleSubmit(e: any) {
         e.preventDefault();
         const response = await fetch("https://api.web3forms.com/submit", {
@@ -42,13 +56,25 @@ const ContactUsForm = () => {
         >
             <div className="flex flex-col items-center justify-around h-[330px] sm:h-[482px]">
                 <div className="flex flex-col sm:flex-row w-full gap-2">
-                    <Input type="text" name="name" placeholder="Nom" />
-                    <Input type="email" name="email" placeholder="Email" />
+                    <Input
+                        type="text"
+                        name="name"
+                        placeholder={namePlaceholder}
+                    />
+                    <Input
+                        type="email"
+                        name="email"
+                        placeholder={emailPlaceholder}
+                    />
                 </div>
-                <Input type="text" name="subject" placeholder="Sujet" />
-                <TextArea name="message" placeholder="Votre message" />
+                <Input
+                    type="text"
+                    name="subject"
+                    placeholder={subjectPlaceholder}
+                />
+                <TextArea name="message" placeholder={messagePlaceholder} />
                 <Button
-                    text="Envoyer"
+                    text={sendButtonText}
                     className="bg-primary-blue font-bold text-sm text-white w-1/2 py-3"
                 />
             </div>

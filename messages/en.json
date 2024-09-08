@@ -139,6 +139,29 @@
         "ApplicationSection": {
             "tag": "Application",
             "heading": "Available Payment Methods"
+        },
+        "ContactUsSection": {
+            "tag": "Contact us",
+            "heading": "Transform Your Payment Management",
+            "contact form": {
+                "name": "Name",
+                "email": "Email",
+                "subject": "Subject",
+                "your message": "Your message",
+                "send": "Send"
+            },
+            "card1": {
+                "title": "Contact us:",
+                "body": "+123 456 7890"
+            },
+            "card2": {
+                "title": "Email:",
+                "body": "info@alpay.com"
+            },
+            "card3": {
+                "title": "Address:",
+                "body": "Medina Rue 4, Dakar-Sénégal"
+            }
         }
     }
 }
