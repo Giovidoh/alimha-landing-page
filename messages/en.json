@@ -118,6 +118,23 @@
                 "title": "Start Your Transactions",
                 "body": "Start accepting payments smoothly and securely, and view your transactions in real time from your dashboard."
             }
+        },
+        "WhyUsSection": {
+            "tag": "About us",
+            "heading": "Why Choose Our Aggregator",
+            "subheading": "You must choose Alpay for:",
+            "card1": {
+                "title": "Flexibility & Compatibility",
+                "body": "Our aggregator adapts to all payment environments, giving you unrivalled flexibility to manage your transactions."
+            },
+            "card2": {
+                "title": "Continuous Innovation",
+                "body": "We update our technologies to meet evolving market requirements, always offering you the best solutions available."
+            },
+            "card3": {
+                "title": "Customer Satisfaction Guarantee",
+                "body": "Our customer-focused approach and responsive support ensure a high level of satisfaction."
+            }
         }
     }
 }
