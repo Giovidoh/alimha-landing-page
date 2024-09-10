@@ -273,6 +273,15 @@
             "Guinea": "Guinée",
             "Djibouti": "Djibouti",
             "central african republic": "RCA"
+        },
+        "DownloadAppSection": {
+            "tag": "Téléchargement",
+            "heading": {
+                "first": "Téléchargez SendMo",
+                "second": "Aujourd'hui"
+            },
+            "subheading": "Disponible sur Android et iOS",
+            "description": "Rejoignez des milliers d'utilisateurs satisfaits et téléchargez SendMo dès aujourd'hui pour une expérience de dépôt mobile money sans pareille."
         }
     }
 }

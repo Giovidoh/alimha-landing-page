@@ -267,6 +267,15 @@
             "Guinea": "Guinea",
             "Djibouti": "Djibouti",
             "central african republic": "CAR"
+        },
+        "DownloadAppSection": {
+            "tag": "Download",
+            "heading": {
+                "first": "Download SendMo",
+                "second": "Now"
+            },
+            "subheading": "Available on Android and iOS",
+            "description": "Join thousands of satisfied users and download SendMo today for an unparalleled mobile money deposit experience."
         }
     }
 }
