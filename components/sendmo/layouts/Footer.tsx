@@ -17,8 +17,8 @@ const Footer = () => {
     const t = useTranslations("SendmoPage.Footer");
     return (
         <footer className="flex flex-col justify-between items-center w-full bg-gray-50 px-5 sm:px-20 min-[1120px]:px-40 pt-14 pb-5">
-            <div className="flex flex-wrap justify-between items-center w-full gap-10">
-                <h2 className="text-2xl md:text-4xl text-center lg:text-start">
+            <div className="flex flex-wrap justify-center min-[1380px]:justify-between items-center w-full gap-10">
+                <h2 className="text-2xl md:text-4xl text-center min-[1380px]:text-start">
                     {t("heading.first")} <br /> {t("heading.second")}
                 </h2>
                 <div className="flex">
@@ -34,10 +34,10 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-wrap justify-between w-full gap-10 mt-24">
+            <div className="flex flex-wrap justify-center min-[854px]:justify-between w-full gap-10 mt-24">
                 <SendmoLogo className="h-12" />
-                <div className="flex flex-wrap justify-between w-[60%] gap-10">
-                    <div className="flex flex-col items-start gap-3">
+                <div className="flex flex-wrap justify-center min-[854px]:justify-between w-[60%] gap-10">
+                    <div className="flex flex-col items-center min-[854px]:items-start text-center gap-3">
                         <h2 className="text-[#5B5B5B] text-xl font-semibold">
                             {t("col1.title")}
                         </h2>
@@ -57,7 +57,7 @@ const Footer = () => {
                             {t("col1.link5")}
                         </Link>
                     </div>
-                    <div className="flex flex-col items-start gap-3">
+                    <div className="flex flex-col items-center min-[854px]:items-start text-center gap-3">
                         <h2 className="text-[#5B5B5B] text-xl font-semibold">
                             {t("col2.title")}
                         </h2>
@@ -71,7 +71,7 @@ const Footer = () => {
                             {t("col2.link3")}
                         </Link>
                     </div>
-                    <div className="flex flex-col items-start gap-3">
+                    <div className="flex flex-col items-center min-[854px]:items-start text-center gap-3">
                         <h2 className="text-[#5B5B5B] text-xl font-semibold">
                             {t("col3.title")}
                         </h2>
@@ -89,8 +89,10 @@ const Footer = () => {
                 </div>
             </div>
             <div className="w-full mt-40">
-                <div className="flex flex-wrap justify-between items-center w-full gap-4 text-[12px] font-light text-[#A9A9A9] border-t border-t-[#B1B1B1] pt-3">
-                    <span>Tous droits réservés ! Copyright 2024</span>
+                <div className="flex flex-wrap justify-center min-[430px]:justify-between items-center w-full gap-4 text-[12px] font-light text-[#A9A9A9] border-t border-t-[#B1B1B1] pt-3">
+                    <span className="text-center">
+                        Tous droits réservés ! Copyright 2024
+                    </span>
                     <div className="flex gap-4">
                         <FacebookIcon className="fill-[#A0A0A0] h-4" />
                         <LinkedinIcon className="fill-[#A0A0A0] h-4" />
