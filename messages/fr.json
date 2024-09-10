@@ -239,6 +239,30 @@
                 "title": "Support Client 24/7",
                 "description": "Assistance à Tout Moment, Notre équipe dédiée est toujours prête à vous aider, assurant une expérience utilisateur sans faille."
             }
+        },
+        "AdvantagesSection": {
+            "tag": "Avantages",
+            "heading": {
+                "first": "Tous les avantages de",
+                "second": "Sendmo"
+            },
+            "card1": {
+                "title": "Facilité d'Utilisation",
+                "description": "Une Interface Intuitive et Conviviale. SendMo est conçue pour être facile à utiliser, même pour les novices en technologie."
+            },
+            "card2": {
+                "title": "Économie de Temps",
+                "description": "Dépôts et Transferts Rapides. Réduisez les délais et les tracas administratifs avec notre système rapide et efficace."
+            },
+            "card3": {
+                "title": "Sécurité Avancée",
+                "description": "Votre Argent, Notre Priorité. Des protocoles de sécurité rigoureux garantissent que vos transactions sont toujours protégées."
+            },
+            "card4": {
+                "title": "Flexibilité Multidevise",
+                "description": "Gérez vos Finances en Toute Simplicité. Acceptez et transférez des fonds dans diverses devises locales sans effort."
+            },
+            "Download App": "Télécharger App"
         }
     }
 }

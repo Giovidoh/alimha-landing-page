@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import React from "react";
 import Badge from "../badges/Badge";
 import IconTextCard from "../cards/IconTextCard";
@@ -12,8 +11,10 @@ import blackManImage from "@/public/assets/black-man-image.png";
 import StickGraphIcon from "@/public/assets/stick-graph-icon.svg";
 import GraphIcon from "@/public/assets/graph-icon.svg";
 import SvgIconsCollection from "../SvgIconsCollection";
+import { useTranslations } from "next-intl";
 
 const AdvantagesSection = () => {
+    const t = useTranslations("SendmoPage.AdvantagesSection");
     return (
         <section
             id="advantages_section"
@@ -21,52 +22,56 @@ const AdvantagesSection = () => {
         >
             <div className="flex flex-col items-center min-[1300px]:items-start w-full min-[1300px]:w-1/2 gap-4">
                 <div className="mb-5">
-                    <Badge text="Avantages" />
+                    <Badge text={t("tag")} />
                 </div>
                 <h1 className="text-2xl md:text-4xl text-center min-[1300px]:text-start leading-snug font-bold tracking-wide">
-                    Tous les avantages de{" "}
-                    <br className="hidden min-[1300px]:block" />
-                    Sendmo
+                    {t("heading.first")}
+                    <br className="hidden min-[1300px]:block" />{" "}
+                    {t("heading.second")}
                 </h1>
                 <div className="flex flex-col gap-2 mb-3">
                     <div>
                         <IconTextCard
                             icon={<ThumbUpIcon />}
-                            title="Facilité d'Utilisation"
-                            body="Une Interface Intuitive et Conviviale. SendMo est conçue pour être facile à utiliser, même pour les novices en technologie."
+                            title={t("card1.title")}
+                            body={t("card1.description")}
                         />
                     </div>
                     <div>
                         <IconTextCard
                             icon={<TimeIcon />}
-                            title="Économie de Temps"
-                            body="Dépôts et Transferts Rapides. Réduisez les délais et les tracas administratifs avec notre système rapide et efficace."
+                            title={t("card2.title")}
+                            body={t("card2.description")}
                         />
                     </div>
                     <div>
                         <IconTextCard
                             icon={<AdvancedSecurityIcon />}
-                            title="Sécurité Avancée"
-                            body="Votre Argent, Notre Priorité. Des protocoles de sécurité rigoureux garantissent que vos transactions sont toujours protégées."
+                            title={t("card3.title")}
+                            body={t("card3.description")}
                         />
                     </div>
                     <div>
                         <IconTextCard
                             icon={<MultideviseFlexibilityIcon />}
-                            title="Flexibilité Multidevise"
-                            body="Gérez vos Finances en Toute Simplicité. Acceptez et transférez des fonds dans diverses devises locales sans effort."
+                            title={t("card4.title")}
+                            body={t("card4.description")}
                         />
                     </div>
                 </div>
-                <Button text="Télécharger App" className="px-7 py-4" />
+                <Button text={t("Download App")} className="px-7 py-4" />
             </div>
             <div className="hidden min-[1300px]:block relative w-1/2">
                 <Image src={blackManImage} alt="black man image" />
                 <div className="absolute top-0 right-14">
-                    <SvgIconsCollection icons={[<StickGraphIcon />]} />
+                    <SvgIconsCollection
+                        icons={[<StickGraphIcon key={"stickGraphIcon"} />]}
+                    />
                 </div>
                 <div className="absolute -bottom-8 left-7">
-                    <SvgIconsCollection icons={[<GraphIcon />]} />
+                    <SvgIconsCollection
+                        icons={[<GraphIcon key={"graphIcon"} />]}
+                    />
                 </div>
             </div>
         </section>
