@@ -16,16 +16,18 @@ const Header: FC<HeaderProps> = ({ headerLinks, downloadApp }) => {
 
     return (
         <header className="sticky top-0 left-0 flex justify-center bg-white w-screen px-5 sm:px-20 min-[1120px]:px-40 py-5 z-50">
-            <div className="flex justify-between items-center w-full">
+            <div className="flex justify-between items-center w-full gap-8">
                 <SendmoLogo className="h-7" />
-                <div className="w-1/2 max-[870px]:hidden">
+                <div className="w-1/2 hidden min-[870px]:block">
                     <Navbar headerLinks={headerLinks} />
                 </div>
-                <div className="hidden min-[950px]:flex gap-4">
-                    <LocalSwitcherSelect />
+                <div className="hidden min-[1160px]:flex gap-4">
+                    <div className="hidden min-[1440px]:block">
+                        <LocalSwitcherSelect />
+                    </div>
                     <Button text={downloadApp} className="px-3 py-2" />
                 </div>
-                <div className="min-[950px]:hidden">
+                <div className="min-[1440px]:hidden">
                     <button
                         className=""
                         onClick={() => setToggleMenu((prev) => !prev)}
@@ -34,11 +36,19 @@ const Header: FC<HeaderProps> = ({ headerLinks, downloadApp }) => {
                     </button>
 
                     {toggleMenu && (
-                        <div className="absolute right-0 top-full p-10 bg-white border bg-opacity-80 backdrop-blur">
+                        <div className="absolute right-0 top-full flex flex-col gap-3 bg-white bg-opacity-80 backdrop-blur p-10 border">
                             <div className="min-[870px]:hidden">
                                 <Navbar headerLinks={headerLinks} />
                             </div>
-                            <Button text={downloadApp} className="px-3 py-2" />
+                            <div className="block min-[1440px]:hidden">
+                                <LocalSwitcherSelect />
+                            </div>
+                            <div className="block min-[1160px]:hidden">
+                                <Button
+                                    text={downloadApp}
+                                    className="px-3 py-2 w-full"
+                                />
+                            </div>
                         </div>
                     )}
                 </div>

@@ -19,7 +19,7 @@ const Navbar: FC<NavbarProps> = ({ headerLinks }) => {
 
     return (
         <nav className="w-full">
-            <ul className="flex max-[870px]:flex-col justify-between items-center w-full gap-3 max-[870px]:pb-3">
+            <ul className="flex max-[870px]:flex-col justify-between items-center w-full gap-3">
                 {headerLinks.map((link, index) => (
                     <li
                         key={index}
@@ -27,7 +27,7 @@ const Navbar: FC<NavbarProps> = ({ headerLinks }) => {
                             activeLink == index
                                 ? "text-secondary-blue scale-105"
                                 : "hover:text-secondary-blue hover:scale-105 transition"
-                        } list-none max-[1200px]:text-sm`}
+                        } list-none max-[1235px]:text-sm`}
                         onClick={() => setActiveLink(index)}
                     >
                         <Link href={link.url}>{link.text}</Link>
