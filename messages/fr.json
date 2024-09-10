@@ -216,6 +216,29 @@
             "heading": "La Solution Innovante pour Vos Dépôts Mobile Money",
             "description": "Transférez Facilement, Déposez Rapidement, en Toute Sécurité. Avec SendMo, simplifiez vos transactions financières et connectez-vous sous-régionalement avec confiance.",
             "ctaText": "Télécharger App"
+        },
+        "FeaturesSection": {
+            "tag": "Fonctionnalités",
+            "heading": {
+                "first": "La Solution Innovante pour",
+                "second": "Vos Dépôts Mobile Money"
+            },
+            "card1": {
+                "title": "Dépôts Instantanés",
+                "description": "Envoyez de l'Argent en Quelques Secondes. Profitez de la rapidité et de la simplicité de nos dépôts instantanés, adaptés à vos besoins quotidiens."
+            },
+            "card2": {
+                "title": "Transferts Sous-Régionaux",
+                "description": "Une Connectivité Sans Frontières, Réalisez des transferts entre le Sénégal, la Guinée, le Togo, la Centrafrique, Djibouti et les Comores. SendMo vous offre une couverture sous-régionale inégalée."
+            },
+            "card3": {
+                "title": "Suivi des Transactions en Temps Réel",
+                "description": "Gardez le Contrôle de Vos Finances, Recevez des notifications instantanées et accédez à un historique détaillé de toutes vos transactions directement depuis l'application."
+            },
+            "card4": {
+                "title": "Support Client 24/7",
+                "description": "Assistance à Tout Moment, Notre équipe dédiée est toujours prête à vous aider, assurant une expérience utilisateur sans faille."
+            }
         }
     }
 }

@@ -210,6 +210,29 @@
             "heading": "The Innovative Solution for Your Mobile Money Deposits",
             "description": "Transfer Easily, Deposit Quickly, Securely. With SendMo, simplify your financial transactions and connect sub-regionally with confidence.",
             "ctaText": "Download App"
+        },
+        "FeaturesSection": {
+            "tag": "Features",
+            "heading": {
+                "first": "The Innovative Solution for",
+                "second": "Your Mobile Money Deposits"
+            },
+            "card1": {
+                "title": "Instant Deposits",
+                "description": "Send money in seconds. Enjoy the speed and simplicity of our instant deposits, tailored to your everyday needs."
+            },
+            "card2": {
+                "title": "Sub-regional transfers",
+                "description": "Borderless connectivity, transfer money between Senegal, Guinea, Togo, Central African Republic, Djibouti and Comoros. SendMo offers you unrivalled sub-regional coverage."
+            },
+            "card3": {
+                "title": "Real-time transaction tracking",
+                "description": "Stay in control of your finances, receive instant notifications and access a detailed history of all your transactions directly from the application."
+            },
+            "card4": {
+                "title": "24/7 customer support",
+                "description": "Anytime Support, Our dedicated team is always ready to help, ensuring a seamless user experience."
+            }
         }
     }
 }
