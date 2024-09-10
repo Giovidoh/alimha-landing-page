@@ -10,6 +10,7 @@ import Badge from "../badges/Badge";
 import Button from "../buttons/Button";
 import ImagesCollections from "../ImagesCollection";
 import { Inter } from "next/font/google";
+import { useTranslations } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ const avatarsImages = [
 ];
 
 const WelcomeToSendmoSection = () => {
+    const t = useTranslations("SendmoPage.WelcomeToSendmoSection");
     return (
         <section className="flex flex-col-reverse min-[930px]:flex-row justify-between items-center bg-gray-50 px-5 sm:px-20 min-[1120px]:px-40 min-[930px]:pt-10 pb-20">
             <div className="relative">
@@ -64,17 +66,14 @@ const WelcomeToSendmoSection = () => {
                 </div>
             </div>
             <div className="flex flex-col items-center sm:items-start gap-5 mt-14 min-[930px]:mt-28">
-                <Badge text="Bienvenue chez SendMo" />
+                <Badge text={t("tag")} />
                 <h1 className="text-2xl md:text-4xl text-center sm:text-start leading-snug font-bold tracking-wide">
-                    La Solution Innovante pour Vos Dépôts Mobile Money
+                    {t("heading")}
                 </h1>
                 <p className="text-center sm:text-start font-light mb-4">
-                    Transférez Facilement, Déposez Rapidement, en Toute
-                    Sécurité. Avec SendMo, simplifiez vos transactions
-                    financières et connectez-vous sous-régionalement avec
-                    confiance.
+                    {t("description")}
                 </p>
-                <Button text="Télécharger App" className="px-7 py-4" />
+                <Button text={t("ctaText")} className="px-7 py-4" />
             </div>
         </section>
     );

@@ -204,6 +204,12 @@
                 "second": "Money Deposits"
             },
             "supporting text": "Manage your transactions intuitively and securely with SendMo. Make quick deposits in just a few clicks, wherever you are."
+        },
+        "WelcomeToSendmoSection": {
+            "tag": "Welcome to SendMo",
+            "heading": "The Innovative Solution for Your Mobile Money Deposits",
+            "description": "Transfer Easily, Deposit Quickly, Securely. With SendMo, simplify your financial transactions and connect sub-regionally with confidence.",
+            "ctaText": "Download App"
         }
     }
 }

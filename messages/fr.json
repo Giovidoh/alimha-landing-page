@@ -210,6 +210,12 @@
                 "second": "Dépôts d'Argent"
             },
             "supporting text": "Gérez vos transactions de manière intuitive et sécurisée avec SendMo. Faites des dépôts rapides en quelques clics, où que vous soyez."
+        },
+        "WelcomeToSendmoSection": {
+            "tag": "Bienvenue chez SendMo",
+            "heading": "La Solution Innovante pour Vos Dépôts Mobile Money",
+            "description": "Transférez Facilement, Déposez Rapidement, en Toute Sécurité. Avec SendMo, simplifiez vos transactions financières et connectez-vous sous-régionalement avec confiance.",
+            "ctaText": "Télécharger App"
         }
     }
 }
