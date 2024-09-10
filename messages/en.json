@@ -285,6 +285,33 @@
                 "second": "contact us."
             },
             "Contact us": "Contact us"
+        },
+        "FaqSection": {
+            "tag": "FAQ",
+            "heading": "Do you have any questions?",
+            "subheading": "Some useful questions about using Sendmo.",
+            "Accordion": {
+                "question1": {
+                    "title": "How do I open a Sendmo account?",
+                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                },
+                "question2": {
+                    "title": "Is Sendmo easy to understand and use?",
+                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                },
+                "question3": {
+                    "title": "Do Sendmo users have access to a customer support service?",
+                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                },
+                "question4": {
+                    "title": "How to get started with sendmo?",
+                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                },
+                "question5": {
+                    "title": "How to get started with sendmo?",
+                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                }
+            }
         }
     }
 }

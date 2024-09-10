@@ -291,6 +291,33 @@
                 "second": "contactez-nous."
             },
             "Contact us": "Contactez-nous"
+        },
+        "FaqSection": {
+            "tag": "FAQ",
+            "heading": "Avez-vous des questions ?",
+            "subheading": "Quelques questions utiles pour l’utilisation de Sendmo.",
+            "Accordion": {
+                "question1": {
+                    "title": "Comment ouvrir un compte Sendmo ?",
+                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                },
+                "question2": {
+                    "title": "Sendmo est-elle facile à comprendre et à utiliser ?",
+                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                },
+                "question3": {
+                    "title": "Les utilisateurs de Sendmo ont-ils accès à un service d'assistance à la clientèle ?",
+                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                },
+                "question4": {
+                    "title": "Comment démarrer avec sendmo ?",
+                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                },
+                "question5": {
+                    "title": "Comment démarrer avec sendmo ?",
+                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                }
+            }
         }
     }
 }
