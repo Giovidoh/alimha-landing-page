@@ -318,6 +318,31 @@
                     "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
                 }
             }
+        },
+        "Footer": {
+            "heading": {
+                "first": "Simplifier vos transferts",
+                "second": "d’argent à tout moment"
+            },
+            "E-mail": "E-mail",
+            "Subscribe": "S'abonner",
+            "col1": {
+                "title": "Liens utiles",
+                "link1": "Fonctionnalités",
+                "link2": "Avantages",
+                "link3": "Téléchargement",
+                "link4": "Contact",
+                "link5": "FAQ"
+            },
+            "col2": {
+                "title": "Ressources",
+                "link1": "Conditions d’utilisation",
+                "link2": "Politique de confidentialité",
+                "link3": "Mention légale"
+            },
+            "col3": {
+                "title": "App"
+            }
         }
     }
 }

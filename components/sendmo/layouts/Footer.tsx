@@ -11,22 +11,24 @@ import LinkedinIcon from "@/public/assets/linkedin-icon.svg";
 import InstagramIcon from "@/public/assets/instagram-icon.svg";
 import XIcon from "@/public/assets/x-icon.svg";
 import YoutubeIcon from "@/public/assets/youtube-icon.svg";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+    const t = useTranslations("SendmoPage.Footer");
     return (
         <footer className="flex flex-col justify-between items-center w-full bg-gray-50 px-5 sm:px-20 min-[1120px]:px-40 pt-14 pb-5">
             <div className="flex flex-wrap justify-between items-center w-full gap-10">
-                <h1 className="text-2xl md:text-4xl text-center lg:text-start">
-                    Simplifier vos transferts <br /> d’argent à tout moment
-                </h1>
+                <h2 className="text-2xl md:text-4xl text-center lg:text-start">
+                    {t("heading.first")} <br /> {t("heading.second")}
+                </h2>
                 <div className="flex">
                     <Input
-                        placeholder="E-mail"
+                        placeholder={t("E-mail")}
                         className="w-full text-xl font-light rounded-tl-md rounded-bl-md"
                     />
                     <div className="relative h-[44px] w-[200px]">
                         <Button
-                            text="S'abonner"
+                            text={t("Subscribe")}
                             className="absolute top-0 -left-2 w-full h-full font-medium text-xl"
                         />
                     </div>
@@ -37,41 +39,41 @@ const Footer = () => {
                 <div className="flex flex-wrap justify-between w-[60%] gap-10">
                     <div className="flex flex-col items-start gap-3">
                         <h2 className="text-[#5B5B5B] text-xl font-semibold">
-                            Usely link
+                            {t("col1.title")}
                         </h2>
                         <Link href={"#"} className="text-[#313131] text-sm">
-                            Fonctionnalités
+                            {t("col1.link1")}
                         </Link>
                         <Link href={"#"} className="text-[#313131] text-sm">
-                            Avantages
+                            {t("col1.link2")}
                         </Link>
                         <Link href={"#"} className="text-[#313131] text-sm">
-                            Téléchargement
+                            {t("col1.link3")}
                         </Link>
                         <Link href={"#"} className="text-[#313131] text-sm">
-                            Contact
+                            {t("col1.link4")}
                         </Link>
                         <Link href={"#"} className="text-[#313131] text-sm">
-                            FAQ
+                            {t("col1.link5")}
                         </Link>
                     </div>
                     <div className="flex flex-col items-start gap-3">
                         <h2 className="text-[#5B5B5B] text-xl font-semibold">
-                            Resources
+                            {t("col2.title")}
                         </h2>
                         <Link href={"#"} className="text-[#313131] text-sm">
-                            Conditions d’utilisation
+                            {t("col2.link1")}
                         </Link>
                         <Link href={"#"} className="text-[#313131] text-sm">
-                            Politique de confidentialité
+                            {t("col2.link2")}
                         </Link>
                         <Link href={"#"} className="text-[#313131] text-sm">
-                            Mention Légale
+                            {t("col2.link3")}
                         </Link>
                     </div>
                     <div className="flex flex-col items-start gap-3">
                         <h2 className="text-[#5B5B5B] text-xl font-semibold">
-                            App
+                            {t("col3.title")}
                         </h2>
                         <LeftIconButton
                             icon={<AppStoreIcon className="fill-white" />}

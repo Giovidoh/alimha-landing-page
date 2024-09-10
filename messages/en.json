@@ -312,6 +312,31 @@
                     "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
                 }
             }
+        },
+        "Footer": {
+            "heading": {
+                "first": "Simplify your money transfers",
+                "second": "at any time"
+            },
+            "E-mail": "E-mail",
+            "Subscribe": "Subscribe",
+            "col1": {
+                "title": "Usely links",
+                "link1": "Features",
+                "link2": "Advantages",
+                "link3": "Download",
+                "link4": "Contact",
+                "link5": "FAQ"
+            },
+            "col2": {
+                "title": "Resources",
+                "link1": "Terms of use",
+                "link2": "Privacy policy",
+                "link3": "Legal notice"
+            },
+            "col3": {
+                "title": "App"
+            }
         }
     }
 }
