@@ -33,9 +33,9 @@ const FaqSection = () => {
         >
             <Badge text="FAQS" px="px-14" />
             <div className="flex flex-col items-center gap-3">
-                <h1 className="text-2xl md:text-4xl text-center leading-snug font-bold tracking-wide">
+                <h2 className="text-2xl md:text-4xl text-center leading-snug font-bold tracking-wide">
                     Avez-vous des questions?
-                </h1>
+                </h2>
                 <p className="text-gray-1 text-center text-pretty font-light">
                     Quelques questions utiles pour l’utilisation de Sendmo.
                 </p>

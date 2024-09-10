@@ -19,10 +19,10 @@ const FeaturesSection = () => {
             className="flex flex-col items-center px-5 sm:px-20 min-[1120px]:px-40 pt-10 md:pt-20 py-36 gap-10"
         >
             <Badge text={t("tag")} />
-            <h1 className="text-2xl md:text-4xl text-center leading-snug font-bold tracking-wide">
+            <h2 className="text-2xl md:text-4xl text-center leading-snug font-bold tracking-wide">
                 {t("heading.first")} <br className="hidden md:block" />{" "}
                 {t("heading.second")}
-            </h1>
+            </h2>
             <div className="grid min-[1300px]:grid-cols-2 gap-2">
                 <IconTextIllustrationCard
                     backgroundColor="bg-secondary-blue"

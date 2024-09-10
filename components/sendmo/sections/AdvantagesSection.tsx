@@ -24,11 +24,11 @@ const AdvantagesSection = () => {
                 <div className="mb-5">
                     <Badge text={t("tag")} />
                 </div>
-                <h1 className="text-2xl md:text-4xl text-center min-[1300px]:text-start leading-snug font-bold tracking-wide">
+                <h2 className="text-2xl md:text-4xl text-center min-[1300px]:text-start leading-snug font-bold tracking-wide">
                     {t("heading.first")}
                     <br className="hidden min-[1300px]:block" />{" "}
                     {t("heading.second")}
-                </h1>
+                </h2>
                 <div className="flex flex-col gap-2 mb-3">
                     <div>
                         <IconTextCard

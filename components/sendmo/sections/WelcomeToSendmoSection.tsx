@@ -67,9 +67,9 @@ const WelcomeToSendmoSection = () => {
             </div>
             <div className="flex flex-col items-center sm:items-start gap-5 mt-14 min-[930px]:mt-28">
                 <Badge text={t("tag")} />
-                <h1 className="text-2xl md:text-4xl text-center sm:text-start leading-snug font-bold tracking-wide">
+                <h2 className="text-2xl md:text-4xl text-center sm:text-start leading-snug font-bold tracking-wide">
                     {t("heading")}
-                </h1>
+                </h2>
                 <p className="text-center sm:text-start font-light mb-4">
                     {t("description")}
                 </p>

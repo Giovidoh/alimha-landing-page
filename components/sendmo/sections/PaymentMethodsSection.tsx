@@ -70,9 +70,9 @@ const PaymentMethodsSection = () => {
         <section className="flex flex-col justify-between items-center px-5 sm:px-20 min-[1120px]:px-40 pt-20 pb-28 gap-5">
             <Badge text={t("tag")} />
             <div className="flex flex-col items-center w-full min-[950px]:w-1/2 gap-4 text-center">
-                <h1 className="text-2xl md:text-4xl leading-snug font-bold tracking-wide">
+                <h2 className="text-2xl md:text-4xl leading-snug font-bold tracking-wide">
                     {t("heading")}
-                </h1>
+                </h2>
                 <p className="flex font-light text-pretty mb-4">
                     {t("subheading")}
                 </p>

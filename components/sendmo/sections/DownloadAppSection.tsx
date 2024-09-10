@@ -18,9 +18,9 @@ const DownloadAppSection = () => {
                 <div className="flex flex-col min-[1200px]:flex-row items-center">
                     <div className="relative flex flex-col items-center sm:items-start w-full min-[1200px]:w-1/2 gap-5 md:gap-8 text-white">
                         <Badge text={t("tag")} />
-                        <h1 className="text-2xl md:text-4xl text-center sm:text-start leading-snug font-bold tracking-wide">
+                        <h2 className="text-2xl md:text-4xl text-center sm:text-start leading-snug font-bold tracking-wide">
                             {t("heading.first")} <br /> {t("heading.second")}
-                        </h1>
+                        </h2>
                         <p className="text-center sm:text-start font-light text-pretty">
                             <span className="font-bold text-base">
                                 {t("subheading")}
