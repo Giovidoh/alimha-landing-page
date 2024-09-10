@@ -23,8 +23,8 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
     description,
 }) => {
     return (
-        <section className="relative flex flex-col justify-evenly items-center text-center px-[5%] lg:px-[10%] bg-white h-fit w-full pt-12 pb-24">
-            <Image
+        <section className="relative flex flex-col justify-evenly items-center text-center px-[5%] lg:px-[10%] bg-gradient-to-r from-primary-blue to-secondary-blue h-fit w-full pt-12 pb-24">
+            {/* <Image
                 src={circle_vector4}
                 alt="circle vector"
                 height={30}
@@ -35,7 +35,7 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                 alt="circle vector"
                 height={20}
                 className="absolute top-28 -right-1"
-            />
+            /> */}
 
             <div className="flex flex-col items-center h-fit">
                 {/* <Image
@@ -43,19 +43,17 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                     alt="international icon"
                     height={50}
                 /> */}
-                <h3 className="font-semibold text-xl text-primary-blue pt-4">
-                    {tag}
-                </h3>
+                <h3 className="font-semibold text-xl text-white pt-4">{tag}</h3>
             </div>
             <div className="mb-6">
-                <h1 className="font-bold text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-4">
+                <h1 className="font-bold text-dark-blue text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-4">
                     {title}
                 </h1>
-                <p className="max-w-[595px] text-xl text-gray-1">
+                <p className="max-w-[595px] text-white text-xl">
                     {description}
                 </p>
             </div>
-            <div className="flex w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+            <div className="flex w-full overflow-hidden bg-white rounded-xl px-10 border-[5px] border-dark-blue shadow-lg">
                 <motion.div
                     className="flex flex-none md:hidden items-center gap-16 pr-16"
                     animate={{

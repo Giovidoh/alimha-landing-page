@@ -15,12 +15,12 @@ const OurServicesSection = () => {
             id="our-services"
             className="relative flex flex-col justify-evenly px-[5%] lg:px-[10%] bg-white h-fit w-full pt-5 pb-24"
         >
-            <Image
+            {/* <Image
                 src={dot_vector1}
                 alt="dot vector"
                 height={120}
                 className="absolute top-[40%] -left-20"
-            />
+            /> */}
             <Image
                 src={line_vector1}
                 alt="line vector"

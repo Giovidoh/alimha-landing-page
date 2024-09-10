@@ -46,7 +46,7 @@ const HeroSection = () => {
                     height={600}
                     className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10"
                 />
-                <Image
+                {/* <Image
                     src={plus2}
                     alt="plus icon"
                     height={30}
@@ -59,7 +59,7 @@ const HeroSection = () => {
                     height={30}
                     width={30}
                     className="absolute bottom-[20px] right-[275px] z-0"
-                />
+                /> */}
             </div>
         </section>
     );

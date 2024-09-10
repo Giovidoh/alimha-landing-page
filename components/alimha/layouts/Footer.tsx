@@ -14,8 +14,8 @@ const Footer = () => {
     const t = useTranslations("AlimhaPage");
 
     return (
-        <footer className="relative flex flex-col justify-evenly items-center bg-dark-blue px-[5%] xl:px-[10%] overflow-hidden">
-            <Image
+        <footer className="relative flex flex-col justify-evenly items-center bg-gradient-to-br from-primary-blue via-secondary-blue  to-secondary-blue px-[5%] xl:px-[10%] overflow-hidden">
+            {/* <Image
                 src={circle_vector4}
                 alt="circle vector"
                 height={35}
@@ -50,10 +50,10 @@ const Footer = () => {
                 alt="footer background image"
                 height={765}
                 className="absolute bottom-0 right-0 opacity-20"
-            />
+            /> */}
 
-            <div className="flex flex-wrap md:flex-nowrap justify-between items-start w-full pt-40 z-10">
-                <div className="max-w-[280px] mr-5 mb-10">
+            <div className="flex flex-wrap md:flex-nowrap justify-between items-start w-full gap-10 pt-40 z-10">
+                <div className="max-w-[280px]">
                     <LogoFooter />
                     <p className="text-white text-justify leading-[19.13px] mt-5">
                         {t("Footer description")}
@@ -82,9 +82,9 @@ const Footer = () => {
                         />
                     </div> */}
                 </div>
-                <div className="flex flex-wrap justify-start gap-10 w-full">
+                <div className="flex flex-wrap justify-between gap-10 w-full">
                     <div className="flex flex-col">
-                        <h3 className="font-semibold text-secondary-blue text-2xl mt-3">
+                        <h3 className="font-semibold text-dark-blue text-2xl mt-3">
                             Alimha
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
@@ -93,7 +93,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-between">
-                        <h3 className="font-semibold text-secondary-blue text-2xl mt-3">
+                        <h3 className="font-semibold text-dark-blue text-2xl mt-3">
                             {t("Solutions")}
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
@@ -112,7 +112,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-between">
-                        <h3 className="font-semibold text-secondary-blue text-2xl mt-3">
+                        <h3 className="font-semibold text-dark-blue text-2xl mt-3">
                             {t("Resources")}
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
@@ -122,7 +122,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-between">
-                        <h3 className="font-semibold text-secondary-blue text-2xl mt-3">
+                        <h3 className="font-semibold text-dark-blue text-2xl mt-3">
                             {t("Contact us")}
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
@@ -140,7 +140,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="w-full pt-40 pb-10">
-                <div className="flex flex-col sm:flex-row justify-between items-center w-full text-sm text-center font-light text-secondary-blue border-t border-t-primary-blue pt-3 gap-3">
+                <div className="flex flex-col sm:flex-row justify-between items-center w-full text-sm text-center font-light text-dark-blue border-t border-t-dark-blue pt-3 gap-3">
                     <span>{t("Copyright")}</span>
                     <span>ALIMHA</span>
                 </div>

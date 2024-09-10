@@ -17,7 +17,7 @@ const WhyUsSection = () => {
     const pathname = usePathname();
 
     return (
-        <section className="relative flex justify-between items-center px-[5%] lg:px-[10%] py-10 bg-white h-fit w-full">
+        <section className="relative flex justify-between items-center px-[5%] lg:px-[10%] py-10 md:py-0 bg-white h-fit w-full">
             <Image
                 src={line_vector2}
                 alt="line vector"
@@ -27,10 +27,10 @@ const WhyUsSection = () => {
             <Image
                 src={linked_lines_vector}
                 alt="line vector"
-                height={900}
+                height={750}
                 className="absolute right-0 top-0 h-full"
             />
-            <Image
+            {/* <Image
                 src={dot_vector1}
                 alt="line vector"
                 height={125}
@@ -53,7 +53,7 @@ const WhyUsSection = () => {
                 alt="line vector"
                 height={30}
                 className="hidden md:block absolute bottom-[20%] left-1/2"
-            />
+            /> */}
 
             <div className="flex flex-col items-center md:items-start w-full z-10">
                 <div className="flex justify-center md:justify-start items-center h-fit pb-4">
@@ -62,12 +62,12 @@ const WhyUsSection = () => {
                     </h3> */}
                     <Image src={map_img} alt="map icon" height={40} />
                 </div>
-                <div className="mb-6">
+                <div>
                     <h1 className="font-bold text-center md:text-left text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-5">
                         {t("WhyUsSection title first part")} <br />{" "}
                         {t("WhyUsSection title second part")}
                     </h1>
-                    <p className="text-center md:text-left text-base font-normal tracking-wide text-gray-2 pb-5 md:pb-10">
+                    <p className="text-center md:text-left text-base font-normal tracking-wide text-[#333333] pb-5 md:pb-10">
                         {t("Alimha is present") + " " + t("in1")}{" "}
                         <span className="text-primary-blue font-semibold">
                             {t("Senegal")}
@@ -98,8 +98,8 @@ const WhyUsSection = () => {
                 </div>
                 {/* <ButtonGradientStyle1 text="En savoir plus" /> */}
             </div>
-            <div className="hidden md:block w-full pt-24 z-10">
-                <Image src={africa_vector} alt="africa vector" height={800} />
+            <div className="hidden md:flex justify-center w-full pt-24 z-10">
+                <Image src={africa_vector} alt="africa vector" height={600} />
             </div>
         </section>
     );

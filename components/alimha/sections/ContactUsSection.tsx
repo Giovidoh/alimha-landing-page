@@ -14,7 +14,7 @@ const ContactUsSection = () => {
             id="contact"
             className="relative flex flex-col justify-evenly items-center text-center px-[5%] lg:px-[10%] bg-[#F1F6FF] h-fit w-full pt-20 pb-32"
         >
-            <Image
+            {/* <Image
                 src={plus3}
                 alt="plus icon"
                 height={20}
@@ -25,7 +25,7 @@ const ContactUsSection = () => {
                 alt="circle icon"
                 height={35}
                 className="absolute bottom-36 right-20"
-            />
+            /> */}
             <Image
                 src={line_vector3}
                 alt="line vector"
@@ -37,7 +37,7 @@ const ContactUsSection = () => {
                 <h1 className="font-bold text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-5">
                     {t("Contact us")}
                 </h1>
-                <p className="text-xl text-gray-1 font-medium pb-4">
+                <p className="text-xl text-[#333333] font-medium pb-4">
                     {t("Let's discuss your project")}
                 </p>
             </div>
