@@ -1,10 +1,13 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { headerLinks } from "@/data/sendmo/headerLinks";
+import React, { FC, useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const Navbar = () => {
+interface NavbarProps {
+    headerLinks: { text: string; url: string }[];
+}
+
+const Navbar: FC<NavbarProps> = ({ headerLinks }) => {
     const [activeLink, setActiveLink] = useState(0);
     const pathname = usePathname();
 
@@ -12,7 +15,7 @@ const Navbar = () => {
         headerLinks.forEach(
             (link, index) => link.url == pathname && setActiveLink(index)
         );
-    }, [pathname]);
+    }, [headerLinks, pathname]);
 
     return (
         <nav className="w-full">

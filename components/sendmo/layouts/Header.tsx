@@ -1,11 +1,17 @@
 "use client";
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import SendmoLogo from "@/public/assets/sendmo-logo.svg";
 import Button from "../buttons/Button";
 import Navbar from "../Navbar";
 import BurgerButtonIcon from "@/public/assets/burger-button-icon.svg";
+import LocalSwitcherSelect from "../selects/LocalSwitcherSelect";
 
-const Header = () => {
+interface HeaderProps {
+    headerLinks: { text: string; url: string }[];
+    downloadApp: string;
+}
+
+const Header: FC<HeaderProps> = ({ headerLinks, downloadApp }) => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     return (
@@ -13,10 +19,11 @@ const Header = () => {
             <div className="flex justify-between items-center w-full">
                 <SendmoLogo className="h-7" />
                 <div className="w-1/2 max-[870px]:hidden">
-                    <Navbar />
+                    <Navbar headerLinks={headerLinks} />
                 </div>
-                <div className="max-[950px]:hidden">
-                    <Button text="Télécharger App" className="px-3 py-2" />
+                <div className="hidden min-[950px]:flex gap-4">
+                    <LocalSwitcherSelect />
+                    <Button text={downloadApp} className="px-3 py-2" />
                 </div>
                 <div className="min-[950px]:hidden">
                     <button
@@ -29,12 +36,9 @@ const Header = () => {
                     {toggleMenu && (
                         <div className="absolute right-0 top-full p-10 bg-white border bg-opacity-80 backdrop-blur">
                             <div className="min-[870px]:hidden">
-                                <Navbar />
+                                <Navbar headerLinks={headerLinks} />
                             </div>
-                            <Button
-                                text="Télécharger App"
-                                className="px-3 py-2"
-                            />
+                            <Button text={downloadApp} className="px-3 py-2" />
                         </div>
                     )}
                 </div>

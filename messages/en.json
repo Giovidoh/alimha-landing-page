@@ -187,5 +187,15 @@
             },
             "copyright": "All rights reserved! Copyright 2024"
         }
+    },
+    "SendmoPage": {
+        "Header": {
+            "Features": "Features",
+            "Advantages": "Advantages",
+            "Download": "Download",
+            "Contact": "Contact",
+            "FAQ": "FAQ",
+            "Download App": "Download App"
+        }
     }
 }

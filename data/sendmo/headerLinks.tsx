@@ -1,14 +1,14 @@
 export const headerLinks = [
     {
-        text: "Fonctionnalités",
-        url: "#fonctionalities_section",
+        text: "Features",
+        url: "#features_section",
     },
     {
-        text: "Avantages",
+        text: "Advantages",
         url: "#advantages_section",
     },
     {
-        text: "Téléchargement",
+        text: "Download",
         url: "#download_section",
     },
     {

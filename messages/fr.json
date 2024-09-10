@@ -193,5 +193,15 @@
             },
             "copyright": "Tous droits réservés ! Copyright 2024"
         }
+    },
+    "SendmoPage": {
+        "Header": {
+            "Features": "Fonctionnalités",
+            "Advantages": "Avantages",
+            "Download": "Téléchargement",
+            "Contact": "Contact",
+            "FAQ": "FAQ",
+            "Download App": "Télécharger App"
+        }
     }
 }

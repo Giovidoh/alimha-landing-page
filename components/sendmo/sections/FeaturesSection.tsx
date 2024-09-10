@@ -10,10 +10,10 @@ import realTimeTransactionTrackingIllustration from "@/public/assets/real-time-t
 import ClientSupportIcon from "@/public/assets/client-support-24-7-icon.svg";
 import clientSupportIllustration from "@/public/assets/client-support-24-7-illustration.png";
 
-const FontionalitiesSection = () => {
+const FeaturesSection = () => {
     return (
         <section
-            id="fonctionalities_section"
+            id="features_section"
             className="flex flex-col items-center px-5 sm:px-20 min-[1120px]:px-40 pt-10 md:pt-20 py-36 gap-10"
         >
             <Badge text="Fonctionnalités" />
@@ -57,4 +57,4 @@ const FontionalitiesSection = () => {
     );
 };
 
-export default FontionalitiesSection;
+export default FeaturesSection;
