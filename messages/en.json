@@ -257,6 +257,16 @@
                 "description": "Manage your finances with ease. Effortlessly accept and transfer funds in a variety of local currencies."
             },
             "Download App": "Download App"
+        },
+        "PaymentMethodsSection": {
+            "tag": "Payment methods",
+            "heading": "Countries where you can send money",
+            "subheading": "Countries where you can send money via Sendmo with available mobile money operators",
+            "Senegal": "Senegal",
+            "Togo": "Togo",
+            "Guinea": "Guinea",
+            "Djibouti": "Djibouti",
+            "central african republic": "CAR"
         }
     }
 }

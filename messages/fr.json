@@ -263,6 +263,16 @@
                 "description": "Gérez vos Finances en Toute Simplicité. Acceptez et transférez des fonds dans diverses devises locales sans effort."
             },
             "Download App": "Télécharger App"
+        },
+        "PaymentMethodsSection": {
+            "tag": "Moyen de paiement",
+            "heading": "Pays où vous pouvez envoyer de l'argent",
+            "subheading": "Pays où vous pouvez envoyer de l’argent Via Sendmo avec les opérateurs mobile money disponibles",
+            "Senegal": "Sénégal",
+            "Togo": "Togo",
+            "Guinea": "Guinée",
+            "Djibouti": "Djibouti",
+            "central african republic": "RCA"
         }
     }
 }
