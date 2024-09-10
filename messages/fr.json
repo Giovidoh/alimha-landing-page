@@ -282,6 +282,15 @@
             },
             "subheading": "Disponible sur Android et iOS",
             "description": "Rejoignez des milliers d'utilisateurs satisfaits et téléchargez SendMo dès aujourd'hui pour une expérience de dépôt mobile money sans pareille."
+        },
+        "ContactSection": {
+            "tag": "Contact",
+            "heading": "prêt à démarrer ?",
+            "subheading": {
+                "first": "Pour toute question ou assistance,",
+                "second": "contactez-nous."
+            },
+            "Contact us": "Contactez-nous"
         }
     }
 }

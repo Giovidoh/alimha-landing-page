@@ -276,6 +276,15 @@
             },
             "subheading": "Available on Android and iOS",
             "description": "Join thousands of satisfied users and download SendMo today for an unparalleled mobile money deposit experience."
+        },
+        "ContactSection": {
+            "tag": "Contact",
+            "heading": "ready to start?",
+            "subheading": {
+                "first": "For questions or assistance,",
+                "second": "contact us."
+            },
+            "Contact us": "Contact us"
         }
     }
 }
