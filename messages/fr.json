@@ -202,6 +202,14 @@
             "Contact": "Contact",
             "FAQ": "FAQ",
             "Download App": "Télécharger App"
+        },
+        "HeroSection": {
+            "tag": "Application de transfert d’argent",
+            "main heading": {
+                "first": "Simplifiez Vos",
+                "second": "Dépôts d'Argent"
+            },
+            "supporting text": "Gérez vos transactions de manière intuitive et sécurisée avec SendMo. Faites des dépôts rapides en quelques clics, où que vous soyez."
         }
     }
 }

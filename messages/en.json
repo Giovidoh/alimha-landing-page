@@ -196,6 +196,14 @@
             "Contact": "Contact",
             "FAQ": "FAQ",
             "Download App": "Download App"
+        },
+        "HeroSection": {
+            "tag": "Money transfer application",
+            "main heading": {
+                "first": "Simplify Your",
+                "second": "Money Deposits"
+            },
+            "supporting text": "Manage your transactions intuitively and securely with SendMo. Make quick deposits in just a few clicks, wherever you are."
         }
     }
 }
