@@ -131,7 +131,7 @@ const LocalSwitcherSelect = () => {
             <div
                 key={id}
                 id={id}
-                className="flex items-center px-3 py-2 gap-3 hover:bg-tertiary border  cursor-pointer"
+                className="flex items-center px-3 py-2 gap-3 hover:bg-tertiary cursor-pointer"
                 onClick={handleChangeLanguage}
             >
                 <Image

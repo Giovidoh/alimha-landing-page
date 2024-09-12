@@ -14,7 +14,7 @@ const HeroSection = () => {
 
     return (
         <section className="flex bg-white h-fit w-full px-[5%] lg:px-[10%] pt-10 md:pt-12 lg:pt-18 xl:pt-32 pb-24 bg-hero-world-img bg-contain bg-no-repeat bg-top">
-            <div className="w-full md:w-1/2 text-center md:text-left">
+            <div className="w-full md:w-1/2 max-md:text-center">
                 <h1 className="font-bold text-[32px] lg:text-[54px] leading-[50px] lg:leading-[64.8px] pb-4">
                     {t("heading.first")} <br />
                     <span className="text-primary-blue">
@@ -22,19 +22,16 @@ const HeroSection = () => {
                     </span>
                 </h1>
                 <p className="text-[#1E1E1E] pb-8">{t("supporting text")}</p>
-                <div className="flex flex-col md:flex-row justify-between w-full pb-8">
+                <div className="flex flex-col justify-between md:flex-row md:items-center gap-3 w-full pb-8">
                     <ButtonGradientStyle1
                         fromColor="from-primary-blue"
                         toColor="to-secondary-blue"
                         text={t("Become partner")}
                         width="w-full md:w-1/2"
-                        marginRight="md:mr-2"
                     />
                     <ButtonStyle1
                         text={t("Learn more")}
                         width="w-full md:w-1/2"
-                        marginLeft="md:ml-2"
-                        marginTop="mt-3 md:mt-0"
                     />
                 </div>
                 <ClientsReviewsRate />

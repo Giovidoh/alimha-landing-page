@@ -34,7 +34,7 @@ const OurServicesSection = () => {
                 {/* <Image src={fund1} alt="fund icon" height={54} width={54} /> */}
             </div>
             <div className="mb-6">
-                <h2 className="font-bold text-center md:text-left text-[32px] lg:text-[44px] leading-[45px] lg:leading-[52.6px] pb-4">
+                <h2 className="font-bold max-md:text-center text-[32px] lg:text-[44px] leading-[45px] lg:leading-[52.6px] pb-4">
                     {t("heading.first")} <br /> {t("heading.second")}
                 </h2>
                 {/* <p className="text-center md:text-left text-xl text-gray-2">

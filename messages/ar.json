@@ -1,105 +1,105 @@
 {
     "AlimhaPage": {
         "Header": {
-            "Solutions": "Solutions",
-            "About us": "About us",
-            "Contact": "Contact",
-            "Become partner": "Become partner"
+            "Solutions": "الحلول",
+            "About us": "نبذة عنا",
+            "Contact": "اتصل بنا",
+            "Become partner": "كن شريكاً"
         },
         "HeroSection": {
             "heading": {
-                "first": "Welcome to",
+                "first": "مرحباً بك في",
                 "second": "Alimha and Company"
             },
-            "supporting text": "Your trusted partner for technology solutions, we turn your ideas into innovative realities. Thanks to a combination of expertise, creativity and cutting-edge technology, we bring your visions to life, turning them into practical, high-performance solutions.",
-            "Become partner": "Become partner",
-            "Learn more": "Learn more",
-            "Customer reviews": "Customer reviews"
+            "supporting text": "شريكك الموثوق للحلول التقنية، فنحن نحول أفكارك إلى واقع مبتكر. وبفضل مزيج من الخبرة والإبداع والتكنولوجيا المتطورة، نحول رؤاك إلى واقع ملموس ونحولها إلى حلول عملية عالية الأداء.",
+            "Become partner": "كن شريكاً",
+            "Learn more": "اعرف المزيد",
+            "Customer reviews": "آراء العملاء"
         },
         "OurServicesSection": {
-            "tag": "Our services",
+            "tag": "خدماتنا",
             "heading": {
-                "first": "Expand your",
-                "second": "business with Alimha"
+                "first": "وسّع نطاق",
+                "second": "الأعمال التجارية مع عليمها"
             },
             "card1": {
-                "title": "Software Development",
-                "description": "Tailor-made software solutions for your specific needs. We create web and mobile applications, analyze and audit your systems, and deploy IT solutions tailored to your requirements."
+                "title": "تطوير البرمجيات",
+                "description": "حلول برمجية مصممة خصيصاً لتلبية احتياجاتك الخاصة. نحن ننشئ تطبيقات الويب والهاتف المحمول، ونحلل أنظمتك ونراجعها، وننشر حلول تكنولوجيا المعلومات المصممة خصيصاً لتلبية احتياجاتك."
             },
             "card2": {
-                "title": "Payment Solutions Aggregator",
-                "description": "Connect to the best payment solutions. Centralize and optimize your financial transactions with our payment solutions aggregator, designed to simplify and secure your operations."
+                "title": "مجمّع حلول الدفع",
+                "description": "اتصل بأفضل حلول الدفع. قم بمركزية معاملاتك المالية وتحسينها من خلال مُجمِّع حلول الدفع الخاص بنا، المصمم لتبسيط عملياتك وتأمينها."
             },
             "card3": {
-                "title": "Mobile Money Deposit Application",
-                "description": "Secure, low-cost and instant Mobile Money deposits. Make sub-regional money deposits easy with our mobile application, designed to offer a seamless and secure user experience."
+                "title": "تطبيق إيداع الأموال عبر الهاتف المحمول",
+                "description": "إيداعات آمنة ومنخفضة التكلفة وفورية للأموال عبر الهاتف المحمول. اجعل إيداعات الأموال دون الإقليمية سهلة من خلال تطبيقنا للهاتف المحمول، المصمم لتقديم تجربة مستخدم سلسة وآمنة."
             },
-            "Learn more": "Learn more"
+            "Learn more": "اعرف المزيد"
         },
         "AboutUsSection": {
-            "tag": "About us",
-            "heading": "Your growth partner",
-            "description": "Alimha and Company is an innovative fintech dedicated to providing modern and efficient payment solutions. Our mission is to simplify financial transactions across the region, offering reliable, secure and accessible services to all.",
-            "Learn more": "Learn more"
+            "tag": "نبذة عنا",
+            "heading": "شريكك في النمو",
+            "description": "شركة عليمها وشركاه هي شركة تكنولوجيا مالية مبتكرة مكرسة لتوفير حلول دفع حديثة وفعالة. وتتمثل مهمتنا في تبسيط المعاملات المالية في جميع أنحاء المنطقة، وتقديم خدمات موثوقة وآمنة ومتاحة للجميع.",
+            "Learn more": "اعرف المزيد"
         },
         "WhyUsSection": {
             "heading": {
-                "first": "Our global",
-                "second": "Reach"
+                "first": "عالميتنا",
+                "second": "الوصول"
             },
-            "Alimha is present": "Alimha is present",
-            "in1": "in",
+            "Alimha is present": "عليمها موجود",
+            "in1": "في",
             "in2": "",
-            "and": "and",
-            "the": "the",
-            "Senegal": "Senegal",
-            "Togo": "Togo",
-            "Guinea": "Guinea",
-            "Djibouti": "Djibouti",
-            "Central Africa": "Central Africa",
-            "Comoros": "Comoros"
+            "and": "و",
+            "the": "فإن",
+            "Senegal": "السنغال",
+            "Togo": "توغو",
+            "Guinea": "غينيا",
+            "Djibouti": "جيبوتي",
+            "Central Africa": "وسط أفريقيا",
+            "Comoros": "جزر القمر"
         },
         "TheyTrustUsSection": {
-            "tag": "They trust us",
-            "heading": "Our partners & support",
-            "description": "We work with strategic partners in various sectors to enhance our service offering."
+            "tag": "إنهم يثقون بنا",
+            "heading": "شركاؤنا ودعمنا",
+            "description": "نحن نعمل مع شركاء استراتيجيين في مختلف القطاعات لتعزيز ما نقدمه من خدمات."
         },
         "ContactUsSection": {
-            "heading": "Contact us",
-            "description": "Let's discuss your project",
+            "heading": "اتصل بنا",
+            "description": "دعنا نناقش مشروعك",
             "contact form": {
-                "name": "Name",
-                "email": "Email",
-                "your message": "Your message",
-                "send": "Send"
+                "name": "الاسم",
+                "email": "البريد الإلكتروني",
+                "your message": "رسالتك",
+                "send": "إرسال"
             }
         },
         "Footer": {
-            "description": "Join the Technological Revolution Discover how Alimha and Company can transform the way you do of doing business. Contact us today!",
+            "description": "انضم إلى الثورة التكنولوجية اكتشف كيف يمكن لشركة عليمها وشركاه أن تغير الطريقة التي تمارس بها أعمالك. اتصل بنا اليوم!",
             "col1": {
                 "title": "Alimha",
-                "link1": "About us",
-                "link2": "Why us"
+                "link1": "نبذة عنا",
+                "link2": "لماذا نحن"
             },
             "col2": {
-                "title": "Solutions",
-                "link1": "Software Development",
-                "link2": "Payment Solutions Aggregator",
-                "link3": "Mobile Money Deposit Application"
+                "title": "الحلول",
+                "link1": "تطوير البرمجيات",
+                "link2": "مجمّع حلول الدفع",
+                "link3": "تطبيق إيداع الأموال عبر الهاتف المحمول"
             },
             "col3": {
-                "title": "Resources",
-                "link1": "Terms of use",
-                "link2": "Privacy policy",
-                "link3": "Legal notice"
+                "title": "الموارد",
+                "link1": "شروط الاستخدام",
+                "link2": "سياسة الخصوصية",
+                "link3": "إشعار قانوني"
             },
             "col4": {
-                "title": "Contact us",
+                "title": "اتصل بنا",
                 "link1": "infos@alimha.com",
-                "link2": "+221 33 844 30 81 / +221 77 889 21 74",
-                "link3": "Mamelles, Dakar - Senegal"
+                "link2": "74 21 889 77 221+ / 81 30 844 33 221+",
+                "link3": "ماميلس، داكار - السنغال"
             },
-            "Copyright": "All rights reserved | Copyright 2024"
+            "Copyright": "جميع الحقوق محفوظة | حقوق الطبع والنشر 2024"
         }
     },
     "AlpayPage": {

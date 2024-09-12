@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,8 +23,10 @@ export default async function RootLayout({
     // side is the easiest way to get started
     const messages = await getMessages();
 
+    const localActive = await getLocale();
+
     return (
-        <html lang="en">
+        <html lang="en" dir={localActive == "ar" ? "rtl" : "ltr"}>
             <body className={inter.className}>
                 <NextIntlClientProvider messages={messages}>
                     {children}

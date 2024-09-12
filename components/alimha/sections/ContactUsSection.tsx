@@ -33,7 +33,7 @@ const ContactUsSection = () => {
                 className="absolute -bottom-40 right-0"
             />
 
-            <div className="mb-6">
+            <div className="mb-6 z-10">
                 <h2 className="font-bold text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-5">
                     {t("heading")}
                 </h2>
@@ -41,7 +41,7 @@ const ContactUsSection = () => {
                     {t("description")}
                 </p>
             </div>
-            <div className="grid  lg:grid-cols-2 gap-5 w-full">
+            <div className="grid lg:grid-cols-2 gap-5 w-full z-10">
                 {/* ADD A MAP HERE */}
                 <Map />
                 <ContactForm

@@ -10,6 +10,7 @@ import ubaLogo from "@/public/assets/uba-logo.png";
 import ecobankLogo from "@/public/assets/ecobank-logo.png";
 import { motion } from "framer-motion";
 import { FC } from "react";
+import { useLocale } from "next-intl";
 
 interface TheyTrustUsSectionProps {
     tag: string;
@@ -22,6 +23,7 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
     title,
     description,
 }) => {
+    const localActive = useLocale();
     return (
         <section className="relative flex flex-col justify-evenly items-center text-center px-[5%] lg:px-[10%] bg-gradient-to-r from-primary-blue to-secondary-blue h-fit w-full pt-12 pb-24">
             {/* <Image
@@ -57,7 +59,7 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                 <motion.div
                     className="flex flex-none md:hidden items-center gap-16 pr-16"
                     animate={{
-                        translateX: "-50%",
+                        translateX: localActive == "ar" ? "50%" : "-50%",
                     }}
                     transition={{
                         duration: 15,
@@ -89,7 +91,7 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                 <motion.div
                     className="hidden md:flex md:flex-none items-center gap-40 pr-40"
                     animate={{
-                        translateX: "-50%",
+                        translateX: localActive == "ar" ? "50%" : "-50%",
                     }}
                     transition={{
                         duration: 15,

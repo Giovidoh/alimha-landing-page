@@ -10,9 +10,10 @@ import plus_vector1 from "@/public/assets/plus-vector-1.png";
 import plus_vector2 from "@/public/assets/plus-vector-2.png";
 import dash_vector1 from "@/public/assets/dash-vector-1.png";
 import thumb_up from "@/public/assets/thumb-up.png";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const AboutUsSection = () => {
+    const localActive = useLocale();
     const t = useTranslations("AlimhaPage.AboutUsSection");
     return (
         <section
@@ -49,10 +50,18 @@ const AboutUsSection = () => {
                 width={20}
                 className="hidden md:block absolute top-[45%] left-[15%]"
             /> */}
-            <div className="hidden md:block absolute bottom-[20%] left-[15%] p-3 bg-white shadow-md rounded-lg">
+            <div
+                className={`hidden md:block absolute bottom-[20%] ${
+                    localActive == "ar" ? "right-[15%]" : "left-[15%]"
+                } p-3 bg-white shadow-md rounded-lg`}
+            >
                 <Image src={growth1} alt="growth image" height={60} />
             </div>
-            <div className="hidden md:flex absolute items-center top-[27%] left-[35%] px-3 py-1 bg-[#19AFFF] shadow-md rounded-lg">
+            <div
+                className={`hidden md:flex absolute items-center top-[27%] ${
+                    localActive == "ar" ? "right-[35%]" : "left-[35%]"
+                } px-3 py-1 bg-[#19AFFF] shadow-md rounded-lg`}
+            >
                 <div className="bg-[#70CDFF] p-1 mr-2 rounded-lg">
                     <Image src={thumb_up} alt="thumb up image" height={30} />
                 </div>
@@ -65,17 +74,17 @@ const AboutUsSection = () => {
                 <Image src={actor2} alt="actor2 image" height={700} />
             </div>
             <div className="flex flex-col justify-between items-center md:items-start w-full md:w-1/2 h-fit md:pl-10 z-10">
-                <div className="flex justify-center md:justify-start items-center w-1/2 h-fit pb-4">
-                    <h3 className="font-semibold text-xl text-white whitespace-nowrap pt-4 pr-6">
+                <div className="flex justify-center md:justify-start items-center w-1/2 gap-3 h-fit pb-4">
+                    <h3 className="font-semibold text-xl text-white whitespace-nowrap pt-4">
                         {t("tag")}
                     </h3>
                     <Image src={growth2} alt="growth icon" height={35} />
                 </div>
                 <div className="mb-6">
-                    <h2 className="font-bold text-dark-blue text-center md:text-left text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-7">
+                    <h2 className="font-bold text-dark-blue max-md:text-center text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-7">
                         {t("heading")}
                     </h2>
-                    <p className="text-white text-center md:text-left text-base">
+                    <p className="text-white max-md:text-center text-base">
                         {t("description")}
                     </p>
                 </div>
