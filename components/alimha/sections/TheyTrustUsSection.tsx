@@ -46,9 +46,9 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                 <h3 className="font-semibold text-xl text-white pt-4">{tag}</h3>
             </div>
             <div className="mb-6">
-                <h1 className="font-bold text-dark-blue text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-4">
+                <h2 className="font-bold text-dark-blue text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-4">
                     {title}
-                </h1>
+                </h2>
                 <p className="max-w-[595px] text-white text-xl">
                     {description}
                 </p>

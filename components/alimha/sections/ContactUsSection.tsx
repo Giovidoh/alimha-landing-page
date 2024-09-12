@@ -8,7 +8,7 @@ import line_vector3 from "@/public/assets/line-vector3.png";
 import { useTranslations } from "next-intl";
 
 const ContactUsSection = () => {
-    const t = useTranslations("AlimhaPage");
+    const t = useTranslations("AlimhaPage.ContactUsSection");
     return (
         <section
             id="contact"
@@ -34,17 +34,22 @@ const ContactUsSection = () => {
             />
 
             <div className="mb-6">
-                <h1 className="font-bold text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-5">
-                    {t("Contact us")}
-                </h1>
+                <h2 className="font-bold text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-5">
+                    {t("heading")}
+                </h2>
                 <p className="text-xl text-[#333333] font-medium pb-4">
-                    {t("Let's discuss your project")}
+                    {t("description")}
                 </p>
             </div>
             <div className="grid  lg:grid-cols-2 gap-5 w-full">
                 {/* ADD A MAP HERE */}
                 <Map />
-                <ContactForm />
+                <ContactForm
+                    namePlaceholder={t("contact form.name")}
+                    emailPlaceholder={t("contact form.email")}
+                    messagePlaceholder={t("contact form.your message")}
+                    buttonText={t("contact form.send")}
+                />
             </div>
         </section>
     );

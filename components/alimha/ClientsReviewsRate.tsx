@@ -3,7 +3,7 @@ import Star from "./Star";
 import { useTranslations } from "next-intl";
 
 const ClientsReviewsRate = () => {
-    const t = useTranslations("AlimhaPage");
+    const t = useTranslations("AlimhaPage.HeroSection");
     return (
         <div className="flex flex-col items-center justify-between w-full h-14 md:w-fit">
             <div className="flex justify-evenly w-full">

@@ -10,18 +10,18 @@ import circle5 from "@/public/assets/circle-vector-5.png";
 import { useTranslations } from "next-intl";
 
 const HeroSection = () => {
-    const t = useTranslations("AlimhaPage");
+    const t = useTranslations("AlimhaPage.HeroSection");
 
     return (
         <section className="flex bg-white h-fit w-full px-[5%] lg:px-[10%] pt-10 md:pt-12 lg:pt-18 xl:pt-32 pb-24 bg-hero-world-img bg-contain bg-no-repeat bg-top">
             <div className="w-full md:w-1/2 text-center md:text-left">
                 <h1 className="font-bold text-[32px] lg:text-[54px] leading-[50px] lg:leading-[64.8px] pb-4">
-                    {t("welcome to")} <br />
+                    {t("heading.first")} <br />
                     <span className="text-primary-blue">
-                        {t("Alimha and Company")}
+                        {t("heading.second")}
                     </span>
                 </h1>
-                <p className="text-[#1E1E1E] pb-8">{t("hero description")}</p>
+                <p className="text-[#1E1E1E] pb-8">{t("supporting text")}</p>
                 <div className="flex flex-col md:flex-row justify-between w-full pb-8">
                     <ButtonGradientStyle1
                         fromColor="from-primary-blue"

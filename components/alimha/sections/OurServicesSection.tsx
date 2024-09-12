@@ -9,7 +9,7 @@ import line_vector1 from "@/public/assets/line-vector1.png";
 import { useTranslations } from "next-intl";
 
 const OurServicesSection = () => {
-    const t = useTranslations("AlimhaPage");
+    const t = useTranslations("AlimhaPage.OurServicesSection");
     return (
         <section
             id="our-services"
@@ -29,14 +29,14 @@ const OurServicesSection = () => {
             />
             <div className="flex justify-center md:justify-start items-center h-fit">
                 <h3 className="font-semibold text-xl text-primary-blue pt-4 pr-6 mb-4">
-                    {t("Our services")}
+                    {t("tag")}
                 </h3>
                 {/* <Image src={fund1} alt="fund icon" height={54} width={54} /> */}
             </div>
             <div className="mb-6">
-                <h1 className="font-bold text-center md:text-left text-[32px] lg:text-[44px] leading-[45px] lg:leading-[52.6px] pb-4">
-                    {t("Expand your")} <br /> {t("business with Alimha")}
-                </h1>
+                <h2 className="font-bold text-center md:text-left text-[32px] lg:text-[44px] leading-[45px] lg:leading-[52.6px] pb-4">
+                    {t("heading.first")} <br /> {t("heading.second")}
+                </h2>
                 {/* <p className="text-center md:text-left text-xl text-gray-2">
                     Des solutions simples pour vos Paiements et transfert
                     d’argent
@@ -46,26 +46,27 @@ const OurServicesSection = () => {
                 <Card
                     icon={software_icon}
                     bgColor={"bg-[#E9FFF5]"}
-                    title={t("Software Development")}
-                    description={t("Software Development description")}
+                    title={t("card1.title")}
+                    description={t("card1.description")}
+                    buttonText={t("Learn more")}
                     buttonBgColor="bg-green-1"
                 />
                 <Card
                     icon={payment_icon}
                     bgColor={"bg-[#E0E2FF]"}
                     href="/en/alpay"
-                    title={t("Payment Solutions Aggregator")}
-                    description={t("Payment Solutions Aggregator description")}
+                    title={t("card2.title")}
+                    description={t("card2.description")}
+                    buttonText={t("Learn more")}
                 />
                 <Card
                     icon={transaction_icon}
                     bgColor={"bg-[#FFF2E0]"}
                     href="/en/sendmo"
-                    title={t("Money Deposit Mobile Application")}
+                    title={t("card3.title")}
                     titleColor="text-orange-1"
-                    description={t(
-                        "Money Deposit Mobile Application description"
-                    )}
+                    description={t("card1.description")}
+                    buttonText={t("Learn more")}
                     buttonBgColor="bg-orange-1"
                 />
             </div>

@@ -11,7 +11,7 @@ import dot_vector2 from "@/public/assets/dot-vector-2.png";
 import { useTranslations } from "next-intl";
 
 const Footer = () => {
-    const t = useTranslations("AlimhaPage");
+    const t = useTranslations("AlimhaPage.Footer");
 
     return (
         <footer className="relative flex flex-col justify-evenly items-center bg-gradient-to-br from-primary-blue via-secondary-blue  to-secondary-blue px-[5%] xl:px-[10%] overflow-hidden">
@@ -56,7 +56,7 @@ const Footer = () => {
                 <div className="max-w-[280px]">
                     <LogoFooter />
                     <p className="text-white text-justify leading-[19.13px] mt-5">
-                        {t("Footer description")}
+                        {t("description")}
                     </p>
                     {/* <div className="flex justify-between items-center w-2/3 pt-7">
                         <Image
@@ -85,56 +85,41 @@ const Footer = () => {
                 <div className="flex flex-wrap justify-between gap-10 w-full">
                     <div className="flex flex-col">
                         <h3 className="font-semibold text-dark-blue text-2xl mt-3">
-                            Alimha
+                            {t("col1.title")}
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
-                            <FooterLink href="#" text={t("About us")} />
-                            <FooterLink href="#" text={t("Why us")} />
+                            <FooterLink href="#" text={t("col1.link1")} />
+                            <FooterLink href="#" text={t("col1.link2")} />
                         </div>
                     </div>
                     <div className="flex flex-col justify-between">
                         <h3 className="font-semibold text-dark-blue text-2xl mt-3">
-                            {t("Solutions")}
+                            {t("col2.title")}
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
-                            <FooterLink
-                                href="#"
-                                text={t("Software Development")}
-                            />
-                            <FooterLink
-                                href="#"
-                                text={t("Payment Solutions Aggregator")}
-                            />
-                            <FooterLink
-                                href="#"
-                                text={t("Money Deposit Mobile Application")}
-                            />
+                            <FooterLink href="#" text={t("col2.link1")} />
+                            <FooterLink href="#" text={t("col2.link2")} />
+                            <FooterLink href="#" text={t("col2.link3")} />
                         </div>
                     </div>
                     <div className="flex flex-col justify-between">
                         <h3 className="font-semibold text-dark-blue text-2xl mt-3">
-                            {t("Resources")}
+                            {t("col3.title")}
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
-                            <FooterLink href="#" text={t("Terms of use")} />
-                            <FooterLink href="#" text={t("Privacy policy")} />
-                            <FooterLink href="#" text={t("Legal Notice")} />
+                            <FooterLink href="#" text={t("col3.link1")} />
+                            <FooterLink href="#" text={t("col3.link2")} />
+                            <FooterLink href="#" text={t("col3.link3")} />
                         </div>
                     </div>
                     <div className="flex flex-col justify-between">
                         <h3 className="font-semibold text-dark-blue text-2xl mt-3">
-                            {t("Contact us")}
+                            {t("col4.title")}
                         </h3>
                         <div className="flex flex-col gap-3 mt-7">
-                            <FooterLink href="#" text="infos@alimha.com" />
-                            <FooterLink
-                                href="#"
-                                text="+221 33 844 30 81 / +221 77 889 21 74"
-                            />
-                            <FooterLink
-                                href="#"
-                                text="Mamelles, Dakar - Sénégal"
-                            />
+                            <FooterLink href="#" text={t("col4.link1")} />
+                            <FooterLink href="#" text={t("col4.link2")} />
+                            <FooterLink href="#" text={t("col4.link3")} />
                         </div>
                     </div>
                 </div>

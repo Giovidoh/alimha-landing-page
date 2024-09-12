@@ -1,54 +1,106 @@
 {
     "AlimhaPage": {
-        "Solutions": "Solutions",
-        "About us": "About us",
-        "Contact": "Contact",
-        "Alimha and Company": "Alimha and Company",
-        "welcome to": "Welcome to",
-        "hero description": "Your trusted partner for technology solutions, we turn your ideas into innovative realities. Thanks to a combination of expertise, creativity and cutting-edge technology, we bring your visions to life, turning them into practical, high-performance solutions.",
-        "Become partner": "Become partner",
-        "Learn more": "Learn more",
-        "Customer reviews": "Customer reviews",
-        "Our services": "Our services",
-        "Expand your": "Expand your",
-        "business with Alimha": "business with Alimha",
-        "Software Development": "Software Development",
-        "Software Development description": "Tailor-made software solutions for your specific needs. We create web and mobile applications, analyze and audit your systems, and deploy IT solutions tailored to your requirements.",
-        "Payment Solutions Aggregator": "Payment Solutions Aggregator",
-        "Payment Solutions Aggregator description": "Connect to the best payment solutions. Centralize and optimize your financial transactions with our payment solutions aggregator, designed to simplify and secure your operations.",
-        "Money Deposit Mobile Application": "Money Deposit Mobile Application",
-        "Money Deposit Mobile Application description": "Secure, low-cost and instant Mobile Money deposits. Make sub-regional money deposits easy with our mobile application, designed to offer a seamless and secure user experience.",
-        "Your growth partner": "Your growth partner",
-        "About us section description": "Alimha and Company is an innovative fintech dedicated to providing modern and efficient payment solutions. Our mission is to simplify financial transactions across the region, offering reliable, secure and accessible services to all.",
-        "WhyUsSection title first part": "Our global",
-        "WhyUsSection title second part": "Reach",
-        "Alimha is present": "Alimha is present",
-        "in1": "in",
-        "in2": "",
-        "and": "and",
-        "the": "the",
-        "Senegal": "Senegal",
-        "Togo": "Togo",
-        "Guinea": "Guinea",
-        "Djibouti": "Djibouti",
-        "Central Africa": "Central Africa",
-        "Comoros": "Comoros",
-        "They trust us": "They trust us",
-        "Our partners and support": "Our partners & support",
-        "They trust us section description": "We work with strategic partners in various sectors to enhance our service offering.",
-        "Contact us": "Contact us",
-        "Let's discuss your project": "Let's discuss your project",
-        "Name": "Name",
-        "Email": "Email",
-        "Your message": "Your message",
-        "Send": "Send",
-        "Footer description": "Join the Technological Revolution Discover how Alimha and Company can transform the way you do of doing business. Contact us today!",
-        "Why us": "Why us",
-        "Resources": "Resources",
-        "Terms of use": "Terms of use",
-        "Privacy policy": "Privacy policy",
-        "Legal Notice": "Legal Notice",
-        "Copyright": "All rights reserved | Copyright 2024"
+        "Header": {
+            "Solutions": "Solutions",
+            "About us": "About us",
+            "Contact": "Contact",
+            "Become partner": "Become partner"
+        },
+        "HeroSection": {
+            "heading": {
+                "first": "Welcome to",
+                "second": "Alimha and Company"
+            },
+            "supporting text": "Your trusted partner for technology solutions, we turn your ideas into innovative realities. Thanks to a combination of expertise, creativity and cutting-edge technology, we bring your visions to life, turning them into practical, high-performance solutions.",
+            "Become partner": "Become partner",
+            "Learn more": "Learn more",
+            "Customer reviews": "Customer reviews"
+        },
+        "OurServicesSection": {
+            "tag": "Our services",
+            "heading": {
+                "first": "Expand your",
+                "second": "business with Alimha"
+            },
+            "card1": {
+                "title": "Software Development",
+                "description": "Tailor-made software solutions for your specific needs. We create web and mobile applications, analyze and audit your systems, and deploy IT solutions tailored to your requirements."
+            },
+            "card2": {
+                "title": "Payment Solutions Aggregator",
+                "description": "Connect to the best payment solutions. Centralize and optimize your financial transactions with our payment solutions aggregator, designed to simplify and secure your operations."
+            },
+            "card3": {
+                "title": "Mobile Money Deposit Application",
+                "description": "Secure, low-cost and instant Mobile Money deposits. Make sub-regional money deposits easy with our mobile application, designed to offer a seamless and secure user experience."
+            },
+            "Learn more": "Learn more"
+        },
+        "AboutUsSection": {
+            "tag": "About us",
+            "heading": "Your growth partner",
+            "description": "Alimha and Company is an innovative fintech dedicated to providing modern and efficient payment solutions. Our mission is to simplify financial transactions across the region, offering reliable, secure and accessible services to all.",
+            "Learn more": "Learn more"
+        },
+        "WhyUsSection": {
+            "heading": {
+                "first": "Our global",
+                "second": "Reach"
+            },
+            "Alimha is present": "Alimha is present",
+            "in1": "in",
+            "in2": "",
+            "and": "and",
+            "the": "the",
+            "Senegal": "Senegal",
+            "Togo": "Togo",
+            "Guinea": "Guinea",
+            "Djibouti": "Djibouti",
+            "Central Africa": "Central Africa",
+            "Comoros": "Comoros"
+        },
+        "TheyTrustUsSection": {
+            "tag": "They trust us",
+            "heading": "Our partners & support",
+            "description": "We work with strategic partners in various sectors to enhance our service offering."
+        },
+        "ContactUsSection": {
+            "heading": "Contact us",
+            "description": "Let's discuss your project",
+            "contact form": {
+                "name": "Name",
+                "email": "Email",
+                "your message": "Your message",
+                "send": "Send"
+            }
+        },
+        "Footer": {
+            "description": "Join the Technological Revolution Discover how Alimha and Company can transform the way you do of doing business. Contact us today!",
+            "col1": {
+                "title": "Alimha",
+                "link1": "About us",
+                "link2": "Why us"
+            },
+            "col2": {
+                "title": "Solutions",
+                "link1": "Software Development",
+                "link2": "Payment Solutions Aggregator",
+                "link3": "Mobile Money Deposit Application"
+            },
+            "col3": {
+                "title": "Resources",
+                "link1": "Terms of use",
+                "link2": "Privacy policy",
+                "link3": "Legal notice"
+            },
+            "col4": {
+                "title": "Contact us",
+                "link1": "infos@alimha.com",
+                "link2": "+221 33 844 30 81 / +221 77 889 21 74",
+                "link3": "Mamelles, Dakar - Senegal"
+            },
+            "Copyright": "All rights reserved | Copyright 2024"
+        }
     },
     "AlpayPage": {
         "Header": {

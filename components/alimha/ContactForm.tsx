@@ -1,14 +1,23 @@
 "use client";
-import React from "react";
+import React, { FC } from "react";
 import Input from "./Input";
 import TextArea from "./TextArea";
 import ButtonGradientStyle1 from "./buttons/ButtonGradientStyle1";
 import { toast } from "sonner";
-import { useTranslations } from "next-intl";
 
-const ContactForm = () => {
-    const t = useTranslations("AlimhaPage");
+interface ContactFormProps {
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    messagePlaceholder: string;
+    buttonText: string;
+}
 
+const ContactForm: FC<ContactFormProps> = ({
+    namePlaceholder,
+    emailPlaceholder,
+    messagePlaceholder,
+    buttonText,
+}) => {
     async function handleSubmit(e: any) {
         e.preventDefault();
         const response = await fetch("https://api.web3forms.com/submit", {
@@ -46,10 +55,18 @@ const ContactForm = () => {
                 className="bg-white px-10 py-7 items-center rounded-3xl z-10"
             >
                 <div className="flex flex-col items-center justify-around h-[330px] sm:h-[482px]">
-                    <Input type="text" name="name" placeholder={t("Name")} />
-                    <Input type="email" name="email" placeholder={t("Email")} />
-                    <TextArea name="message" placeholder={t("Your message")} />
-                    <ButtonGradientStyle1 text={t("Send")} />
+                    <Input
+                        type="text"
+                        name="name"
+                        placeholder={namePlaceholder}
+                    />
+                    <Input
+                        type="email"
+                        name="email"
+                        placeholder={emailPlaceholder}
+                    />
+                    <TextArea name="message" placeholder={messagePlaceholder} />
+                    <ButtonGradientStyle1 text={buttonText} />
                 </div>
             </form>
         </>

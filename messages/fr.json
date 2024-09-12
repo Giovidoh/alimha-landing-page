@@ -1,59 +1,106 @@
 {
     "AlimhaPage": {
-        "Solutions": "Solutions",
-        "About us": "Qui sommes-nous ?",
-        "Contact": "Contact",
-        "Alimha and Company": "Alimha and Company",
-        "welcome to": "Bienvenue chez",
-        "hero description": "Votre partenaire de confiance en solutions technologiques, nous transformons vos idées en réalités innovantes. Grâce à une combinaison d'expertise, de créativité et de technologie de pointe, nous donnons vie à vos visions en les concrétisant en solutions pratiques et performantes.",
-        "Become partner": "Devenir partenaire",
-        "Learn more": "En savoir Plus",
-        "Customer reviews": "Avis des clients",
-        "Our services": "Nos services",
-        "Expand your": "Développez votre",
-        "business with Alimha": "activité avec Alimha",
-        "Software Development": "Développement de Logiciels",
-        "Software Development description": "Des solutions logicielles sur mesure pour vos besoins spécifiques. Nous créons des applications web et mobiles, analysons et auditons vos systèmes, et déployons des solutions informatiques adaptées à vos exigences.",
-        "Payment Solutions Aggregator": "Agrégateur de Solutions de Paiement",
-        "Payment Solutions Aggregator description": "Connectez-vous aux meilleures solutions de paiement. Centralisez et optimisez vos transactions financières grâce à notre agrégateur de solutions de paiement, conçu pour simplifier et sécuriser vos opérations.",
-        "Money Deposit Mobile Application": "Application Mobile de Dépôt d'argent",
-        "Money Deposit Mobile Application description": "Dépôts Mobile Money sécurisés, à moindre coût et instantanés. Facilitez les dépôts d'argent sous-régionaux avec notre application mobile, conçue pour offrir une expérience utilisateur fluide et sécurisée.",
-        "Your growth partner": "Votre partenaire de croissance",
-        "About us section description": "Alimha and Company est une fintech innovante dédiée à fournir des solutions de paiement modernes et efficaces. Notre mission est de simplifier les transactions financières à travers la région, en offrant des services fiables, sécurisés et accessibles à tous.",
-        "WhyUsSection title first part": "Notre portée",
-        "WhyUsSection title second part": "Mondiale",
-        "Alimha is present": "Alimha est présent",
-        "in1": "au",
-        "in2": "en",
-        "and": "et",
-        "the": "",
-        "Senegal": "Sénégal",
-        "Togo": "Togo",
-        "Guinea": "Guinée",
-        "Djibouti": "Djibouti",
-        "Central Africa": "Centrafrique",
-        "Comoros": "Comores",
-        "They trust us": "Ils nous font confiance",
-        "Our partners and support": "Nos partenaires & supports",
-        "They trust us section description": "Nous travaillons avec des partenaires stratégiques de différents secteurs pour enrichir notre offre de services.",
-        "Contact us": "Contactez-nous",
-        "Let's discuss your project": "Discutons de votre projet",
-        "Name": "Nom",
-        "Email": "Email",
-        "Your message": "Votre message",
-        "Send": "Envoyer",
-        "Footer description": "Rejoignez la Révolution Technologique Découvrez comment Alimha and Company peut transformer votre manière de faire des affaires. Contactez-nous dès aujourd'hui !",
-        "Why us": "Pourquoi - nous ?",
-        "Resources": "Ressources",
-        "Terms of use": "Conditions d’utilisation",
-        "Privacy policy": "Politique de confidentialité",
-        "Legal Notice": "Mention Légale",
-        "Copyright": "Tous droits réservés | Copyright 2024",
+        "Header": {
+            "Solutions": "Solutions",
+            "About us": "Qui sommes-nous",
+            "Contact": "Contact",
+            "Become partner": "Devenir partenaire"
+        },
         "HeroSection": {
-            "main heading": {
-                "first": "Agrégateur de Solutions",
-                "second": "de Paiement"
+            "heading": {
+                "first": "Bienvenue chez",
+                "second": "Alimha and Company"
+            },
+            "supporting text": "Votre partenaire de confiance en solutions technologiques, nous transformons vos idées en réalités innovantes. Grâce à une combinaison d'expertise, de créativité et de technologie de pointe, nous donnons vie à vos visions en les concrétisant en solutions pratiques et performantes.",
+            "Become partner": "Devenir partenaire",
+            "Learn more": "En savoir Plus",
+            "Customer reviews": "Avis des clients"
+        },
+        "OurServicesSection": {
+            "tag": "Nos services",
+            "heading": {
+                "first": "Développez votre",
+                "second": "activité avec Alimha"
+            },
+
+            "card1": {
+                "title": "Développement de Logiciels",
+                "description": "Des solutions logicielles sur mesure pour vos besoins spécifiques. Nous créons des applications web et mobiles, analysons et auditons vos systèmes, et déployons des solutions informatiques adaptées à vos exigences."
+            },
+            "card2": {
+                "title": "Agrégateur de Solutions de Paiement",
+                "description": "Connectez-vous aux meilleures solutions de paiement. Centralisez et optimisez vos transactions financières grâce à notre agrégateur de solutions de paiement, conçu pour simplifier et sécuriser vos opérations."
+            },
+            "card3": {
+                "title": "Application Mobile de Dépôt d'argent",
+                "description": "Dépôts Mobile Money sécurisés, à moindre coût et instantanés. Facilitez les dépôts d'argent sous-régionaux avec notre application mobile, conçue pour offrir une expérience utilisateur fluide et sécurisée."
+            },
+            "Learn more": "En savoir plus"
+        },
+        "AboutUsSection": {
+            "tag": "Qui sommes nous ?",
+            "heading": "Votre partenaire de croissance",
+            "description": "Alimha and Company est une fintech innovante dédiée à fournir des solutions de paiement modernes et efficaces. Notre mission est de simplifier les transactions financières à travers la région, en offrant des services fiables, sécurisés et accessibles à tous.",
+            "Learn more": "En savoir plus"
+        },
+        "WhyUsSection": {
+            "heading": {
+                "first": "Notre portée",
+                "second": "Mondiale"
+            },
+            "Alimha is present": "Alimha est présent",
+            "in1": "au",
+            "in2": "en",
+            "and": "et",
+            "the": "",
+            "Senegal": "Sénégal",
+            "Togo": "Togo",
+            "Guinea": "Guinée",
+            "Djibouti": "Djibouti",
+            "Central Africa": "Centrafrique",
+            "Comoros": "Comores"
+        },
+        "TheyTrustUsSection": {
+            "tag": "Ils nous font confiance",
+            "heading": "Nos partenaires & supports",
+            "description": "Nous travaillons avec des partenaires stratégiques de différents secteurs pour enrichir notre offre de services."
+        },
+        "ContactUsSection": {
+            "heading": "Contactez-nous",
+            "description": "Discutons de votre projet",
+            "contact form": {
+                "name": "Nom",
+                "email": "Email",
+                "your message": "Votre message",
+                "send": "Envoyer"
             }
+        },
+        "Footer": {
+            "description": "Rejoignez la Révolution Technologique Découvrez comment Alimha and Company peut transformer votre manière de faire des affaires. Contactez-nous dès aujourd'hui !",
+            "col1": {
+                "title": "Alimha",
+                "link1": "Qui sommes-nous ?",
+                "link2": "Pourquoi nous ?"
+            },
+            "col2": {
+                "title": "Solutions",
+                "link1": "Développement de Logiciels",
+                "link2": "Agrégateur de Solutions de Paiement",
+                "link3": "Application Mobile de Dépôt d'argent"
+            },
+            "col3": {
+                "title": "Ressources",
+                "link1": "Conditions d'utilisation",
+                "link2": "Politique de confidentialité",
+                "link3": "Mention légale"
+            },
+            "col4": {
+                "title": "Contactez-nous",
+                "link1": "infos@alimha.com",
+                "link2": "+221 33 844 30 81 / +221 77 889 21 74",
+                "link3": "Mamelles, Dakar - Sénégal"
+            },
+            "Copyright": "Tous droits réservés | Copyright 2024"
         }
     },
     "AlpayPage": {

@@ -19,9 +19,9 @@ export default function Home() {
             <AboutUsSection />
             <WhyUsSection />
             <TheyTrustUsSection
-                tag={t("They trust us")}
-                title={t("Our partners and support")}
-                description={t("They trust us section description")}
+                tag={t("TheyTrustUsSection.tag")}
+                title={t("TheyTrustUsSection.heading")}
+                description={t("TheyTrustUsSection.description")}
             />
             <ContactUsSection />
             <Footer />

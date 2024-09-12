@@ -3,7 +3,7 @@ import NavLink from "./NavLink";
 import { useTranslations } from "next-intl";
 
 const NavBar = () => {
-    const t = useTranslations("AlimhaPage");
+    const t = useTranslations("AlimhaPage.Header");
     return (
         <ul className="flex max-md:flex-col justify-around w-full max-w-[500px]">
             <NavLink text={t("Solutions")} href="#our-services" />

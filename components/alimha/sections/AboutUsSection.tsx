@@ -12,8 +12,8 @@ import dash_vector1 from "@/public/assets/dash-vector-1.png";
 import thumb_up from "@/public/assets/thumb-up.png";
 import { useTranslations } from "next-intl";
 
-const WhoAreWeSection = () => {
-    const t = useTranslations("AlimhaPage");
+const AboutUsSection = () => {
+    const t = useTranslations("AlimhaPage.AboutUsSection");
     return (
         <section
             id="who-are-we"
@@ -67,16 +67,16 @@ const WhoAreWeSection = () => {
             <div className="flex flex-col justify-between items-center md:items-start w-full md:w-1/2 h-fit md:pl-10 z-10">
                 <div className="flex justify-center md:justify-start items-center w-1/2 h-fit pb-4">
                     <h3 className="font-semibold text-xl text-white whitespace-nowrap pt-4 pr-6">
-                        {t("About us")}
+                        {t("tag")}
                     </h3>
                     <Image src={growth2} alt="growth icon" height={35} />
                 </div>
                 <div className="mb-6">
-                    <h1 className="font-bold text-dark-blue text-center md:text-left text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-7">
-                        {t("Your growth partner")}
-                    </h1>
+                    <h2 className="font-bold text-dark-blue text-center md:text-left text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-7">
+                        {t("heading")}
+                    </h2>
                     <p className="text-white text-center md:text-left text-base">
-                        {t("About us section description")}
+                        {t("description")}
                     </p>
                 </div>
                 <ButtonGradientStyle1
@@ -89,4 +89,4 @@ const WhoAreWeSection = () => {
     );
 };
 
-export default WhoAreWeSection;
+export default AboutUsSection;

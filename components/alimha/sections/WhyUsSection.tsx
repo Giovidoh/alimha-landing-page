@@ -13,7 +13,7 @@ import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 
 const WhyUsSection = () => {
-    const t = useTranslations("AlimhaPage");
+    const t = useTranslations("AlimhaPage.WhyUsSection");
     const pathname = usePathname();
 
     return (
@@ -63,10 +63,9 @@ const WhyUsSection = () => {
                     <Image src={map_img} alt="map icon" height={40} />
                 </div>
                 <div>
-                    <h1 className="font-bold text-center md:text-left text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-5">
-                        {t("WhyUsSection title first part")} <br />{" "}
-                        {t("WhyUsSection title second part")}
-                    </h1>
+                    <h2 className="font-bold text-center md:text-left text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-5">
+                        {t("heading.first")} <br /> {t("heading.second")}
+                    </h2>
                     <p className="text-center md:text-left text-base font-normal tracking-wide text-[#333333] pb-5 md:pb-10">
                         {t("Alimha is present") + " " + t("in1")}{" "}
                         <span className="text-primary-blue font-semibold">
