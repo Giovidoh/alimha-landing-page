@@ -9,6 +9,7 @@ import frFlag from "@/public/assets/fr-flag.png";
 import usFlag from "@/public/assets/us-flag.png";
 import saFlag from "@/public/assets/sa-flag.png";
 import ChevronDownOutline from "@/public/assets/chevron-down-outline.svg";
+import { motion } from "framer-motion";
 
 type LanguageInfo = {
     id: string;
@@ -60,7 +61,9 @@ const LocalSwitcherSelect = () => {
             <span className="font-semibold">
                 {selectedLanguages[localActive].label}
             </span>
-            <ChevronDownOutline className="h-5" />
+            <motion.div animate={{ rotate: toggleLocalSwitcher ? 180 : 0 }}>
+                <ChevronDownOutline className="h-5" />
+            </motion.div>
         </div>
     );
     // Show the non-selected languages
