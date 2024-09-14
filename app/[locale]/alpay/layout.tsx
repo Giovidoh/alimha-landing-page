@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "@/styles/alpayGlobals.css";
+import { useLocale } from "next-intl";
 
 const sora = Sora({ subsets: ["latin"] });
 
@@ -15,8 +16,9 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const localActive = useLocale();
     return (
-        <html lang="en">
+        <html lang="en" dir={localActive == "ar" ? "rtl" : "ltr"}>
             <body className={sora.className}>{children}</body>
         </html>
     );
