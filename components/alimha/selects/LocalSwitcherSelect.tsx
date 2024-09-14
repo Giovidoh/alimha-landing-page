@@ -66,8 +66,8 @@ const LocalSwitcherSelect = () => {
             </motion.div>
         </div>
     );
-    // Show the non-selected languages
 
+    // Show the non-selected languages
     const languages: Record<string, LanguageInfo[]> = {
         en: [
             {
