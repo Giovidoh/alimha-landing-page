@@ -6,6 +6,7 @@ import Button from "../buttons/Button";
 import BurgerButtonIcon from "@/public/assets/burger-button-icon.svg";
 import Link from "next/link";
 import LocalSwitcherSelect from "../selects/LocalSwitcherSelect";
+import { useLocale } from "next-intl";
 
 interface HeaderProps {
     headerLinks: { text: string; url: string }[];
@@ -14,6 +15,7 @@ interface HeaderProps {
 
 const Header: FC<HeaderProps> = ({ headerLinks, contactUs }) => {
     const [toggleMenu, setToggleMenu] = useState(false);
+    const localActive = useLocale();
 
     return (
         <header className="sticky top-0 left-0 flex justify-center bg-white w-screen px-5 sm:px-20 min-[1330px]:px-40 py-5 z-50">
@@ -43,7 +45,11 @@ const Header: FC<HeaderProps> = ({ headerLinks, contactUs }) => {
                     </button>
 
                     {toggleMenu && (
-                        <div className="absolute right-0 top-full flex flex-col bg-white bg-opacity-80 p-10 gap-3 border backdrop-blur">
+                        <div
+                            className={`absolute ${
+                                localActive == "ar" ? "left-0" : "right-0"
+                            } top-full flex flex-col bg-white bg-opacity-80 p-10 gap-3 border backdrop-blur`}
+                        >
                             <div className="min-[1000px]:hidden">
                                 <Navbar headerLinks={headerLinks} />
                             </div>
