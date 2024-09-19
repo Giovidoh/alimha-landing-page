@@ -16,7 +16,7 @@ import moovMoneyImg from "@/public/assets/moov-money.png";
 import tmoneyImg from "@/public/assets/tmoney.png";
 import Image from "next/image";
 import sendmoHeroImage from "@/public/assets/sendmo-hero-image.png";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const countriesImages = [
     {
@@ -61,6 +61,7 @@ const paymentMethodsImages = [
 ];
 
 const HeroSection = () => {
+    const localActive = useLocale();
     const t = useTranslations("SendmoPage.HeroSection");
     return (
         <section className="flex flex-col min-[930px]:flex-row justify-between items-center w-full px-5 sm:px-20 min-[1120px]:px-40 py-10">
@@ -106,10 +107,24 @@ const HeroSection = () => {
                         priority
                     />
                 </div>
-                <div className="hidden sm:block absolute bottom-14 left-0 min-[930px]:bottom-1/3 min-[930px]:-left-14">
+                <div
+                    className={`hidden sm:block absolute bottom-14 min-[930px]:bottom-1/3 ${
+                        localActive == "ar" ? "right-0" : "left-0"
+                    } ${
+                        localActive == "ar"
+                            ? "min-[930px]:-right-14"
+                            : "min-[930px]:-left-14"
+                    }`}
+                >
                     <ImagesCollection images={countriesImages} />
                 </div>
-                <div className="hidden sm:block absolute top-5 min-[930px]:top-14 min-[930px]:right-1/4">
+                <div
+                    className={`hidden sm:block absolute top-5 min-[930px]:top-14 ${
+                        localActive == "ar"
+                            ? "min-[930px]:left-1/4 "
+                            : "min-[930px]:right-1/4 "
+                    }`}
+                >
                     <ImagesCollection images={paymentMethodsImages} />
                 </div>
             </div>

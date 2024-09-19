@@ -10,7 +10,7 @@ import Badge from "../badges/Badge";
 import Button from "../buttons/Button";
 import ImagesCollections from "../ImagesCollection";
 import { Inter } from "next/font/google";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +34,9 @@ const avatarsImages = [
 ];
 
 const WelcomeToSendmoSection = () => {
+    const localActive = useLocale();
     const t = useTranslations("SendmoPage.WelcomeToSendmoSection");
+
     return (
         <section className="flex flex-col-reverse min-[930px]:flex-row justify-between items-center bg-gray-50 px-5 sm:px-20 min-[1120px]:px-40 min-[930px]:pt-10 pb-20">
             <div className="relative">
@@ -48,13 +50,21 @@ const WelcomeToSendmoSection = () => {
                 <div className="hidden min-[930px]:block">
                     <Image src={blackWoman} alt="black woman image" />
                 </div>
-                <div className="hidden sm:block absolute top-1/3 -left-[15%]">
+                <div
+                    className={`hidden sm:block absolute top-1/3 ${
+                        localActive == "ar" ? "-right-[15%]" : "-left-[15%]"
+                    }`}
+                >
                     <ImagesCollections
                         images={avatarsImages}
                         imageHeight={40}
                     />
                 </div>
-                <div className="hidden sm:block absolute bottom-1 right-10">
+                <div
+                    className={`hidden sm:block absolute bottom-1 ${
+                        localActive == "ar" ? "left-10" : "right-10"
+                    }`}
+                >
                     <div className="flex items-center w-fit px-3 py-2 gap-2 bg-white rounded-lg shadow-lg">
                         <Image src={avatar5} alt="avatar 5 image" height={40} />
                         <p

@@ -242,153 +242,154 @@
     },
     "SendmoPage": {
         "Header": {
-            "Features": "Features",
-            "Advantages": "Advantages",
-            "Download": "Download",
-            "Contact": "Contact",
-            "FAQ": "FAQ",
-            "Download App": "Download App"
+            "Features": "الميزات",
+            "Advantages": "المزايا",
+            "Download": "تنزيل",
+            "Contact": "اتصل بنا",
+            "FAQ": "الأسئلة الشائعة",
+            "Download App": "تنزيل التطبيق"
         },
         "HeroSection": {
-            "tag": "Money transfer application",
+            "tag": "تطبيق تحويل الأموال",
             "main heading": {
-                "first": "Simplify Your",
-                "second": "Money Deposits"
+                "first": "بَسِّطْ من",
+                "second": "إيداعات الأموال"
             },
-            "supporting text": "Manage your transactions intuitively and securely with SendMo. Make quick deposits in just a few clicks, wherever you are."
+            "supporting text": "أدِر معاملاتك بسهولة وأمان مع SendMo. قم بإجراء إيداعات سريعة ببضع نقرات فقط، أينما كنت."
         },
         "WelcomeToSendmoSection": {
-            "tag": "Welcome to SendMo",
-            "heading": "The Innovative Solution for Your Mobile Money Deposits",
-            "description": "Transfer Easily, Deposit Quickly, Securely. With SendMo, simplify your financial transactions and connect sub-regionally with confidence.",
-            "ctaText": "Download App"
+            "tag": "مرحباً بك في SendMo",
+            "heading": "الحل المبتكر لإيداعاتك المالية عبر الهاتف المحمول",
+            "description": "قم بالتحويل بسهولة، والإيداع بسرعة وأمان. مع SendMo، يمكنك تبسيط معاملاتك المالية والتواصل دون الإقليمي بكل ثقة.",
+            "ctaText": "تنزيل التطبيق"
         },
         "FeaturesSection": {
-            "tag": "Features",
+            "tag": "الميزات",
             "heading": {
-                "first": "The Innovative Solution for",
-                "second": "Your Mobile Money Deposits"
+                "first": "الحل المبتكر لـ",
+                "second": "إيداعات أموالك عبر الهاتف المتحرك"
             },
             "card1": {
-                "title": "Instant Deposits",
-                "description": "Send money in seconds. Enjoy the speed and simplicity of our instant deposits, tailored to your everyday needs."
+                "title": "الإيداعات الفورية",
+                "description": "أرسل الأموال في ثوانٍ. استمتع بسرعة وبساطة الإيداعات الفورية التي نقدمها والمصممة خصيصاً لتلبية احتياجاتك اليومية."
             },
             "card2": {
-                "title": "Sub-regional transfers",
-                "description": "Borderless connectivity, transfer money between Senegal, Guinea, Togo, Central African Republic, Djibouti and Comoros. SendMo offers you unrivalled sub-regional coverage."
+                "title": "التحويلات دون الإقليمية",
+                "description": "اتصال بلا حدود وتحويل الأموال بين السنغال وغينيا وتوغو وجمهورية أفريقيا الوسطى وجيبوتي وجزر القمر. تقدم لك SendMo تغطية دون إقليمية لا مثيل لها."
             },
             "card3": {
-                "title": "Real-time transaction tracking",
-                "description": "Stay in control of your finances, receive instant notifications and access a detailed history of all your transactions directly from the application."
+                "title": "تتبع المعاملات في الوقت الفعلي",
+                "description": "تحكَّم في شؤونك المالية، واحصل على إشعارات فورية واطلع على سجل مفصّل لجميع معاملاتك مباشرةً من التطبيق."
             },
             "card4": {
-                "title": "24/7 customer support",
-                "description": "Anytime Support, Our dedicated team is always ready to help, ensuring a seamless user experience."
+                "title": "دعم العملاء على مدار الساعة طوال أيام الأسبوع",
+                "description": "الدعم في أي وقت، فريقنا المتفاني مستعد دائماً للمساعدة، مما يضمن تجربة مستخدم سلسة."
             }
         },
         "AdvantagesSection": {
-            "tag": "Advantages",
+            "tag": "المزايا",
             "heading": {
-                "first": "All the benefits of",
+                "first": "جميع فوائد",
                 "second": "Sendmo"
             },
             "card1": {
-                "title": "Ease of use",
-                "description": "Intuitive, user-friendly interface. SendMo is designed to be easy to use, even for technology novices."
+                "title": "سهولة الاستخدام",
+                "description": "واجهة بديهية وسهلة الاستخدام. تم تصميم SendMo ليكون سهل الاستخدام، حتى للمبتدئين في مجال التكنولوجيا."
             },
             "card2": {
-                "title": "Time saving",
-                "description": "Fast Deposits and Transfers. Reduce delays and administrative hassles with our fast, efficient system."
+                "title": "توفير الوقت",
+                "description": "إيداعات وتحويلات سريعة. قلل من التأخير والمتاعب الإدارية مع نظامنا السريع والفعال."
             },
             "card3": {
-                "title": "Advanced Security",
-                "description": "Your Money, Our Priority. Rigorous security protocols ensure that your transactions are always protected."
+                "title": "أمان متقدم",
+                "description": "أموالك، أولويتنا تضمن بروتوكولات الأمان الصارمة حماية معاملاتك دائماً."
             },
             "card4": {
-                "title": "Multi-currency flexibility",
-                "description": "Manage your finances with ease. Effortlessly accept and transfer funds in a variety of local currencies."
+                "title": "مرونة تعدد العملات",
+                "description": "قم بإدارة أموالك بكل سهولة. اقبل الأموال وحوِّلها بسهولة بمجموعة متنوعة من العملات المحلية."
             },
-            "Download App": "Download App"
+            "Download App": "تنزيل التطبيق"
         },
         "PaymentMethodsSection": {
-            "tag": "Payment methods",
-            "heading": "Countries where you can send money",
-            "subheading": "Countries where you can send money via Sendmo with available mobile money operators",
-            "Senegal": "Senegal",
-            "Togo": "Togo",
-            "Guinea": "Guinea",
-            "Djibouti": "Djibouti",
+            "tag": "طرق الدفع",
+            "heading": "البلدان التي يمكنك إرسال الأموال إليها",
+            "subheading": "البلدان التي يمكنك إرسال الأموال إليها عبر Sendmo من خلال مشغلي خدمات تحويل الأموال عبر الهاتف المحمول المتاحين",
+            "Senegal": "السنغال",
+            "Togo": "توغو",
+            "Guinea": "غينيا",
+            "Djibouti": "جيبوتي",
             "central african republic": "CAR"
         },
         "DownloadAppSection": {
-            "tag": "Download",
+            "tag": "تنزيل",
             "heading": {
-                "first": "Download SendMo",
-                "second": "Now"
+                "first": "تنزيل SendMo",
+                "second": "الآن"
             },
-            "subheading": "Available on Android and iOS",
-            "description": "Join thousands of satisfied users and download SendMo today for an unparalleled mobile money deposit experience."
+            "subheading": "متوفر على نظامي Android وiOS",
+            "description": "انضم إلى آلاف المستخدمين الراضين وقم بتنزيل SendMo اليوم للاستمتاع بتجربة إيداع أموال لا مثيل لها عبر الهاتف المحمول."
         },
         "ContactSection": {
-            "tag": "Contact",
-            "heading": "ready to start?",
+            "tag": "اتصل بنا",
+            "heading": "هل أنت مستعد للبدء؟",
             "subheading": {
-                "first": "For questions or assistance,",
-                "second": "contact us."
+                "first": "للأسئلة أو المساعدة",
+                "second": "اتصل بنا"
             },
-            "Contact us": "Contact us"
+            "Contact us": "اتصل بنا"
         },
         "FaqSection": {
-            "tag": "FAQ",
-            "heading": "Do you have any questions?",
-            "subheading": "Some useful questions about using Sendmo.",
+            "tag": "الأسئلة الشائعة",
+            "heading": "هل لديك أي أسئلة؟",
+            "subheading": "بعض الأسئلة المفيدة حول استخدام Sendmo",
             "Accordion": {
                 "question1": {
-                    "title": "How do I open a Sendmo account?",
-                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                    "title": "كيف يمكنني فتح حساب Sendmo؟",
+                    "body": "العميل سعيد جدًا بمتابعته. كان من العار أنه أراد أن يجعل الأمر سهلاً. كل ما تحتاجه هو الأرض مع جعبة. كان من العار أنه أراد أن يجعل الأمر سهلاً. أنت فقط بحاجة إلى جعبة."
                 },
                 "question2": {
-                    "title": "Is Sendmo easy to understand and use?",
-                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                    "title": "هل Sendmo سهل الفهم والاستخدام؟",
+                    "body": "العميل سعيد جدًا بمتابعته. كان من العار أنه أراد أن يجعل الأمر سهلاً. كل ما تحتاجه هو الأرض مع جعبة. كان من العار أنه أراد أن يجعل الأمر سهلاً. أنت فقط بحاجة إلى جعبة."
                 },
                 "question3": {
-                    "title": "Do Sendmo users have access to a customer support service?",
-                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                    "title": "هل يمكن لمستخدمي Sendmo الوصول إلى خدمة دعم العملاء؟",
+                    "body": "العميل سعيد جدًا بمتابعته. كان من العار أنه أراد أن يجعل الأمر سهلاً. كل ما تحتاجه هو الأرض مع جعبة. كان من العار أنه أراد أن يجعل الأمر سهلاً. أنت فقط بحاجة إلى جعبة."
                 },
                 "question4": {
-                    "title": "How to get started with sendmo?",
-                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                    "title": "كيف تبدأ مع sendmo؟",
+                    "body": "العميل سعيد جدًا بمتابعته. كان من العار أنه أراد أن يجعل الأمر سهلاً. كل ما تحتاجه هو الأرض مع جعبة. كان من العار أنه أراد أن يجعل الأمر سهلاً. أنت فقط بحاجة إلى جعبة."
                 },
                 "question5": {
-                    "title": "How to get started with sendmo?",
-                    "body": "Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas.Lorem ipsum dolor sit amet consectetur. Erat turpis id egestas facilisi. Egestas justo tellus pharetra egestas."
+                    "title": "كيف تبدأ مع sendmo؟",
+                    "body": "العميل سعيد جدًا بمتابعته. كان من العار أنه أراد أن يجعل الأمر سهلاً. كل ما تحتاجه هو الأرض مع جعبة. كان من العار أنه أراد أن يجعل الأمر سهلاً. أنت فقط بحاجة إلى جعبة.العميل سعيد جدًا بمتابعته. كان من العار أنه أراد أن يجعل الأمر سهلاً. كل ما تحتاجه هو الأرض مع جعبة. كان من العار أنه أراد أن يجعل الأمر سهلاً. أنت فقط بحاجة إلى جعبة."
                 }
             }
         },
         "Footer": {
             "heading": {
-                "first": "Simplify your money transfers",
-                "second": "at any time"
+                "first": "تبسيط تحويلاتك المالية",
+                "second": "في أي وقت"
             },
-            "E-mail": "E-mail",
-            "Subscribe": "Subscribe",
+            "E-mail": "البريد الإلكتروني",
+            "Subscribe": "اشتراك",
             "col1": {
-                "title": "Usely links",
-                "link1": "Features",
-                "link2": "Advantages",
-                "link3": "Download",
-                "link4": "Contact",
-                "link5": "FAQ"
+                "title": "روابط مفيدة",
+                "link1": "الميزات",
+                "link2": "المزايا",
+                "link3": "تنزيل",
+                "link4": "اتصل بنا",
+                "link5": "الأسئلة الشائعة"
             },
             "col2": {
-                "title": "Resources",
-                "link1": "Terms of use",
-                "link2": "Privacy policy",
-                "link3": "Legal notice"
+                "title": "الموارد",
+                "link1": "شروط الاستخدام",
+                "link2": "سياسة الخصوصية",
+                "link3": "إشعار قانوني"
             },
             "col3": {
-                "title": "App"
-            }
+                "title": "التطبيق"
+            },
+            "Copyright": "جميع الحقوق محفوظة! حقوق الطبع والنشر 2024"
         }
     }
 }
