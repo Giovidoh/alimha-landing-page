@@ -51,7 +51,7 @@ const LocalSwitcherSelect = () => {
     };
 
     const selectedLanguage = (
-        <div className="flex justify-between items-center bg-white w-full px-3 py-2 gap-2 border-[2px] border-primary-blue rounded-xl shadow-lg">
+        <div className="flex justify-between items-center bg-white w-full px-3 py-2 gap-2 border-[1px] border-primary-blue rounded-md">
             <Image
                 src={selectedLanguages[localActive].flag}
                 alt={selectedLanguages[localActive].alt}
@@ -166,7 +166,7 @@ const LocalSwitcherSelect = () => {
                 </option>
             </select> */}
             <div
-                className="relative w-[170px] select-none z-0"
+                className="relative w-full select-none z-0"
                 onClick={() => setToggleLocalSwitcher((prev) => !prev)}
             >
                 <div className="cursor-pointer">{selectedLanguage}</div>
@@ -174,7 +174,7 @@ const LocalSwitcherSelect = () => {
                 <div
                     className={`${
                         !toggleLocalSwitcher && "hidden"
-                    } absolute top-[105%] left-0 flex flex-col bg-white w-full gap-1 py-3 border-[1px] border-t-0 border-primary-blue rounded-bl-xl rounded-br-xl select-none -z-10`}
+                    } absolute top-[105%] left-0 flex flex-col bg-white w-full gap-1 py-3 border-[1px] border-t-0 border-primary-blue rounded-bl-md rounded-br-md select-none -z-10`}
                 >
                     {nonSelectedLanguages}
                 </div>

@@ -19,7 +19,7 @@ const ButtonGradientStyle1: React.FC<ButtonGradientStyle1Props> = ({
 }) => {
     return (
         <button
-            className={`bg-gradient-to-r hover:bg-gradient-to-l hover:scale-105 ${fromColor} ${toColor} font-bold capitalize tracking-wide whitespace-nowrap text-white ${width} ${height} ${marginRight} rounded-xl transition ease-in`}
+            className={`bg-gradient-to-r hover:bg-gradient-to-l hover:scale-105 ${fromColor} ${toColor} font-bold capitalize tracking-wide whitespace-nowrap text-white ${width} ${height} ${marginRight} rounded-md transition ease-in`}
         >
             {text}
         </button>
