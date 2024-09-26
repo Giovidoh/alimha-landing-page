@@ -1,62 +1,146 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import Image from "next/image";
 import React from "react";
 import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
-import ButtonStyle1 from "../buttons/ButtonStyle1";
-import ClientsReviewsRate from "../ClientsReviewsRate";
-import actor1 from "@/public/assets/actor1.png";
-import plus2 from "@/public/assets/plus-vector-2.png";
-import circle5 from "@/public/assets/circle-vector-5.png";
-import { useTranslations } from "next-intl";
+import actor3 from "@/public/assets/actor3.png";
+import jigsaw from "@/public/assets/jigsaw-img.png";
+import saas from "@/public/assets/saas-img.png";
+import api from "@/public/assets/api-img.png";
+import { useLocale, useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
+    const localActive = useLocale();
     const t = useTranslations("AlimhaPage.HeroSection");
 
     return (
-        <section className="flex bg-white h-fit w-full px-[5%] lg:px-[10%] pt-10 md:pt-12 lg:pt-18 xl:pt-32 pb-24 bg-hero-world-img bg-contain bg-no-repeat bg-top">
-            <div className="w-full md:w-1/2 max-md:text-center">
-                <h1 className="font-bold text-[32px] lg:text-[54px] leading-[50px] lg:leading-[64.8px] pb-4">
-                    {t("heading.first")} <br />
-                    <span className="text-primary-blue">
-                        {t("heading.second")}
+        <section className="bg-white bg-hero-image bg-cover bg-no-repeat">
+            <div className="relative flex justify-between items-center w-full h-full px-[5%] lg:px-[10%] pt-24">
+                <div className="flex flex-col items-center min-[900px]:items-start bg-white bg-opacity-80 min-[900px]:bg-transparent w-full min-[900px]:w-1/2 gap-3 min-[1280px]:gap-5 py-10 px-2 min-[900px]:px-0 rounded-2xl shadow-2xl shadow-white z-10">
+                    <span className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md">
+                        {t("tag")}
                     </span>
-                </h1>
-                <p className="text-[#1E1E1E] pb-8">{t("supporting text")}</p>
-                <div className="flex flex-col justify-between md:flex-row md:items-center gap-3 w-full pb-8">
-                    <ButtonGradientStyle1
-                        fromColor="from-primary-blue"
-                        toColor="to-secondary-blue"
-                        text={t("Become partner")}
-                        width="w-full md:w-1/2"
-                    />
-                    <ButtonStyle1
-                        text={t("Learn more")}
-                        width="w-full md:w-1/2"
+                    <h1 className="font-bold text-4xl min-[1200px]:text-5xl text-center min-[900px]:text-start leading-tight min-[1280px]:tleading-normal min-[900px]:whitespace-nowrap">
+                        {t("heading.first")} <br />
+                        <span className="text-primary-blue">
+                            {t("heading.second")}
+                        </span>
+                    </h1>
+                    <p className="text-[#1E1E1E] text-center min-[900px]:text-justify text-sm min-[1280px]:text-base">
+                        {t("supporting text")}
+                    </p>
+                    <div className="w-full text-center min-[900px]:text-start">
+                        <ButtonGradientStyle1
+                            fromColor="from-primary-blue"
+                            toColor="to-primary-blue"
+                            text={t("Become partner")}
+                            width="px-5"
+                        />
+                    </div>
+                </div>
+                <div className="hidden min-[900px]:block z-10">
+                    <Image
+                        src={actor3}
+                        alt="hero actor image"
+                        height={641}
+                        className="pointer-events-none select-none"
                     />
                 </div>
-                <ClientsReviewsRate />
-            </div>
-            <div className="hidden md:block md:relative md:w-1/2">
-                <Image
-                    src={actor1}
-                    alt="hero actor image"
-                    height={600}
-                    className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10"
-                />
-                {/* <Image
-                    src={plus2}
-                    alt="plus icon"
-                    height={30}
-                    width={30}
-                    className="absolute top-[190px] right-[80px] z-0"
-                />
-                <Image
-                    src={circle5}
-                    alt="circle icon"
-                    height={30}
-                    width={30}
-                    className="absolute bottom-[20px] right-[275px] z-0"
-                /> */}
+
+                <motion.div
+                    initial={{
+                        x: localActive == "ar" ? "-100%" : "100%",
+                        y: "-100%",
+                        rotate: localActive == "ar" ? 210 : -30,
+                    }}
+                    animate={{ x: 0, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className={`absolute -top-[5%] ${
+                        localActive == "ar" ? "right-[57%]" : "left-[57%]"
+                    } `}
+                >
+                    <div className="bg-gradient-to-r from-primary-blue to-white/0 w-[1000px] h-[80px] ml-5 rounded-full"></div>
+                    <div className="bg-gradient-to-r from-primary-blue to-white/0  w-[1000px] h-[180px] rounded-full"></div>
+                </motion.div>
+
+                <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1, rotate: 360, x: 10 }}
+                    transition={{ duration: 0.3, ease: "linear" }}
+                    className={`hidden min-[900px]:block absolute top-[45%] ${
+                        localActive == "ar" ? "right-[70%]" : "left-[60%]"
+                    }`}
+                >
+                    <motion.div
+                        animate={{ x: [0, 10, 0], y: [0, 5, 0] }}
+                        transition={{ duration: 3, repeat: Infinity }}
+                        className="absolute top-4 left-4 w-14 xl:w-20 h-14 xl:h-20 bg-white/20 rounded-lg"
+                    ></motion.div>
+                    <motion.div
+                        animate={{ x: [0, 5, 0], y: [0, -5, 0] }}
+                        transition={{ duration: 3, repeat: Infinity }}
+                        className="relative bg-white/90 w-14 xl:w-20 h-14 xl:h-20 p-2 rounded-lg"
+                    >
+                        <Image
+                            src={jigsaw}
+                            alt="jigsaw image"
+                            className="absolute bottom-0 right-1 w-10 xl:w-14 h-10 xl:h-14 pointer-events-none select-none"
+                        />
+                    </motion.div>
+                </motion.div>
+
+                <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1, rotate: 360, x: 10 }}
+                    transition={{ duration: 0.3, ease: "linear", delay: 0.3 }}
+                    className={`hidden min-[900px]:block absolute top-[75%] ${
+                        localActive == "ar" ? "right-[70%]" : "left-[60%]"
+                    } z-20`}
+                >
+                    <motion.div
+                        animate={{ x: [0, 10, 0], y: [0, 5, 0] }}
+                        transition={{ duration: 3, repeat: Infinity }}
+                        className="absolute top-4 left-4 w-14 xl:w-20 h-14 xl:h-20 bg-white/40 rounded-lg"
+                    ></motion.div>
+                    <motion.div
+                        animate={{ x: [0, 5, 0], y: [0, -5, 0] }}
+                        transition={{ duration: 3, repeat: Infinity }}
+                        className="relative flex justify-center items-center bg-white/90 w-14 xl:w-20 h-14 xl:h-20 p-2 rounded-lg"
+                    >
+                        <Image
+                            src={saas}
+                            alt="saas image"
+                            className="w-10 xl:w-14 h-10 xl:h-14 pointer-events-none select-none"
+                        />
+                    </motion.div>
+                </motion.div>
+
+                <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1, rotate: 360, x: 10 }}
+                    transition={{ duration: 0.3, ease: "linear", delay: 0.6 }}
+                    className={`hidden min-[900px]:block absolute top-[65%] ${
+                        localActive == "ar" ? "right-[50%]" : "left-[80%]"
+                    } z-20`}
+                >
+                    <motion.div
+                        animate={{ x: [0, 10, 0], y: [0, 5, 0] }}
+                        transition={{ duration: 3, repeat: Infinity }}
+                        className="absolute -top-5 -left-5 w-14 xl:w-20 h-14 xl:h-20 bg-white/30 rounded-lg"
+                    ></motion.div>
+                    <motion.div
+                        animate={{ x: [0, 5, 0], y: [0, -5, 0] }}
+                        transition={{ duration: 3, repeat: Infinity }}
+                        className="relative flex justify-center items-center bg-white/80 w-14 xl:w-20 h-14 xl:h-20 p-2 rounded-lg"
+                    >
+                        <Image
+                            src={api}
+                            alt="api image"
+                            className="w-10 xl:w-14 h-10 xl:h-14 pointer-events-none select-none"
+                        />
+                    </motion.div>
+                </motion.div>
             </div>
         </section>
     );

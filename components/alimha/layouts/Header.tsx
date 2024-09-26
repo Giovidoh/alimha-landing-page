@@ -14,7 +14,7 @@ const Header = () => {
     const localActive = useLocale();
 
     return (
-        <motion.header className="relative flex justify-between bg-white w-full gap-4 lg:px-[10%] max-lg:px-[5%] py-2 z-50">
+        <motion.header className="fixed flex justify-between w-full gap-4 lg:px-[10%] max-lg:px-[5%] py-2 mt-5 z-50">
             <div className="flex justify-between items-center">
                 <Logo />
             </div>
@@ -26,7 +26,7 @@ const Header = () => {
                     <NavBar />
                 </nav>
                 <div className="hidden min-[950px]:flex items-center gap-3">
-                    <div className="hidden min-[1100px]:block w-1/2">
+                    <div className="hidden min-[1200px]:block w-1/2">
                         <LocalSwitcherSelect />
                     </div>
                     <div className="block w-1/2">
@@ -37,7 +37,7 @@ const Header = () => {
                         />
                     </div>
                 </div>
-                <div className="flex min-[1100px]:hidden justify-end items-center">
+                <div className="flex min-[1200px]:hidden justify-end items-center">
                     <BurgerButton setBurgerDropped={setBurgerDropped} />
                     {burgerDropped && (
                         <div
@@ -48,7 +48,7 @@ const Header = () => {
                             <nav className="block md:hidden" role="navigation">
                                 <NavBar />
                             </nav>
-                            <div className="block min-[1100px]:hidden">
+                            <div className="block min-[1200px]:hidden">
                                 <LocalSwitcherSelect />
                             </div>
                             <div className="flex min-[950px]:hidden">

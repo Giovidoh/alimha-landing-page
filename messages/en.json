@@ -3,10 +3,12 @@
         "Header": {
             "Solutions": "Solutions",
             "About us": "About us",
+            "Career": "Career",
             "Contact": "Contact",
             "Become partner": "Become partner"
         },
         "HeroSection": {
+            "tag": "Information Technology",
             "heading": {
                 "first": "Welcome to",
                 "second": "Alimha and Company"

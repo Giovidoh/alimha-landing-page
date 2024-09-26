@@ -3,10 +3,12 @@
         "Header": {
             "Solutions": "الحلول",
             "About us": "نبذة عنا",
+            "Career": "حياة مهنية",
             "Contact": "اتصل بنا",
             "Become partner": "كن شريكاً"
         },
         "HeroSection": {
+            "tag": "تكنولوجيا المعلومات",
             "heading": {
                 "first": "مرحباً بك في",
                 "second": "Alimha and Company"

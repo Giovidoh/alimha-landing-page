@@ -3,10 +3,12 @@
         "Header": {
             "Solutions": "Solutions",
             "About us": "A propos",
+            "Career": "Carrière",
             "Contact": "Contact",
             "Become partner": "Devenir partenaire"
         },
         "HeroSection": {
+            "tag": "Informatique",
             "heading": {
                 "first": "Bienvenue chez",
                 "second": "Alimha and Company"
@@ -22,7 +24,6 @@
                 "first": "Développez votre",
                 "second": "activité avec Alimha"
             },
-
             "card1": {
                 "title": "Développement de Logiciels",
                 "description": "Des solutions logicielles sur mesure pour vos besoins spécifiques. Nous créons des applications web et mobiles, analysons et auditons vos systèmes, et déployons des solutions informatiques adaptées à vos exigences."

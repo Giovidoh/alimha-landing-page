@@ -12,6 +12,7 @@ const NavBar = () => {
     const navbarLinks = [
         { href: "#our-services", text: t("Solutions") },
         { href: "#who-are-we", text: t("About us") },
+        { href: "/", text: t("Career") },
         { href: "#contact", text: t("Contact") },
     ];
 

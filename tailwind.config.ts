@@ -9,7 +9,7 @@ const config: Config = {
     theme: {
         extend: {
             backgroundImage: {
-                "hero-world-img": "url(../public/assets/world.png)",
+                "hero-image": "url(../public/assets/hero-image.png)",
                 "who-are-we-bg": "url(../public/assets/about-us-bg.png)",
                 "sendmo-download-app-bg":
                     "url(../public/assets/sendmo-download-app-bg.png)",
