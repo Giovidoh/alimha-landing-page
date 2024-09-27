@@ -6,15 +6,45 @@ import BurgerButton from "../buttons/BurgerButton";
 import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import LocalSwitcherSelect from "../selects/LocalSwitcherSelect";
 import { useLocale, useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import {
+    motion,
+    progress,
+    scroll,
+    useMotionValueEvent,
+    useScroll,
+} from "framer-motion";
 
 const Header = () => {
     const [burgerDropped, setBurgerDropped] = useState(false);
     const t = useTranslations("AlimhaPage.Header");
     const localActive = useLocale();
 
+    const [background, setBackground] = useState<string>("");
+    const [firstAnimationComplete, setfirstAnimationComplete] =
+        useState<boolean>(false);
+
+    scroll(
+        (progress) =>
+            progress > 0 ? setBackground("white") : setBackground(""),
+        {
+            source: document.body,
+        }
+    );
+
     return (
-        <motion.header className="fixed flex justify-between w-full gap-4 lg:px-[10%] max-lg:px-[5%] py-2 mt-5 z-50">
+        <motion.header
+            initial={{ paddingTop: 8, y: "-100%" }}
+            animate={{ paddingTop: background ? 8 : 30, y: 0 }}
+            transition={{
+                ease: "easeIn",
+                duration: 0.3,
+                delay: firstAnimationComplete ? 0 : 1,
+            }}
+            onAnimationComplete={() => setfirstAnimationComplete(true)}
+            className={`fixed flex justify-between ${
+                background ? "bg-white bg-opacity-80 backdrop-blur-md" : ""
+            } w-full gap-4 lg:px-[10%] max-lg:px-[5%] py-2 z-50 transition`}
+        >
             <div className="flex justify-between items-center">
                 <Logo />
             </div>
