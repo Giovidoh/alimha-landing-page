@@ -1,12 +1,18 @@
+"use client";
 import React from "react";
 import Card from "../Card";
 import PaymentIcon from "@/public/assets/payment-icon.svg";
 import TransactionIcon from "@/public/assets/alimha-transaction-icon.svg";
 import SoftwareIcon from "@/public/assets/software-icon.svg";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { motion } from "framer-motion";
+import { getLangDir } from "rtl-detect";
 
 const OurServicesSection = () => {
+    const localActive = useLocale();
+    const direction = getLangDir(localActive);
     const t = useTranslations("AlimhaPage.OurServicesSection");
+
     return (
         <section
             id="our-services"
@@ -80,6 +86,22 @@ const OurServicesSection = () => {
                     buttonBgColor="bg-orange-1"
                 /> */}
             </div>
+
+            <motion.div
+                initial={{
+                    x: direction == "rtl" ? "-100%" : "100%",
+                    y: "-100%",
+                    rotate: direction == "rtl" ? 210 : 150,
+                }}
+                animate={{ x: 0, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className={`absolute top-[60%] ${
+                    direction == "rtl" ? "right-[57%]" : "left-[70%]"
+                } z-10`}
+            >
+                <div className="bg-gradient-to-r from-secondary-blue to-white/0 w-[1000px] h-[80px] ml-5 rounded-full"></div>
+                <div className="bg-gradient-to-r from-secondary-blue to-white/0  w-[930px] h-[180px] rounded-full"></div>
+            </motion.div>
         </section>
     );
 };
