@@ -6,13 +6,7 @@ import BurgerButton from "../buttons/BurgerButton";
 import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import LocalSwitcherSelect from "../selects/LocalSwitcherSelect";
 import { useLocale, useTranslations } from "next-intl";
-import {
-    motion,
-    progress,
-    scroll,
-    useMotionValueEvent,
-    useScroll,
-} from "framer-motion";
+import { motion, scroll } from "framer-motion";
 
 const Header = () => {
     const [burgerDropped, setBurgerDropped] = useState(false);
@@ -24,7 +18,7 @@ const Header = () => {
         useState<boolean>(false);
 
     scroll(
-        (progress) =>
+        (progress: number) =>
             progress > 0 ? setBackground("white") : setBackground(""),
         {
             source: document.body,
