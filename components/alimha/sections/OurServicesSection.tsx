@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Card from "../Card";
+import Card from "../cards/Card";
 import PaymentIcon from "@/public/assets/payment-icon.svg";
 import TransactionIcon from "@/public/assets/alimha-transaction-icon.svg";
 import SoftwareIcon from "@/public/assets/software-icon.svg";
@@ -91,12 +91,12 @@ const OurServicesSection = () => {
                 initial={{
                     x: direction == "rtl" ? "-100%" : "100%",
                     y: "-100%",
-                    rotate: direction == "rtl" ? 210 : 150,
+                    rotate: direction == "rtl" ? 30 : 150,
                 }}
                 animate={{ x: 0, y: 0 }}
                 transition={{ duration: 0.8 }}
                 className={`absolute top-[60%] ${
-                    direction == "rtl" ? "right-[57%]" : "left-[70%]"
+                    direction == "rtl" ? "right-[70%]" : "left-[70%]"
                 } z-10`}
             >
                 <div className="bg-gradient-to-r from-secondary-blue to-white/0 w-[1000px] h-[80px] ml-5 rounded-full"></div>

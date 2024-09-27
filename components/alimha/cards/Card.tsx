@@ -1,8 +1,9 @@
 "use client";
 import React, { ReactNode } from "react";
 import CardIcon from "./CardIcon";
-import ButtonStyle2 from "./buttons/ButtonStyle2";
+import ButtonStyle2 from "../buttons/ButtonStyle2";
 import { motion } from "framer-motion";
+import { getLangDir } from "rtl-detect";
 import { useLocale } from "next-intl";
 
 interface CardProps {
@@ -29,6 +30,7 @@ const Card: React.FC<CardProps> = ({
     highlighted = false,
 }) => {
     const localActive = useLocale();
+    const direction = getLangDir(localActive);
 
     return (
         <div
@@ -39,6 +41,7 @@ const Card: React.FC<CardProps> = ({
             <CardIcon
                 icon={icon}
                 bgColor={highlighted ? "bg-white" : bgColor}
+                className="z-10"
             />
             <h2
                 className={`${titleColor} text-xl lg:text-2xl min-[1200px]:text-3xl font-semibold z-10`}
@@ -62,13 +65,15 @@ const Card: React.FC<CardProps> = ({
             {highlighted && (
                 <motion.div
                     initial={{
-                        x: localActive == "ar" ? "-110%" : "110%",
+                        x: direction == "rtl" ? "-110%" : "110%",
                         y: "-100%",
-                        rotate: localActive == "ar" ? 210 : -30,
+                        rotate: direction == "rtl" ? 210 : -30,
                     }}
                     animate={{ x: "0%", y: "-65%" }}
                     transition={{ duration: 0.8, delay: 3 }}
-                    className={`absolute top-1/2 left-3 z-0`}
+                    className={`absolute top-1/2 ${
+                        direction == "rtl" ? "right-3" : "left-3"
+                    } z-0`}
                 >
                     <div className="bg-gradient-to-r from-secondary-blue/60 via-secondary-blue/30 to-white/0 w-[450px] h-[70px] ml-5 rounded-full"></div>
                     <div className="bg-gradient-to-r from-secondary-blue/60 via-secondary-blue/30 to-white/0  w-[390px] h-[120px] rounded-full"></div>

@@ -39,10 +39,22 @@
             "Learn more": "Learn more"
         },
         "AboutUsSection": {
-            "tag": "About us",
-            "heading": "Your growth partner",
-            "description": "Alimha and Company is an innovative fintech dedicated to providing modern and efficient payment solutions. Our mission is to simplify financial transactions across the region, offering reliable, secure and accessible services to all.",
-            "Learn more": "Learn more"
+            "card1": {
+                "title": "Who are we?",
+                "body": "Alimha and Company is a dynamic technology company dedicated to turning ideas into concrete solutions. For over five years, we have been putting our expertise at the service of businesses, helping them to make the digital transition and offering them tailor-made technological solutions."
+            },
+            "card2": {
+                "title": "Our vision",
+                "body": "With a team of experts passionate about technological innovation, we strive to stay at the forefront of the latest advances, while offering robust, secure and scalable solutions. At Alimha and Company, we don't just meet your expectations, we strive to exceed them."
+            },
+            "card3": {
+                "title": "Our mission",
+                "body": "Combining innovation, creativity and technology to solve the complex challenges our customers face. Whether it's through our payment solutions aggregator, our mobile money transfer application or our software development services, we're here to help you achieve your goals."
+            },
+            "card4": {
+                "title": "Our values",
+                "body": "Our values are based on commitment, quality and customer satisfaction. We believe that every project is unique, which is why we take a personalized approach to each customer, working closely with them to understand their specific needs and develop solutions that meet them perfectly."
+            }
         },
         "WhyUsSection": {
             "heading": {
