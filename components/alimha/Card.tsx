@@ -1,6 +1,9 @@
+"use client";
 import React, { ReactNode } from "react";
 import CardIcon from "./CardIcon";
 import ButtonStyle2 from "./buttons/ButtonStyle2";
+import { motion } from "framer-motion";
+import { useLocale } from "next-intl";
 
 interface CardProps {
     icon: ReactNode;
@@ -25,25 +28,27 @@ const Card: React.FC<CardProps> = ({
     buttonBgColor,
     highlighted = false,
 }) => {
+    const localActive = useLocale();
+
     return (
         <div
-            className={`flex flex-col items-start ${
+            className={`relative flex flex-col items-start ${
                 highlighted ? "bg-primary-blue text-white" : "bg-white"
-            } w-full h-fit gap-4 px-7 py-8 rounded-3xl shadow-xl md:shadow-2xl z-10`}
+            } w-full h-fit gap-4 px-7 py-8 rounded-3xl shadow-xl md:shadow-2xl overflow-hidden z-10`}
         >
             <CardIcon
                 icon={icon}
                 bgColor={highlighted ? "bg-white" : bgColor}
             />
             <h2
-                className={`${titleColor} text-xl lg:text-2xl min-[1200px]:text-3xl font-semibold`}
+                className={`${titleColor} text-xl lg:text-2xl min-[1200px]:text-3xl font-semibold z-10`}
             >
                 {title}
             </h2>
             <p
                 className={`${
                     highlighted ? "text-white" : "text-[#333333]"
-                } font-light text-sm lg:text-base min-[1200px]:text-lg text-pretty tracking-wide pb-3`}
+                } font-light text-sm lg:text-base min-[1200px]:text-lg text-pretty tracking-wide pb-3 z-10`}
             >
                 {description}
             </p>
@@ -51,7 +56,24 @@ const Card: React.FC<CardProps> = ({
                 href={href}
                 text={buttonText}
                 bgColor={buttonBgColor}
+                className="z-10"
             />
+
+            {highlighted && (
+                <motion.div
+                    initial={{
+                        x: localActive == "ar" ? "-110%" : "110%",
+                        y: "-100%",
+                        rotate: localActive == "ar" ? 210 : -30,
+                    }}
+                    animate={{ x: "0%", y: "-65%" }}
+                    transition={{ duration: 0.8, delay: 3 }}
+                    className={`absolute top-1/2 left-3 z-0`}
+                >
+                    <div className="bg-gradient-to-r from-secondary-blue/60 via-secondary-blue/30 to-white/0 w-[450px] h-[70px] ml-5 rounded-full"></div>
+                    <div className="bg-gradient-to-r from-secondary-blue/60 via-secondary-blue/30 to-white/0  w-[390px] h-[120px] rounded-full"></div>
+                </motion.div>
+            )}
         </div>
     );
 };

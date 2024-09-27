@@ -5,18 +5,20 @@ interface ButtonStyle2Props {
     bgColor?: string;
     href?: string;
     text?: string;
+    className?: string;
 }
 
 const ButtonStyle2: React.FC<ButtonStyle2Props> = ({
     bgColor = "bg-primary-blue",
     href = "#",
     text = "Button",
+    className,
 }) => {
     return (
         <Link
             href={href}
             target="_blank"
-            className={`flex justify-center items-center border ${bgColor} text-white hover:scale-105 font-medium tracking-wide rounded-md w-[194px] h-[45px] transition ease-in`}
+            className={`flex justify-center items-center border ${bgColor} text-white hover:scale-105 font-medium tracking-wide rounded-md w-[194px] h-[45px] transition ease-in ${className}`}
         >
             {text}
         </Link>

@@ -64,6 +64,7 @@ const OurServicesSection = () => {
                         })}
                         description={t("card2.description")}
                         buttonText={t("Learn more")}
+                        buttonBgColor="transparent"
                         highlighted={true}
                     />
                 </div>
