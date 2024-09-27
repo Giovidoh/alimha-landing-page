@@ -21,15 +21,15 @@
         "OurServicesSection": {
             "tag": "Nos services",
             "heading": {
-                "first": "Développez votre",
-                "second": "activité avec Alimha"
+                "first": "<span>Développez</span> votre",
+                "second": "<span>Activité</span> avec Alimha"
             },
             "card1": {
-                "title": "Développement de Logiciels",
+                "title": "<span>Développement</span> de <br></br> Logiciels",
                 "description": "Des solutions logicielles sur mesure pour vos besoins spécifiques. Nous créons des applications web et mobiles, analysons et auditons vos systèmes, et déployons des solutions informatiques adaptées à vos exigences."
             },
             "card2": {
-                "title": "Agrégateur de Solutions de Paiement",
+                "title": "<span>Agrégateur</span> de Solutions <br></br> de Paiement",
                 "description": "Connectez-vous aux meilleures solutions de paiement. Centralisez et optimisez vos transactions financières grâce à notre agrégateur de solutions de paiement, conçu pour simplifier et sécuriser vos opérations."
             },
             "card3": {

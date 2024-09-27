@@ -21,11 +21,11 @@
         "OurServicesSection": {
             "tag": "Our services",
             "heading": {
-                "first": "Expand your",
-                "second": "business with Alimha"
+                "first": "<span>Expand</span> your",
+                "second": "<span>Business</span> with Alimha"
             },
             "card1": {
-                "title": "Software Development",
+                "title": "<span>Software</span> Development",
                 "description": "Tailor-made software solutions for your specific needs. We create web and mobile applications, analyze and audit your systems, and deploy IT solutions tailored to your requirements."
             },
             "card2": {

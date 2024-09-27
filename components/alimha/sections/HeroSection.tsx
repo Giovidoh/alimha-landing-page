@@ -18,16 +18,16 @@ const HeroSection = () => {
         <section className="bg-white bg-hero-image bg-cover bg-no-repeat">
             <div className="relative flex justify-between items-center w-full h-full px-[5%] lg:px-[10%] pt-24">
                 <div className="flex flex-col items-center min-[900px]:items-start bg-white bg-opacity-80 min-[900px]:bg-transparent w-full min-[900px]:w-1/2 gap-3 min-[1280px]:gap-5 py-10 px-2 min-[900px]:px-0 rounded-2xl shadow-2xl shadow-white z-10">
-                    <span className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md">
+                    <span className="bg-tertiary text-secondary-blue text-sm min-[1200px]:text-base px-3 py-2 rounded-md">
                         {t("tag")}
                     </span>
-                    <h1 className="font-bold text-4xl min-[1200px]:text-5xl text-center min-[900px]:text-start leading-tight min-[1280px]:tleading-normal min-[900px]:whitespace-nowrap">
+                    <h1 className="font-bold text-3xl lg:text-4xl min-[1200px]:text-5xl text-center min-[900px]:text-start leading-tight min-[1200px]:leading-snug min-[900px]:whitespace-nowrap">
                         {t("heading.first")} <br />
                         <span className="text-primary-blue">
                             {t("heading.second")}
                         </span>
                     </h1>
-                    <p className="text-[#1E1E1E] text-center min-[900px]:text-justify text-sm min-[1280px]:text-base">
+                    <p className="text-[#1E1E1E] text-center min-[900px]:text-justify text-sm lg:text-base min-[1200px]:text-lg">
                         {t("supporting text")}
                     </p>
                     <div className="w-full text-center min-[900px]:text-start">
