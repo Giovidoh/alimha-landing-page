@@ -57,21 +57,8 @@
             }
         },
         "WhyUsSection": {
-            "heading": {
-                "first": "Notre portée",
-                "second": "Mondiale"
-            },
-            "Alimha is present": "Alimha est présent",
-            "in1": "au",
-            "in2": "en",
-            "and": "et",
-            "the": "",
-            "Senegal": "Sénégal",
-            "Togo": "Togo",
-            "Guinea": "Guinée",
-            "Djibouti": "Djibouti",
-            "Central Africa": "Centrafrique",
-            "Comoros": "Comores"
+            "tag": "Pourquoi-nous",
+            "heading": "Notre Portée Mondiale"
         },
         "TheyTrustUsSection": {
             "tag": "Ils nous font confiance",

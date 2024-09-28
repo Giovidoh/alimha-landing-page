@@ -57,21 +57,8 @@
             }
         },
         "WhyUsSection": {
-            "heading": {
-                "first": "عالميتنا",
-                "second": "الوصول"
-            },
-            "Alimha is present": "عليمها موجود",
-            "in1": "في",
-            "in2": "",
-            "and": "و",
-            "the": "فإن",
-            "Senegal": "السنغال",
-            "Togo": "توغو",
-            "Guinea": "غينيا",
-            "Djibouti": "جيبوتي",
-            "Central Africa": "وسط أفريقيا",
-            "Comoros": "جزر القمر"
+            "tag": "لماذا نحن",
+            "heading": "انتشارنا العالمي"
         },
         "TheyTrustUsSection": {
             "tag": "إنهم يثقون بنا",

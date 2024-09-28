@@ -57,21 +57,8 @@
             }
         },
         "WhyUsSection": {
-            "heading": {
-                "first": "Our global",
-                "second": "Reach"
-            },
-            "Alimha is present": "Alimha is present",
-            "in1": "in",
-            "in2": "",
-            "and": "and",
-            "the": "the",
-            "Senegal": "Senegal",
-            "Togo": "Togo",
-            "Guinea": "Guinea",
-            "Djibouti": "Djibouti",
-            "Central Africa": "Central Africa",
-            "Comoros": "Comoros"
+            "tag": "Why us",
+            "heading": "Our Global Reach"
         },
         "TheyTrustUsSection": {
             "tag": "They trust us",
