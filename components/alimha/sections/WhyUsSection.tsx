@@ -22,8 +22,8 @@ const WhyUsSection = () => {
                     <video
                         width="100%"
                         height="100%"
+                        controls
                         autoPlay
-                        loop
                         preload="auto"
                         playsInline
                         className="rounded-xl"
