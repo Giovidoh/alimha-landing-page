@@ -10,7 +10,7 @@ const WhyUsSection = () => {
     return (
         <section className="relative flex justify-between items-center bg-primary-blue w-full h-fit after:content-[''] after:absolute after:top-0 after:left-0 after:bg-why-us-bg-image after:bg-cover after:bg-center after:bg-no-repeat after:opacity-25 after:w-full after:h-full">
             <div className="bg-primary-blue/30 w-full h-full px-[5%] lg:px-[10%] py-10 md:py-20 z-10">
-                <div className="flex flex-col items-center w-full gap-14">
+                <div className="flex flex-col items-center w-full gap-8 md:gap-14">
                     <div className="flex flex-col items-center w-full gap-5">
                         <span className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md">
                             {t("tag")}
