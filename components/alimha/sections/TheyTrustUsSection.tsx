@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import circle_vector4 from "@/public/assets/circle-vector-4.png";
-import plus_vector3 from "@/public/assets/plus-vector-3.png";
 import codifyLogo from "@/public/assets/codify-logo.png";
 import soudhuLogo from "@/public/assets/soudhu-logo.png";
 import odeytech from "@/public/assets/Odeytech.jpg";
@@ -24,40 +22,25 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
     description,
 }) => {
     const localActive = useLocale();
-    return (
-        <section className="relative flex flex-col justify-evenly items-center text-center px-[5%] lg:px-[10%] bg-gradient-to-r from-primary-blue to-secondary-blue h-fit w-full pt-12 pb-24">
-            {/* <Image
-                src={circle_vector4}
-                alt="circle vector"
-                height={30}
-                className="absolute bottom-52 left-10"
-            />
-            <Image
-                src={plus_vector3}
-                alt="circle vector"
-                height={20}
-                className="absolute top-28 -right-1"
-            /> */}
 
-            <div className="flex flex-col items-center h-fit">
-                {/* <Image
-                    src={international_icon}
-                    alt="international icon"
-                    height={50}
-                /> */}
-                <h3 className="font-semibold text-xl text-white pt-4">{tag}</h3>
+    return (
+        <section className="relative flex flex-col justify-evenly items-center bg-[#F8F8F8] text-center w-full h-fit px-[5%] lg:px-[10%] pt-12 pb-24">
+            <div className="flex flex-col items-center gap-4 mb-7">
+                <span className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md">
+                    {tag}
+                </span>
+
+                <div className="flex flex-col gap-3">
+                    <h2 className="font-bold text-center text-2xl lg:text-3xl min-[1200px]:text-4xl leading-tight min-[1200px]:leading-snug">
+                        {title}
+                    </h2>
+                    <p className="max-w-[595px] text-[#333333] text-sm lg:text-base min-[1200px]:text-lg">
+                        {description}
+                    </p>
+                </div>
             </div>
-            <div className="mb-6">
-                <h2 className="font-bold text-dark-blue text-[32px] xl:text-[44px] leading-[40px] xl:leading-[52.6px] pb-4">
-                    {title}
-                </h2>
-                <p className="max-w-[595px] text-white text-xl">
-                    {description}
-                </p>
-            </div>
-            <div className="flex w-full overflow-hidden bg-white rounded-xl px-10 border-[5px] border-dark-blue shadow-lg">
+            <div className="flex w-full overflow-hidden px-10">
                 <motion.div
-                    className="flex flex-none md:hidden items-center gap-16 pr-16"
                     animate={{
                         translateX: localActive == "ar" ? "50%" : "-50%",
                     }}
@@ -67,29 +50,67 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                         repeat: Infinity,
                         repeatType: "loop",
                     }}
+                    className="flex flex-none md:hidden items-center gap-16 pr-16 py-3"
                 >
                     {/* Small devices */}
-                    <Image src={ecobankLogo} alt="ecobank logo" height={32.5} />
-                    <Image src={soudhuLogo} alt="soudhu logo" height={32.5} />
-                    <Image src={ubaLogo} alt="uba logo" height={65} />
-                    <Image src={codifyLogo} alt="codify logo" height={47.5} />
-                    <Image src={odeytech} alt="odeytech logo" height={32.5} />
+                    <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
+                        <Image
+                            src={ecobankLogo}
+                            alt="ecobank logo"
+                            height={32.5}
+                        />
+                    </div>
+                    <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
+                        <Image
+                            src={soudhuLogo}
+                            alt="soudhu logo"
+                            height={32.5}
+                        />
+                    </div>
+                    <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
+                        <Image src={ubaLogo} alt="uba logo" height={65} />
+                    </div>
+                    <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
+                        <Image
+                            src={codifyLogo}
+                            alt="codify logo"
+                            height={47.5}
+                        />
+                    </div>
+                    <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
+                        <Image src={odeytech} alt="odeytech logo" height={45} />
+                    </div>
 
                     {/* Second set of logos for animation */}
-                    <Image src={ecobankLogo} alt="ecobank logo" height={32.5} />
-                    <Image src={soudhuLogo} alt="soudhu logo" height={32.5} />
-                    <Image src={ubaLogo} alt="uba logo" height={65} />
-                    <Image src={codifyLogo} alt="codify logo" height={47.5} />
-                    <Image src={odeytech} alt="odeytech logo" height={32.5} />
-                    {/* <Image src={orange_money} alt="orange money icon" height={25} />
-                <Image src={wave} alt="wave icon" height={40} />
-                <Image src={moov_money} alt="moov money icon" height={40} />
-                <Image src={mtn_momo} alt="mtn momo icon" height={35} />
-                <Image src={free_money} alt="free money icon" height={62.5} />
-                <Image src={tmoney} alt="tmoney icon" height={37.5} /> */}
+                    <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
+                        <Image
+                            src={ecobankLogo}
+                            alt="ecobank logo"
+                            height={32.5}
+                        />
+                    </div>
+                    <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
+                        <Image
+                            src={soudhuLogo}
+                            alt="soudhu logo"
+                            height={32.5}
+                        />
+                    </div>
+                    <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
+                        <Image src={ubaLogo} alt="uba logo" height={65} />
+                    </div>
+                    <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
+                        <Image
+                            src={codifyLogo}
+                            alt="codify logo"
+                            height={47.5}
+                        />
+                    </div>
+                    <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
+                        <Image src={odeytech} alt="odeytech logo" height={45} />
+                    </div>
                 </motion.div>
                 <motion.div
-                    className="hidden md:flex md:flex-none items-center gap-40 pr-40"
                     animate={{
                         translateX: localActive == "ar" ? "50%" : "-50%",
                     }}
@@ -99,26 +120,53 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                         ease: "linear",
                         repeatType: "loop",
                     }}
+                    className="hidden md:flex md:flex-none items-center gap-24 pr-24 py-7"
                 >
                     {/* Large devices */}
-                    <Image src={ecobankLogo} alt="ecobank logo" height={65} />
-                    <Image src={soudhuLogo} alt="soudhu logo" height={65} />
-                    <Image src={ubaLogo} alt="uba logo" height={130} />
-                    <Image src={codifyLogo} alt="codify logo" height={95} />
-                    <Image src={odeytech} alt="odeytech logo" height={65} />
+                    <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
+                        <Image
+                            src={ecobankLogo}
+                            alt="ecobank logo"
+                            height={65}
+                        />
+                    </div>
+                    <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
+                        <Image src={soudhuLogo} alt="soudhu logo" height={65} />
+                    </div>
+                    <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
+                        <Image src={ubaLogo} alt="uba logo" height={130} />
+                    </div>
+                    <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
+                        <Image src={codifyLogo} alt="codify logo" height={95} />
+                    </div>
+                    <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
+                        <Image src={odeytech} alt="odeytech logo" height={65} />
+                    </div>
 
                     {/* Second set of logos for animation */}
-                    <Image src={ecobankLogo} alt="ecobank logo" height={65} />
-                    <Image src={soudhuLogo} alt="soudhu logo" height={65} />
-                    <Image src={ubaLogo} alt="uba logo" height={130} />
-                    <Image src={codifyLogo} alt="codify logo" height={95} />
-                    <Image src={odeytech} alt="odeytech logo" height={65} />
-                    {/* <Image src={orange_money} alt="orange money icon" height={55} /> */}
-                    {/* <Image src={wave} alt="wave icon" height={80} /> */}
-                    {/* <Image src={moov_money} alt="moov money icon" height={80} /> */}
-                    {/* <Image src={mtn_momo} alt="mtn momo icon" height={70} /> */}
-                    {/* <Image src={free_money} alt="free money icon" height={125} /> */}
-                    {/* <Image src={tmoney} alt="tmoney icon" height={75} /> */}
+                    <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
+                        <Image
+                            src={ecobankLogo}
+                            alt="ecobank logo"
+                            height={65}
+                        />
+                    </div>
+
+                    <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
+                        <Image src={soudhuLogo} alt="soudhu logo" height={65} />
+                    </div>
+
+                    <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
+                        <Image src={ubaLogo} alt="uba logo" height={130} />
+                    </div>
+
+                    <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
+                        <Image src={codifyLogo} alt="codify logo" height={95} />
+                    </div>
+
+                    <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
+                        <Image src={odeytech} alt="odeytech logo" height={65} />
+                    </div>
                 </motion.div>
             </div>
         </section>
