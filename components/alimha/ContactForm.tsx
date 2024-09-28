@@ -52,7 +52,7 @@ const ContactForm: FC<ContactFormProps> = ({
         <>
             <form
                 onSubmit={handleSubmit}
-                className="bg-white px-10 py-7 items-center rounded-3xl z-10"
+                className="bg-white px-10 py-7 items-center border rounded-3xl z-10"
             >
                 <div className="flex flex-col items-center justify-around h-[330px] sm:h-[482px]">
                     <Input

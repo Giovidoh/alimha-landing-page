@@ -66,8 +66,25 @@
             "description": "Nous travaillons avec des partenaires stratégiques de différents secteurs pour enrichir notre offre de services."
         },
         "ContactUsSection": {
-            "heading": "Contactez-nous",
+            "tag": "Contact",
+            "heading": "<span>Contactez</span>-nous",
             "description": "Discutons de votre projet",
+            "address card": {
+                "title": "Coordonnées",
+                "body": "Contactez-nous si besoin  Nous vous offrons des prestations de qualitiés",
+                "card1": {
+                    "title": "Contactez-nous :",
+                    "body": "+221 78 589 87 85"
+                },
+                "card2": {
+                    "title": "Email :",
+                    "body": "info@alpay.com"
+                },
+                "card3": {
+                    "title": "Adresse :",
+                    "body": "Medina Rue 4, Dakar-Sénégal"
+                }
+            },
             "contact form": {
                 "name": "Nom",
                 "email": "Email",

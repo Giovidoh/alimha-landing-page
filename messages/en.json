@@ -66,8 +66,25 @@
             "description": "We work with strategic partners in various sectors to enhance our service offering."
         },
         "ContactUsSection": {
-            "heading": "Contact us",
+            "tag": "Contact",
+            "heading": "<span>Contact</span> us",
             "description": "Let's discuss your project",
+            "address card": {
+                "title": "Contact",
+                "body": "Contact us if you need us We offer you quality services",
+                "card1": {
+                    "title": "Contact us :",
+                    "body": "+221 78 589 87 85"
+                },
+                "card2": {
+                    "title": "Email :",
+                    "body": "info@alpay.com"
+                },
+                "card3": {
+                    "title": "Address :",
+                    "body": "Medina Rue 4, Dakar-Senegal"
+                }
+            },
             "contact form": {
                 "name": "Name",
                 "email": "Email",
