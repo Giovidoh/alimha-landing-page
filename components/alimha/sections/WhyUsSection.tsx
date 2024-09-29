@@ -28,8 +28,10 @@ const WhyUsSection = () => {
                         height="100%"
                         autoPlay
                         loop
-                        preload="none"
+                        muted
+                        preload="auto"
                         className="rounded-xl"
+                        playsInline
                     >
                         <source src="/videos/alimha-global-reach-video.mp4" />
                         Votre navigateur ne supporte pas ce format de vidéo.
