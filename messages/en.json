@@ -71,7 +71,7 @@
             "description": "Let's discuss your project",
             "address card": {
                 "title": "Contact",
-                "body": "Contact us if you need us We offer you quality services",
+                "body": "Contact us if you need us. We offer you quality services",
                 "card1": {
                     "title": "Contact us :",
                     "body": "+221 78 589 87 85"
@@ -97,25 +97,19 @@
             "col1": {
                 "title": "Alimha",
                 "link1": "About us",
-                "link2": "Why us"
+                "link2": "Why us",
+                "link3": "Our Vision",
+                "link4": "Our Mission"
             },
             "col2": {
-                "title": "Solutions",
-                "link1": "Software Development",
-                "link2": "Payment Solutions Aggregator",
-                "link3": "Mobile Money Deposit Application"
-            },
-            "col3": {
-                "title": "Resources",
-                "link1": "Terms of use",
-                "link2": "Privacy policy",
-                "link3": "Legal notice"
-            },
-            "col4": {
                 "title": "Contact us",
                 "link1": "infos@alimha.com",
                 "link2": "+221 33 844 30 81 / +221 77 889 21 74",
                 "link3": "Mamelles, Dakar - Senegal"
+            },
+            "subscribe form": {
+                "email": "E-mail",
+                "subscribe": "Subscribe"
             },
             "Copyright": "All rights reserved | Copyright 2024"
         }

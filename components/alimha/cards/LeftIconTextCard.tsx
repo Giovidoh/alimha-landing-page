@@ -18,7 +18,9 @@ const LeftIconTextCard: FC<LeftIconTextCardProps> = ({
                 <h2 className="font-bold text-white text-base lg:text-lg min-[1200px]:text-xl">
                     {title}
                 </h2>
-                <p className="font-light text-white text-sm">{body}</p>
+                <p className="font-light text-white text-sm lg:text-base min-[1200px]:text-lg text-pretty tracking-wide">
+                    {body}
+                </p>
             </div>
         </div>
     );

@@ -16,7 +16,7 @@ const HeroSection = () => {
 
     return (
         <section className="bg-white bg-hero-image bg-cover bg-no-repeat">
-            <div className="relative flex justify-between items-center w-full h-full px-[5%] lg:px-[10%] pt-24">
+            <div className="relative flex justify-between items-center w-full h-full px-[5%] lg:px-[10%] pt-24 pb-20 min-[900px]:pb-0">
                 <div className="flex flex-col items-center min-[900px]:items-start bg-white bg-opacity-80 min-[900px]:bg-transparent w-full min-[900px]:w-1/2 gap-3 min-[1280px]:gap-5 py-10 px-2 min-[900px]:px-0 rounded-2xl shadow-2xl shadow-white z-10">
                     <span className="bg-tertiary text-secondary-blue text-sm min-[1200px]:text-base px-3 py-2 rounded-md">
                         {t("tag")}

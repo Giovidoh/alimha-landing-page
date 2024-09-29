@@ -10,7 +10,10 @@ const FooterLink: React.FC<FooterLinkProps> = ({
     text = "FooterLink",
 }) => {
     return (
-        <a href={href} className="text-white font-light">
+        <a
+            href={href}
+            className="font-light text-sm lg:text-base min-[1200px]:text-lg text-pretty tracking-wide"
+        >
             {text}
         </a>
     );
