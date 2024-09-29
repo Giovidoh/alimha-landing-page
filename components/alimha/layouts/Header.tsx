@@ -38,14 +38,14 @@ const Header = () => {
             onAnimationComplete={() => setfirstAnimationComplete(true)}
             className={`fixed flex justify-between ${
                 background ? "bg-white bg-opacity-80 backdrop-blur-md" : ""
-            } w-full gap-4 lg:px-[10%] max-lg:px-[5%] py-2 z-50 transition`}
+            } w-full gap-4 px-[5%] lg:px-[10%] py-2 z-50 transition`}
         >
             <div className="flex justify-between items-center">
                 <Link href={`/${localActive}/alimha`}>
                     <Logo />
                 </Link>
             </div>
-            <div className="flex gap-10">
+            <div className="flex gap-10 mr-3">
                 <nav
                     className="max-md:hidden flex justify-center items-center"
                     role="navigation"
@@ -53,7 +53,7 @@ const Header = () => {
                     <NavBar />
                 </nav>
                 <div className="hidden min-[950px]:flex items-center gap-3">
-                    <div className="hidden min-[1200px]:block w-1/2">
+                    <div className="hidden min-[1200px]:block">
                         <LocalSwitcherSelect />
                     </div>
                     <div className="block w-1/2">
