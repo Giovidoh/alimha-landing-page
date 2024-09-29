@@ -28,7 +28,7 @@ const WhyUsSection = () => {
                         height="100%"
                         autoPlay
                         loop
-                        preload="auto"
+                        preload="none"
                         className="rounded-xl"
                     >
                         <source src="/videos/alimha-global-reach-video.mp4" />
