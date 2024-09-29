@@ -4,6 +4,9 @@ import "@/styles/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
+import Header from "@/components/alimha/layouts/Header";
+import Footer from "@/components/alimha/layouts/Footer";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -29,7 +32,9 @@ export default async function RootLayout({
         <html lang="en" dir={localActive == "ar" ? "rtl" : "ltr"}>
             <body className={inter.className}>
                 <NextIntlClientProvider messages={messages}>
+                    <Header />
                     {children}
+                    <Footer />
                 </NextIntlClientProvider>
             </body>
         </html>

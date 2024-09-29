@@ -1,26 +1,27 @@
 import React, { useEffect, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState<number>(-1);
     const pathname = usePathname();
+    const localActive = useLocale();
     const t = useTranslations("AlimhaPage.Header");
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const navbarLinks = [
-        { href: "#our-services", text: t("Solutions") },
-        { href: "#why-us", text: t("About us") },
-        { href: "/", text: t("Career") },
-        { href: "#contact", text: t("Contact") },
+        { href: `/${localActive}/alimha#our-services`, text: t("Solutions") },
+        { href: `/${localActive}/alimha#about-us`, text: t("About us") },
+        { href: `/${localActive}/alimha/career`, text: t("Career") },
+        { href: `/${localActive}/alimha#contact`, text: t("Contact") },
     ];
 
     useEffect(() => {
         navbarLinks.forEach(
             (link, index) => pathname == link.href && setActiveLink(index)
         );
-    }, [navbarLinks, pathname]);
+    }, [pathname, navbarLinks]);
 
     return (
         <ul className="flex max-md:flex-col gap-5 min-[1135px]:gap-10 w-full max-w-[500px]">

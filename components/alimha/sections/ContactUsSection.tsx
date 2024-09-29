@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ContactForm from "../ContactForm";
+import ContactForm from "../forms/ContactForm";
 import { useLocale, useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { getLangDir } from "rtl-detect";

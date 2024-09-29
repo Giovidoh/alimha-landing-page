@@ -36,7 +36,7 @@ const Card: React.FC<CardProps> = ({
         <div
             className={`relative flex flex-col items-start ${
                 highlighted ? "bg-primary-blue text-white" : "bg-white"
-            } w-full h-fit gap-4 px-7 py-8 rounded-3xl shadow-xl md:shadow-2xl overflow-hidden z-10`}
+            } w-full h-fit gap-4 px-7 py-8 rounded-3xl shadow-xl md:shadow-2xl overflow-hidden z-20`}
         >
             <CardIcon
                 icon={icon}

@@ -40,8 +40,11 @@ const OurServicesSection = () => {
                     d’argent
                 </p> */}
             </div>
-            <div className="flex flex-wrap justify-center min-[900px]:justify-start w-full gap-10">
-                <div className="w-[350px] lg:w-[500px]">
+            <div className="grid grid-cols-1 min-[900px]:grid-cols-2 justify-center min-[900px]:justify-start w-full gap-10">
+                <div
+                    // className="w-[350px] lg:w-[500px]"
+                    className="w-full h-full"
+                >
                     <Card
                         icon={<SoftwareIcon />}
                         bgColor={"bg-[#F1EFEF]"}
@@ -59,7 +62,10 @@ const OurServicesSection = () => {
                     />
                 </div>
 
-                <div className="w-[350px] lg:w-[500px]">
+                <div
+                    // className="w-[350px] lg:w-[500px]"
+                    className="w-full h-full"
+                >
                     <Card
                         icon={<PaymentIcon />}
                         bgColor={"bg-[#F1EFEF]"}

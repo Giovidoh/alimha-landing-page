@@ -14,7 +14,7 @@ const AboutUsSection = () => {
 
     return (
         <section
-            id="why-us"
+            id="about-us"
             className="relative flex justify-center items-center bg-white w-full h-fit px-[5%] lg:px-[10%] pt-20 py-24 min-[900px]:py-56 overflow-hidden"
         >
             <div className="grid grid-cols-1 min-[800px]:grid-cols-3 items-center w-full h-full gap-x-5 gap-y-5 min-[800px]:gap-y-60 min-[1200px]:gap-y-20">

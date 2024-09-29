@@ -7,6 +7,7 @@ import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import LocalSwitcherSelect from "../selects/LocalSwitcherSelect";
 import { useLocale, useTranslations } from "next-intl";
 import { motion, scroll } from "framer-motion";
+import Link from "next/link";
 
 const Header = () => {
     const [burgerDropped, setBurgerDropped] = useState(false);
@@ -40,7 +41,9 @@ const Header = () => {
             } w-full gap-4 lg:px-[10%] max-lg:px-[5%] py-2 z-50 transition`}
         >
             <div className="flex justify-between items-center">
-                <Logo />
+                <Link href={`/${localActive}/alimha`}>
+                    <Logo />
+                </Link>
             </div>
             <div className="flex gap-10">
                 <nav

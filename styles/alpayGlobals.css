@@ -12,3 +12,9 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
+
+@layer base {
+  :root {
+        --radius: 0.5rem;
+    }
+}

@@ -19,7 +19,7 @@
             "Customer reviews": "Customer reviews"
         },
         "OurServicesSection": {
-            "tag": "Our services",
+            "tag": "Our solutions",
             "heading": {
                 "first": "<span>Expand</span> your",
                 "second": "<span>Business</span> with Alimha"
@@ -74,7 +74,7 @@
                 "body": "Contact us if you need us. We offer you quality services",
                 "card1": {
                     "title": "Contact us :",
-                    "body": "+221 78 589 87 85"
+                    "body": "+221 33 844 30 81 / +221 77 889 21 74"
                 },
                 "card2": {
                     "title": "Email :",
@@ -82,7 +82,7 @@
                 },
                 "card3": {
                     "title": "Address :",
-                    "body": "Medina Rue 4, Dakar-Senegal"
+                    "body": "Mamelles, Dakar - Senegal"
                 }
             },
             "contact form": {

@@ -8,7 +8,7 @@
             "Become partner": "Devenir partenaire"
         },
         "HeroSection": {
-            "tag": "Informatique",
+            "tag": "Technologies de l'Information",
             "heading": {
                 "first": "Bienvenue chez",
                 "second": "Alimha and Company"
@@ -19,7 +19,7 @@
             "Customer reviews": "Avis des clients"
         },
         "OurServicesSection": {
-            "tag": "Nos services",
+            "tag": "Nos solutions",
             "heading": {
                 "first": "<span>Développez</span> votre",
                 "second": "<span>Activité</span> avec Alimha"
@@ -74,7 +74,7 @@
                 "body": "Contactez-nous si besoin. Nous vous offrons des prestations de qualitiés",
                 "card1": {
                     "title": "Contactez-nous :",
-                    "body": "+221 78 589 87 85"
+                    "body": "+221 33 844 30 81 / +221 77 889 21 74"
                 },
                 "card2": {
                     "title": "Email :",
@@ -82,7 +82,7 @@
                 },
                 "card3": {
                     "title": "Adresse :",
-                    "body": "Medina Rue 4, Dakar-Sénégal"
+                    "body": "Mamelles, Dakar - Sénégal"
                 }
             },
             "contact form": {
@@ -105,7 +105,7 @@
                 "title": "Contactez-nous",
                 "link1": "infos@alimha.com",
                 "link2": "+221 33 844 30 81 / +221 77 889 21 74",
-                "link3": "Medina, rue 4  Dakar , Sénégal"
+                "link3": "Mamelles, Dakar - Sénégal"
             },
             "subscribe form": {
                 "email": "E-mail",

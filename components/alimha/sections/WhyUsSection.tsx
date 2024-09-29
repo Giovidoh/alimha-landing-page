@@ -8,9 +8,13 @@ const WhyUsSection = () => {
     const pathname = usePathname();
 
     return (
-        <section className="relative flex justify-between items-center bg-primary-blue w-full h-fit after:content-[''] after:absolute after:top-0 after:left-0 after:bg-why-us-bg-image after:bg-cover after:bg-center after:bg-no-repeat after:opacity-25 after:w-full after:h-full">
-            <div className="bg-primary-blue/30 w-full h-full px-[5%] lg:px-[10%] py-10 md:py-20 z-10">
-                <div className="flex flex-col items-center w-full gap-8 md:gap-14">
+        <section
+            id="why-us"
+            className="relative flex justify-between items-center bg-primary-blue bg-why-us-bg-image bg-cover bg-center bg-no-repeat w-full h-fit"
+        >
+            <div className="relative w-full h-full px-[5%] lg:px-[10%] py-10 md:py-20 z-10">
+                <div className="absolute top-0 left-0 bg-gradient-to-r from-[#0133a9] to-[#0032A4] opacity-95 w-full h-full"></div>
+                <div className="relative flex flex-col items-center w-full gap-8 md:gap-14">
                     <div className="flex flex-col items-center w-full gap-5">
                         <span className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md">
                             {t("tag")}
@@ -22,8 +26,8 @@ const WhyUsSection = () => {
                     <video
                         width="100%"
                         height="100%"
-                        controls
                         autoPlay
+                        loop
                         preload="auto"
                         playsInline
                         className="rounded-xl"

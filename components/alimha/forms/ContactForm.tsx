@@ -1,8 +1,8 @@
 "use client";
 import React, { FC } from "react";
-import Input from "./Input";
-import TextArea from "./TextArea";
-import ButtonGradientStyle1 from "./buttons/ButtonGradientStyle1";
+import Input from "../Input";
+import TextArea from "../TextArea";
+import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import { toast } from "sonner";
 
 interface ContactFormProps {
@@ -66,7 +66,13 @@ const ContactForm: FC<ContactFormProps> = ({
                         placeholder={emailPlaceholder}
                     />
                     <TextArea name="message" placeholder={messagePlaceholder} />
-                    <ButtonGradientStyle1 text={buttonText} />
+                    <div className="w-full">
+                        <ButtonGradientStyle1
+                            text={buttonText}
+                            fromColor="from-primary-blue"
+                            toColor="to-primary-blue"
+                        />
+                    </div>
                 </div>
             </form>
         </>

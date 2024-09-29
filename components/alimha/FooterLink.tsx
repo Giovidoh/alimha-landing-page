@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface FooterLinkProps {
@@ -10,12 +11,12 @@ const FooterLink: React.FC<FooterLinkProps> = ({
     text = "FooterLink",
 }) => {
     return (
-        <a
+        <Link
             href={href}
             className="font-light text-sm lg:text-base min-[1200px]:text-lg text-pretty tracking-wide"
         >
             {text}
-        </a>
+        </Link>
     );
 };
 

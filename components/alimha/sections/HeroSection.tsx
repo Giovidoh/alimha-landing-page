@@ -68,7 +68,7 @@ const HeroSection = () => {
                     initial={{ scale: 0 }}
                     animate={{ scale: 1, rotate: 360, x: 10 }}
                     transition={{ duration: 0.3, ease: "linear" }}
-                    className={`hidden min-[900px]:block absolute top-[45%] ${
+                    className={`hidden min-[900px]:block absolute top-[30%] ${
                         localActive == "ar" ? "right-[70%]" : "left-[60%]"
                     }`}
                 >
@@ -94,7 +94,7 @@ const HeroSection = () => {
                     initial={{ scale: 0 }}
                     animate={{ scale: 1, rotate: 360, x: 10 }}
                     transition={{ duration: 0.3, ease: "linear", delay: 0.3 }}
-                    className={`hidden min-[900px]:block absolute top-[75%] ${
+                    className={`hidden min-[900px]:block absolute top-[65%] ${
                         localActive == "ar" ? "right-[70%]" : "left-[60%]"
                     } z-20`}
                 >
@@ -120,8 +120,8 @@ const HeroSection = () => {
                     initial={{ scale: 0 }}
                     animate={{ scale: 1, rotate: 360, x: 10 }}
                     transition={{ duration: 0.3, ease: "linear", delay: 0.6 }}
-                    className={`hidden min-[900px]:block absolute top-[65%] ${
-                        localActive == "ar" ? "right-[50%]" : "left-[80%]"
+                    className={`hidden min-[900px]:block absolute top-[70%] ${
+                        localActive == "ar" ? "right-[45%]" : "left-[78%]"
                     } z-20`}
                 >
                     <motion.div

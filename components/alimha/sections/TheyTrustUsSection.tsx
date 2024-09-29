@@ -24,8 +24,8 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
     const localActive = useLocale();
 
     return (
-        <section className="relative flex flex-col justify-evenly items-center bg-[#F8F8F8] text-center w-full h-fit px-[5%] lg:px-[10%] pt-12 pb-24">
-            <div className="flex flex-col items-center gap-4 mb-7">
+        <section className="relative flex flex-col justify-evenly items-center bg-[#F8F8F8] text-center w-full h-fit pt-12 pb-24">
+            <div className="flex flex-col items-center gap-4 px-[5%] lg:px-[10%] mb-7">
                 <span className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md">
                     {tag}
                 </span>
@@ -78,7 +78,7 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                         />
                     </div>
                     <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
-                        <Image src={odeytech} alt="odeytech logo" height={45} />
+                        <Image src={odeytech} alt="odeytech logo" height={58} />
                     </div>
 
                     {/* Second set of logos for animation */}
@@ -107,7 +107,7 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                         />
                     </div>
                     <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
-                        <Image src={odeytech} alt="odeytech logo" height={45} />
+                        <Image src={odeytech} alt="odeytech logo" height={58} />
                     </div>
                 </motion.div>
                 <motion.div
@@ -140,7 +140,7 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                         <Image src={codifyLogo} alt="codify logo" height={95} />
                     </div>
                     <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
-                        <Image src={odeytech} alt="odeytech logo" height={65} />
+                        <Image src={odeytech} alt="odeytech logo" height={85} />
                     </div>
 
                     {/* Second set of logos for animation */}
@@ -165,7 +165,7 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                     </div>
 
                     <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
-                        <Image src={odeytech} alt="odeytech logo" height={65} />
+                        <Image src={odeytech} alt="odeytech logo" height={85} />
                     </div>
                 </motion.div>
             </div>
