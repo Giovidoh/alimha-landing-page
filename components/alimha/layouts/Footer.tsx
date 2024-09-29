@@ -23,13 +23,13 @@ const Footer = () => {
             <div className="flex flex-wrap md:flex-nowrap items-start w-full gap-20 pt-20 min-[900px]:pt-40 z-10">
                 <div className="flex flex-col max-w-[280px] gap-16">
                     <Image src={logo} alt="alimha's logo" />
-                    <div className="flex justify-between">
+                    {/* <div className="flex justify-between">
                         <FacebookIcon />
                         <LinkedInIcon />
                         <InstagramIcon />
                         <XIcon />
                         <YoutubeIcon />
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex flex-wrap justify-between w-full gap-5">
                     <div className="flex flex-col gap-2">
