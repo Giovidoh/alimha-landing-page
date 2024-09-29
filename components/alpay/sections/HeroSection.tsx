@@ -3,6 +3,7 @@ import Button from "../buttons/Button";
 import Image from "next/image";
 import womanWithComputerImage from "@/public/assets/woman-with-a-computer.png";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const HeroSection = () => {
     const t = useTranslations("AlpayPage.HeroSection");
@@ -21,14 +22,21 @@ const HeroSection = () => {
                         {t("supporting text")}
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center min-[1000px]:justify-start items-center w-full min-[1000px]:w-1/2 gap-5 min-[1000px]:gap-10">
-                        <Button
+                        {/* <Button
                             text={t("Contact us")}
                             className="bg-white hover:bg-secondary-blue text-primary-blue hover:text-white border border-white hover:border-primary-blue py-3 min-w-[185px] w-full"
                         />
                         <Button
                             text={t("Learn more")}
                             className="bg-primary-blue hover:bg-white capitalize text-white hover:text-primary-blue border border-white py-3 min-w-[185px] w-full"
-                        />
+                        /> */}
+                        <Link
+                            href="https://demo.alimha.com/"
+                            target="_blank"
+                            className="flex justify-center items-center bg-white hover:bg-secondary-blue text-primary-blue hover:text-white border border-white hover:border-primary-blue py-3 min-w-[185px] w-full hover:scale-105 rounded-md transition"
+                        >
+                            {t("Test the solution")}
+                        </Link>
                     </div>
                 </div>
                 <div className="hidden min-[1000px]:block w-1/2">

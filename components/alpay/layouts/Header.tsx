@@ -24,7 +24,7 @@ const Header: FC<HeaderProps> = ({ headerLinks, contactUs }) => {
                 <div className="w-1/2 max-[1000px]:hidden">
                     <Navbar headerLinks={headerLinks} />
                 </div>
-                <div className="hidden min-[1070px]:flex min-[1070px]:ml-16 gap-4">
+                <div className="hidden min-[1070px]:flex items-center min-[1070px]:ml-16 gap-4">
                     {/* <Button
                         text="Contactez-nous"
                         className="bg-primary-blue text-white px-3 py-2"
@@ -32,9 +32,12 @@ const Header: FC<HeaderProps> = ({ headerLinks, contactUs }) => {
                     <div className="hidden min-[1440px]:block">
                         <LocalSwitcherSelect />
                     </div>
-                    <button className="hover:scale-105 rounded-md transition bg-primary-blue text-white px-3 py-2">
-                        <Link href="#contact-us">{contactUs}</Link>
-                    </button>
+                    <Link
+                        href="#contact-us"
+                        className="flex justify-center items-center bg-primary-blue text-white hover:text-white border py-3 min-w-[185px] w-full hover:scale-105 rounded-md transition"
+                    >
+                        {contactUs}
+                    </Link>
                 </div>
                 <div className="flex items-center min-[1440px]:hidden">
                     <button
@@ -48,7 +51,7 @@ const Header: FC<HeaderProps> = ({ headerLinks, contactUs }) => {
                         <div
                             className={`absolute ${
                                 localActive == "ar" ? "left-0" : "right-0"
-                            } top-full flex flex-col bg-white bg-opacity-80 p-10 gap-3 border backdrop-blur`}
+                            } top-full flex flex-col items-center bg-white bg-opacity-80 p-10 gap-3 border backdrop-blur`}
                         >
                             <div className="min-[1000px]:hidden">
                                 <Navbar headerLinks={headerLinks} />
@@ -61,9 +64,12 @@ const Header: FC<HeaderProps> = ({ headerLinks, contactUs }) => {
                             <div className="block min-[1440px]:hidden">
                                 <LocalSwitcherSelect />
                             </div>
-                            <button className="block min-[1070px]:hidden hover:scale-105 rounded-md transition bg-primary-blue text-white px-3 py-2">
-                                <Link href="#contact-us">{contactUs}</Link>
-                            </button>
+                            <Link
+                                href="#contact-us"
+                                className="flex min-[1070px]:hidden justify-center items-center bg-primary-blue text-white hover:text-white border py-3 min-w-[185px] w-full hover:scale-105 rounded-md transition"
+                            >
+                                {contactUs}
+                            </Link>
                         </div>
                     )}
                 </div>
