@@ -34,6 +34,7 @@ const WhyUsSection = () => {
                         playsInline
                     >
                         <source src="/videos/alimha-global-reach-video.mp4" />
+                        <source src="/videos/alimha-global-reach-video.webm" />
                         Votre navigateur ne supporte pas ce format de vidéo.
                     </video>
                 </div>
