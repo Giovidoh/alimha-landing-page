@@ -29,7 +29,6 @@ const WhyUsSection = () => {
                         autoPlay
                         loop
                         preload="auto"
-                        playsInline
                         className="rounded-xl"
                     >
                         <source src="/videos/alimha-global-reach-video.mp4" />
