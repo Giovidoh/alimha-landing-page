@@ -104,7 +104,8 @@ const CareerForm = () => {
                             <FormControl>
                                 <Textarea
                                     placeholder="Lettre de motivation"
-                                    className="bg-[#F8FAFC] text-xs lg:text-base text-[#333333] border border-[#EDEDED] w-full py-2 sm:py-3 rounded-lg outline-none"
+                                    className="bg-[#F8FAFC] text-xs lg:text-base text-[#333333] border border-[#EDEDED] w-full py-2 sm:py-3 rounded-lg outline-none resize-none"
+                                    rows="5"
                                     {...field}
                                 />
                             </FormControl>
