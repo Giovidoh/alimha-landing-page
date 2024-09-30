@@ -26,7 +26,7 @@ import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import { useTranslations } from "next-intl";
 
 const formSchema = z.object({
-    cv: z.instanceof(File, { message: "Veuillez choisir votre CV" }).refine(
+    cv: z.instanceof(File, { message: "Veuillez téléverser votre CV" }).refine(
         (file) => {
             const allowedTypes = ["image/png", "image/jpeg", "application/pdf"];
             return allowedTypes.includes(file.type);
@@ -34,7 +34,9 @@ const formSchema = z.object({
         { message: "Le fichier doit être de type PNG, JPG, JPEG ou PDF" }
     ),
     coverLetter: z
-        .instanceof(File, { message: "Veuillez choisir votre CV" })
+        .instanceof(File, {
+            message: "Veuillez téléverser votre lettre de motivation",
+        })
         .refine(
             (file) => {
                 const allowedTypes = [
