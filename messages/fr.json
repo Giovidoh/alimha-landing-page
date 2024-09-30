@@ -425,6 +425,112 @@
         }
     },
     "SoftwareDevelopmentPage": {
+        "Header": {
+            "link1": "Accueil",
+            "link2": "Services",
+            "link3": "Nos réalisations",
+            "link4": "Equipe",
+            "link5": "Contact",
+            "link6": "FAQ",
+            "button text": "Contactez-nous"
+        },
+        "HeroSection": {
+            "tag": "Développement",
+            "heading": "Conception et Développement d'Applications <span>Web</span> et <span>Mobile</span>",
+            "subheading": "Créez des applications performantes et intuitives pour toutes les plateformes. Transformez vos idées en solutions digitales robustes.",
+            "cta text": "Contactez-nous"
+        },
+        "ServicesSection": {
+            "tag": "Nos services",
+            "heading": "Découvrez nos services de <span>développement</span> sur <span>mesure</span>",
+            "card1": {
+                "title": "Conception d'Applications Web et Mobile",
+                "body": "Des solutions sur mesure pour vos besoins spécifiques. Nous créons des applications web et mobiles qui allient esthétique et performance, pour offrir une expérience utilisateur exceptionnelle."
+            },
+            "card2": {
+                "title": "Analyse de Système",
+                "body": "Sécurisez et améliorez vos infrastructures. Nos audits détaillés vous aident à comprendre les forces et les faiblesses de vos systèmes, en vous fournissant des recommandations précises."
+            },
+            "card3": {
+                "title": "Analyse de Système",
+                "body": "Optimisez vos processus internes. Nous réalisons une analyse complète de vos systèmes informatiques pour identifier les inefficacités et proposer des solutions d'amélioration."
+            },
+            "card4": {
+                "title": "Déploiement de Solutions Informatiques",
+                "body": "Mise en œuvre fluide et efficace. Nous vous accompagnons dans le déploiement de vos solutions informatiques, assurant une transition sans heurts et un support technique constant."
+            }
+        },
+        "AboutUsSection": {
+            "tag": "Qui sommes-nous ?",
+            "heading": "Pourquoi choisir <span>Alimha and Company</span> ?",
+            "card1": {
+                "title": "Expertise et Expérience",
+                "body": "Des années de réussite dans le développement de logiciels. Notre équipe d'experts possède une vaste expérience dans le développement de solutions logicielles complexes et innovantes."
+            },
+            "card2": {
+                "title": "Approche Personnalisée",
+                "body": "Des solutions adaptées à vos besoins. Nous travaillons en étroite collaboration avec vous pour comprendre vos besoins spécifiques et développer des solutions qui répondent exactement à vos attentes."
+            },
+            "card3": {
+                "title": "Technologies de Pointe",
+                "body": "Innover avec les dernières technologies. Nous utilisons les technologies les plus avancées pour vous offrir des solutions performantes et durables."
+            },
+            "card4": {
+                "title": "Support et Maintenance",
+                "body": "Un accompagnement continu. Nous assurons un support technique complet et une maintenance proactive pour garantir le bon fonctionnement de vos solutions à long terme."
+            }
+        },
+        "ProjectsSection": {
+            "tag": "Projets",
+            "heading": "Découvrez Nos <span>Projets Réussis</span>",
+            "subheading": "Consultez notre portfolio pour voir comment nous avons aidé d'autres entreprises à réussir grâce à nos solutions logicielles sur mesure."
+        },
+        "YourProjectSection": {
+            "heading": "Parlons de votre projet",
+            "subheading": "Contactez-nous dès aujourd'hui pour donner vie à vos idées et projets innovants.",
+            "cta text": "Contactez-nous"
+        },
+        "MeetExpertsSection": {
+            "tag": "Rencontrez nos experts",
+            "heading": "Notre excellence la confiance des clients",
+            "subheading": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor.",
+            "cta text": "Contactez-nous",
+            "card1": {
+                "name": "Ulrich <span>AMAH</span>",
+                "role": "CEO & Founder"
+            },
+            "card2": {
+                "name": "Jeanne <span>MACOS</span>",
+                "role": "Directeur Juridique"
+            },
+            "card3": {
+                "name": "Tito <span>GBEDZEHA</span>",
+                "role": "Directeur Informatique"
+            }
+        },
+        "ContactUsSection": {
+            "tag": "Contactez-nous",
+            "heading": "Transformons vos <span>idées</span> en <br></br> <span>Projets innovateurs</span>",
+            "subheading": "Vous avez un projet en tête ? Contactez-nous pour une consultation gratuite !",
+            "contact form": {
+                "name": "Nom",
+                "email": "Votre E-mail",
+                "subject": "Sujet",
+                "message": "Votre message"
+            },
+            "card1": {
+                "title": "Contactez-nous :",
+                "body": "+123 456 7890"
+            },
+            "card2": {
+                "title": "Email :",
+                "body": "info@alimha.com"
+            },
+            "card3": {
+                "title": "Adresse :",
+                "body": "Mamelles, Dakar - Sénégal"
+            }
+        },
         "MaintenancePage": {
             "heading": "Désolé ! Nous sommes en maintenance. 🛠️",
             "message": "Veuillez revisiter plus tard...",
