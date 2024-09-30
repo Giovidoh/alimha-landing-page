@@ -113,6 +113,26 @@
                 "subscribe": "S'abonner"
             },
             "Copyright": "Tous droits réservés | Copyright 2024"
+        },
+        "CareerPage": {
+            "message": "Veuillez remplir ce formulaire si vous souhaitez postuler chez Alimha.",
+            "career form": {
+                "your cv": "Votre CV",
+                "cover letter": "Lettre de motivation",
+                "job": "Emploi",
+                "jobs": {
+                    "job1": "Développeur",
+                    "job2": "Ingénieur Réseaux",
+                    "job3": "Comptable"
+                },
+                "country": "Pays",
+                "countries": {
+                    "country1": "Guinée",
+                    "country2": "Sénégal",
+                    "country3": "Togo"
+                },
+                "send": "Envoyer"
+            }
         }
     },
     "AlpayPage": {

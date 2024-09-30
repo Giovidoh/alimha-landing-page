@@ -1,8 +1,10 @@
 import CareerForm from "@/components/alimha/forms/CareerForm";
 import Image from "next/image";
 import logo from "@/public/assets/alimha-logo.png";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+    const t = useTranslations("AlimhaPage.CareerPage");
     return (
         <main className="w-full h-fit pt-32 pb-20">
             <section className="flex justify-center w-full h-full">
@@ -11,10 +13,7 @@ export default function Page() {
                         <Image src={logo} alt="alimha's logo" height={100} />
                     </div>
                     <div className="flex flex-col gap-4">
-                        <p className="text-[#333333] text-sm lg:text-base min-[1200px]:text-lg">
-                            Veuillez remplir ce formulaire si vous souhaitez
-                            postuler chez Alimha.
-                        </p>
+                        <p className="text-[#333333] text-sm lg:text-base min-[1200px]:text-lg"></p>
                         <CareerForm />
                     </div>
                 </div>

@@ -113,6 +113,26 @@
                 "subscribe": "Subscribe"
             },
             "Copyright": "All rights reserved | Copyright 2024"
+        },
+        "CareerPage": {
+            "message": "Please fill in this form if you would like to apply to Alimha.",
+            "career form": {
+                "your cv": "Your CV",
+                "cover letter": "Cover letter",
+                "job": "Job",
+                "jobs": {
+                    "job1": "Developer",
+                    "job2": "Network Engineer",
+                    "job3": "Accountant"
+                },
+                "country": "Country",
+                "countries": {
+                    "country1": "Guinea",
+                    "country2": "Senegal",
+                    "country3": "Togo"
+                },
+                "send": "Send"
+            }
         }
     },
     "AlpayPage": {

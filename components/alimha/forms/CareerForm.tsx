@@ -15,7 +15,6 @@ import {
     FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import {
     Select,
     SelectContent,
@@ -24,7 +23,7 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
-import { cp } from "fs";
+import { useTranslations } from "next-intl";
 
 const formSchema = z.object({
     cv: z.instanceof(File, { message: "Veuillez choisir votre CV" }).refine(
@@ -58,6 +57,7 @@ const formSchema = z.object({
 type FormSchema = z.infer<typeof formSchema>;
 
 const CareerForm = () => {
+    const t = useTranslations("AlimhaPage.CareerPage.career form");
     const [job, setJob] = useState<string>("");
     const [country, setCountry] = useState<string>("");
 
@@ -87,7 +87,7 @@ const CareerForm = () => {
                     render={({ field }) => (
                         <FormItem>
                             <FormLabel className="font-semibold text-[#333333] text-sm lg:text-base min-[1200px]:text-lg">
-                                Votre CV
+                                {t("your cv")}
                             </FormLabel>
                             <FormControl>
                                 <Input
@@ -109,7 +109,7 @@ const CareerForm = () => {
                     render={({ field }) => (
                         <FormItem>
                             <FormLabel className="font-semibold text-[#333333] text-sm lg:text-base min-[1200px]:text-lg">
-                                Lettre de motivation
+                                {t("cover letter")}
                             </FormLabel>
                             <FormControl>
                                 <Input
@@ -132,7 +132,7 @@ const CareerForm = () => {
                         render={({ field }) => (
                             <FormItem className="w-full">
                                 <FormLabel className="font-semibold text-[#333333] text-sm lg:text-base min-[1200px]:text-lg">
-                                    Emploi
+                                    {t("job")}
                                 </FormLabel>
                                 <FormControl>
                                     <Select
@@ -142,17 +142,19 @@ const CareerForm = () => {
                                         }}
                                     >
                                         <SelectTrigger className="bg-[#F8FAFC] text-xs lg:text-base text-[#333333] border border-[#EDEDED] w-full p-5 md:p-6 rounded-lg outline-none">
-                                            <SelectValue placeholder="Emploi" />
+                                            <SelectValue
+                                                placeholder={t("job")}
+                                            />
                                         </SelectTrigger>
                                         <SelectContent className="text-xs lg:text-base">
                                             <SelectItem value="Développeur">
-                                                Développeur
+                                                {t("jobs.job1")}
                                             </SelectItem>
                                             <SelectItem value="Ingénieur Réseaux">
-                                                Ingénieur Réseaux
+                                                {t("jobs.job2")}
                                             </SelectItem>
                                             <SelectItem value="Comptable">
-                                                Comptable
+                                                {t("jobs.job3")}
                                             </SelectItem>
                                         </SelectContent>
                                     </Select>
@@ -167,7 +169,7 @@ const CareerForm = () => {
                         render={({ field }) => (
                             <FormItem className="w-full">
                                 <FormLabel className="font-semibold text-[#333333] text-sm lg:text-base min-[1200px]:text-lg">
-                                    Pays
+                                    {t("country")}
                                 </FormLabel>
                                 <FormControl>
                                     <Select
@@ -177,17 +179,19 @@ const CareerForm = () => {
                                         }}
                                     >
                                         <SelectTrigger className="bg-[#F8FAFC] text-xs lg:text-base text-[#333333] border border-[#EDEDED] w-full p-5 md:p-6 rounded-lg outline-none">
-                                            <SelectValue placeholder="Pays" />
+                                            <SelectValue
+                                                placeholder={t("country")}
+                                            />
                                         </SelectTrigger>
                                         <SelectContent className="text-xs lg:text-base">
                                             <SelectItem value="Guinée">
-                                                Guinée
+                                                {t("countries.country1")}
                                             </SelectItem>
                                             <SelectItem value="Sénégal">
-                                                Sénégal
+                                                {t("countries.country2")}
                                             </SelectItem>
                                             <SelectItem value="Togo">
-                                                Togo
+                                                {t("countries.country3")}
                                             </SelectItem>
                                         </SelectContent>
                                     </Select>
@@ -201,7 +205,7 @@ const CareerForm = () => {
                     <ButtonGradientStyle1
                         fromColor="from-primary-blue"
                         toColor="to-primary-blue"
-                        text="Envoyer"
+                        text={t("send")}
                         width="w-full"
                     />
                 </div>

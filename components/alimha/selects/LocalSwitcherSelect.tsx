@@ -1,5 +1,5 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React, { ReactNode, useEffect, useState } from "react";
 import { useTransition } from "react";
 import { ChangeEvent } from "react";
@@ -24,6 +24,8 @@ const LocalSwitcherSelect = () => {
     const router = useRouter();
     const localActive = useLocale();
     const [toggleLocalSwitcher, setToggleLocalSwitcher] = useState(false);
+    const pathname = usePathname();
+    const pathnameWithoutIntl = pathname.slice(4);
 
     // Choose the selected language
     const selectedLanguages: Record<string, LanguageInfo> = {
@@ -126,7 +128,7 @@ const LocalSwitcherSelect = () => {
 
     const handleChangeLanguage = (e: any) => {
         const { id } = e.target.closest("div");
-        router.replace(`/${id}/alimha`);
+        router.replace(`/${id}/${pathnameWithoutIntl}`);
     };
 
     const nonSelectedLanguages = languages[localActive].map(
