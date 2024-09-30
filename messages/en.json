@@ -403,5 +403,12 @@
             },
             "Copyright": "All rights reserved! Copyright 2024"
         }
+    },
+    "SoftwareDevelopmentPage": {
+        "MaintenancePage": {
+            "heading": "Sorry for the inconvenience! We're undergoing maintenance. 🛠️",
+            "message": "Please revisit later...",
+            "redirect link": "Back to Alimha"
+        }
     }
 }

@@ -48,7 +48,7 @@ const OurServicesSection = () => {
                     <Card
                         icon={<SoftwareIcon />}
                         bgColor={"bg-[#F1EFEF]"}
-                        href="/en/alpay"
+                        href={`/${localActive}/software-development/maintenance`}
                         title={t.rich("card1.title", {
                             span: (chunks) => (
                                 <span className="text-primary-blue">
