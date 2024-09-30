@@ -74,15 +74,15 @@
                 "title": "Contact",
                 "body": "Contact us if you need us. We offer you quality services",
                 "card1": {
-                    "title": "Contact us :",
+                    "title": "Contact us:",
                     "body": "+221 33 844 30 81 / +221 77 889 21 74"
                 },
                 "card2": {
-                    "title": "Email :",
+                    "title": "Email:",
                     "body": "info@alimha.com"
                 },
                 "card3": {
-                    "title": "Address :",
+                    "title": "Address:",
                     "body": "Mamelles, Dakar - Senegal"
                 }
             },
@@ -426,109 +426,109 @@
     },
     "SoftwareDevelopmentPage": {
         "Header": {
-            "link1": "Accueil",
+            "link1": "Home",
             "link2": "Services",
-            "link3": "Nos réalisations",
-            "link4": "Equipe",
+            "link3": "Our achievements",
+            "link4": "Team",
             "link5": "Contact",
             "link6": "FAQ",
-            "button text": "Contactez-nous"
+            "button text": "Contact us"
         },
         "HeroSection": {
-            "tag": "Développement",
-            "heading": "Conception et Développement d'Applications <span>Web</span> et <span>Mobile</span>",
-            "subheading": "Créez des applications performantes et intuitives pour toutes les plateformes. Transformez vos idées en solutions digitales robustes.",
-            "cta text": "Contactez-nous"
+            "tag": "Development",
+            "heading": "<span>Web</span> and <span>Mobile</span> Application Design and Development",
+            "subheading": "Create high-performance, intuitive applications for all platforms. Transform your ideas into robust digital solutions.",
+            "cta text": "Contact us"
         },
         "ServicesSection": {
-            "tag": "Nos services",
-            "heading": "Découvrez nos services de <span>développement</span> sur <span>mesure</span>",
+            "tag": "Our services",
+            "heading": "Discover our <span>custom development</span> services",
             "card1": {
-                "title": "Conception d'Applications Web et Mobile",
-                "body": "Des solutions sur mesure pour vos besoins spécifiques. Nous créons des applications web et mobiles qui allient esthétique et performance, pour offrir une expérience utilisateur exceptionnelle."
+                "title": "Web and Mobile Application Design",
+                "body": "Tailor-made solutions for your specific needs. We create web and mobile applications that combine aesthetics and performance to deliver an exceptional user experience."
             },
             "card2": {
-                "title": "Analyse de Système",
-                "body": "Sécurisez et améliorez vos infrastructures. Nos audits détaillés vous aident à comprendre les forces et les faiblesses de vos systèmes, en vous fournissant des recommandations précises."
+                "title": " System Audit IT",
+                "body": "Secure and improve your infrastructures. Our detailed audits help you understand the strengths and weaknesses of your systems, providing you with precise recommendations."
             },
             "card3": {
-                "title": "Analyse de Système",
-                "body": "Optimisez vos processus internes. Nous réalisons une analyse complète de vos systèmes informatiques pour identifier les inefficacités et proposer des solutions d'amélioration."
+                "title": "System Analysis",
+                "body": "Optimize your internal processes. We carry out a complete analysis of your IT systems to identify inefficiencies and propose solutions for improvement."
             },
             "card4": {
-                "title": "Déploiement de Solutions Informatiques",
-                "body": "Mise en œuvre fluide et efficace. Nous vous accompagnons dans le déploiement de vos solutions informatiques, assurant une transition sans heurts et un support technique constant."
+                "title": "IT Solutions Deployment",
+                "body": "Smooth, efficient implementation. We support you in the deployment of your IT solutions, ensuring a smooth transition and constant technical support."
             }
         },
         "AboutUsSection": {
-            "tag": "Qui sommes-nous ?",
-            "heading": "Pourquoi choisir <span>Alimha and Company</span> ?",
+            "tag": "About us",
+            "heading": "Why choose <span>Alimha and Company</span>?",
             "card1": {
-                "title": "Expertise et Expérience",
-                "body": "Des années de réussite dans le développement de logiciels. Notre équipe d'experts possède une vaste expérience dans le développement de solutions logicielles complexes et innovantes."
+                "title": "Expertise and experience",
+                "body": "Years of successful software development. Our team of experts has extensive experience in developing complex and innovative software solutions."
             },
             "card2": {
-                "title": "Approche Personnalisée",
-                "body": "Des solutions adaptées à vos besoins. Nous travaillons en étroite collaboration avec vous pour comprendre vos besoins spécifiques et développer des solutions qui répondent exactement à vos attentes."
+                "title": "Customized approach",
+                "body": "Solutions tailored to your needs. We work closely with you to understand your specific needs and develop solutions that meet your exact requirements."
             },
             "card3": {
-                "title": "Technologies de Pointe",
-                "body": "Innover avec les dernières technologies. Nous utilisons les technologies les plus avancées pour vous offrir des solutions performantes et durables."
+                "title": "Cutting-edge technologies",
+                "body": "Innovating with the latest technologies. We use the most advanced technologies to offer you high-performance, long-lasting solutions."
             },
             "card4": {
-                "title": "Support et Maintenance",
-                "body": "Un accompagnement continu. Nous assurons un support technique complet et une maintenance proactive pour garantir le bon fonctionnement de vos solutions à long terme."
+                "title": "Support and Maintenance",
+                "body": "Ongoing support. We provide comprehensive technical support and proactive maintenance to keep your solutions running smoothly over the long term."
             }
         },
         "ProjectsSection": {
-            "tag": "Projets",
-            "heading": "Découvrez Nos <span>Projets Réussis</span>",
-            "subheading": "Consultez notre portfolio pour voir comment nous avons aidé d'autres entreprises à réussir grâce à nos solutions logicielles sur mesure."
+            "tag": "Projects",
+            "heading": "Discover Our <span>Successful Projects</span>.",
+            "subheading": "Take a look at our portfolio to see how we've helped other companies succeed with our tailor-made software solutions."
         },
         "YourProjectSection": {
-            "heading": "Parlons de votre projet",
-            "subheading": "Contactez-nous dès aujourd'hui pour donner vie à vos idées et projets innovants.",
-            "cta text": "Contactez-nous"
+            "heading": "Let's talk about your project",
+            "subheading": "Contact us today to bring your innovative ideas and projects to life.",
+            "cta text": "Contact us"
         },
         "MeetExpertsSection": {
-            "tag": "Rencontrez nos experts",
-            "heading": "Notre excellence la confiance des clients",
+            "tag": "Rencontrez at the experts",
+            "heading": "Our excellence our customers' trust",
             "subheading": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor.",
-            "cta text": "Contactez-nous",
+            "cta text": "Contact us",
             "card1": {
                 "name": "Ulrich <span>AMAH</span>",
                 "role": "CEO & Founder"
             },
             "card2": {
                 "name": "Jeanne <span>MACOS</span>",
-                "role": "Directeur Juridique"
+                "role": "General Counsel"
             },
             "card3": {
                 "name": "Tito <span>GBEDZEHA</span>",
-                "role": "Directeur Informatique"
+                "role": "IT Director"
             }
         },
         "ContactUsSection": {
-            "tag": "Contactez-nous",
-            "heading": "Transformons vos <span>idées</span> en <br></br> <span>Projets innovateurs</span>",
-            "subheading": "Vous avez un projet en tête ? Contactez-nous pour une consultation gratuite !",
+            "tag": "Contact us",
+            "heading": "Let's turn your <span>ideas</span> into <br></br> <span>Innovative projects</span>.",
+            "subheading": "Do you have a project in mind? Contact us for a free consultation!",
             "contact form": {
-                "name": "Nom",
-                "email": "Votre E-mail",
-                "subject": "Sujet",
-                "message": "Votre message"
+                "name": "Name",
+                "email": "Your e-mail",
+                "subject": "Subject",
+                "message": "Your message"
             },
             "card1": {
-                "title": "Contactez-nous :",
+                "title": "Contact us:",
                 "body": "+123 456 7890"
             },
             "card2": {
-                "title": "Email :",
+                "title": "Email:",
                 "body": "info@alimha.com"
             },
             "card3": {
-                "title": "Adresse :",
-                "body": "Mamelles, Dakar - Sénégal"
+                "title": "Address:",
+                "body": "Mamelles, Dakar - Senegal"
             }
         },
         "MaintenancePage": {

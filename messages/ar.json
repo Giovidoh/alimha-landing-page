@@ -426,109 +426,109 @@
     },
     "SoftwareDevelopmentPage": {
         "Header": {
-            "link1": "Accueil",
-            "link2": "Services",
-            "link3": "Nos réalisations",
-            "link4": "Equipe",
-            "link5": "Contact",
-            "link6": "FAQ",
-            "button text": "Contactez-nous"
+            "link1": "الصفحة الرئيسية",
+            "link2": "الخدمات",
+            "link3": "إنجازاتنا",
+            "link4": "الفريق",
+            "link5": "اتصل بنا",
+            "link6": "الأسئلة الشائعة",
+            "button text": "اتصل بنا"
         },
         "HeroSection": {
-            "tag": "Développement",
-            "heading": "Conception et Développement d'Applications <span>Web</span> et <span>Mobile</span>",
-            "subheading": "Créez des applications performantes et intuitives pour toutes les plateformes. Transformez vos idées en solutions digitales robustes.",
-            "cta text": "Contactez-nous"
+            "tag": "التطوير",
+            "heading": "تصميم وتطوير تطبيقات الويب والجوال",
+            "subheading": "أنشئ تطبيقات عالية الأداء وسهلة الاستخدام لجميع المنصات. حوّل أفكارك إلى حلول رقمية قوية.",
+            "cta text": "اتصل بنا"
         },
         "ServicesSection": {
-            "tag": "Nos services",
-            "heading": "Découvrez nos services de <span>développement</span> sur <span>mesure</span>",
+            "tag": "خدماتنا",
+            "heading": "اكتشف خدماتنا التطويرية المخصصة",
             "card1": {
-                "title": "Conception d'Applications Web et Mobile",
-                "body": "Des solutions sur mesure pour vos besoins spécifiques. Nous créons des applications web et mobiles qui allient esthétique et performance, pour offrir une expérience utilisateur exceptionnelle."
+                "title": "تصميم تطبيقات الويب والهاتف المحمول",
+                "body": "حلول مصممة خصيصاً لتلبية احتياجاتك الخاصة. نحن نصمم تطبيقات الويب والهاتف المحمول التي تجمع بين الجماليات والأداء لتقديم تجربة مستخدم استثنائية."
             },
             "card2": {
-                "title": "Analyse de Système",
-                "body": "Sécurisez et améliorez vos infrastructures. Nos audits détaillés vous aident à comprendre les forces et les faiblesses de vos systèmes, en vous fournissant des recommandations précises."
+                "title": "تدقيق نظام تكنولوجيا المعلومات",
+                "body": "قم بتأمين بنيتك التحتية وتحسينها. تساعدك عمليات التدقيق التفصيلية التي نجريها على فهم نقاط القوة والضعف في أنظمتك، وتزويدك بتوصيات دقيقة."
             },
             "card3": {
-                "title": "Analyse de Système",
-                "body": "Optimisez vos processus internes. Nous réalisons une analyse complète de vos systèmes informatiques pour identifier les inefficacités et proposer des solutions d'amélioration."
+                "title": "تحليل النظام",
+                "body": "تحسين عملياتك الداخلية. نقوم بإجراء تحليل كامل لأنظمة تكنولوجيا المعلومات لديك لتحديد أوجه القصور واقتراح حلول للتحسين."
             },
             "card4": {
-                "title": "Déploiement de Solutions Informatiques",
-                "body": "Mise en œuvre fluide et efficace. Nous vous accompagnons dans le déploiement de vos solutions informatiques, assurant une transition sans heurts et un support technique constant."
+                "title": "نشر حلول تكنولوجيا المعلومات",
+                "body": "تنفيذ سلس وفعال. نحن ندعمك في نشر حلول تكنولوجيا المعلومات الخاصة بك، ونضمن لك الانتقال السلس والدعم الفني المستمر."
             }
         },
         "AboutUsSection": {
-            "tag": "Qui sommes-nous ?",
-            "heading": "Pourquoi choisir <span>Alimha and Company</span> ?",
+            "tag": "من نحن؟",
+            "heading": "Pourquoi choisir Alimha and Company ?",
             "card1": {
-                "title": "Expertise et Expérience",
-                "body": "Des années de réussite dans le développement de logiciels. Notre équipe d'experts possède une vaste expérience dans le développement de solutions logicielles complexes et innovantes."
+                "title": "الخبرة والتمرس",
+                "body": "سنوات من تطوير البرمجيات الناجحة. يتمتع فريق الخبراء لدينا بخبرة واسعة في تطوير حلول برمجية معقدة ومبتكرة."
             },
             "card2": {
-                "title": "Approche Personnalisée",
-                "body": "Des solutions adaptées à vos besoins. Nous travaillons en étroite collaboration avec vous pour comprendre vos besoins spécifiques et développer des solutions qui répondent exactement à vos attentes."
+                "title": "نهج مخصص",
+                "body": "حلول مصممة خصيصاً لتلبية احتياجاتك. نحن نعمل معك عن كثب لفهم احتياجاتك الخاصة وتطوير حلول تلبي متطلباتك الدقيقة."
             },
             "card3": {
-                "title": "Technologies de Pointe",
-                "body": "Innover avec les dernières technologies. Nous utilisons les technologies les plus avancées pour vous offrir des solutions performantes et durables."
+                "title": "أحدث التقنيات المتطورة",
+                "body": "الابتكار بأحدث التقنيات. نستخدم أحدث التقنيات المتطورة لنقدم لك حلولاً عالية الأداء تدوم طويلاً."
             },
             "card4": {
-                "title": "Support et Maintenance",
-                "body": "Un accompagnement continu. Nous assurons un support technique complet et une maintenance proactive pour garantir le bon fonctionnement de vos solutions à long terme."
+                "title": "الدعم والصيانة",
+                "body": "الدعم المستمر. نحن نقدم الدعم الفني الشامل والصيانة الاستباقية لضمان تشغيل حلولك بسلاسة على المدى الطويل."
             }
         },
         "ProjectsSection": {
-            "tag": "Projets",
-            "heading": "Découvrez Nos <span>Projets Réussis</span>",
-            "subheading": "Consultez notre portfolio pour voir comment nous avons aidé d'autres entreprises à réussir grâce à nos solutions logicielles sur mesure."
+            "tag": "المشاريع",
+            "heading": "اكتشف قصص نجاحنا",
+            "subheading": "ألقِ نظرة على محفظة أعمالنا لترى كيف ساعدنا الشركات الأخرى على النجاح من خلال حلولنا البرمجية المصممة حسب الطلب."
         },
         "YourProjectSection": {
-            "heading": "Parlons de votre projet",
-            "subheading": "Contactez-nous dès aujourd'hui pour donner vie à vos idées et projets innovants.",
-            "cta text": "Contactez-nous"
+            "heading": "دعنا نتحدث عن مشروعك",
+            "subheading": "اتصل بنا اليوم لتجعل أفكارك ومشاريعك المبتكرة تنبض بالحياة.",
+            "cta text": "اتصل بنا"
         },
         "MeetExpertsSection": {
-            "tag": "Rencontrez nos experts",
-            "heading": "Notre excellence la confiance des clients",
+            "tag": "رينكونتريز عند الخبراء",
+            "heading": "ثقة عملائنا المتميزين",
             "subheading": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor.",
-            "cta text": "Contactez-nous",
+            "cta text": "اتصل بنا",
             "card1": {
                 "name": "Ulrich <span>AMAH</span>",
-                "role": "CEO & Founder"
+                "role": "الرئيس التنفيذي والمؤسس"
             },
             "card2": {
                 "name": "Jeanne <span>MACOS</span>",
-                "role": "Directeur Juridique"
+                "role": "المستشار القانوني العام"
             },
             "card3": {
                 "name": "Tito <span>GBEDZEHA</span>",
-                "role": "Directeur Informatique"
+                "role": "مدير تكنولوجيا المعلومات"
             }
         },
         "ContactUsSection": {
-            "tag": "Contactez-nous",
-            "heading": "Transformons vos <span>idées</span> en <br></br> <span>Projets innovateurs</span>",
-            "subheading": "Vous avez un projet en tête ? Contactez-nous pour une consultation gratuite !",
+            "tag": "اتصل بنا",
+            "heading": "تحويل أفكارك إلى مشاريع مبتكرة",
+            "subheading": "هل لديك مشروع في ذهنك؟ اتصل بنا للحصول على استشارة مجانية!",
             "contact form": {
-                "name": "Nom",
-                "email": "Votre E-mail",
-                "subject": "Sujet",
-                "message": "Votre message"
+                "name": "الاسم",
+                "email": "عنوان بريدك الإلكتروني",
+                "subject": "الموضوع",
+                "message": "رسالتك"
             },
             "card1": {
-                "title": "Contactez-nous :",
+                "title": "اتصل بنا",
                 "body": "+123 456 7890"
             },
             "card2": {
-                "title": "Email :",
+                "title": "البريد الإلكتروني :",
                 "body": "info@alimha.com"
             },
             "card3": {
-                "title": "Adresse :",
-                "body": "Mamelles, Dakar - Sénégal"
+                "title": "العنوان:",
+                "body": "ماميلس، داكار - السنغال"
             }
         },
         "MaintenancePage": {
