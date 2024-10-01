@@ -442,7 +442,8 @@
         },
         "ServicesSection": {
             "tag": "Our services",
-            "heading": "Discover our <span>custom development</span> services",
+            "heading": "Discover our <span>custom <br></br> development</span> services",
+            "subheading": "Create high-performance, intuitive applications for all platforms. <br></br> Transform your ideas into robust digital solutions",
             "card1": {
                 "title": "Web and Mobile Application Design",
                 "body": "Tailor-made solutions for your specific needs. We create web and mobile applications that combine aesthetics and performance to deliver an exceptional user experience."

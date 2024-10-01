@@ -8,7 +8,7 @@ const HeroSection = () => {
     const t = useTranslations("SoftwareDevelopmentPage.HeroSection");
 
     return (
-        <section className="px-[5%] min-[1200px]:px-[10%] py-16">
+        <section className="px-[5%] min-[1200px]:px-[10%] pt-10 pb-16 min-[950px]:pt-16 min-[950px]:pb-28">
             <div className="flex justify-between items-center gap-16">
                 <div className="flex flex-col items-center min-[950px]:items-start bg-white bg-opacity-80 min-[950px]:bg-transparent w-full min-[950px]:w-1/2 gap-3 min-[1280px]:gap-5 py-10 px-2 min-[950px]:px-0 rounded-2xl shadow-2xl shadow-white min-[950px]:shadow-none z-10">
                     <span className="bg-tertiary text-secondary-blue text-sm min-[1200px]:text-base px-3 py-2 rounded-md">
@@ -24,7 +24,7 @@ const HeroSection = () => {
                             br: () => <br />,
                         })}
                     </h1>
-                    <p className="text-[#1E1E1E] text-center min-[950px]:text-justify text-sm lg:text-base min-[1200px]:text-lg">
+                    <p className="text-[#1E1E1E] text-center min-[950px]:text-justify text-sm lg:text-base min-[1200px]:text-lg tracking-wide">
                         {t("subheading")}
                     </p>
                     <div>

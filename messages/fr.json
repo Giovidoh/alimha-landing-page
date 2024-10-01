@@ -442,7 +442,8 @@
         },
         "ServicesSection": {
             "tag": "Nos services",
-            "heading": "Découvrez nos services de <span>développement</span> sur <span>mesure</span>",
+            "heading": "Découvrez nos services de <br></br> <span>développement</span> sur <span>mesure</span>",
+            "subheading": "Créez des applications performantes et intuitives pour toutes les plateformes. <br></br> Transformez vos idées en solutions digitales robustes.",
             "card1": {
                 "title": "Conception d'Applications Web et Mobile",
                 "body": "Des solutions sur mesure pour vos besoins spécifiques. Nous créons des applications web et mobiles qui allient esthétique et performance, pour offrir une expérience utilisateur exceptionnelle."
