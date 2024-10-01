@@ -3,21 +3,21 @@ import Link from "next/link";
 import React, { FC } from "react";
 
 interface Button1Props {
-    url?: string;
+    href?: string;
     text?: string;
     className?: string;
 }
 
 const Button1: FC<Button1Props> = ({
-    url = "#",
+    href = "#",
     text = "Button1",
     className,
 }) => {
     return (
         <Link
-            href={url}
+            href={href}
             className={cn(
-                `flex justify-center items-center bg-primary-blue text-white tracking-wide px-5 py-3`,
+                `flex justify-center items-center bg-primary-blue text-white tracking-wide whitespace-nowrap px-5 py-3 rounded-md`,
                 className
             )}
         >
