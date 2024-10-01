@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import logo from "@/public/assets/alimha-logo.png";
@@ -8,12 +8,25 @@ import Button1 from "../buttons/Button1";
 import LocalSwitcherSelect from "../selects/LocalSwitcherSelect";
 import BurgerButton from "@/public/assets/burger-button-icon.svg";
 import { getLangDir } from "rtl-detect";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
     const localActive = useLocale();
     const direction = getLangDir(localActive);
     const t = useTranslations("SoftwareDevelopmentPage.Header");
+
+    const router = useRouter();
+
+    // Maintenance mode
+    useEffect(() => {
+        if (
+            process.env.NEXT_PUBLIC_SOFTWARE_DEVELOPMENT_MAINTENANCE_MODE ===
+            "true"
+        ) {
+            router.replace(`/${localActive}/software-development/maintenance`);
+        }
+    }, [localActive, router]);
 
     const handleToggleMenu = () => {
         setToggleMenu((prev) => !prev);
