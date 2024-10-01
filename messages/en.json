@@ -436,7 +436,7 @@
         },
         "HeroSection": {
             "tag": "Development",
-            "heading": "<span>Web</span> and <span>Mobile</span> Application Design and Development",
+            "heading": "<span>Web</span> and <span>Mobile</span> Application <br></br> Design and Development",
             "subheading": "Create high-performance, intuitive applications for all platforms. Transform your ideas into robust digital solutions.",
             "cta text": "Contact us"
         },

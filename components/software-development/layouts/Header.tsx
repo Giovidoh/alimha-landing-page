@@ -33,7 +33,7 @@ const Header = () => {
     };
 
     return (
-        <header className="relative flex items-center justify-between px-[5%] min-[1200px]:px-[10%] pt-5 pb-2">
+        <header className="relative flex items-center justify-between px-[5%] min-[1200px]:px-[10%] pt-5 pb-2 z-50">
             <div>
                 <Image src={logo} alt="alimha's logo" height={45} />
             </div>
