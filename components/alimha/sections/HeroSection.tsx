@@ -9,9 +9,11 @@ import saas from "@/public/assets/saas-img.png";
 import api from "@/public/assets/api-img.png";
 import { useLocale, useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { getLangDir } from "rtl-detect";
 
 const HeroSection = () => {
     const localActive = useLocale();
+    const direction = getLangDir(localActive);
     const t = useTranslations("AlimhaPage.HeroSection");
 
     return (
@@ -50,14 +52,14 @@ const HeroSection = () => {
 
                 <motion.div
                     initial={{
-                        x: localActive == "ar" ? "-100%" : "100%",
+                        x: direction == "rtl" ? "-100%" : "100%",
                         y: "-100%",
-                        rotate: localActive == "ar" ? 210 : -30,
+                        rotate: direction == "rtl" ? 210 : -30,
                     }}
                     animate={{ x: 0, y: 0 }}
                     transition={{ duration: 0.8 }}
                     className={`absolute -top-[5%] ${
-                        localActive == "ar" ? "right-[57%]" : "left-[57%]"
+                        direction == "rtl" ? "right-[57%]" : "left-[57%]"
                     } `}
                 >
                     <div className="bg-gradient-to-r from-primary-blue to-white/0 w-[1000px] h-[80px] ml-5 rounded-full"></div>
@@ -69,7 +71,7 @@ const HeroSection = () => {
                     animate={{ scale: 1, rotate: 360, x: 10 }}
                     transition={{ duration: 0.3, ease: "linear" }}
                     className={`hidden min-[900px]:block absolute top-[30%] ${
-                        localActive == "ar" ? "right-[70%]" : "left-[60%]"
+                        direction == "rtl" ? "right-[70%]" : "left-[60%]"
                     }`}
                 >
                     <motion.div
@@ -95,7 +97,7 @@ const HeroSection = () => {
                     animate={{ scale: 1, rotate: 360, x: 10 }}
                     transition={{ duration: 0.3, ease: "linear", delay: 0.3 }}
                     className={`hidden min-[900px]:block absolute top-[65%] ${
-                        localActive == "ar" ? "right-[70%]" : "left-[60%]"
+                        direction == "rtl" ? "right-[70%]" : "left-[60%]"
                     } z-20`}
                 >
                     <motion.div
@@ -121,7 +123,7 @@ const HeroSection = () => {
                     animate={{ scale: 1, rotate: 360, x: 10 }}
                     transition={{ duration: 0.3, ease: "linear", delay: 0.6 }}
                     className={`hidden min-[900px]:block absolute top-[70%] ${
-                        localActive == "ar" ? "right-[45%]" : "left-[78%]"
+                        direction == "rtl" ? "right-[52%]" : "left-[78%]"
                     } z-20`}
                 >
                     <motion.div
