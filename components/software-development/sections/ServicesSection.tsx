@@ -72,16 +72,7 @@ const ServicesSection = () => {
             </div>
 
             {/* Decoration */}
-            <div
-                // initial={{
-                //     x: direction == "rtl" ? "-100%" : "100%",
-                //     y: "-100%",
-                //     rotate: direction == "rtl" ? 210 : -30,
-                // }}
-                // animate={{ x: 0, y: 0 }}
-                // transition={{ duration: 0.8 }}
-                className={`absolute top-0 left-0 w-full h-full`}
-            >
+            <div className={`absolute top-0 left-0 w-full h-full`}>
                 <div className="absolute flex flex-col justify-center items-center w-full h-full -rotate-[40deg]">
                     <div className="bg-gradient-to-r from-primary-blue via-white/20 to-primary-blue w-[900px] h-[250px] rounded-full"></div>
                     <div className="bg-gradient-to-r from-primary-blue via-white/20 to-primary-blue w-[1000px] h-[100px] rounded-full"></div>

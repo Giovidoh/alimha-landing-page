@@ -463,7 +463,7 @@
         },
         "AboutUsSection": {
             "tag": "Qui sommes-nous ?",
-            "heading": "Pourquoi choisir <span>Alimha and Company</span> ?",
+            "heading": "Pourquoi <span>Choisir</span> Alimha <br></br> and Company ?",
             "card1": {
                 "title": "Expertise et Expérience",
                 "body": "Des années de réussite dans le développement de logiciels. Notre équipe d'experts possède une vaste expérience dans le développement de solutions logicielles complexes et innovantes."
@@ -479,7 +479,8 @@
             "card4": {
                 "title": "Support et Maintenance",
                 "body": "Un accompagnement continu. Nous assurons un support technique complet et une maintenance proactive pour garantir le bon fonctionnement de vos solutions à long terme."
-            }
+            },
+            "button text": "Contactez-nous"
         },
         "ProjectsSection": {
             "tag": "Projets",
