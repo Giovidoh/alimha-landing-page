@@ -44,7 +44,7 @@ const DownloadAppSection = () => {
                             />
                         </div>
                     </div>
-                    <div className="hidden min-[1200px]:block">
+                    <div className="relative hidden min-[1200px]:block">
                         <Image
                             src={sendmoDownloadAppMobileImage}
                             alt="sendmo mobile app download image"

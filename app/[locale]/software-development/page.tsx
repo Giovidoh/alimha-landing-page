@@ -2,6 +2,7 @@ import AboutUsSection from "@/components/software-development/sections/AboutUsSe
 import HeroSection from "@/components/software-development/sections/HeroSection";
 import ProjectsSection from "@/components/software-development/sections/ProjectsSection";
 import ServicesSection from "@/components/software-development/sections/ServicesSection";
+import YourProjectSection from "@/components/software-development/sections/YourProjectSection";
 
 export default function Page() {
     return (
@@ -10,6 +11,7 @@ export default function Page() {
             <ServicesSection />
             <AboutUsSection />
             <ProjectsSection />
+            <YourProjectSection />
         </main>
     );
 }
