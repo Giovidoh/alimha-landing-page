@@ -14,7 +14,7 @@ const AboutUsSection = () => {
     const t = useTranslations("SoftwareDevelopmentPage.AboutUsSection");
     return (
         <section
-            id="advantages_section"
+            id="about-us"
             className=" bg-white w-full px-[5%] min-[1200px]:px-[10%] pt-20 pb-28"
         >
             <div className="flex flex-col min-[950px]:flex-row justify-between items-center gap-10">
@@ -86,7 +86,6 @@ const AboutUsSection = () => {
                                 <div className="absolute top-[58%] -left-[20%] bg-gradient-to-r from-primary-blue/5 via-white/20 to-primary-blue/5 w-[100%] h-[100px] rounded-full"></div>
                             </div>
                         </div>
-                        <div className="absolute top-[95%] left-[83%] bg-white bg-opacity-50 backdrop-blur p-[5%] rounded-full"></div>
                     </div>
                 </div>
             </div>
