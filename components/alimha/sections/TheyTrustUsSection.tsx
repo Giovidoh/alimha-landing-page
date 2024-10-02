@@ -9,6 +9,7 @@ import ecobankLogo from "@/public/assets/ecobank-logo.png";
 import { motion } from "framer-motion";
 import { FC } from "react";
 import { useLocale } from "next-intl";
+import { getLangDir } from "rtl-detect";
 
 interface TheyTrustUsSectionProps {
     tag: string;
@@ -22,6 +23,7 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
     description,
 }) => {
     const localActive = useLocale();
+    const direction = getLangDir(localActive);
 
     return (
         <section className="relative flex flex-col justify-evenly items-center bg-[#F8F8F8] text-center w-full h-fit pt-12 pb-24">
@@ -42,7 +44,7 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
             <div className="flex w-full overflow-hidden px-10">
                 <motion.div
                     animate={{
-                        translateX: localActive == "ar" ? "50%" : "-50%",
+                        translateX: direction == "rtl" ? "50%" : "-50%",
                     }}
                     transition={{
                         duration: 15,
@@ -50,7 +52,9 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                         repeat: Infinity,
                         repeatType: "loop",
                     }}
-                    className="flex flex-none md:hidden items-center gap-16 pr-16 py-3"
+                    className={`flex flex-none md:hidden items-center gap-16 ${
+                        direction == "rtl" ? "pl-16" : "pr-16"
+                    } py-3`}
                 >
                     {/* Small devices */}
                     <div className="flex justify-center items-center bg-white w-[130px] h-[80px] rounded-xl shadow-lg">
@@ -112,7 +116,7 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                 </motion.div>
                 <motion.div
                     animate={{
-                        translateX: localActive == "ar" ? "50%" : "-50%",
+                        translateX: direction == "rtl" ? "50%" : "-50%",
                     }}
                     transition={{
                         duration: 15,
@@ -120,7 +124,9 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
                         ease: "linear",
                         repeatType: "loop",
                     }}
-                    className="hidden md:flex md:flex-none items-center gap-24 pr-24 py-7"
+                    className={`hidden md:flex md:flex-none items-center gap-24 ${
+                        direction == "rtl" ? "pl-24" : "pr-24"
+                    } py-7`}
                 >
                     {/* Large devices */}
                     <div className="flex justify-center items-center bg-white w-[230px] h-[120px] rounded-xl shadow-lg">
