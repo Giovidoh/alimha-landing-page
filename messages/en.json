@@ -494,7 +494,7 @@
         },
         "MeetExpertsSection": {
             "tag": "Rencontrez at the experts",
-            "heading": "Our excellence our customers' trust",
+            "heading": "Our <span>excellence</span> our <br></br> customers' trust",
             "subheading": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor.",
             "cta text": "Contact us",
             "card1": {

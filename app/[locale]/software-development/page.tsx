@@ -1,5 +1,6 @@
 import AboutUsSection from "@/components/software-development/sections/AboutUsSection";
 import HeroSection from "@/components/software-development/sections/HeroSection";
+import MeetExpertsSection from "@/components/software-development/sections/MeetExpertsSection";
 import ProjectsSection from "@/components/software-development/sections/ProjectsSection";
 import ServicesSection from "@/components/software-development/sections/ServicesSection";
 import YourProjectSection from "@/components/software-development/sections/YourProjectSection";
@@ -12,6 +13,7 @@ export default function Page() {
             <AboutUsSection />
             <ProjectsSection />
             <YourProjectSection />
+            <MeetExpertsSection />
         </main>
     );
 }
