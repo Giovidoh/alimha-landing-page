@@ -4,7 +4,7 @@ import React, {
     FC,
     JSXElementConstructor,
     ReactElement,
-    ReactNode,
+    ReactNodeArray,
 } from "react";
 
 interface TeamMemberCardProps {
@@ -12,7 +12,7 @@ interface TeamMemberCardProps {
     name:
         | string
         | ReactElement<any, string | JSXElementConstructor<any>>
-        | ReactNode[];
+        | ReactNodeArray;
     role: string;
 }
 
