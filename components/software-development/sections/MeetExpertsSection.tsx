@@ -1,18 +1,7 @@
 import { useTranslations } from "next-intl";
-import React from "react";
+import React, { useEffect } from "react";
 import Button1 from "../buttons/Button1";
-import TeamMemberCard from "../cards/TeamMemberCard";
-import avatar1 from "@/public/assets/avatar-1.png";
-import avatar2 from "@/public/assets/avatar-2.png";
-import avatar3 from "@/public/assets/avatar-3.png";
-
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel";
+import TeamCarousel from "../carousels/TeamCarousel";
 
 const MeetExpertsSection = () => {
     const t = useTranslations("SoftwareDevelopmentPage.MeetExpertsSection");
@@ -41,51 +30,9 @@ const MeetExpertsSection = () => {
                         <Button1 text={t("cta text")} />
                     </div>
                 </div>
-                <Carousel>
-                    <CarouselContent>
-                        <CarouselItem className="basis-1/3">
-                            <TeamMemberCard
-                                image={avatar1}
-                                name={t.rich("card1.name", {
-                                    span: (chunks) => (
-                                        <span className="font-semibold">
-                                            {chunks}
-                                        </span>
-                                    ),
-                                })}
-                                role={t("card1.role")}
-                            />
-                        </CarouselItem>
-                        <CarouselItem className="basis-1/3">
-                            <TeamMemberCard
-                                image={avatar2}
-                                name={t.rich("card2.name", {
-                                    span: (chunks) => (
-                                        <span className="font-semibold">
-                                            {chunks}
-                                        </span>
-                                    ),
-                                })}
-                                role={t("card2.role")}
-                            />
-                        </CarouselItem>
-                        <CarouselItem className="basis-1/3">
-                            <TeamMemberCard
-                                image={avatar3}
-                                name={t.rich("card3.name", {
-                                    span: (chunks) => (
-                                        <span className="font-semibold">
-                                            {chunks}
-                                        </span>
-                                    ),
-                                })}
-                                role={t("card3.role")}
-                            />
-                        </CarouselItem>
-                    </CarouselContent>
-                    {/* <CarouselPrevious />
-                    <CarouselNext /> */}
-                </Carousel>
+                <div className="flex justify-center min-[950px]:justify-end w-full">
+                    <TeamCarousel />
+                </div>
             </div>
         </section>
     );

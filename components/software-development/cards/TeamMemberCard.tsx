@@ -25,7 +25,9 @@ const TeamMemberCard: FC<TeamMemberCardProps> = ({ image, name, role }) => {
                 <Image src={image} alt="member image" height={160} />
             </div>
             <div className="flex flex-col gap-1 items-center">
-                <h3 className="text-center text-xl tracking-wide">{name}</h3>
+                <h3 className="text-center text-xl tracking-wide whitespace-nowrap">
+                    {name}
+                </h3>
                 <p className="font-light text-center text-sm tracking-wide">
                     {role}
                 </p>
