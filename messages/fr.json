@@ -518,7 +518,8 @@
                 "name": "Nom",
                 "email": "Votre E-mail",
                 "subject": "Sujet",
-                "message": "Votre message"
+                "message": "Votre message",
+                "send": "Envoyer"
             },
             "card1": {
                 "title": "Contactez-nous :",
@@ -526,7 +527,7 @@
             },
             "card2": {
                 "title": "Email :",
-                "body": "info@alimha.com"
+                "body": "infos@alimha.com"
             },
             "card3": {
                 "title": "Adresse :",

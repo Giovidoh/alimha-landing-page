@@ -111,7 +111,7 @@ const TeamCarousel = () => {
                             index == current
                                 ? "bg-primary-blue"
                                 : "bg-[#EAEAEA]"
-                        } p-2 rounded-full`}
+                        } p-[5px] rounded-full`}
                     ></div>
                 ))}
             </div>
