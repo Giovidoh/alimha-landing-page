@@ -534,6 +534,29 @@
                 "body": "ماميلس، داكار - السنغال"
             }
         },
+        "FaqSection": {
+            "tag": "الأسئلة الشائعة",
+            "heading": "هل لديك أي أسئلة؟",
+            "subheading": "راجع الأسئلة الشائعة للحصول على إجابات سريعة على الأسئلة الأكثر شيوعاً.",
+            "accordion": {
+                "item1": {
+                    "question": "Lorem ipsum dolor sit amet consectetur.",
+                    "answer": "Lorem ipsum dolor sit amet consectetur."
+                },
+                "item2": {
+                    "question": "Lorem ipsum dolor sit amet consectetur.",
+                    "answer": "Lorem ipsum dolor sit amet consectetur."
+                },
+                "item3": {
+                    "question": "Lorem ipsum dolor sit amet consectetur.",
+                    "answer": "Lorem ipsum dolor sit amet consectetur."
+                },
+                "item4": {
+                    "question": "Lorem ipsum dolor sit amet consectetur.",
+                    "answer": "Lorem ipsum dolor sit amet consectetur."
+                }
+            }
+        },
         "MaintenancePage": {
             "heading": "نعتذر عن الإزعاج! نحن نخضع للصيانة. 🛠️",
             "message": "يُرجى التحقق لاحقاً...",

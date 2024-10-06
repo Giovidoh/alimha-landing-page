@@ -534,6 +534,29 @@
                 "body": "Mamelles, Dakar - Senegal"
             }
         },
+        "FaqSection": {
+            "tag": "FAQS",
+            "heading": "Do you have any <span>questions</span>?",
+            "subheading": "Check out our FAQs for quick answers to your most frequently asked questions.",
+            "accordion": {
+                "item1": {
+                    "question": "Lorem ipsum dolor sit amet consectetur.",
+                    "answer": "Lorem ipsum dolor sit amet consectetur."
+                },
+                "item2": {
+                    "question": "Lorem ipsum dolor sit amet consectetur.",
+                    "answer": "Lorem ipsum dolor sit amet consectetur."
+                },
+                "item3": {
+                    "question": "Lorem ipsum dolor sit amet consectetur.",
+                    "answer": "Lorem ipsum dolor sit amet consectetur."
+                },
+                "item4": {
+                    "question": "Lorem ipsum dolor sit amet consectetur.",
+                    "answer": "Lorem ipsum dolor sit amet consectetur."
+                }
+            }
+        },
         "MaintenancePage": {
             "heading": "Sorry for the inconvenience! We're undergoing maintenance. 🛠️",
             "message": "Please revisit later...",
