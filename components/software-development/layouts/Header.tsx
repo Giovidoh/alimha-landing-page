@@ -33,51 +33,53 @@ const Header = () => {
     };
 
     return (
-        <header className="relative flex items-center justify-between px-[5%] min-[1200px]:px-[10%] pt-5 pb-2 z-50">
-            <div>
-                <Image src={logo} alt="alimha's logo" height={45} />
-            </div>
-            <div className="flex items-center gap-10">
-                <div className="hidden md:block">
-                    <Navbar />
+        <header className="relative flex justify-center items-center px-[5%] min-[1200px]:px-[10%] pt-5 pb-2 z-50">
+            <div className="flex items-center justify-between w-full max-w-[1200px]">
+                <div>
+                    <Image src={logo} alt="alimha's logo" height={45} />
                 </div>
-                <div className="hidden min-[950px]:flex items-center gap-3">
-                    <div className="hidden min-[1070px]:block">
-                        <LocalSwitcherSelect />
+                <div className="flex items-center gap-10">
+                    <div className="hidden md:block">
+                        <Navbar />
                     </div>
-                    <div className="hidden min-[950px]:block">
-                        <Button1 href="#" text={t("button text")} />
+                    <div className="hidden min-[950px]:flex items-center gap-3">
+                        <div className="hidden min-[1070px]:block">
+                            <LocalSwitcherSelect />
+                        </div>
+                        <div className="hidden min-[950px]:block">
+                            <Button1 href="#" text={t("button text")} />
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="block min-[1070px]:hidden">
-                <button onClick={handleToggleMenu}>
-                    <BurgerButton className="h-4" />
-                </button>
-                {toggleMenu && (
-                    <div
-                        className={`absolute top-full ${
-                            direction == "rtl" ? "left-0" : "right-0"
-                        } flex flex-col items-center bg-white bg-opacity-80 backdrop-blur p-10 gap-4 rounded-es-md rounded-ee-md `}
-                    >
-                        <div className="block md:hidden">
-                            <Navbar className="flex flex-col" />
-                        </div>
-                        <div className="flex flex-col items-center w-full gap-3">
-                            <div className="block min-[1070px]:hidden">
-                                <LocalSwitcherSelect />
+                <div className="block min-[1070px]:hidden">
+                    <button onClick={handleToggleMenu}>
+                        <BurgerButton className="h-4" />
+                    </button>
+                    {toggleMenu && (
+                        <div
+                            className={`absolute top-full ${
+                                direction == "rtl" ? "left-0" : "right-0"
+                            } flex flex-col items-center bg-white bg-opacity-80 backdrop-blur p-10 gap-4 rounded-es-md rounded-ee-md `}
+                        >
+                            <div className="block md:hidden">
+                                <Navbar className="flex flex-col" />
                             </div>
-                            <div className="block min-[950px]:hidden w-full">
-                                <Button1
-                                    href="#"
-                                    text={t("button text")}
-                                    className="w-full"
-                                />
+                            <div className="flex flex-col items-center w-full gap-3">
+                                <div className="block min-[1070px]:hidden">
+                                    <LocalSwitcherSelect />
+                                </div>
+                                <div className="block min-[950px]:hidden w-full">
+                                    <Button1
+                                        href="#"
+                                        text={t("button text")}
+                                        className="w-full"
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                )}
+                    )}
+                </div>
             </div>
         </header>
     );

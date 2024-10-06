@@ -11,9 +11,9 @@ const ContactUsSection = () => {
     return (
         <section
             id="contact-us"
-            className="px-[5%] min-[1200px]:px-[10%] pt-10 pb-16 min-[950px]:pt-16 min-[950px]:pb-28"
+            className="flex justify-center items-center px-[5%] min-[1200px]:px-[10%] pt-10 pb-16 min-[950px]:pt-16 min-[950px]:pb-28"
         >
-            <div className="flex flex-col items-center gap-5">
+            <div className="flex flex-col items-center w-full max-w-[1200px] gap-5">
                 <span className="bg-tertiary text-primary-blue text-sm min-[1200px]:text-base px-3 py-2 rounded-md">
                     {t("tag")}
                 </span>

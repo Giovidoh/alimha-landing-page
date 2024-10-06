@@ -11,8 +11,8 @@ import DeploymentIcon from "@/public/assets/deployment-icon.svg";
 const ServicesSection = () => {
     const t = useTranslations("SoftwareDevelopmentPage.ServicesSection");
     return (
-        <section className="relative bg-primary-blue px-[5%] min-[1200px]:px-[10%] py-16">
-            <div className="relative flex flex-col items-center gap-14 z-10">
+        <section className="relative flex justify-center items-center bg-primary-blue px-[5%] min-[1200px]:px-[10%] py-16">
+            <div className="relative flex flex-col items-center max-w-[1200px] gap-14 z-10">
                 <div className="flex flex-col items-center gap-5">
                     <span className="bg-white text-primary-blue text-sm min-[1200px]:text-base px-3 py-2 rounded-md">
                         {t("tag")}

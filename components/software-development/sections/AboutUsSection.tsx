@@ -15,9 +15,9 @@ const AboutUsSection = () => {
     return (
         <section
             id="about-us"
-            className=" bg-white w-full px-[5%] min-[1200px]:px-[10%] pt-20 pb-28"
+            className="flex justify-center items-center bg-white w-full px-[5%] min-[1200px]:px-[10%] pt-20 pb-28"
         >
-            <div className="flex flex-col min-[950px]:flex-row justify-between items-center gap-10">
+            <div className="flex flex-col min-[950px]:flex-row justify-between items-center max-w-[1200px] gap-10">
                 <div className="flex flex-col items-center min-[950px]:items-start w-full min-[950px]:w-1/2 gap-4">
                     <span className="bg-tertiary text-primary-blue text-sm min-[1200px]:text-base px-3 py-2 rounded-md">
                         {t("tag")}

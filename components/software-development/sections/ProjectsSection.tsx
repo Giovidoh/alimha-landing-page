@@ -7,9 +7,9 @@ const ProjectsSection = () => {
     return (
         <section
             id="projects"
-            className="bg-white w-full px-[5%] min-[1200px]:px-[10%] pt-20 pb-28"
+            className="flex justify-center items-center bg-white w-full px-[5%] min-[1200px]:px-[10%] pt-20 pb-28"
         >
-            <div className="flex flex-col gap-14">
+            <div className="flex flex-col max-w-[1200px] gap-14">
                 <div className="flex flex-col items-center gap-4">
                     <span className="bg-tertiary text-primary-blue text-sm min-[1200px]:text-base px-3 py-2 rounded-md">
                         {t("tag")}

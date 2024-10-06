@@ -26,9 +26,9 @@ const FaqSection = () => {
     return (
         <section
             id="faq_section"
-            className="px-[5%] min-[1200px]:px-[10%] pt-10 pb-16 min-[950px]:pt-16 min-[950px]:pb-28"
+            className="flex justify-center items-center px-[5%] min-[1200px]:px-[10%] pt-10 pb-16 min-[950px]:pt-16 min-[950px]:pb-28"
         >
-            <div className="flex flex-col justify-between items-center gap-6 sm:gap-10">
+            <div className="flex flex-col justify-between items-center w-full max-w-[1200px] gap-6 sm:gap-10">
                 <div className="flex flex-col items-center gap-3">
                     <span className="bg-tertiary text-primary-blue text-sm min-[1200px]:text-base px-8 py-2 rounded-md">
                         {t("tag")}

@@ -7,8 +7,8 @@ import meetingImg from "@/public/assets/meeting-img.png";
 const YourProjectSection = () => {
     const t = useTranslations("SoftwareDevelopmentPage.YourProjectSection");
     return (
-        <section className="bg-white w-full px-[5%] min-[1200px]:px-[10%] pt-20 pb-28">
-            <div className="relative bg-primary-blue w-full h-full px-5 sm:px-10 min-[1120px]:px-20 py-10 rounded-3xl before:content-[''] before:absolute before:top-0 before:left-0 before:bg-sendmo-download-app-bg before:bg-no-repeat before:bg-cover before:bg-center before:opacity-20 before:w-full before:h-full">
+        <section className="flex justify-center items-center bg-white w-full px-[5%] min-[1200px]:px-[10%] pt-20 pb-28">
+            <div className="relative bg-primary-blue w-full max-w-[1200px] h-full px-5 sm:px-10 min-[1120px]:px-20 py-10 rounded-3xl before:content-[''] before:absolute before:top-0 before:left-0 before:bg-sendmo-download-app-bg before:bg-no-repeat before:bg-cover before:bg-center before:opacity-20 before:w-full before:h-full">
                 <div className="flex justify-between items-center text-white">
                     <div className="relative flex flex-col items-center min-[950px]:items-start w-full min-[950px]:w-1/2 gap-4">
                         <h2 className="font-bold text-center min-[950px]:text-start text-2xl lg:text-3xl min-[1200px]:text-4xl leading-tight min-[1200px]:leading-snug tracking-wide min-[950px]:whitespace-nowrap">
