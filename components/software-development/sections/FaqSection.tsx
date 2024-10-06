@@ -26,33 +26,37 @@ const FaqSection = () => {
     return (
         <section
             id="faq_section"
-            className="flex flex-col justify-between items-center gap-6 sm:gap-10 px-5 sm:px-20 min-[1120px]:px-40 py-20"
+            className="px-[5%] min-[1200px]:px-[10%] pt-10 pb-16 min-[950px]:pt-16 min-[950px]:pb-28"
         >
-            <div className="flex flex-col items-center gap-3">
-                <span className="bg-tertiary text-primary-blue text-sm min-[1200px]:text-base px-8 py-2 rounded-md">
-                    {t("tag")}
-                </span>
-                <h2 className="font-bold text-center text-2xl lg:text-3xl min-[1200px]:text-4xl leading-tight min-[1200px]:leading-snug tracking-wide">
-                    {t.rich("heading", {
-                        span: (chunks) => (
-                            <span className="text-primary-blue">{chunks}</span>
-                        ),
-                        br: () => <br />,
-                    })}
-                </h2>
-                <p className="text-[#1E1E1E] text-center text-sm lg:text-base min-[1200px]:text-lg tracking-wide w-full md:w-3/4">
-                    {t("subheading")}
-                </p>
-            </div>
+            <div className="flex flex-col justify-between items-center gap-6 sm:gap-10">
+                <div className="flex flex-col items-center gap-3">
+                    <span className="bg-tertiary text-primary-blue text-sm min-[1200px]:text-base px-8 py-2 rounded-md">
+                        {t("tag")}
+                    </span>
+                    <h2 className="font-bold text-center text-2xl lg:text-3xl min-[1200px]:text-4xl leading-tight min-[1200px]:leading-snug tracking-wide">
+                        {t.rich("heading", {
+                            span: (chunks) => (
+                                <span className="text-primary-blue">
+                                    {chunks}
+                                </span>
+                            ),
+                            br: () => <br />,
+                        })}
+                    </h2>
+                    <p className="text-[#1E1E1E] text-center text-sm lg:text-base min-[1200px]:text-lg tracking-wide w-full md:w-3/4">
+                        {t("subheading")}
+                    </p>
+                </div>
 
-            <div className="flex flex-col w-[95%] sm:w-[80%] gap-4">
-                {accordionInfos.map((accordion, index) => (
-                    <Accordion
-                        key={index}
-                        title={accordion.title}
-                        body={accordion.body}
-                    />
-                ))}
+                <div className="flex flex-col w-[95%] sm:w-[80%] gap-4">
+                    {accordionInfos.map((accordion, index) => (
+                        <Accordion
+                            key={index}
+                            title={accordion.title}
+                            body={accordion.body}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     );
