@@ -8,7 +8,7 @@ import Button1 from "../buttons/Button1";
 const Footer = () => {
     const t = useTranslations("SoftwareDevelopmentPage.Footer");
     return (
-        <footer className="relative flex flex-col justify-evenly items-center bg-[#012773] w-full px-[5%] min-[1200px]:px-[10%] overflow-hidden">
+        <footer className="relative flex flex-col justify-evenly items-center bg-[#012773] w-full px-[5%] min-[1200px]:px-[10%]">
             <div className="flex flex-wrap md:flex-nowrap justify-between items-start w-full pt-40 gap-20">
                 <div className="flex flex-col gap-10 text-pretty">
                     <Image src={alimhaLogoWhite} alt="alimha's logo" />
@@ -56,6 +56,7 @@ const Footer = () => {
                     <span>ALIMAH</span>
                 </div>
             </div>
+            <div className="absolute -top-10 left-[80%] bg-white bg-opacity-50 backdrop-blur p-14 rounded-full"></div>
         </footer>
     );
 };
