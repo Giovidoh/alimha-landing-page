@@ -557,6 +557,29 @@
                 }
             }
         },
+        "Footer": {
+            "description": "Alimha and Company : Votre Partenaire pour des Solutions Logicielles Innovantes et Personnalisées.",
+            "subscribe form": {
+                "email": "E-mail",
+                "subscribe": "S'abonner"
+            },
+            "col1": {
+                "title": "Liens utiles",
+                "link1": "Accueil",
+                "link2": "Services",
+                "link3": "Nos réalisations",
+                "link4": "Equipe",
+                "link5": "Contact",
+                "link6": "FAQ"
+            },
+            "col2": {
+                "title": "Resources",
+                "link1": "Conditions d’utilisation",
+                "link2": "Politique de confidentialité",
+                "link3": "Mention légale"
+            },
+            "copyright": "Tous droits réservés ! Copyright 2024"
+        },
         "MaintenancePage": {
             "heading": "Désolé ! Nous sommes en maintenance. 🛠️",
             "message": "Veuillez revisiter plus tard...",

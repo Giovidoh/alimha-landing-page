@@ -1,3 +1,4 @@
+import Footer from "@/components/software-development/layouts/Footer";
 import AboutUsSection from "@/components/software-development/sections/AboutUsSection";
 import ContactUsSection from "@/components/software-development/sections/ContactUsSection";
 import FaqSection from "@/components/software-development/sections/FaqSection";
@@ -18,6 +19,7 @@ export default function Page() {
             <MeetExpertsSection />
             <ContactUsSection />
             <FaqSection />
+            <Footer />
         </main>
     );
 }
