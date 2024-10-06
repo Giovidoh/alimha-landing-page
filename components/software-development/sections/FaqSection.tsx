@@ -25,7 +25,7 @@ const FaqSection = () => {
 
     return (
         <section
-            id="faq_section"
+            id="faq"
             className="flex justify-center items-center px-[5%] min-[1200px]:px-[10%] pt-10 pb-16 min-[950px]:pt-16 min-[950px]:pb-28"
         >
             <div className="flex flex-col justify-between items-center w-full max-w-[1200px] gap-6 sm:gap-10">

@@ -6,7 +6,7 @@ const ProjectsSection = () => {
     const t = useTranslations("SoftwareDevelopmentPage.ProjectsSection");
     return (
         <section
-            id="projects"
+            id="our-achievements"
             className="flex justify-center items-center bg-white w-full px-[5%] min-[1200px]:px-[10%] pt-20 pb-28"
         >
             <div className="flex flex-col max-w-[1200px] gap-14">

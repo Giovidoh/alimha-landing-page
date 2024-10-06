@@ -10,7 +10,7 @@ const ContactUsSection = () => {
     const t = useTranslations("SoftwareDevelopmentPage.ContactUsSection");
     return (
         <section
-            id="contact-us"
+            id="contact"
             className="flex justify-center items-center px-[5%] min-[1200px]:px-[10%] pt-10 pb-16 min-[950px]:pt-16 min-[950px]:pb-28"
         >
             <div className="flex flex-col items-center w-full max-w-[1200px] gap-5">
