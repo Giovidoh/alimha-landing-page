@@ -9,12 +9,15 @@ import LocalSwitcherSelect from "../selects/LocalSwitcherSelect";
 import BurgerButton from "@/public/assets/burger-button-icon.svg";
 import { getLangDir } from "rtl-detect";
 import { useRouter } from "next/navigation";
+import { motion, progress, scroll } from "framer-motion";
 
 const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
     const localActive = useLocale();
     const direction = getLangDir(localActive);
     const t = useTranslations("SoftwareDevelopmentPage.Header");
+
+    const [background, setBackground] = useState<string>("");
 
     const router = useRouter();
 
@@ -32,8 +35,23 @@ const Header = () => {
         setToggleMenu((prev) => !prev);
     };
 
+    scroll(
+        (progress: number) =>
+            progress > 0 ? setBackground("bg-white/80") : setBackground(""),
+        {
+            source: document.body,
+        }
+    );
+
     return (
-        <header className="relative flex justify-center items-center px-[5%] min-[1200px]:px-[10%] pt-5 pb-2 z-50">
+        <motion.header
+            initial={{ y: "-100%" }}
+            animate={{ y: 0 }}
+            transition={{ delay: 0.5, ease: "easeOut" }}
+            className={`fixed flex justify-center items-center ${
+                background ? `${background} backdrop-blur-md` : "bg-transparent"
+            } w-full px-[5%] min-[1200px]:px-[10%] pt-2 pb-2 z-50 transition`}
+        >
             <div className="flex items-center justify-between w-full max-w-[1200px]">
                 <div>
                     <Image src={logo} alt="alimha's logo" height={45} />
@@ -81,7 +99,7 @@ const Header = () => {
                     )}
                 </div>
             </div>
-        </header>
+        </motion.header>
     );
 };
 
