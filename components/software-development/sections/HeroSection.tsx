@@ -1,8 +1,10 @@
+"use client";
 import { useTranslations } from "next-intl";
 import React from "react";
 import Button1 from "../buttons/Button1";
 import Image from "next/image";
 import heroImage from "@/public/assets/software-development-hero-img.png";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
     const t = useTranslations("SoftwareDevelopmentPage.HeroSection");
@@ -32,18 +34,125 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className="relative hidden min-[950px]:block">
-                    <Image
-                        src={heroImage}
-                        alt="hero image"
-                        height={450}
-                        className="pointer-events-none select-none"
-                    />
+                    <motion.div
+                        initial={{ scale: 0.5 }}
+                        animate={{ scale: 1 }}
+                        transition={{
+                            duration: 0.3,
+                            delay: 0.5,
+                            ease: "easeInOut",
+                            type: "spring",
+                            stiffness: 90,
+                        }}
+                    >
+                        <Image
+                            src={heroImage}
+                            alt="hero image"
+                            height={450}
+                            className="pointer-events-none select-none"
+                        />
+                    </motion.div>
                     <div className="absolute top-0 left-0 w-full h-full -z-10">
-                        <div className="absolute -top-[2%] left-[14%] bg-primary-blue p-[23%] rounded-full"></div>
-                        <div className="absolute top-[20%] left-1/4 bg-primary-blue p-[34%] rounded-full"></div>
-                        <div className="absolute top-[55%] left-[2%] bg-primary-blue p-[23%] rounded-full"></div>
-                        <div className="absolute -top-[2%] left-[20%] bg-white bg-opacity-50 backdrop-blur p-[5%] rounded-full"></div>
-                        <div className="absolute top-[100%] left-[60%] bg-white bg-opacity-50 backdrop-blur p-[5%] rounded-full"></div>
+                        <motion.div
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{
+                                duration: 0.3,
+                                delay: 1,
+                                ease: "easeInOut",
+                                type: "spring",
+                                stiffness: 50,
+                            }}
+                            className="absolute -top-[2%] left-[14%] bg-primary-blue p-[23%] rounded-full"
+                        ></motion.div>
+                        <motion.div
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{
+                                duration: 0.3,
+                                delay: 1.2,
+                                ease: "easeInOut",
+                                type: "spring",
+                                stiffness: 50,
+                            }}
+                            className="absolute top-[20%] left-1/4 bg-primary-blue p-[34%] rounded-full"
+                        ></motion.div>
+                        <motion.div
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{
+                                duration: 0.3,
+                                delay: 1.4,
+                                ease: "easeInOut",
+                                type: "spring",
+                                stiffness: 50,
+                            }}
+                            className="absolute top-[55%] left-[2%] bg-primary-blue p-[23%] rounded-full"
+                        ></motion.div>
+                        <motion.div
+                            animate={{
+                                x: [
+                                    0,
+                                    "25%",
+                                    "50%",
+                                    "75%",
+                                    "100%",
+                                    "75%",
+                                    "50%",
+                                    "25%",
+                                    0,
+                                ],
+                                y: [
+                                    0,
+                                    "-25%",
+                                    "-50%",
+                                    "-25%",
+                                    0,
+                                    "25%",
+                                    "50%",
+                                    "25%",
+                                    0,
+                                ],
+                            }}
+                            transition={{
+                                duration: 5,
+                                ease: "linear",
+                                repeat: Infinity,
+                            }}
+                            className="absolute -top-[2%] left-[20%] bg-white bg-opacity-50 backdrop-blur p-[5%] rounded-full"
+                        ></motion.div>
+                        <motion.div
+                            animate={{
+                                x: [
+                                    0,
+                                    "-25%",
+                                    "-50%",
+                                    "-75%",
+                                    "-100%",
+                                    "-75%",
+                                    "-50%",
+                                    "-25%",
+                                    0,
+                                ],
+                                y: [
+                                    0,
+                                    "25%",
+                                    "50%",
+                                    "25%",
+                                    0,
+                                    "-25%",
+                                    "-50%",
+                                    "-25%",
+                                    0,
+                                ],
+                            }}
+                            transition={{
+                                duration: 5,
+                                ease: "linear",
+                                repeat: Infinity,
+                            }}
+                            className="absolute top-[100%] left-[60%] bg-white bg-opacity-50 backdrop-blur p-[5%] rounded-full"
+                        ></motion.div>
                     </div>
                 </div>
             </div>
