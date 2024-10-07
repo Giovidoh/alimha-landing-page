@@ -131,7 +131,8 @@
                     "country2": "Sénégal",
                     "country3": "Togo"
                 },
-                "send": "Envoyer"
+                "send": "Envoyer",
+                "captcha error message": "Veuillez remplir le champ captcha !"
             }
         }
     },

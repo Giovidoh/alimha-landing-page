@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
+import { Toaster } from "sonner";
 import Header from "@/components/alimha/layouts/Header";
 import Footer from "@/components/alimha/layouts/Footer";
 
@@ -36,6 +37,16 @@ export default async function RootLayout({
                     {children}
                     <Footer />
                 </NextIntlClientProvider>
+                <Toaster
+                    toastOptions={{
+                        style: {
+                            fontSize: "18px",
+                        },
+                    }}
+                    position="bottom-left"
+                    closeButton
+                    richColors
+                />
             </body>
         </html>
     );

@@ -131,7 +131,8 @@
                     "country2": "السنغال",
                     "country3": "توغو"
                 },
-                "send": "إرسال"
+                "send": "إرسال",
+                "captcha error message": "يُرجى ملء خانة captcha من فضلك!"
             }
         }
     },

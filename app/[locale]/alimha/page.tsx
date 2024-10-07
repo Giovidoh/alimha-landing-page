@@ -4,7 +4,6 @@ import OurServicesSection from "@/components/alimha/sections/OurServicesSection"
 import TheyTrustUsSection from "@/components/alimha/sections/TheyTrustUsSection";
 import AboutUsSection from "@/components/alimha/sections/AboutUsSection";
 import WhyUsSection from "@/components/alimha/sections/WhyUsSection";
-import { Toaster } from "sonner";
 import { useTranslations } from "next-intl";
 
 export default function Home() {
@@ -21,17 +20,6 @@ export default function Home() {
                 description={t("TheyTrustUsSection.description")}
             />
             <ContactUsSection />
-
-            <Toaster
-                toastOptions={{
-                    style: {
-                        fontSize: "18px",
-                    },
-                }}
-                position="bottom-left"
-                closeButton
-                richColors
-            />
         </main>
     );
 }

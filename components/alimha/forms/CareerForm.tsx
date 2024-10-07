@@ -8,7 +8,6 @@ import { z } from "zod";
 import {
     Form,
     FormControl,
-    FormDescription,
     FormField,
     FormItem,
     FormLabel,
@@ -23,7 +22,9 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+
+import { toast } from "sonner";
 
 const formSchema = z.object({
     cv: z.instanceof(File, { message: "Veuillez téléverser votre CV" }).refine(
@@ -59,6 +60,7 @@ const formSchema = z.object({
 type FormSchema = z.infer<typeof formSchema>;
 
 const CareerForm = () => {
+    const localActive = useLocale();
     const t = useTranslations("AlimhaPage.CareerPage.career form");
     const [job, setJob] = useState<string>("");
     const [country, setCountry] = useState<string>("");
@@ -73,13 +75,56 @@ const CareerForm = () => {
         },
     });
 
-    const onSubmit = (values: FormSchema) => {
-        console.log(values);
+    const onSubmit = async (values: FormSchema, e: any) => {
+        e.preventDefault();
+
+        const formData = new FormData();
+
+        // Append form data fields
+        formData.append("cv", values.cv as Blob);
+        formData.append("coverLetter", values.coverLetter as Blob);
+        formData.append("job", values.job);
+        formData.append("country", values.country);
+
+        const careerForm = document.getElementById(
+            "career-form"
+        ) as HTMLFormElement;
+
+        // Checking captcha
+        const hCaptcha = (
+            careerForm.querySelector(
+                "textarea[name=h-captcha-response]"
+            ) as HTMLTextAreaElement
+        )?.value;
+
+        if (!hCaptcha) {
+            toast.error(`${t("captcha error message")}`);
+            return;
+        }
+
+        formData.append("h-captcha-response", hCaptcha);
+
+        // Send the form data
+        const response = await fetch(`/${localActive}/api/career-form-email`, {
+            method: "POST",
+            body: formData, // Use FormData
+        });
+
+        if (response.ok) {
+            form.reset(); // Clear form on success
+            toast.success("Votre message a été envoyé avec succès. Merci !");
+        } else {
+            toast.error(
+                "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer s'il vous plaît."
+            );
+        }
     };
 
     return (
         <Form {...form}>
             <form
+                id="career-form"
+                method="POST"
                 onSubmit={form.handleSubmit(onSubmit)}
                 className="flex flex-col gap-4 pb-5"
             >
@@ -97,7 +142,7 @@ const CareerForm = () => {
                                     accept=".png, .jpg, .jpeg, .pdf"
                                     className="bg-[#F8FAFC] border border-[#EDEDED] text-base w-1/2 h-12 pt-3 rounded-lg outline-none cursor-pointer"
                                     onChange={(e) => {
-                                        field.onChange(e.target.files?.[0]); // Gérer la sélection du fichier
+                                        field.onChange(e.target.files?.[0]); // Handle file selection
                                     }}
                                 />
                             </FormControl>
@@ -119,7 +164,7 @@ const CareerForm = () => {
                                     accept=".png, .jpg, .jpeg, .pdf"
                                     className="bg-[#F8FAFC] border border-[#EDEDED] text-base w-1/2 h-12 pt-3 rounded-lg outline-none cursor-pointer"
                                     onChange={(e) => {
-                                        field.onChange(e.target.files?.[0]); // Gérer la sélection du fichier
+                                        field.onChange(e.target.files?.[0]); // Handle file selection
                                     }}
                                 />
                             </FormControl>
@@ -203,6 +248,14 @@ const CareerForm = () => {
                         )}
                     />
                 </div>
+
+                {/* hCaptcha */}
+                <div
+                    className="h-captcha mt-2"
+                    data-captcha="true"
+                    data-lang={localActive}
+                ></div>
+
                 <div className="mt-4">
                     <ButtonGradientStyle1
                         fromColor="from-primary-blue"
@@ -212,6 +265,11 @@ const CareerForm = () => {
                     />
                 </div>
             </form>
+            <script
+                src="https://web3forms.com/client/script.js"
+                async
+                defer
+            ></script>
         </Form>
     );
 };
