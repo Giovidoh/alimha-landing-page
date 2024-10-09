@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import Logo from "../Logo";
 import NavBar from "../NavBar";
 import BurgerButton from "../buttons/BurgerButton";
-import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import LocalSwitcherSelect from "../selects/LocalSwitcherSelect";
 import { useLocale, useTranslations } from "next-intl";
 import { motion, scroll } from "framer-motion";
 import Link from "next/link";
+import ButtonStyle2 from "../buttons/ButtonStyle2";
 
 const Header = () => {
     const [burgerDropped, setBurgerDropped] = useState(false);
@@ -57,10 +57,11 @@ const Header = () => {
                         <LocalSwitcherSelect />
                     </div>
                     <div className="block w-1/2">
-                        <ButtonGradientStyle1
-                            fromColor="from-primary-blue"
-                            toColor="to-primary-blue"
+                        <ButtonStyle2
+                            href={`/${localActive}/alimha/become-partner`}
                             text={t("Become partner")}
+                            bgColor="bg-primary-blue"
+                            className="border-none z-10"
                         />
                     </div>
                 </div>
@@ -79,10 +80,11 @@ const Header = () => {
                                 <LocalSwitcherSelect />
                             </div>
                             <div className="flex min-[950px]:hidden">
-                                <ButtonGradientStyle1
-                                    fromColor="from-primary-blue"
-                                    toColor="to-primary-blue"
+                                <ButtonStyle2
+                                    href={`/${localActive}/alimha/become-partner`}
                                     text={t("Become partner")}
+                                    bgColor="bg-primary-blue"
+                                    className="border-none z-10"
                                 />
                             </div>
                         </div>

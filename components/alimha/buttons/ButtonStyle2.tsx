@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 
@@ -18,7 +19,10 @@ const ButtonStyle2: React.FC<ButtonStyle2Props> = ({
         <Link
             href={href}
             target="_blank"
-            className={`flex justify-center items-center border ${bgColor} text-white hover:scale-105 font-medium tracking-wide rounded-md w-[194px] h-[45px] transition ease-in ${className}`}
+            className={cn(
+                `flex justify-center items-center border ${bgColor} text-white hover:scale-105 font-medium tracking-wide rounded-md w-[194px] h-[45px] transition ease-in`,
+                className
+            )}
         >
             {text}
         </Link>

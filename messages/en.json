@@ -117,15 +117,21 @@
         "CareerPage": {
             "message": "Please fill in this form if you would like to apply to Alimha.",
             "career form": {
-                "your cv": "Your CV",
-                "cover letter": "Cover letter",
-                "job": "Job",
+                "field1": "Your CV",
+                "field1 error message": "Please upload your CV",
+                "field1 error message2": "File type must be PNG, JPG, JPEG or PDF",
+                "field2": "Cover letter",
+                "field2 error message": "Please upload your cover letter",
+                "field2 error message2": "File type must be PNG, JPG, JPEG or PDF",
+                "field3": "Job",
+                "field3 error message": "Please select the desired job.",
                 "jobs": {
                     "job1": "Developer",
                     "job2": "Network Engineer",
                     "job3": "Accountant"
                 },
-                "country": "Country",
+                "field4": "Country",
+                "field4 error message": "Please select your country of residence.",
                 "countries": {
                     "country1": "Guinea",
                     "country2": "Senegal",
@@ -133,6 +139,19 @@
                 },
                 "send": "Send",
                 "captcha error message": "Please fill out captcha field!"
+            }
+        },
+        "BecomePartnerPage": {
+            "message": "Please fill in this form if you would like to become an Alimha partner.",
+            "become partner form": {
+                "field1": "Lastname",
+                "field1 error message": "Please enter your name.",
+                "field2": "Firstname",
+                "field2 error message": "Please enter your first name(s).",
+                "field3": "Email",
+                "field3 error message": "Please enter your email address.",
+                "field4": "Description",
+                "send": "Send"
             }
         }
     },

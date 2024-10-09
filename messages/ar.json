@@ -117,15 +117,21 @@
         "CareerPage": {
             "message": "يرجى ملء هذا النموذج إذا كنت ترغب في التقدم لوظيفة في شركة عليمة.",
             "career form": {
-                "your cv": "سيرتك الذاتية",
-                "cover letter": "خطاب تغطية",
-                "job": "الوظائف",
+                "field1": "سيرتك الذاتية",
+                "field1 error message": "يُرجى تحميل سيرتك الذاتية",
+                "field1 error message2": "يجب أن يكون الملف بتنسيق PNG أو JPG أو JPEG أو PDF",
+                "field2": "خطاب تغطية",
+                "field2 error message": "يرجى تحميل خطاب التغطية الخاص بك",
+                "field2 error message2": "يجب أن يكون الملف بتنسيق PNG أو JPG أو JPEG أو PDF",
+                "field3": "الوظائف",
+                "field3 error message": "يُرجى تحديد الوظيفة المطلوبة.",
                 "jobs": {
                     "job1": "المطور",
                     "job2": "مهندس شبكات",
                     "job3": "محاسب"
                 },
-                "country": "البلد",
+                "field4": "البلد",
+                "field4 error message": "يُرجى اختيار بلد إقامتك.",
                 "countries": {
                     "country1": "غينيا",
                     "country2": "السنغال",
@@ -133,6 +139,19 @@
                 },
                 "send": "إرسال",
                 "captcha error message": "يُرجى ملء خانة captcha من فضلك!"
+            }
+        },
+        "BecomePartnerPage": {
+            "message": "يُرجى ملء هذا النموذج إذا كنت ترغب في أن تصبح شريكاً لـ Alimha.",
+            "become partner form": {
+                "field1": "الاسم",
+                "field1 error message": "الرجاء إدخال اسمك.",
+                "field2": "الاسم (الأسماء) الأولى",
+                "field2 error message": "يُرجى إدخال اسمك (أسمائكم) الأول (أسماءكم).",
+                "field3": "البريد الإلكتروني",
+                "field3 error message": "الرجاء إدخال عنوان بريدك الإلكتروني",
+                "field4": "الوصف",
+                "send": "إرسال"
             }
         }
     },

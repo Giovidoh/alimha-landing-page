@@ -2,7 +2,6 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import actor3 from "@/public/assets/actor3.png";
 import jigsaw from "@/public/assets/jigsaw-img.png";
 import saas from "@/public/assets/saas-img.png";
@@ -10,6 +9,7 @@ import api from "@/public/assets/api-img.png";
 import { useLocale, useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { getLangDir } from "rtl-detect";
+import ButtonStyle2 from "../buttons/ButtonStyle2";
 
 const HeroSection = () => {
     const localActive = useLocale();
@@ -33,11 +33,11 @@ const HeroSection = () => {
                         {t("supporting text")}
                     </p>
                     <div className="w-full text-center min-[900px]:text-start">
-                        <ButtonGradientStyle1
-                            fromColor="from-primary-blue"
-                            toColor="to-primary-blue"
+                        <ButtonStyle2
+                            href={`/${localActive}/alimha/become-partner`}
                             text={t("Become partner")}
-                            width="px-5"
+                            bgColor="bg-primary-blue"
+                            className="border-none z-10"
                         />
                     </div>
                 </div>

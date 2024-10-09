@@ -26,19 +26,15 @@ import { useLocale, useTranslations } from "next-intl";
 
 import { toast } from "sonner";
 
-const formSchema = z.object({
-    cv: z.instanceof(File, { message: "Veuillez téléverser votre CV" }).refine(
-        (file) => {
-            const allowedTypes = ["image/png", "image/jpeg", "application/pdf"];
-            return allowedTypes.includes(file.type);
-        },
-        { message: "Le fichier doit être de type PNG, JPG, JPEG ou PDF" }
-    ),
-    coverLetter: z
-        .instanceof(File, {
-            message: "Veuillez téléverser votre lettre de motivation",
-        })
-        .refine(
+const CareerForm = () => {
+    const localActive = useLocale();
+    const t = useTranslations("AlimhaPage.CareerPage.career form");
+    const [job, setJob] = useState<string>("");
+    const [country, setCountry] = useState<string>("");
+
+    // ZOD Schema
+    const formSchema = z.object({
+        cv: z.instanceof(File, { message: t("field1 error message") }).refine(
             (file) => {
                 const allowedTypes = [
                     "image/png",
@@ -47,23 +43,29 @@ const formSchema = z.object({
                 ];
                 return allowedTypes.includes(file.type);
             },
-            { message: "Le fichier doit être de type PNG, JPG, JPEG ou PDF" }
+            { message: t("field1 error message2") }
         ),
-    job: z
-        .string()
-        .min(1, { message: "Veuillez sélectionner l'emploi souhaité." }),
-    country: z
-        .string()
-        .min(1, { message: "Veuillez sélectionner votre pays de résidence." }),
-});
+        coverLetter: z
+            .instanceof(File, {
+                message: t("field2 error message"),
+            })
+            .refine(
+                (file) => {
+                    const allowedTypes = [
+                        "image/png",
+                        "image/jpeg",
+                        "application/pdf",
+                    ];
+                    return allowedTypes.includes(file.type);
+                },
+                { message: t("field2 error message2") }
+            ),
+        job: z.string().min(1, { message: t("field3 error message") }),
+        country: z.string().min(1, { message: t("field4 error message") }),
+    });
 
-type FormSchema = z.infer<typeof formSchema>;
-
-const CareerForm = () => {
-    const localActive = useLocale();
-    const t = useTranslations("AlimhaPage.CareerPage.career form");
-    const [job, setJob] = useState<string>("");
-    const [country, setCountry] = useState<string>("");
+    type FormSchema = z.infer<typeof formSchema>;
+    // End ZOD Schema
 
     const form = useForm<FormSchema>({
         resolver: zodResolver(formSchema),
@@ -134,7 +136,7 @@ const CareerForm = () => {
                     render={({ field }) => (
                         <FormItem>
                             <FormLabel className="font-semibold text-[#333333] text-sm lg:text-base min-[1200px]:text-lg">
-                                {t("your cv")}
+                                {t("field1")}
                             </FormLabel>
                             <FormControl>
                                 <Input
@@ -156,7 +158,7 @@ const CareerForm = () => {
                     render={({ field }) => (
                         <FormItem>
                             <FormLabel className="font-semibold text-[#333333] text-sm lg:text-base min-[1200px]:text-lg">
-                                {t("cover letter")}
+                                {t("field2")}
                             </FormLabel>
                             <FormControl>
                                 <Input
@@ -179,7 +181,7 @@ const CareerForm = () => {
                         render={({ field }) => (
                             <FormItem className="w-full">
                                 <FormLabel className="font-semibold text-[#333333] text-sm lg:text-base min-[1200px]:text-lg">
-                                    {t("job")}
+                                    {t("field3")}
                                 </FormLabel>
                                 <FormControl>
                                     <Select
@@ -190,7 +192,7 @@ const CareerForm = () => {
                                     >
                                         <SelectTrigger className="bg-[#F8FAFC] text-xs lg:text-base text-[#333333] border border-[#EDEDED] w-full p-5 md:p-6 rounded-lg outline-none">
                                             <SelectValue
-                                                placeholder={t("job")}
+                                                placeholder={t("field3")}
                                             />
                                         </SelectTrigger>
                                         <SelectContent className="text-xs lg:text-base">
@@ -216,7 +218,7 @@ const CareerForm = () => {
                         render={({ field }) => (
                             <FormItem className="w-full">
                                 <FormLabel className="font-semibold text-[#333333] text-sm lg:text-base min-[1200px]:text-lg">
-                                    {t("country")}
+                                    {t("field4")}
                                 </FormLabel>
                                 <FormControl>
                                     <Select
@@ -227,7 +229,7 @@ const CareerForm = () => {
                                     >
                                         <SelectTrigger className="bg-[#F8FAFC] text-xs lg:text-base text-[#333333] border border-[#EDEDED] w-full p-5 md:p-6 rounded-lg outline-none">
                                             <SelectValue
-                                                placeholder={t("country")}
+                                                placeholder={t("field4")}
                                             />
                                         </SelectTrigger>
                                         <SelectContent className="text-xs lg:text-base">

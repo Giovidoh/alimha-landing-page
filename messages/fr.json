@@ -117,15 +117,21 @@
         "CareerPage": {
             "message": "Veuillez remplir ce formulaire si vous souhaitez postuler chez Alimha.",
             "career form": {
-                "your cv": "Votre CV",
-                "cover letter": "Lettre de motivation",
-                "job": "Emploi",
+                "field1": "Votre CV",
+                "field1 error message": "Veuillez téléverser votre CV",
+                "field1 error message2": "Le fichier doit être de type PNG, JPG, JPEG ou PDF",
+                "field2": "Lettre de motivation",
+                "field2 error message": "Veuillez téléverser votre lettre de motivation",
+                "field2 error message2": "Le fichier doit être de type PNG, JPG, JPEG ou PDF",
+                "field3": "Emploi",
+                "field3 error message": "Veuillez sélectionner l'emploi souhaité.",
                 "jobs": {
                     "job1": "Développeur",
                     "job2": "Ingénieur Réseaux",
                     "job3": "Comptable"
                 },
-                "country": "Pays",
+                "field4": "Pays",
+                "field4 error message": "Veuillez sélectionner votre pays de résidence.",
                 "countries": {
                     "country1": "Guinée",
                     "country2": "Sénégal",
@@ -133,6 +139,19 @@
                 },
                 "send": "Envoyer",
                 "captcha error message": "Veuillez remplir le champ captcha !"
+            }
+        },
+        "BecomePartnerPage": {
+            "message": "Veuillez remplir ce formulaire si vous souhaitez devenir partenaire d'Alimha.",
+            "become partner form": {
+                "field1": "Nom",
+                "field1 error message": "Veuillez entrer votre nom.",
+                "field2": "Prénom(s)",
+                "field2 error message": "Veuillez entrer votre/vos prénom(s).",
+                "field3": "Email",
+                "field3 error message": "Veuillez entrer votre email.",
+                "field4": "Description",
+                "send": "Envoyer"
             }
         }
     },
