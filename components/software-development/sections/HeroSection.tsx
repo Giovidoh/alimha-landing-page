@@ -1,6 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
-import React from "react";
+import React, { useState } from "react";
 import Button1 from "../buttons/Button1";
 import Image from "next/image";
 import heroImage from "@/public/assets/software-development-hero-img.png";
@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
     const t = useTranslations("SoftwareDevelopmentPage.HeroSection");
+    const [firstAnimationComplete, setFirstAnimationComplete] = useState(false);
 
     return (
         <section className="flex justify-center items-center px-[5%] min-[1200px]:px-[10%] pt-28 min-[950px]:pt-40 pb-16 min-[950px]:pb-28">
@@ -50,42 +51,101 @@ const HeroSection = () => {
                             alt="hero image"
                             height={450}
                             className="pointer-events-none select-none"
+                            priority={true}
                         />
                     </motion.div>
                     <div className="absolute top-0 left-0 w-full h-full -z-10">
                         <motion.div
                             initial={{ scale: 0 }}
-                            animate={{ scale: 1 }}
-                            transition={{
-                                duration: 0.3,
-                                delay: 1,
-                                ease: "easeInOut",
-                                type: "spring",
-                                stiffness: 50,
-                            }}
+                            animate={
+                                firstAnimationComplete
+                                    ? {
+                                          scale: [1, 0.9],
+                                      }
+                                    : { scale: 1 }
+                            }
+                            transition={
+                                firstAnimationComplete
+                                    ? {
+                                          duration: 5,
+                                          delay: 1,
+                                          ease: "easeInOut",
+                                          type: "spring",
+                                          stiffness: 50,
+                                          repeatType: "mirror",
+                                          repeat: Infinity,
+                                      }
+                                    : {
+                                          duration: 0.3,
+                                          delay: 1,
+                                          ease: "easeInOut",
+                                          type: "spring",
+                                          stiffness: 50,
+                                      }
+                            }
                             className="absolute -top-[2%] left-[14%] bg-primary-blue p-[23%] rounded-full"
                         ></motion.div>
                         <motion.div
                             initial={{ scale: 0 }}
-                            animate={{ scale: 1 }}
-                            transition={{
-                                duration: 0.3,
-                                delay: 1.2,
-                                ease: "easeInOut",
-                                type: "spring",
-                                stiffness: 50,
-                            }}
+                            animate={
+                                firstAnimationComplete
+                                    ? {
+                                          scale: [1, 0.9],
+                                      }
+                                    : { scale: 1 }
+                            }
+                            transition={
+                                firstAnimationComplete
+                                    ? {
+                                          duration: 5,
+                                          delay: 1.2,
+                                          ease: "easeInOut",
+                                          type: "spring",
+                                          stiffness: 50,
+                                          repeatType: "mirror",
+                                          repeat: Infinity,
+                                      }
+                                    : {
+                                          duration: 0.3,
+                                          delay: 1.3,
+                                          ease: "easeInOut",
+                                          type: "spring",
+                                          stiffness: 50,
+                                      }
+                            }
                             className="absolute top-[20%] left-1/4 bg-primary-blue p-[34%] rounded-full"
                         ></motion.div>
                         <motion.div
                             initial={{ scale: 0 }}
-                            animate={{ scale: 1 }}
-                            transition={{
-                                duration: 0.3,
-                                delay: 1.4,
-                                ease: "easeInOut",
-                                type: "spring",
-                                stiffness: 50,
+                            animate={
+                                firstAnimationComplete
+                                    ? {
+                                          scale: [1, 0.9],
+                                      }
+                                    : { scale: 1 }
+                            }
+                            transition={
+                                firstAnimationComplete
+                                    ? {
+                                          duration: 5,
+                                          delay: 1.4,
+                                          ease: "easeInOut",
+                                          type: "spring",
+                                          stiffness: 50,
+                                          repeatType: "mirror",
+                                          repeat: Infinity,
+                                      }
+                                    : {
+                                          duration: 0.3,
+                                          delay: 1.6,
+                                          ease: "easeInOut",
+                                          type: "spring",
+                                          stiffness: 50,
+                                      }
+                            }
+                            onAnimationComplete={() => {
+                                !firstAnimationComplete &&
+                                    setFirstAnimationComplete(true);
                             }}
                             className="absolute top-[55%] left-[2%] bg-primary-blue p-[23%] rounded-full"
                         ></motion.div>
