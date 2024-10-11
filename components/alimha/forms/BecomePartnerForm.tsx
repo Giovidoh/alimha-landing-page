@@ -72,11 +72,9 @@ const BecomePartnerForm = () => {
 
         if (response.ok) {
             form.reset(); // Clear form on success
-            toast.success("Votre message a été envoyé avec succès. Merci !");
+            toast.success(t("success message"));
         } else {
-            toast.error(
-                "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer s'il vous plaît."
-            );
+            toast.error(t("error message"));
         }
 
         setIsLoading(false);

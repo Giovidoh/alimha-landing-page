@@ -138,7 +138,9 @@
                     "country3": "Togo"
                 },
                 "send": "Envoyer",
-                "captcha error message": "Veuillez remplir le champ captcha !"
+                "captcha error message": "Veuillez remplir le champ captcha !",
+                "success message": "Votre message a été envoyé avec succès. Merci !",
+                "error message": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer s'il vous plaît."
             }
         },
         "BecomePartnerPage": {
@@ -151,7 +153,9 @@
                 "field3": "Email",
                 "field3 error message": "Veuillez entrer votre email.",
                 "field4": "Description",
-                "send": "Envoyer"
+                "send": "Envoyer",
+                "success message": "Votre message a été envoyé avec succès. Merci !",
+                "error message": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer s'il vous plaît."
             }
         }
     },
