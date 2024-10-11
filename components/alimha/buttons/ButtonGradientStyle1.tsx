@@ -7,6 +7,7 @@ interface ButtonGradientStyle1Props {
     width?: string;
     height?: string;
     marginRight?: string;
+    disabled?: boolean;
 }
 
 const ButtonGradientStyle1: React.FC<ButtonGradientStyle1Props> = ({
@@ -16,10 +17,12 @@ const ButtonGradientStyle1: React.FC<ButtonGradientStyle1Props> = ({
     width = "w-[194px]",
     height = "h-[45px]",
     marginRight = "mr-0",
+    disabled = false,
 }) => {
     return (
         <button
-            className={`bg-gradient-to-r hover:bg-gradient-to-l hover:scale-105 ${fromColor} ${toColor} font-medium capitalize tracking-wider whitespace-nowrap text-white ${width} ${height} ${marginRight} rounded-md transition ease-in`}
+            className={`bg-gradient-to-r hover:bg-gradient-to-l hover:scale-105 ${fromColor} ${toColor} font-medium capitalize tracking-wider whitespace-nowrap text-white ${width} ${height} ${marginRight} rounded-md transition ease-in disabled:cursor-not-allowed`}
+            disabled={disabled}
         >
             {text}
         </button>

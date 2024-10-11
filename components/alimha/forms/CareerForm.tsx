@@ -31,6 +31,7 @@ const CareerForm = () => {
     const t = useTranslations("AlimhaPage.CareerPage.career form");
     const [job, setJob] = useState<string>("");
     const [country, setCountry] = useState<string>("");
+    const [isLoading, setIsLoading] = useState(false);
 
     // ZOD Schema
     const formSchema = z.object({
@@ -80,6 +81,8 @@ const CareerForm = () => {
     const onSubmit = async (values: FormSchema, e: any) => {
         e.preventDefault();
 
+        setIsLoading(true);
+
         const formData = new FormData();
 
         // Append form data fields
@@ -88,38 +91,30 @@ const CareerForm = () => {
         formData.append("job", values.job);
         formData.append("country", values.country);
 
-        const careerForm = document.getElementById(
-            "career-form"
-        ) as HTMLFormElement;
-
-        // Checking captcha
-        const hCaptcha = (
-            careerForm.querySelector(
-                "textarea[name=h-captcha-response]"
-            ) as HTMLTextAreaElement
-        )?.value;
-
-        if (!hCaptcha) {
-            toast.error(`${t("captcha error message")}`);
-            return;
-        }
-
-        formData.append("h-captcha-response", hCaptcha);
-
         // Send the form data
-        const response = await fetch(`/${localActive}/api/career-form-email`, {
+        const response = await fetch(`http://localhost:3333/career-mail`, {
             method: "POST",
             body: formData, // Use FormData
         });
 
         if (response.ok) {
-            form.reset(); // Clear form on success
+            // Clear form on success
+            form.reset({
+                cv: undefined,
+                coverLetter: undefined,
+            });
+            setJob("");
+            setCountry("");
+
             toast.success("Votre message a été envoyé avec succès. Merci !");
+            setInterval(() => window.location.reload(), 5000);
         } else {
             toast.error(
                 "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer s'il vous plaît."
             );
         }
+
+        setIsLoading(false);
     };
 
     return (
@@ -185,6 +180,7 @@ const CareerForm = () => {
                                 </FormLabel>
                                 <FormControl>
                                     <Select
+                                        value={job}
                                         onValueChange={(selectedJob) => {
                                             setJob(selectedJob);
                                             field.onChange(selectedJob);
@@ -222,6 +218,7 @@ const CareerForm = () => {
                                 </FormLabel>
                                 <FormControl>
                                     <Select
+                                        value={country}
                                         onValueChange={(selectedCountry) => {
                                             setCountry(selectedCountry);
                                             field.onChange(selectedCountry);
@@ -264,14 +261,10 @@ const CareerForm = () => {
                         toColor="to-primary-blue"
                         text={t("send")}
                         width="w-full"
+                        disabled={isLoading}
                     />
                 </div>
             </form>
-            <script
-                src="https://web3forms.com/client/script.js"
-                async
-                defer
-            ></script>
         </Form>
     );
 };

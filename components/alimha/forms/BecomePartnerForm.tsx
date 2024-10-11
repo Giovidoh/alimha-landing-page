@@ -18,12 +18,14 @@ import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import { Textarea } from "@/components/ui/textarea";
 
 import { useLocale, useTranslations } from "next-intl";
+import { toast } from "sonner";
 
 const BecomePartnerForm = () => {
     const localActive = useLocale();
     const t = useTranslations(
         "AlimhaPage.BecomePartnerPage.become partner form"
     );
+    const [isLoading, setIsLoading] = useState(false);
 
     // ZOD Schema
     const formSchema = z.object({
@@ -49,6 +51,8 @@ const BecomePartnerForm = () => {
     const onSubmit = async (values: FormSchema, e: any) => {
         e.preventDefault();
 
+        setIsLoading(true);
+
         const formData = new FormData();
 
         // Append form data fields
@@ -57,7 +61,25 @@ const BecomePartnerForm = () => {
         formData.append("email", values.email);
         formData.append("description", values.description);
 
-        console.log(formData);
+        // Send mail to Alimha
+        const response = await fetch(
+            "http://localhost:3333/become-partner-mail",
+            {
+                method: "POST",
+                body: formData,
+            }
+        );
+
+        if (response.ok) {
+            form.reset(); // Clear form on success
+            toast.success("Votre message a été envoyé avec succès. Merci !");
+        } else {
+            toast.error(
+                "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer s'il vous plaît."
+            );
+        }
+
+        setIsLoading(false);
     };
 
     return (
@@ -151,6 +173,7 @@ const BecomePartnerForm = () => {
                         toColor="to-primary-blue"
                         text={t("send")}
                         width="w-full"
+                        disabled={isLoading}
                     />
                 </div>
             </form>
