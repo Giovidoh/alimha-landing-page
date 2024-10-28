@@ -34,9 +34,9 @@ const Card: React.FC<CardProps> = ({
 
     return (
         <div
-            className={`relative flex flex-col items-start ${
+            className={`relative flex flex-col items-start justify-between ${
                 highlighted ? "bg-primary-blue text-white" : "bg-white"
-            } w-full h-fit gap-4 px-7 py-8 rounded-3xl shadow-xl md:shadow-2xl overflow-hidden z-20`}
+            } w-full h-full gap-4 px-7 py-8 rounded-3xl shadow-xl md:shadow-2xl overflow-hidden z-20`}
         >
             <CardIcon
                 icon={icon}
