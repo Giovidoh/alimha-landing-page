@@ -34,18 +34,22 @@ const Footer = () => {
                                 <div className="flex flex-col gap-2">
                                     <FooterLink
                                         href={`/${localActive}/alimha#about-us`}
+                                        id="about-us"
                                         text={t("col1.link1")}
                                     />
                                     <FooterLink
                                         href={`/${localActive}/alimha#why-us`}
+                                        id="why-us"
                                         text={t("col1.link2")}
                                     />
                                     <FooterLink
                                         href={`/${localActive}/alimha#about-us`}
+                                        id="about-us"
                                         text={t("col1.link3")}
                                     />
                                     <FooterLink
                                         href={`/${localActive}/alimha#about-us`}
+                                        id="about-us"
                                         text={t("col1.link4")}
                                     />
                                 </div>
