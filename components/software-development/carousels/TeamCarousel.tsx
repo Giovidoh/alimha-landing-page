@@ -47,7 +47,7 @@ const TeamCarousel = () => {
                 ]}
             >
                 <CarouselContent>
-                    <CarouselItem className="basis-full min-[950px]:basis-1/2 min-[1280px]:basis-1/3">
+                    {/* <CarouselItem className="basis-full min-[950px]:basis-1/2 min-[1280px]:basis-1/3">
                         <TeamMemberCard
                             image={avatar1}
                             name={t.rich("card1.name", {
@@ -59,8 +59,8 @@ const TeamCarousel = () => {
                             })}
                             role={t("card1.role")}
                         />
-                    </CarouselItem>
-                    <CarouselItem className="basis-full min-[950px]:basis-1/2 min-[1280px]:basis-1/3">
+                    </CarouselItem> */}
+                    <CarouselItem className="basis-full min-[950px]:basis-1/2">
                         <TeamMemberCard
                             image={avatar2}
                             name={t.rich("card2.name", {
@@ -73,20 +73,7 @@ const TeamCarousel = () => {
                             role={t("card2.role")}
                         />
                     </CarouselItem>
-                    <CarouselItem className="basis-full min-[950px]:basis-1/2 min-[1280px]:basis-1/3">
-                        <TeamMemberCard
-                            image={avatar3}
-                            name={t.rich("card3.name", {
-                                span: (chunks) => (
-                                    <span className="font-semibold">
-                                        {chunks}
-                                    </span>
-                                ),
-                            })}
-                            role={t("card3.role")}
-                        />
-                    </CarouselItem>
-                    <CarouselItem className="basis-full min-[950px]:basis-1/2 min-[1280px]:basis-1/3">
+                    <CarouselItem className="basis-full min-[950px]:basis-1/2">
                         <TeamMemberCard
                             image={avatar3}
                             name={t.rich("card3.name", {
