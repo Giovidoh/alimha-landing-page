@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import BecomePartnerForm from "@/components/alimha/forms/BecomePartnerForm";
 
 export default function Page() {
-    const t = useTranslations("AlimhaPage.CareerPage");
+    const t = useTranslations("AlimhaPage.BecomePartnerPage");
     return (
         <main className="w-full h-fit pt-32 pb-20">
             <section className="flex justify-center w-full h-full px-5">

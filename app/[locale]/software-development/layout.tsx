@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         "Welcome to Alimha and Company - Your trusted partner in technology solutions. Transform your ideas into innovative realities with our expertise, creativity, and cutting-edge technology. We combine these elements to turn your visions into concrete solutions.",
 };
 
-export default async function RootLayout({
+export default async function SoftwareDevelopmentLayout({
     children,
     params: { locale },
 }: Readonly<{
