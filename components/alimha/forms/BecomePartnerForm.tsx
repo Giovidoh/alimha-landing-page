@@ -19,8 +19,10 @@ import { Textarea } from "@/components/ui/textarea";
 
 import { useLocale, useTranslations } from "next-intl";
 import { toast } from "sonner";
+import { getServerUrl } from "@/utils/getServerUrl";
 
 const BecomePartnerForm = () => {
+    const serverUrl = getServerUrl();
     const localActive = useLocale();
     const t = useTranslations(
         "AlimhaPage.BecomePartnerPage.become partner form"
@@ -62,13 +64,10 @@ const BecomePartnerForm = () => {
         formData.append("description", values.description);
 
         // Send mail to Alimha
-        const response = await fetch(
-            "http://localhost:3333/become-partner-mail",
-            {
-                method: "POST",
-                body: formData,
-            }
-        );
+        const response = await fetch(`${serverUrl}/become-partner-mail`, {
+            method: "POST",
+            body: formData,
+        });
 
         if (response.ok) {
             form.reset(); // Clear form on success

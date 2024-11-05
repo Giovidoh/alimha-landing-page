@@ -25,8 +25,10 @@ import ButtonGradientStyle1 from "../buttons/ButtonGradientStyle1";
 import { useLocale, useTranslations } from "next-intl";
 
 import { toast } from "sonner";
+import { getServerUrl } from "@/utils/getServerUrl";
 
 const CareerForm = () => {
+    const serverUrl = getServerUrl();
     const localActive = useLocale();
     const t = useTranslations("AlimhaPage.CareerPage.career form");
     const [job, setJob] = useState<string>("");
@@ -92,7 +94,7 @@ const CareerForm = () => {
         formData.append("country", values.country);
 
         // Send the form data
-        const response = await fetch(`http://localhost:3333/career-mail`, {
+        const response = await fetch(`${serverUrl}/career-mail`, {
             method: "POST",
             body: formData, // Use FormData
         });
