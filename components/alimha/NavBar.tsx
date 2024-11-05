@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState<number>(-1);
     const pathname = usePathname();
     const localActive = useLocale();
     const t = useTranslations("AlimhaPage.Header");
+
+    const router = useRouter();
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const navbarLinks = [
@@ -35,12 +38,17 @@ const NavBar = () => {
         );
     }, [pathname, navbarLinks]);
 
-    const scrollToSection = (e: any, id: string, index: number) => {
+    const scrollToSection = async (e: any, id: string, index: number) => {
         e.preventDefault();
         setActiveLink(index);
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
+
+        if (id && pathname == `/${localActive}/alimha`) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        } else {
+            router.push(e.target.href);
         }
     };
 
