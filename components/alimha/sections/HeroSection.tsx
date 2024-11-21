@@ -57,7 +57,7 @@ const HeroSection = () => {
                         rotate: direction == "rtl" ? 210 : -30,
                     }}
                     animate={{ x: 0, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 1.7 }}
                     className={`absolute -top-[5%] ${
                         direction == "rtl" ? "right-[57%]" : "left-[57%]"
                     } `}
@@ -69,7 +69,7 @@ const HeroSection = () => {
                 <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1, rotate: 360, x: 10 }}
-                    transition={{ duration: 0.3, ease: "linear" }}
+                    transition={{ duration: 0.5, ease: "linear", delay: 0.5 }}
                     className={`hidden min-[900px]:block absolute top-[30%] ${
                         direction == "rtl" ? "right-[70%]" : "left-[60%]"
                     }`}
@@ -96,9 +96,9 @@ const HeroSection = () => {
                     initial={{ scale: 0 }}
                     animate={{ scale: 1, rotate: 360, x: 10 }}
                     transition={{
-                        duration: 0.3,
+                        duration: 0.5,
                         ease: "linear",
-                        delay: 0.3,
+                        delay: 1,
                     }}
                     className={`hidden min-[900px]:block absolute top-[65%] ${
                         direction == "rtl" ? "right-[70%]" : "left-[60%]"
@@ -126,9 +126,9 @@ const HeroSection = () => {
                     initial={{ scale: 0 }}
                     animate={{ scale: 1, rotate: 360, x: 10 }}
                     transition={{
-                        duration: 0.3,
+                        duration: 0.5,
                         ease: "linear",
-                        delay: 0.6,
+                        delay: 1.5,
                     }}
                     className={`hidden min-[900px]:block absolute top-[70%] ${
                         direction == "rtl" ? "right-[52%]" : "left-[78%]"
