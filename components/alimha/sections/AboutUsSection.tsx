@@ -1,16 +1,22 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import aboutUsIllustration from "@/public/assets/about-us-illustration.png";
 import DottedTextCard from "../cards/DottedTextCard";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { getLangDir } from "rtl-detect";
 
 const AboutUsSection = () => {
     const localActive = useLocale();
     const direction = getLangDir(localActive);
     const t = useTranslations("AlimhaPage.AboutUsSection");
+
+    const tagRef = useRef(null);
+    const tagIsInView = useInView(tagRef, {
+        margin: "0px 0px -100px 0px",
+        once: true,
+    });
 
     return (
         <section
@@ -19,12 +25,20 @@ const AboutUsSection = () => {
         >
             <div className="w-full max-w-[1400px]">
                 <div className="flex flex-col items-center gap-20">
-                    <span className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md">
+                    <span
+                        ref={tagRef}
+                        style={{
+                            scale: tagIsInView ? 1 : 0,
+                            opacity: tagIsInView ? 1 : 0,
+                            transition: "all 1s ease-in-out",
+                        }}
+                        className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md"
+                    >
                         {t("tag")}
                     </span>
 
                     <div className="grid grid-cols-1 min-[800px]:grid-cols-3 items-center w-full h-full gap-x-5 gap-y-5 min-[800px]:gap-y-60 min-[1200px]:gap-y-20">
-                        <div className="flex justify-center items-center min-w-[330px] h-fit min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-start">
+                        <div className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-start">
                             <DottedTextCard
                                 title={t("card1.title")}
                                 body={t("card1.body")}
@@ -42,19 +56,19 @@ const AboutUsSection = () => {
                                 height={450}
                             />
                         </div>
-                        <div className="flex justify-center items-center min-w-[330px] h-fit min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-end">
+                        <div className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-end">
                             <DottedTextCard
                                 title={t("card2.title")}
                                 body={t("card2.body")}
                             />
                         </div>
-                        <div className="flex justify-center items-center min-w-[330px] h-fit min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-start">
+                        <div className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-start">
                             <DottedTextCard
                                 title={t("card3.title")}
                                 body={t("card3.body")}
                             />
                         </div>
-                        <div className="flex justify-center items-center min-w-[330px] h-fit min-[800px]:min-h-[230px] place-self-center min[800px]:place-self-end">
+                        <div className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min[800px]:place-self-end">
                             <DottedTextCard
                                 title={t("card4.title")}
                                 body={t("card4.body")}

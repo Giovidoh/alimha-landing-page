@@ -1,17 +1,41 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Card from "../cards/Card";
 import PaymentIcon from "@/public/assets/payment-icon.svg";
 import TransactionIcon from "@/public/assets/alimha-transaction-icon.svg";
 import SoftwareIcon from "@/public/assets/software-icon.svg";
 import { useLocale, useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { getLangDir } from "rtl-detect";
 
 const OurServicesSection = () => {
     const localActive = useLocale();
     const direction = getLangDir(localActive);
     const t = useTranslations("AlimhaPage.OurServicesSection");
+
+    const tagRef = useRef(null);
+    const tagIsInView = useInView(tagRef, {
+        margin: "0px 0px -100px 0px",
+        once: true,
+    });
+
+    const headingRef = useRef(null);
+    const headingIsInView = useInView(headingRef, {
+        margin: "0px 0px -150px 0px",
+        once: true,
+    });
+
+    const firstCardRef = useRef(null);
+    const firstCardIsInView = useInView(firstCardRef, {
+        margin: "0px 0px -220px 0px",
+        once: true,
+    });
+
+    const secondCardRef = useRef(null);
+    const secondCardIsInView = useInView(secondCardRef, {
+        margin: "0px 0px -220px 0px",
+        once: true,
+    });
 
     return (
         <section
@@ -20,10 +44,30 @@ const OurServicesSection = () => {
         >
             <div className="w-full max-w-[1400px]">
                 <div className="flex flex-col justify-center items-center min-[900px]:items-start gap-5">
-                    <span className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md">
+                    <span
+                        ref={tagRef}
+                        style={{
+                            transform: tagIsInView
+                                ? "none"
+                                : "translateX(-200px)",
+                            opacity: tagIsInView ? 1 : 0,
+                            transition: "all 1s ease-in-out",
+                        }}
+                        className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md"
+                    >
                         {t("tag")}
                     </span>
-                    <h2 className="font-bold text-center min-[900px]:text-start text-2xl lg:text-3xl min-[1200px]:text-4xl leading-tight min-[1200px]:leading-snug pb-4">
+                    <h2
+                        ref={headingRef}
+                        style={{
+                            transform: headingIsInView
+                                ? "none"
+                                : "translateX(-200px)",
+                            opacity: headingIsInView ? 1 : 0,
+                            transition: "all 1s ease-in-out 1s",
+                        }}
+                        className="font-bold text-center min-[900px]:text-start text-2xl lg:text-3xl min-[1200px]:text-4xl leading-tight min-[1200px]:leading-snug pb-4"
+                    >
                         {t.rich("heading.first", {
                             span: (chunks) => (
                                 <span className="text-primary-blue">
@@ -46,9 +90,16 @@ const OurServicesSection = () => {
                 </p> */}
                 </div>
                 <div className="grid grid-cols-1 min-[900px]:grid-cols-2 justify-center min-[900px]:justify-start w-full gap-10">
-                    <div
-                        // className="w-[350px] lg:w-[500px]"
+                    <motion.div
+                        ref={firstCardRef}
                         className="w-full h-full"
+                        initial={{ scale: 0.5, opacity: 0 }}
+                        animate={firstCardIsInView && { scale: 1, opacity: 1 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 50,
+                            delay: 1,
+                        }}
                     >
                         <Card
                             icon={<SoftwareIcon />}
@@ -65,11 +116,18 @@ const OurServicesSection = () => {
                             description={t("card1.description")}
                             buttonText={t("Learn more")}
                         />
-                    </div>
+                    </motion.div>
 
-                    <div
-                        // className="w-[350px] lg:w-[500px]"
+                    <motion.div
+                        ref={secondCardRef}
                         className="w-full h-full"
+                        initial={{ scale: 0.5, opacity: 0 }}
+                        animate={secondCardIsInView && { scale: 1, opacity: 1 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 50,
+                            delay: 1.5,
+                        }}
                     >
                         <Card
                             icon={<PaymentIcon />}
@@ -84,7 +142,7 @@ const OurServicesSection = () => {
                             buttonBgColor="transparent"
                             highlighted={true}
                         />
-                    </div>
+                    </motion.div>
 
                     {/* <Card
                     icon={transaction_icon}

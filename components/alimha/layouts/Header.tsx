@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+
+import React, { useEffect, useState } from "react";
 import Logo from "../Logo";
 import NavBar from "../NavBar";
 import BurgerButton from "../buttons/BurgerButton";
@@ -18,13 +19,15 @@ const Header = () => {
     const [firstAnimationComplete, setfirstAnimationComplete] =
         useState<boolean>(false);
 
-    scroll(
-        (progress: number) =>
-            progress > 0 ? setBackground("white") : setBackground(""),
-        {
-            source: document.body,
-        }
-    );
+    useEffect(() => {
+        scroll(
+            (progress: number) =>
+                progress > 0 ? setBackground("white") : setBackground(""),
+            {
+                source: document.body,
+            }
+        );
+    }, []);
 
     return (
         <motion.header

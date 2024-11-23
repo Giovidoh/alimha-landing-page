@@ -22,9 +22,9 @@ const DottedTextCard: FC<DottedTextCardProps> = ({
 }) => {
     return (
         <div
-            className={`flex flex-col justify-start ${cardBgColor} w-full h-full gap-3 pl-3 pr-5 pt-3 py-5 rounded-lg shadow-lg shadow-tertiary`}
+            className={`flex flex-col justify-start ${cardBgColor} w-full h-full gap-3 pt-5 pr-8 pb-5 pl-4 rounded-lg shadow-lg shadow-tertiary`}
         >
-            <div className="flex items-center gap-x-2 gap-y-10">
+            <div className="flex items-center gap-x-4">
                 <div className={`${dotBgColor} p-4 rounded-md`}>
                     <div className={`${dotColor} w-4 h-4 rounded-full`}></div>
                 </div>
