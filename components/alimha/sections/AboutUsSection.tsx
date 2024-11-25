@@ -14,37 +14,37 @@ const AboutUsSection = () => {
 
     const tagRef = useRef(null);
     const tagIsInView = useInView(tagRef, {
-        margin: "0px 0px -5% 0px",
+        margin: "0px 0px -10% 0px",
         once: true,
     });
 
     const centerImageRef = useRef(null);
     const centerImageIsInView = useInView(centerImageRef, {
-        margin: "0px 0px -8% 0px",
+        margin: "0px 0px -15% 0px",
         once: false,
     });
 
     const card1Ref = useRef(null);
     const card1IsInView = useInView(card1Ref, {
-        margin: "0px 0px -10% 0px",
+        margin: "0px 0px -20% 0px",
         once: true,
     });
 
     const card2Ref = useRef(null);
     const card2IsInView = useInView(card2Ref, {
-        margin: "0px 0px -10% 0px",
+        margin: "0px 0px -20% 0px",
         once: true,
     });
 
     const card3Ref = useRef(null);
     const card3IsInView = useInView(card3Ref, {
-        margin: "0px 0px -10% 0px",
+        margin: "0px 0px -20% 0px",
         once: true,
     });
 
     const card4Ref = useRef(null);
     const card4IsInView = useInView(card4Ref, {
-        margin: "0px 0px -10% 0px",
+        margin: "0px 0px -20% 0px",
         once: false,
     });
 

@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import codifyLogo from "@/public/assets/codify-logo.png";
 import soudhuLogo from "@/public/assets/soudhu-logo.png";
 import odeytech from "@/public/assets/Odeytech.jpg";
 import ubaLogo from "@/public/assets/uba-logo.png";
 import ecobankLogo from "@/public/assets/ecobank-logo.png";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { FC } from "react";
 import { useLocale } from "next-intl";
 import { getLangDir } from "rtl-detect";
@@ -25,21 +25,90 @@ const TheyTrustUsSection: FC<TheyTrustUsSectionProps> = ({
     const localActive = useLocale();
     const direction = getLangDir(localActive);
 
+    const tagRef = useRef(null);
+    const tagIsInView = useInView(tagRef, {
+        margin: "0px 0px -10% 0px",
+        once: true,
+    });
+
+    const headingRef = useRef(null);
+    const headingIsInView = useInView(headingRef, {
+        margin: "0px 0px -20% 0px",
+        once: true,
+    });
+
+    const subHeadingRef = useRef(null);
+    const subHeadingIsInView = useInView(subHeadingRef, {
+        margin: "0px 0px -30% 0px",
+        once: true,
+    });
+
     return (
         <section className="relative flex flex-col justify-evenly items-center text-center bg-[#F8F8F8] w-full gap-7 px-[5%] lg:px-[10%] pt-12 pb-24">
             <div className="w-full max-w-[1400px]">
                 <div className="flex flex-col items-center gap-4">
-                    <span className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md">
+                    <motion.span
+                        ref={tagRef}
+                        className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md"
+                        initial={{
+                            scale: 0.5,
+                            opacity: 0,
+                        }}
+                        animate={
+                            tagIsInView && {
+                                scale: 1,
+                                opacity: 1,
+                            }
+                        }
+                        transition={{
+                            duration: 1,
+                            ease: "circOut",
+                        }}
+                    >
                         {tag}
-                    </span>
+                    </motion.span>
 
                     <div className="flex flex-col gap-3">
-                        <h2 className="font-bold text-center text-2xl lg:text-3xl min-[1200px]:text-4xl leading-tight min-[1200px]:leading-snug">
+                        <motion.h2
+                            ref={headingRef}
+                            className="font-bold text-center text-2xl lg:text-3xl min-[1200px]:text-4xl leading-tight min-[1200px]:leading-snug"
+                            initial={{
+                                scale: 0.5,
+                                opacity: 0,
+                            }}
+                            animate={
+                                headingIsInView && {
+                                    scale: 1,
+                                    opacity: 1,
+                                }
+                            }
+                            transition={{
+                                duration: 1,
+                                ease: "circOut",
+                            }}
+                        >
                             {title}
-                        </h2>
-                        <p className="max-w-[595px] text-[#333333] text-sm lg:text-base min-[1200px]:text-lg">
+                        </motion.h2>
+                        <motion.p
+                            ref={subHeadingRef}
+                            className="max-w-[595px] text-[#333333] text-sm lg:text-base min-[1200px]:text-lg"
+                            initial={{
+                                scale: 0.5,
+                                opacity: 0,
+                            }}
+                            animate={
+                                subHeadingIsInView && {
+                                    scale: 1,
+                                    opacity: 1,
+                                }
+                            }
+                            transition={{
+                                duration: 1,
+                                ease: "circOut",
+                            }}
+                        >
                             {description}
-                        </p>
+                        </motion.p>
                     </div>
                 </div>
                 <div className="flex w-full overflow-hidden px-10">

@@ -15,25 +15,25 @@ const OurServicesSection = () => {
 
     const tagRef = useRef(null);
     const tagIsInView = useInView(tagRef, {
-        margin: "0px 0px -5% 0px",
+        margin: "0px 0px -10% 0px",
         once: true,
     });
 
     const headingRef = useRef(null);
     const headingIsInView = useInView(headingRef, {
-        margin: "0px 0px -8% 0px",
+        margin: "0px 0px -15% 0px",
         once: true,
     });
 
     const Card1Ref = useRef(null);
     const Card1IsInView = useInView(Card1Ref, {
-        margin: "0px 0px -9% 0px",
+        margin: "0px 0px 20% 0px",
         once: true,
     });
 
     const Card2Ref = useRef(null);
     const Card2IsInView = useInView(Card2Ref, {
-        margin: "0px 0px -9% 0px",
+        margin: "0px 0px 20% 0px",
         once: true,
     });
 
