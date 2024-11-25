@@ -18,6 +18,12 @@ const AboutUsSection = () => {
         once: true,
     });
 
+    const centerImageRef = useRef(null);
+    const centerImageIsInView = useInView(centerImageRef, {
+        margin: "0px 0px -8% 0px",
+        once: false,
+    });
+
     const card1Ref = useRef(null);
     const card1IsInView = useInView(card1Ref, {
         margin: "0px 0px -10% 0px",
@@ -39,7 +45,7 @@ const AboutUsSection = () => {
     const card4Ref = useRef(null);
     const card4IsInView = useInView(card4Ref, {
         margin: "0px 0px -10% 0px",
-        once: true,
+        once: false,
     });
 
     return (
@@ -57,13 +63,13 @@ const AboutUsSection = () => {
                             opacity: 0,
                         }}
                         animate={
-                            card1IsInView && {
+                            tagIsInView && {
                                 scale: 1,
                                 opacity: 1,
                             }
                         }
                         transition={{
-                            duration: 0.5,
+                            duration: 1,
                             ease: "circOut",
                         }}
                     >
@@ -99,13 +105,32 @@ const AboutUsSection = () => {
                                 bodyColor="text-white"
                             />
                         </motion.div>
-                        <div className="hidden min-[800px]:block row-span-2 place-self-center">
+                        <motion.div
+                            ref={centerImageRef}
+                            className="hidden min-[800px]:block row-span-2 place-self-center"
+                            initial={{
+                                scale: 0.5,
+                                opacity: 0.5,
+                                rotate: 0,
+                            }}
+                            animate={
+                                centerImageIsInView && {
+                                    scale: 1,
+                                    opacity: 1,
+                                    rotate: 360,
+                                }
+                            }
+                            transition={{
+                                duration: 2,
+                                ease: "circOut",
+                            }}
+                        >
                             <Image
                                 src={aboutUsIllustration}
                                 alt="about us illustration"
                                 height={450}
                             />
-                        </div>
+                        </motion.div>
                         <motion.div
                             ref={card2Ref}
                             className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-end"
