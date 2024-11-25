@@ -64,16 +64,20 @@ const Card: React.FC<CardProps> = ({
 
             {highlighted && (
                 <motion.div
+                    className={`absolute top-1/2 ${
+                        direction == "rtl" ? "right-3" : "left-3"
+                    } z-0`}
                     initial={{
                         x: direction == "rtl" ? "-110%" : "110%",
                         y: "-100%",
                         rotate: direction == "rtl" ? 210 : -30,
                     }}
                     animate={{ x: "0%", y: "-65%" }}
-                    transition={{ duration: 0.8, delay: 3 }}
-                    className={`absolute top-1/2 ${
-                        direction == "rtl" ? "right-3" : "left-3"
-                    } z-0`}
+                    transition={{
+                        type: "spring",
+                        stiffness: 80,
+                        delay: 3,
+                    }}
                 >
                     <div className="bg-gradient-to-r from-secondary-blue/60 via-secondary-blue/30 to-white/0 w-[450px] h-[70px] ml-5 rounded-full"></div>
                     <div className="bg-gradient-to-r from-secondary-blue/60 via-secondary-blue/30 to-white/0  w-[390px] h-[120px] rounded-full"></div>

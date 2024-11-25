@@ -15,25 +15,25 @@ const OurServicesSection = () => {
 
     const tagRef = useRef(null);
     const tagIsInView = useInView(tagRef, {
-        margin: "0px 0px -100px 0px",
+        margin: "0px 0px -5% 0px",
         once: true,
     });
 
     const headingRef = useRef(null);
     const headingIsInView = useInView(headingRef, {
-        margin: "0px 0px -150px 0px",
+        margin: "0px 0px -8% 0px",
         once: true,
     });
 
-    const firstCardRef = useRef(null);
-    const firstCardIsInView = useInView(firstCardRef, {
-        margin: "0px 0px -220px 0px",
+    const Card1Ref = useRef(null);
+    const Card1IsInView = useInView(Card1Ref, {
+        margin: "0px 0px -9% 0px",
         once: true,
     });
 
-    const secondCardRef = useRef(null);
-    const secondCardIsInView = useInView(secondCardRef, {
-        margin: "0px 0px -220px 0px",
+    const Card2Ref = useRef(null);
+    const Card2IsInView = useInView(Card2Ref, {
+        margin: "0px 0px -9% 0px",
         once: true,
     });
 
@@ -44,29 +44,37 @@ const OurServicesSection = () => {
         >
             <div className="w-full max-w-[1400px]">
                 <div className="flex flex-col justify-center items-center min-[900px]:items-start gap-5">
-                    <span
+                    <motion.span
                         ref={tagRef}
-                        style={{
-                            transform: tagIsInView
-                                ? "none"
-                                : "translateX(-200px)",
-                            opacity: tagIsInView ? 1 : 0,
-                            transition: "all 1s ease-in-out",
-                        }}
                         className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md"
+                        initial={{
+                            x: "-200px",
+                            opacity: 0,
+                        }}
+                        animate={
+                            tagIsInView && {
+                                x: 0,
+                                opacity: 1,
+                            }
+                        }
+                        transition={{ duration: 1, ease: "circOut" }}
                     >
                         {t("tag")}
-                    </span>
-                    <h2
+                    </motion.span>
+                    <motion.h2
                         ref={headingRef}
-                        style={{
-                            transform: headingIsInView
-                                ? "none"
-                                : "translateX(-200px)",
-                            opacity: headingIsInView ? 1 : 0,
-                            transition: "all 1s ease-in-out 1s",
-                        }}
                         className="font-bold text-center min-[900px]:text-start text-2xl lg:text-3xl min-[1200px]:text-4xl leading-tight min-[1200px]:leading-snug pb-4"
+                        initial={{
+                            x: "-200px",
+                            opacity: 0,
+                        }}
+                        animate={
+                            headingIsInView && {
+                                x: 0,
+                                opacity: 1,
+                            }
+                        }
+                        transition={{ duration: 1, ease: "circOut" }}
                     >
                         {t.rich("heading.first", {
                             span: (chunks) => (
@@ -83,22 +91,17 @@ const OurServicesSection = () => {
                                 </span>
                             ),
                         })}
-                    </h2>
-                    {/* <p className="text-center md:text-left text-xl text-gray-2">
-                    Des solutions simples pour vos Paiements et transfert
-                    d’argent
-                </p> */}
+                    </motion.h2>
                 </div>
                 <div className="grid grid-cols-1 min-[900px]:grid-cols-2 justify-center min-[900px]:justify-start w-full gap-10">
                     <motion.div
-                        ref={firstCardRef}
+                        ref={Card1Ref}
                         className="w-full h-full"
                         initial={{ scale: 0.5, opacity: 0 }}
-                        animate={firstCardIsInView && { scale: 1, opacity: 1 }}
+                        animate={Card1IsInView && { scale: 1, opacity: 1 }}
                         transition={{
                             type: "spring",
                             stiffness: 50,
-                            delay: 1,
                         }}
                     >
                         <Card
@@ -119,14 +122,14 @@ const OurServicesSection = () => {
                     </motion.div>
 
                     <motion.div
-                        ref={secondCardRef}
+                        ref={Card2Ref}
                         className="w-full h-full"
                         initial={{ scale: 0.5, opacity: 0 }}
-                        animate={secondCardIsInView && { scale: 1, opacity: 1 }}
+                        animate={Card2IsInView && { scale: 1, opacity: 1 }}
                         transition={{
                             type: "spring",
                             stiffness: 50,
-                            delay: 1.5,
+                            delay: 0.5,
                         }}
                     >
                         <Card
@@ -157,16 +160,20 @@ const OurServicesSection = () => {
                 </div>
 
                 <motion.div
+                    className={`absolute top-[60%] ${
+                        direction == "rtl" ? "right-[70%]" : "left-[70%]"
+                    } z-10`}
                     initial={{
                         x: direction == "rtl" ? "-100%" : "100%",
                         y: "-100%",
                         rotate: direction == "rtl" ? 30 : 150,
                     }}
                     animate={{ x: 0, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className={`absolute top-[60%] ${
-                        direction == "rtl" ? "right-[70%]" : "left-[70%]"
-                    } z-10`}
+                    transition={{
+                        type: "spring",
+                        stiffness: 80,
+                        delay: 3,
+                    }}
                 >
                     <div className="bg-gradient-to-r from-secondary-blue to-white/0 w-[1000px] h-[80px] ml-5 rounded-full"></div>
                     <div className="bg-gradient-to-r from-secondary-blue to-white/0  w-[930px] h-[180px] rounded-full"></div>

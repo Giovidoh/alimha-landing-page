@@ -14,7 +14,31 @@ const AboutUsSection = () => {
 
     const tagRef = useRef(null);
     const tagIsInView = useInView(tagRef, {
-        margin: "0px 0px -100px 0px",
+        margin: "0px 0px -5% 0px",
+        once: true,
+    });
+
+    const card1Ref = useRef(null);
+    const card1IsInView = useInView(card1Ref, {
+        margin: "0px 0px -10% 0px",
+        once: true,
+    });
+
+    const card2Ref = useRef(null);
+    const card2IsInView = useInView(card2Ref, {
+        margin: "0px 0px -10% 0px",
+        once: true,
+    });
+
+    const card3Ref = useRef(null);
+    const card3IsInView = useInView(card3Ref, {
+        margin: "0px 0px -10% 0px",
+        once: true,
+    });
+
+    const card4Ref = useRef(null);
+    const card4IsInView = useInView(card4Ref, {
+        margin: "0px 0px -10% 0px",
         once: true,
     });
 
@@ -25,20 +49,46 @@ const AboutUsSection = () => {
         >
             <div className="w-full max-w-[1400px]">
                 <div className="flex flex-col items-center gap-20">
-                    <span
+                    <motion.span
                         ref={tagRef}
-                        style={{
-                            scale: tagIsInView ? 1 : 0,
-                            opacity: tagIsInView ? 1 : 0,
-                            transition: "all 1s ease-in-out",
-                        }}
                         className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md"
+                        initial={{
+                            scale: 0.5,
+                            opacity: 0,
+                        }}
+                        animate={
+                            card1IsInView && {
+                                scale: 1,
+                                opacity: 1,
+                            }
+                        }
+                        transition={{
+                            duration: 0.5,
+                            ease: "circOut",
+                        }}
                     >
                         {t("tag")}
-                    </span>
+                    </motion.span>
 
                     <div className="grid grid-cols-1 min-[800px]:grid-cols-3 items-center w-full h-full gap-x-5 gap-y-5 min-[800px]:gap-y-60 min-[1200px]:gap-y-20">
-                        <div className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-start">
+                        <motion.div
+                            ref={card1Ref}
+                            className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-start"
+                            initial={{
+                                x: "-200px",
+                                opacity: 0,
+                            }}
+                            animate={
+                                card1IsInView && {
+                                    x: 0,
+                                    opacity: 1,
+                                }
+                            }
+                            transition={{
+                                duration: 1,
+                                ease: "circOut",
+                            }}
+                        >
                             <DottedTextCard
                                 title={t("card1.title")}
                                 body={t("card1.body")}
@@ -48,7 +98,7 @@ const AboutUsSection = () => {
                                 titleColor="text-white"
                                 bodyColor="text-white"
                             />
-                        </div>
+                        </motion.div>
                         <div className="hidden min-[800px]:block row-span-2 place-self-center">
                             <Image
                                 src={aboutUsIllustration}
@@ -56,19 +106,70 @@ const AboutUsSection = () => {
                                 height={450}
                             />
                         </div>
-                        <div className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-end">
+                        <motion.div
+                            ref={card2Ref}
+                            className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-end"
+                            initial={{
+                                x: "200px",
+                                opacity: 0,
+                            }}
+                            animate={
+                                card2IsInView && {
+                                    x: 0,
+                                    opacity: 1,
+                                }
+                            }
+                            transition={{
+                                duration: 1,
+                                ease: "circOut",
+                            }}
+                        >
                             <DottedTextCard
                                 title={t("card2.title")}
                                 body={t("card2.body")}
                             />
-                        </div>
-                        <div className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-start">
+                        </motion.div>
+                        <motion.div
+                            ref={card3Ref}
+                            className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-start"
+                            initial={{
+                                x: "-200px",
+                                opacity: 0,
+                            }}
+                            animate={
+                                card3IsInView && {
+                                    x: 0,
+                                    opacity: 1,
+                                }
+                            }
+                            transition={{
+                                duration: 1,
+                                ease: "circOut",
+                            }}
+                        >
                             <DottedTextCard
                                 title={t("card3.title")}
                                 body={t("card3.body")}
                             />
-                        </div>
-                        <div className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min[800px]:place-self-end">
+                        </motion.div>
+                        <motion.div
+                            ref={card4Ref}
+                            className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min[800px]:place-self-end"
+                            initial={{
+                                x: "200px",
+                                opacity: 0,
+                            }}
+                            animate={
+                                card4IsInView && {
+                                    x: 0,
+                                    opacity: 1,
+                                }
+                            }
+                            transition={{
+                                duration: 1,
+                                ease: "circOut",
+                            }}
+                        >
                             <DottedTextCard
                                 title={t("card4.title")}
                                 body={t("card4.body")}
@@ -78,7 +179,7 @@ const AboutUsSection = () => {
                                 titleColor="text-white"
                                 bodyColor="text-white"
                             />
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
                 <motion.div
