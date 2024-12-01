@@ -35,13 +35,15 @@ const Header = () => {
         setToggleMenu((prev) => !prev);
     };
 
-    scroll(
-        (progress: number) =>
-            progress > 0 ? setBackground("bg-white/80") : setBackground(""),
-        {
-            source: document.body,
-        }
-    );
+    useEffect(() => {
+        scroll(
+            (progress: number) =>
+                progress > 0 ? setBackground("bg-white/80") : setBackground(""),
+            {
+                source: document.body,
+            }
+        );
+    }, []);
 
     return (
         <motion.header

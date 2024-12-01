@@ -90,7 +90,7 @@ const Footer = () => {
             <div className="w-full pt-40 pb-10">
                 <div className="flex flex-col sm:flex-row justify-between items-center w-full text-sm text-center font-light text-white border-t border-t-white pt-3 gap-3">
                     <span>{t("copyright")}</span>
-                    <span>ALIMAH</span>
+                    <span>ALIMHA</span>
                 </div>
             </div>
         </footer>

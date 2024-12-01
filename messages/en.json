@@ -290,9 +290,9 @@
             },
             "col3": {
                 "title": "Contact us",
-                "email": "infos@alpay.com",
-                "number": "+221 78 589 87 85",
-                "address": "Medina, rue 4 Dakar, Senegal"
+                "email": "infos@alimha.com",
+                "number": "+221 77 889 21 74",
+                "address": "Mamelles, Dakar - Senegal"
             },
             "copyright": "All rights reserved! Copyright 2024"
         }
@@ -602,6 +602,12 @@
                 "link1": "Terms of use",
                 "link2": "Privacy policy",
                 "link3": "Legal notice"
+            },
+            "col3": {
+                "title": "Contact us",
+                "email": "infos@alimha.com",
+                "number": "+221 33 844 30 81 / +221 77 889 21 74",
+                "address": "Mamelles, Dakar - Senegal"
             },
             "copyright": "All rights reserved! Copyright 2024"
         },
