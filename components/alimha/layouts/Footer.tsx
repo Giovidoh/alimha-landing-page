@@ -22,7 +22,7 @@ const Footer = () => {
         <footer className="relative flex justify-center bg-[#F7F7F7] px-[5%] lg:px-[10%] overflow-hidden">
             <div className="w-full max-w-[1400px]">
                 <div className="flex flex-col justify-evenly items-center w-full">
-                    <div className="flex flex-col min-[1430px]:flex-row flex-wrap items-center min-[1430px]:items-start justify-between w-full gap-20 pt-20 min-[900px]:pt-40 z-10">
+                    <div className="flex flex-col min-[1432px]:flex-row flex-wrap items-center min-[1432px]:items-start justify-between w-full gap-20 pt-20 min-[900px]:pt-40 z-10">
                         <div className="w-fit">
                             <Image src={logo} alt="alimha's logo" width={200} />
                         </div>
@@ -73,22 +73,29 @@ const Footer = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="flex flex-col justify-between min-w-[300px] max-w-[400px] gap-10">
-                                <p className="text-justify text-pretty tracking-wide mt-5">
-                                    {t("description")}
-                                </p>
-                                <div className="flex flex-nowrap items-center">
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        id=""
-                                        placeholder={t("subscribe form.email")}
-                                        className="bg-white w-2/3 p-3 outline-none tracking-wide"
-                                    />
-                                    <ButtonStyle2
-                                        text={t("subscribe form.subscribe")}
-                                        className="w-1/3"
-                                    />
+                            <div className="flex flex-col gap-2">
+                                <h3 className="font-semibold text-primary-blue text-lg">
+                                    {t("join us")}
+                                </h3>
+                                <div className="flex flex-col justify-between min-w-[300px] max-w-[400px] gap-10">
+                                    <p className="text-justify text-pretty tracking-wide">
+                                        {t("description")}
+                                    </p>
+                                    <div className="flex flex-nowrap items-center">
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            id=""
+                                            placeholder={t(
+                                                "subscribe form.email"
+                                            )}
+                                            className="bg-white w-2/3 p-3 outline-none tracking-wide"
+                                        />
+                                        <ButtonStyle2
+                                            text={t("subscribe form.subscribe")}
+                                            className="w-1/3"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>

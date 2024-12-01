@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useRef } from "react";
 import ContactForm from "../forms/ContactForm";
 import { useLocale, useTranslations } from "next-intl";
@@ -29,6 +30,12 @@ const ContactUsSection = () => {
     const subHeadingRef = useRef(null);
     const subHeadingIsInView = useInView(subHeadingRef, {
         margin: "0px 0px -30% 0px",
+        once: true,
+    });
+
+    const contactCardsRef = useRef(null);
+    const contactCardsAreInView = useInView(contactCardsRef, {
+        margin: "0px 0px -40% 0px",
         once: true,
     });
 
@@ -110,7 +117,18 @@ const ContactUsSection = () => {
                         </div>
                     </div>
                     <div className="grid lg:grid-cols-2 gap-5 w-full z-10">
-                        <div className="relative flex flex-col justify-evenly gap-5 bg-primary-blue px-10 py-5 rounded-3xl overflow-hidden">
+                        <motion.div
+                            ref={contactCardsRef}
+                            className="relative flex flex-col justify-evenly gap-5 bg-primary-blue px-10 py-5 rounded-3xl overflow-hidden"
+                            initial={{
+                                x: direction == "rtl" ? "100%" : "-100%",
+                                opacity: 0,
+                            }}
+                            animate={
+                                contactCardsAreInView && { x: 0, opacity: 1 }
+                            }
+                            transition={{ duration: 1, ease: "circOut" }}
+                        >
                             <motion.div
                                 initial={{
                                     x: direction == "rtl" ? "-100%" : "100%",
@@ -153,14 +171,27 @@ const ContactUsSection = () => {
                                     body={t("address card.card3.body")}
                                 />
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <ContactForm
-                            namePlaceholder={t("contact form.name")}
-                            emailPlaceholder={t("contact form.email")}
-                            messagePlaceholder={t("contact form.your message")}
-                            buttonText={t("contact form.send")}
-                        />
+                        <motion.div
+                            initial={{
+                                x: direction == "rtl" ? "-100%" : "100%",
+                                opacity: 0,
+                            }}
+                            animate={
+                                contactCardsAreInView && { x: 0, opacity: 1 }
+                            }
+                            transition={{ duration: 1, ease: "circOut" }}
+                        >
+                            <ContactForm
+                                namePlaceholder={t("contact form.name")}
+                                emailPlaceholder={t("contact form.email")}
+                                messagePlaceholder={t(
+                                    "contact form.your message"
+                                )}
+                                buttonText={t("contact form.send")}
+                            />
+                        </motion.div>
                     </div>
                 </div>
             </div>

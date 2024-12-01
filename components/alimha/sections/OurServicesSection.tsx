@@ -48,7 +48,7 @@ const OurServicesSection = () => {
                         ref={tagRef}
                         className="bg-tertiary text-secondary-blue text-sm min-[1280px]:text-base px-3 py-2 rounded-md"
                         initial={{
-                            x: "-200px",
+                            x: direction == "rtl" ? "200px" : "-200px",
                             opacity: 0,
                         }}
                         animate={
@@ -65,7 +65,7 @@ const OurServicesSection = () => {
                         ref={headingRef}
                         className="font-bold text-center min-[900px]:text-start text-2xl lg:text-3xl min-[1200px]:text-4xl leading-tight min-[1200px]:leading-snug pb-4"
                         initial={{
-                            x: "-200px",
+                            x: direction == "rtl" ? "200px" : "-200px",
                             opacity: 0,
                         }}
                         animate={

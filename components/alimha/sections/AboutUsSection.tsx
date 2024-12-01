@@ -81,7 +81,7 @@ const AboutUsSection = () => {
                             ref={card1Ref}
                             className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-start"
                             initial={{
-                                x: "-200px",
+                                x: direction == "rtl" ? "200px" : "-200px",
                                 opacity: 0,
                             }}
                             animate={
@@ -135,7 +135,7 @@ const AboutUsSection = () => {
                             ref={card2Ref}
                             className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-end"
                             initial={{
-                                x: "200px",
+                                x: direction == "rtl" ? "-200px" : "200px",
                                 opacity: 0,
                             }}
                             animate={
@@ -158,7 +158,7 @@ const AboutUsSection = () => {
                             ref={card3Ref}
                             className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min-[800px]:place-self-start"
                             initial={{
-                                x: "-200px",
+                                x: direction == "rtl" ? "200px" : "-200px",
                                 opacity: 0,
                             }}
                             animate={
@@ -181,7 +181,7 @@ const AboutUsSection = () => {
                             ref={card4Ref}
                             className="flex justify-center items-center min-w-[330px] h-full min-[800px]:min-h-[230px] place-self-center min[800px]:place-self-end"
                             initial={{
-                                x: "200px",
+                                x: direction == "rtl" ? "-200px" : "200px",
                                 opacity: 0,
                             }}
                             animate={

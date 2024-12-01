@@ -21,7 +21,10 @@ const HeroSection = () => {
             <div className="relative flex justify-between items-center w-full max-w-[1400px]">
                 <motion.div
                     className="flex flex-col items-center min-[900px]:items-start bg-white bg-opacity-80 min-[900px]:bg-transparent w-full min-[900px]:w-1/2 gap-3 min-[1280px]:gap-5 py-10 px-2 min-[900px]:px-0 rounded-2xl shadow-2xl shadow-white min-[900px]:shadow-none z-10"
-                    initial={{ x: "-50px", opacity: 0 }}
+                    initial={{
+                        x: direction == "rtl" ? "50px" : "-50px",
+                        opacity: 0,
+                    }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, ease: "circOut" }}
                 >
@@ -48,7 +51,10 @@ const HeroSection = () => {
                 </motion.div>
                 <motion.div
                     className="hidden min-[900px]:block z-10"
-                    initial={{ x: "1000px", opacity: 0 }}
+                    initial={{
+                        x: direction == "rtl" ? "-1000px" : "1000px",
+                        opacity: 0,
+                    }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{
                         type: "spring",
