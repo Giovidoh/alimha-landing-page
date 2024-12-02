@@ -14,7 +14,7 @@ const AdvantagesSection = () => {
     return (
         <section
             id="advantages"
-            className="flex bg-gray-50 bg-alpay-advantages-bg bg-cover bg-no-repeat bg-center w-full h-fit py-10 min-[1000px]:py-24 px-5 sm:px-20 min-[1330px]:px-40 gap-3"
+            className="flex items-center bg-gray-50 bg-alpay-advantages-bg bg-cover bg-no-repeat bg-center w-full h-fit gap-10 py-10 min-[1000px]:py-24 px-5 sm:px-20 min-[1330px]:px-40"
         >
             <div className="flex flex-col justify-center items-center min-[1000px]:items-start w-full min-[1000px]:w-1/2 min-h-[600px] gap-4">
                 <span className="font-medium text-base sm:text-lg text-primary-blue">

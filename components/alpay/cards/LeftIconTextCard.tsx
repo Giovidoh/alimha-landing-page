@@ -18,7 +18,7 @@ const LeftIconTextCard: FC<LeftIconTextCardProps> = ({
             </div>
             <div>
                 <h2 className="font-bold">{title}</h2>
-                <p className="text-sm">{body}</p>
+                <p className="text-sm text-pretty text-justify">{body}</p>
             </div>
         </div>
     );
