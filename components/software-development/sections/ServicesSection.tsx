@@ -1,17 +1,37 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import IconTextCard from "../cards/IconTextCard";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import dashboardImage from "@/public/assets/dashboard-img.png";
 import ApplicationIcon from "@/public/assets/application-icon.svg";
 import AuditIcon from "@/public/assets/audit-icon.svg";
 import MicrosystemIcon from "@/public/assets/microsystem-icon.svg";
 import DeploymentIcon from "@/public/assets/deployment-icon.svg";
+import { motion, useInView } from "framer-motion";
+import { getLangDir } from "rtl-detect";
 
 const ServicesSection = () => {
+    const localActive = useLocale();
     const t = useTranslations("SoftwareDevelopmentPage.ServicesSection");
+    const direction = getLangDir(localActive);
+
+    const sectionRef = useRef(null);
+
+    const flash1IsInView = useInView(sectionRef, {
+        margin: "0px 0px -90% 0px",
+        once: true,
+    });
+
+    const flash2IsInView = useInView(sectionRef, {
+        margin: "0px 0px -90% 0px",
+        once: true,
+    });
+
     return (
         <section
+            ref={sectionRef}
             id="our-services"
             className="relative flex justify-center items-center bg-primary-blue px-[5%] min-[1200px]:px-[10%] py-16"
         >
@@ -75,10 +95,42 @@ const ServicesSection = () => {
             </div>
 
             {/* Decoration */}
-            <div className={`absolute top-0 left-0 w-full h-full`}>
-                <div className="absolute flex flex-col justify-center items-center w-full h-full -rotate-[40deg]">
-                    <div className="bg-gradient-to-r from-primary-blue via-white/20 to-primary-blue w-[900px] h-[250px] rounded-full"></div>
-                    <div className="bg-gradient-to-r from-primary-blue via-white/20 to-primary-blue w-[1000px] h-[100px] rounded-full"></div>
+            <div
+                className={`absolute top-0 left-0 w-full h-full overflow-hidden`}
+            >
+                <div
+                    className={`absolute flex flex-col justify-center items-center w-full h-full lg:overflow-hidden ${
+                        direction === "rtl"
+                            ? "rotate-[40deg]"
+                            : "-rotate-[40deg]"
+                    }`}
+                >
+                    <motion.div
+                        className="bg-gradient-to-r from-primary-blue via-white/20 to-primary-blue w-[900px] h-[250px] rounded-full"
+                        initial={
+                            direction === "rtl"
+                                ? { x: "-150%", y: "-200px" }
+                                : { x: "150%", y: "-200px" }
+                        }
+                        animate={flash1IsInView && { x: 0, y: 0 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 100,
+                        }}
+                    ></motion.div>
+                    <motion.div
+                        className="bg-gradient-to-r from-primary-blue via-white/20 to-primary-blue w-[1000px] h-[100px] rounded-full"
+                        initial={
+                            direction === "rtl"
+                                ? { x: "150%", y: "200px" }
+                                : { x: "-150%", y: "200px" }
+                        }
+                        animate={flash2IsInView && { x: 0, y: 0 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 100,
+                        }}
+                    ></motion.div>
                 </div>
             </div>
             <div className="absolute top-[95%] left-[83%] bg-white bg-opacity-50 backdrop-blur p-[5%] rounded-full"></div>
