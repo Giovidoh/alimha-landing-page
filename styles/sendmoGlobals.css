@@ -12,3 +12,9 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+@import "./components/index.css";
+@import "./template/index.css";
+@import "./vendors/index.css";
+@import "./tailwind/index.css";

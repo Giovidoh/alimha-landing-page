@@ -17,6 +17,7 @@ import tmoneyImg from "@/public/assets/tmoney.png";
 import Image from "next/image";
 import sendmoHeroImage from "@/public/assets/sendmo-hero-image.png";
 import { useLocale, useTranslations } from "next-intl";
+import TransactionForm from "../forms/TransactionForm";
 
 const countriesImages = [
     {
@@ -63,6 +64,43 @@ const paymentMethodsImages = [
 const HeroSection = () => {
     const localActive = useLocale();
     const t = useTranslations("SendmoPage.HeroSection");
+    const transactionFormTranslations = {
+        title: t("transaction.title"),
+        description: t("transaction.description"),
+        transactionForm: {
+            input1: {
+                title: t("transaction.transactionForm.input1.title"),
+                placeholder: t(
+                    "transaction.transactionForm.input1.placeholder"
+                ),
+            },
+            input2: {
+                title: t("transaction.transactionForm.input2.title"),
+                placeholder: t(
+                    "transaction.transactionForm.input2.placeholder"
+                ),
+            },
+            input3: {
+                title: t("transaction.transactionForm.input3.title"),
+                placeholder: t(
+                    "transaction.transactionForm.input3.placeholder"
+                ),
+            },
+            loadingCta: t("transaction.transactionForm.loadingCta"),
+            cta: t("transaction.transactionForm.cta"),
+            transactionFormErrorMessages: {
+                amount: t("transaction.transactionFormErrorMessages.amount"),
+            },
+            transactionFormExchangeDetails: {
+                exchangeRate: t(
+                    "transaction.transactionFormExchangeDetails.exchangeRate"
+                ),
+                receivedAmount: t(
+                    "transaction.transactionFormExchangeDetails.receivedAmount"
+                ),
+            },
+        },
+    };
     return (
         <section className="flex flex-col min-[930px]:flex-row justify-between items-center w-full px-5 sm:px-20 min-[1120px]:px-40 py-10">
             <div className="flex flex-col justify-center items-center sm:items-start w-full min-[930px]:w-1/2 gap-3 md:gap-6 min-[930px]:mb-24 z-10">
@@ -90,7 +128,7 @@ const HeroSection = () => {
                     />
                 </div>
             </div>
-            <div className="relative flex justify-end w-1/2 max-[930px]:w-full">
+            {/* <div className="relative flex justify-end w-1/2 max-[930px]:w-full">
                 <div className="max-sm:hidden min-[930px]:hidden">
                     <Image
                         src={sendmoHeroImage}
@@ -127,6 +165,12 @@ const HeroSection = () => {
                 >
                     <ImagesCollection images={paymentMethodsImages} />
                 </div>
+            </div> */}
+            <div className="w-full min-[930px]:w-1/2">
+                <TransactionForm
+                    translations={transactionFormTranslations}
+                    className="bg-white p-10 w-full shadow-lg rounded-xl"
+                />
             </div>
         </section>
     );
