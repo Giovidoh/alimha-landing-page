@@ -101,8 +101,16 @@ const TransactionForm = (props: TransactionFormProps) => {
         );
 
         return newCountryList.map((country) => {
-            country.label = country.dialCode;
-            return country;
+            // Get only burkina faso, guinea, senegal and togo
+            if (
+                country.value === "BF" ||
+                country.value === "GN" ||
+                country.value === "SN" ||
+                country.value === "TG"
+            ) {
+                country.label = country.dialCode;
+                return country;
+            }
         });
     }, []);
 
@@ -141,7 +149,9 @@ const TransactionForm = (props: TransactionFormProps) => {
     });
 
     const onSubmit = async (values: TransactionFormSchema) => {
+        setSubmitting(true);
         console.log(values);
+        setSubmitting(false);
     };
 
     return (
@@ -193,7 +203,9 @@ const TransactionForm = (props: TransactionFormProps) => {
                             control={control}
                             render={({ field }) => (
                                 <Select<CountryOption>
-                                    options={dialCodeList}
+                                    options={dialCodeList.filter(
+                                        (option) => option !== undefined
+                                    )}
                                     {...field}
                                     className="w-[150px]"
                                     components={{
@@ -206,10 +218,12 @@ const TransactionForm = (props: TransactionFormProps) => {
                                         Control: CustomControl,
                                     }}
                                     placeholder=""
-                                    value={dialCodeList.filter(
-                                        (option) =>
-                                            option.dialCode === field.value
-                                    )}
+                                    value={
+                                        dialCodeList.filter(
+                                            (option) =>
+                                                option?.dialCode === field.value
+                                        )[0]
+                                    }
                                     onChange={(option) =>
                                         field.onChange(option?.dialCode)
                                     }
@@ -259,7 +273,9 @@ const TransactionForm = (props: TransactionFormProps) => {
                             control={control}
                             render={({ field }) => (
                                 <Select<CountryOption>
-                                    options={dialCodeList}
+                                    options={dialCodeList.filter(
+                                        (option) => option !== undefined
+                                    )}
                                     {...field}
                                     className="w-[150px]"
                                     components={{
@@ -272,10 +288,12 @@ const TransactionForm = (props: TransactionFormProps) => {
                                         Control: CustomControl,
                                     }}
                                     placeholder=""
-                                    value={dialCodeList.filter(
-                                        (option) =>
-                                            option.dialCode === field.value
-                                    )}
+                                    value={
+                                        dialCodeList.filter(
+                                            (option) =>
+                                                option?.dialCode === field.value
+                                        )[0]
+                                    }
                                     onChange={(option) =>
                                         field.onChange(option?.dialCode)
                                     }
