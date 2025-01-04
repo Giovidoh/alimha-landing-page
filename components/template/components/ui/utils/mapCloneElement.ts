@@ -1,17 +1,16 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { Children, isValidElement, cloneElement } from 'react'
-import type { ReactNode, DetailedReactHTMLElement } from 'react'
+import { Children, isValidElement, cloneElement } from "react";
+import type { ReactNode, DetailedReactHTMLElement } from "react";
 
 function map(children: ReactNode, func: any, context?: any) {
-    let index = 0
+    let index = 0;
     return Children.map(children, (child) => {
         if (!isValidElement(child)) {
-            return child
+            return child;
         }
-        const handle = func.call(context, child, index)
-        index += 1
-        return handle
-    })
+        const handle = func.call(context, child, index);
+        index += 1;
+        return handle;
+    });
 }
 
 function mapCloneElement(children: ReactNode, func: any, context?: any) {
@@ -22,8 +21,8 @@ function mapCloneElement(children: ReactNode, func: any, context?: any) {
                 key: index,
                 ...func(child, index),
             }),
-        context,
-    )
+        context
+    );
 }
 
-export default mapCloneElement
+export default mapCloneElement;
