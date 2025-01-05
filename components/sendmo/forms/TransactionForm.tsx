@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState, ReactNode, CSSProperties } from "react";
+import { useMemo, useState, ReactNode, CSSProperties, useEffect } from "react";
 import { Button } from "@/components/template/components/ui/Button";
 import { FormItem, Form } from "@/components/template/components/ui/Form";
 import { useForm, Controller } from "react-hook-form";
@@ -15,6 +15,7 @@ import Select, {
 } from "@/components/template/components/ui/Select";
 import { countryList } from "@/components/template/constants/countries.constant";
 import NumericInput from "@/components/template/components/shared/NumericInput";
+import { paymentMethods } from "@/components/template/constants/paymentMethods.constant";
 
 interface CommonProps {
     id?: string;
@@ -45,6 +46,11 @@ type CountryOption = {
     value: string;
 };
 
+type PaymentMethodOption = {
+    label: string;
+    value: string;
+};
+
 const CustomSelectOption = (
     props: OptionProps<CountryOption> & { variant: "country" | "phone" }
 ) => {
@@ -60,6 +66,24 @@ const CustomSelectOption = (
                     />
                     {props.variant === "country" && <span>{label}</span>}
                     {props.variant === "phone" && <span>{data.dialCode}</span>}
+                </span>
+            )}
+        />
+    );
+};
+
+const CustomPaymentMethodOption = (props: OptionProps<PaymentMethodOption>) => {
+    return (
+        <DefaultOption<PaymentMethodOption>
+            {...props}
+            customLabel={(data, label) => (
+                <span className="flex items-center gap-2">
+                    <Avatar
+                        shape="circle"
+                        size={20}
+                        src={`/assets/payment-methods/${data.value}.png`}
+                    />
+                    <span>{label}</span>
                 </span>
             )}
         />
@@ -85,6 +109,27 @@ const CustomControl = ({ children, ...props }: ControlProps<CountryOption>) => {
     );
 };
 
+const CustomPaymentMethodControl = ({
+    children,
+    ...props
+}: ControlProps<PaymentMethodOption>) => {
+    const selected = props.getValue()[0];
+    return (
+        <Control {...props}>
+            {" "}
+            {selected && (
+                <Avatar
+                    className="ltr:ml-4 rtl:mr-4"
+                    shape="circle"
+                    size={20}
+                    src={`/assets/payment-methods/${selected.value}.png`}
+                />
+            )}
+            {children}
+        </Control>
+    );
+};
+
 const TransactionForm = (props: TransactionFormProps) => {
     const {
         disableSubmit = false,
@@ -94,6 +139,13 @@ const TransactionForm = (props: TransactionFormProps) => {
     } = props;
 
     const [isSubmitting, setSubmitting] = useState<boolean>(false);
+
+    const [senderCountry, setSenderCountry] = useState<CountryOption | null>(
+        null
+    );
+
+    const [receiverCountry, setReceiverCountry] =
+        useState<CountryOption | null>(null);
 
     const dialCodeList = useMemo(() => {
         const newCountryList: Array<CountryOption> = JSON.parse(
@@ -113,6 +165,30 @@ const TransactionForm = (props: TransactionFormProps) => {
             }
         });
     }, []);
+
+    // Get payment methods for sender and receiver
+    const senderPaymentMethodsList = useMemo(() => {
+        if (!senderCountry) return [];
+        const newPaymentMethods: Array<PaymentMethodOption> =
+            paymentMethods[senderCountry?.value as keyof typeof paymentMethods];
+        return newPaymentMethods.map((method) => ({
+            label: method.label,
+            value: method.value,
+        }));
+    }, [senderCountry]);
+
+    const receiverPaymentMethodsList = useMemo(() => {
+        if (!receiverCountry) return [];
+        const newPaymentMethods: Array<PaymentMethodOption> =
+            paymentMethods[
+                receiverCountry?.value as keyof typeof paymentMethods
+            ];
+        return newPaymentMethods.map((method) => ({
+            label: method.label,
+            value: method.value,
+        }));
+    }, [receiverCountry]);
+    // End Get payment methods for sender and receiver
 
     const validationSchema: ZodType<TransactionFormSchema> = z.object({
         amount: z.number({
@@ -144,6 +220,7 @@ const TransactionForm = (props: TransactionFormProps) => {
         handleSubmit,
         formState: { errors },
         control,
+        setValue,
     } = useForm<TransactionFormSchema>({
         resolver: zodResolver(validationSchema),
     });
@@ -153,6 +230,16 @@ const TransactionForm = (props: TransactionFormProps) => {
         console.log(values);
         setSubmitting(false);
     };
+
+    // Set sender & receiver payment method to the first payment method in the list
+    useEffect(() => {
+        setValue("senderPaymentMethod", senderPaymentMethodsList[0]?.value);
+    }, [senderCountry, senderPaymentMethodsList, setValue]);
+
+    useEffect(() => {
+        setValue("receiverPaymentMethod", receiverPaymentMethodsList[0]?.value);
+    }, [receiverCountry, receiverPaymentMethodsList, setValue]);
+    // End Set sender & receiver payment method to the first payment method in the list
 
     return (
         <div className={className}>
@@ -171,7 +258,7 @@ const TransactionForm = (props: TransactionFormProps) => {
                         render={({ field }) => (
                             <div className="grid grid-cols-3 w-full">
                                 <Input
-                                    type="text"
+                                    type="number"
                                     className="col-span-2 rounded-r-none"
                                     placeholder={
                                         translations.transactionForm.input1
@@ -179,6 +266,9 @@ const TransactionForm = (props: TransactionFormProps) => {
                                     }
                                     autoComplete="off"
                                     {...field}
+                                    onChange={(e) => {
+                                        field.onChange(Number(e.target.value));
+                                    }}
                                 />
                                 <div className="flex items-center justify-center text-sm text-white bg-primary-deep w-full h-full rounded-r-md">
                                     Fcfa
@@ -224,9 +314,10 @@ const TransactionForm = (props: TransactionFormProps) => {
                                                 option?.dialCode === field.value
                                         )[0]
                                     }
-                                    onChange={(option) =>
-                                        field.onChange(option?.dialCode)
-                                    }
+                                    onChange={(option) => {
+                                        field.onChange(option?.dialCode);
+                                        setSenderCountry(option);
+                                    }}
                                 />
                             )}
                         />
@@ -252,6 +343,40 @@ const TransactionForm = (props: TransactionFormProps) => {
                                     value={field.value}
                                     onChange={field.onChange}
                                     onBlur={field.onBlur}
+                                />
+                            )}
+                        />
+                    </FormItem>
+                    <FormItem
+                        invalid={
+                            Boolean(errors.senderPhoneNumber) ||
+                            Boolean(errors.senderDialCode)
+                        }
+                    >
+                        <Controller
+                            name="senderPaymentMethod"
+                            control={control}
+                            render={({ field }) => (
+                                <Select<PaymentMethodOption>
+                                    options={senderPaymentMethodsList.filter(
+                                        (option) => option !== undefined
+                                    )}
+                                    {...field}
+                                    className="w-[150px]"
+                                    components={{
+                                        Option: CustomPaymentMethodOption,
+                                        Control: CustomPaymentMethodControl,
+                                    }}
+                                    placeholder=""
+                                    value={
+                                        senderPaymentMethodsList.filter(
+                                            (option) =>
+                                                option?.value === field.value
+                                        )[0]
+                                    }
+                                    onChange={(option) => {
+                                        field.onChange(option?.value);
+                                    }}
                                 />
                             )}
                         />
@@ -294,9 +419,10 @@ const TransactionForm = (props: TransactionFormProps) => {
                                                 option?.dialCode === field.value
                                         )[0]
                                     }
-                                    onChange={(option) =>
-                                        field.onChange(option?.dialCode)
-                                    }
+                                    onChange={(option) => {
+                                        field.onChange(option?.dialCode);
+                                        setReceiverCountry(option);
+                                    }}
                                 />
                             )}
                         />
@@ -322,6 +448,40 @@ const TransactionForm = (props: TransactionFormProps) => {
                                     value={field.value}
                                     onChange={field.onChange}
                                     onBlur={field.onBlur}
+                                />
+                            )}
+                        />
+                    </FormItem>
+                    <FormItem
+                        invalid={
+                            Boolean(errors.senderPhoneNumber) ||
+                            Boolean(errors.senderDialCode)
+                        }
+                    >
+                        <Controller
+                            name="receiverPaymentMethod"
+                            control={control}
+                            render={({ field }) => (
+                                <Select<PaymentMethodOption>
+                                    options={receiverPaymentMethodsList.filter(
+                                        (option) => option !== undefined
+                                    )}
+                                    {...field}
+                                    className="w-[150px]"
+                                    components={{
+                                        Option: CustomPaymentMethodOption,
+                                        Control: CustomPaymentMethodControl,
+                                    }}
+                                    placeholder=""
+                                    value={
+                                        receiverPaymentMethodsList.filter(
+                                            (option) =>
+                                                option?.value === field.value
+                                        )[0]
+                                    }
+                                    onChange={(option) => {
+                                        field.onChange(option?.value);
+                                    }}
                                 />
                             )}
                         />
