@@ -9,10 +9,10 @@ import { useLocale } from "next-intl";
 
 interface HeaderProps {
     headerLinks: { text: string; url: string }[];
-    downloadApp: string;
+    loginButtontext: string;
 }
 
-const Header: FC<HeaderProps> = ({ headerLinks, downloadApp }) => {
+const Header: FC<HeaderProps> = ({ headerLinks, loginButtontext }) => {
     const [toggleMenu, setToggleMenu] = useState(false);
     const localActive = useLocale();
 
@@ -27,7 +27,7 @@ const Header: FC<HeaderProps> = ({ headerLinks, downloadApp }) => {
                     <div className="hidden min-[1440px]:block">
                         <LocalSwitcherSelect />
                     </div>
-                    <Button text={downloadApp} className="px-3 py-2" />
+                    <Button text={loginButtontext} className="px-3 py-2" />
                 </div>
                 <div className="min-[1440px]:hidden">
                     <button
@@ -51,7 +51,7 @@ const Header: FC<HeaderProps> = ({ headerLinks, downloadApp }) => {
                             </div>
                             <div className="block min-[1160px]:hidden">
                                 <Button
-                                    text={downloadApp}
+                                    text={loginButtontext}
                                     className="px-3 py-2 w-full"
                                 />
                             </div>

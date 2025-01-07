@@ -22,7 +22,7 @@ export default function Home() {
         <main className="flex flex-col items-center">
             <Header
                 headerLinks={translatedHeaderLinks}
-                downloadApp={t("Header.Download App")}
+                loginButtontext={t("Header.Login")}
             />
             <HeroSection />
             <WelcomeToSendmoSection />
